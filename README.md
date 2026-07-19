@@ -28,11 +28,13 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 
 | Path | What lives there |
 |------|------------------|
-| [`METHODOLOGY.md`](./METHODOLOGY.md) | The correspondence ladder, evidence standards, and the anti-patterns we watch for. Read this first. |
+| [`METHODOLOGY.md`](./METHODOLOGY.md) | The correspondence ladder, evidence standards, anti-patterns, and the expansion⇄restraint rhythm. Read this first. |
+| [`PREDICTION-FIELD.md`](./PREDICTION-FIELD.md) | The organizing frame: the environment we map *is* a prediction field; invariants are its measurement-invariant structure. |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Conventions for adding or revising an invariant or a domain. How "we" work. |
 | [`invariants/`](./invariants/) | One file per candidate invariant. [`invariants/README.md`](./invariants/README.md) is the master catalog. |
 | [`domains/`](./domains/) | The invariant × domain cross-reference matrix — the actual "map." |
-| [`questions/`](./questions/OPEN-QUESTIONS.md) | The prioritized research agenda: concrete, falsifiable questions. |
+| [`questions/`](./questions/) | The agenda in two tiers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous) and [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable). |
+| [`experiments/`](./experiments/) | Runnable tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |
 | [`research-log/`](./research-log/) | Dated entries recording what we investigated, decided, and changed. |
 
 ## How to navigate

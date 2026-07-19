@@ -68,6 +68,13 @@ in *learning trajectories, evolutionary fitness landscapes, and markets* the way
 does in thermodynamics — i.e., is curvature-blowup a universal early-warning of a
 transition? **Falsifier:** train a model through a known grokking/phase transition
 and show the Fisher curvature does *not* spike there.
+> **⟳ Restraint pass (2026-07-19):** tested and *partially confirmed* — see
+> [`../experiments/S3-fisher-geometry/`](../experiments/S3-fisher-geometry/). The
+> Fisher signal spikes at both the Ising critical point (χ→∞ at T_c) *and* the
+> double-descent interpolation threshold (inverse-Fisher blow-up coincides exactly
+> with the test-error peak, P/N=1). Grokking specifically remains untested (needs
+> torch); the full Riemann-curvature version remains open. Object promoted to
+> `developing`: [`statistical-geometry.md`](../invariants/statistical-geometry.md).
 
 ### S4 🟢 — Is every "evolving distribution" a gradient flow in Wasserstein space?
 **Bridge:** optimal transport; the JKO theorem (the heat equation *is* the gradient

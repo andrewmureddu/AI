@@ -72,6 +72,31 @@ Each invariant entry carries one status:
 - `retired` — investigated and found to be ≤ L1 despite common claims. **Kept,
   not deleted** — the reason it fails is a result.
 
+## The research rhythm: expansion ⇄ restraint
+
+The project runs on a two-stroke engine, and both strokes are load-bearing:
+
+- **Expansion.** Make conceptual leaps — spot that the same object wears different
+  disciplinary costumes, connect distant fields, generate candidates. This is the
+  generative stroke, and it is *supposed* to overreach. Its home is
+  [`questions/SPECULATIVE.md`](./questions/SPECULATIVE.md), where hops are tagged by
+  boldness (🟢/🟡/🔴), not yet defended.
+- **Restraint.** Test, prune, refine. Take one leap, restate it quantitatively, try
+  hardest to *falsify* it, and record what survived. Its home is
+  [`questions/OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) and
+  [`experiments/`](./experiments/).
+
+Expansion without restraint is confabulation; restraint without expansion is
+bookkeeping. The map advances only by alternating them. A leap that survives its
+falsifier **graduates** from the speculative tier to the rigorous tier and its
+object earns a full entry in [`invariants/`](./invariants/); a leap that dies is
+logged and its correspondence marked L1. Either way the environment gets mapped.
+
+This is also the honest reading of the "AI-native" advantage: the breadth that
+powers the expansion stroke is exactly what makes fake unifications cheap, so it
+must be paired with a disciplined restraint stroke. Do what breadth is good at —
+*with explicit hedging.*
+
 ## The unit of work
 
 One research increment = take one candidate, gather its manifestations, assign a

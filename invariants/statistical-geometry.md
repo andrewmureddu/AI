@@ -5,7 +5,7 @@
 > one geometry, and its scalar curvature diverges at phase transitions everywhere.
 > **Headline correspondence level:** L3 candidate (the metric is genuinely shared;
 > the curvature-at-criticality claim spans it). *(seed — speculative)*
-> **Status:** seed
+> **Status:** developing — *first evidence in* ([experiment](../experiments/S3-fisher-geometry/))
 
 ## Statement
 
@@ -27,3 +27,20 @@ Speculative question **S3**: does curvature-blowup predict transitions in *learn
 trajectories, fitness landscapes, and markets*, not just thermodynamics? Concrete
 test: Fisher curvature should spike at an ML grokking/phase transition. Falsifier:
 it doesn't. Refs: Amari 1985; Ruppeiner 1995; Provost–Vallee (quantum metric).
+
+## Evidence so far (2026-07-19)
+
+First test in [`../experiments/S3-fisher-geometry/`](../experiments/S3-fisher-geometry/)
+(pure numpy, reproducible):
+
+- **Physics leg confirmed exactly.** Mean-field Ising Fisher information
+  (χ = Var(M)/T) diverges at T = 1.000 = T_c.
+- **Learning leg confirmed on double descent.** In ridgeless random-feature
+  regression the inverse-Fisher scale 1/σ_min² blows up at **the same** capacity
+  P/N = 1.000 as the test-error peak — the generalization catastrophe *is* the
+  Fisher matrix going singular.
+
+This lifts the entry from `seed` to `developing`: same computable geometric object,
+same signature, two domains. **Not yet L3** — this is coincidence with a shared
+object (strong L2), not a proven common mechanism. Still open: the full Riemann
+scalar-curvature version, and the *grokking*-specific transition (needs torch).
