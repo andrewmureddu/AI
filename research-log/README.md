@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-19 — Speculative sweep (AI-native bridges)](./2026-07-19-speculative-sweep.md)
 - [2026-07-19 — Kickoff & seeded taxonomy](./2026-07-19-kickoff.md)
 
 ## Entry format

@@ -29,9 +29,18 @@ contested/soft claims.
 | [Trade-offs/Pareto](../invariants/tradeoffs-pareto.md) | L2 | | L2 | L2 | L2 | L2 | L2 | |
 | [Duality/conjugates](../invariants/duality.md) | L3 | L2 | | | L2 | L3 | | |
 | [Information bottleneck](../invariants/information-bottleneck.md) | | | | L3 | | L2 | | (L2) |
+| *— speculative tier —* | | | | | | | | |
+| [Universal update](../invariants/mirror-descent-update.md) | L3 | | L3 | (L2) | L3 | **anchor** | L2 | (L1) |
+| [Optimal transport](../invariants/optimal-transport.md) | **anchor** | | L2 | | L3 | L3 | | |
+| [Spectral gap](../invariants/spectral-gap.md) | L3 | L2 | L2 | L2 | (L1) | L3 | L2 | L2 |
+| [Statistical geometry](../invariants/statistical-geometry.md) | L3 | | (L1) | (L1) | (L2) | **anchor** | | |
+| [Noise thresholds](../invariants/noise-thresholds.md) | L3 | L2 | L3 | (L2) | | **anchor** | (L1) | |
+| [Critical slowing down](../invariants/critical-slowing-down.md) | **anchor** | | L3 | L3 | (L2) | L3 | L3 | (L1) |
 
 *(Cell levels are seed estimates for the un-worked invariants; treat anything in
-a `seed`-status entry as a hypothesis to be checked, not a finding.)*
+a `seed`-status entry as a hypothesis to be checked, not a finding. The
+speculative-tier rows are hypotheses squared — see
+[`../questions/SPECULATIVE.md`](../questions/SPECULATIVE.md).)*
 
 ## What the map is telling us (early reads)
 
