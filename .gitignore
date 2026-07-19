@@ -1,0 +1,13 @@
+# Scratch / local working files
+scratch/
+*.tmp
+.DS_Store
+
+# Analysis artifacts (if/when we add computation)
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+data/raw/
+*.parquet
