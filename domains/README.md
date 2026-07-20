@@ -36,6 +36,8 @@ contested/soft claims.
 | [Statistical geometry](../invariants/statistical-geometry.md) | L3 | | (L1) | (L1) | (L2) | **anchor** | | |
 | [Noise thresholds](../invariants/noise-thresholds.md) | L3 | L2 | L3 | (L2) | | **anchor** | (L1) | |
 | [Critical slowing down](../invariants/critical-slowing-down.md) | **anchor** | | L3 | L3 | (L2) | L3 | L3 | (L1) |
+| *— consolidation hub —* | | | | | | | | |
+| [Free-energy hub Φ=lnZ](../invariants/free-energy-hub.md) | **L4** | L3 | L3 | L2 | L3 | **L3** | L2 | L2 |
 
 *(Cell levels are seed estimates for the un-worked invariants; treat anything in
 a `seed`-status entry as a hypothesis to be checked, not a finding. The

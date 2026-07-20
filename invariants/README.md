@@ -44,6 +44,15 @@ yet defended. Treat every level as a hypothesis.
 | 21 | [Noise thresholds](./noise-thresholds.md) | recoverability transition p_c | L2–L3? | seed·spec | S5 |
 | 22 | [Critical slowing down](./critical-slowing-down.md) | autocorr→1, variance blow-up | L3–L4? | seed·spec | S6, S7 |
 
+### Consolidations (a hub the other entries turn out to orbit)
+
+Not a new bridge — a discovered *center*, where several catalog entries are facets
+of one object. Confirmed math, not speculative.
+
+| # | Node | Core object | Level | Status | Absorbs |
+|--:|------|-------------|:-----:|--------|---------|
+| 23 | [Free-energy hub](./free-energy-hub.md) | Φ = ln Z (log-partition) | **L3** (L4 via Lee–Yang) | developing | facets of #3, #5, #12, #15, #16, #17, #20 |
+
 ## Reading the levels honestly
 
 The interesting entries are the ones that span the ladder: **#2 (Noether)**,

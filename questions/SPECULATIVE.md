@@ -211,6 +211,80 @@ measure predictive-information scaling across domains and find no common band.
 
 ---
 
+## Cluster G — Stones off the free-energy hub (added 2026-07-19)
+
+These use the [free-energy hub](../invariants/free-energy-hub.md) Φ = ln Z: its
+gradient (observables), Hessian (Fisher/fluctuations), and singularities.
+
+### S13 🟡 — Is every phase transition a non-analyticity of the prediction field's free energy?
+**Bridge:** Lee–Yang — a transition is a singularity of Φ = ln Z.
+**Connects:** physics · CS (SAT) · ML (grokking, double descent) · reasoning.
+Given the hub, is *every* sharp transition — thermodynamic, computational, learning
+— a non-analyticity of the appropriate log-partition function (Lee–Yang zeros
+pinching the real axis)? Double descent already fits: the inverse-Fisher = ∂²Φ that
+blew up in [S3](../experiments/S3-fisher-geometry/) is exactly the hub's Hessian
+diverging. **Falsifier:** a genuine transition whose free energy stays analytic.
+**Tractable next step:** locate partition-function zeros for a small grokking model.
+
+### S15 🟡 — Does the fluctuation–dissipation theorem hold in learning and markets?
+**Bridge:** response = fluctuation, because both are ∂²Φ (the hub's Hessian).
+**Connects:** physics · ML (SGD noise) · finance.
+FDT: a system's linear response to a perturbation equals the autocorrelation of its
+spontaneous fluctuations. Does a learner's response to a data/parameter perturbation
+equal the covariance of its SGD fluctuations? Do market impact responses equal
+fluctuation autocorrelations? **Out of equilibrium**, is the FDT-violation ratio —
+an *effective temperature* — itself the invariant? **Falsifier:** measure both sides
+in a trained model and find no relation even after fitting one effective temperature.
+
+### S16 🔴 — Is there a universal speed limit on changing your predictions?
+**Bridge:** information-geometric / thermodynamic speed limits (Fisher length ≥
+distance ÷ time).
+**Connects:** physics (thermalization) · ML (learning curves) · evolution.
+The rate at which any system can move its distribution is bounded by its integrated
+Fisher information (a "statistical speed"). Are learning speed, evolutionary rate,
+and thermalization time all bounded by the *same* Fisher-length inequality?
+**Falsifier:** a system that shifts its distribution faster than its integrated
+Fisher information permits.
+
+## Cluster H — Compression, symmetry, and what survives
+
+### S14 🟡 — Renormalization = the information bottleneck = diffusion-model denoising?
+**Bridge:** scale-by-scale compression that preserves predictive information.
+**Connects:** physics (RG) · ML (info bottleneck, diffusion models) · neuro
+(predictive coding).
+RG keeps "relevant" operators and discards "irrelevant" ones; the IB keeps
+predictive information and discards the rest; diffusion models and network depth
+coarse-grain scale by scale. Are **RG-relevant = IB-predictive = coarse-to-fine-
+preserved** the same partition of information? **Falsifier:** exhibit relevant-
+operator content that is provably *not* the predictive-information content. Upgrades
+[`emergence-renormalization.md`](../invariants/emergence-renormalization.md).
+
+### S17 🔴 — Are flat minima (ML generalization) the same as gauge / Goldstone zero-modes (physics)?
+**Bridge:** flat directions = symmetry orbits.
+**Connects:** physics (gauge, Goldstone modes) · ML (flat minima).
+Flat minima generalize; broken-symmetry zero-modes (Goldstone) are flat directions
+with physical meaning. Is "generalization = living on a flat / gauge orbit" the same
+statement as "physical observables are gauge-invariant"? **Falsifier:** flat minima
+that correspond to no symmetry of the loss. (Sharpens S10.)
+
+### S18 🟢 — Causation = invariance across environments = this project's own method, turned inward
+**Bridge:** intervention-invariant prediction.
+**Connects:** causal inference (Pearl do-calculus) · ML (invariant causal
+prediction / IRM) · **the methodology of this repo itself**.
+Modern ML *defines* causal mechanisms as precisely the relationships that stay
+invariant across environments (Peters et al.'s ICP; Arjovsky's IRM). That is our
+[cross-domain-invariant](../METHODOLOGY.md) criterion applied to one system's
+environments: **causation is a prediction-field invariant under the group of
+interventions.** So "map cross-domain invariants" and "find causal structure" are
+the *same operation at different scopes* — the project is self-similar with its own
+method. **Tier 🟢** because invariance⇒causation is already established; the open
+part is whether the "same operation, different scope" reading yields a real transfer
+(e.g., does ladder level predict causal robustness?). This is also the concrete
+falsifier for the [prediction-field frame](../PREDICTION-FIELD.md). **Falsifier:** a
+mechanism causally stable but *not* environment-invariant, or vice versa.
+
+---
+
 ## How to work a speculative stone
 
 1. Pick one. Restate it as a **quantitative** claim (an exponent, a ratio, a

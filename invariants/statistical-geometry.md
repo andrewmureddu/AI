@@ -13,6 +13,11 @@ A family of probability distributions carries the Fisher information metric.
 Domain-neutral object: this metric and its scalar curvature R, whose blow-up marks
 loss of distinguishability / diverging correlation volume.
 
+**Hub relation:** for an exponential family the Fisher metric *is* the Hessian of
+the [free-energy hub](./free-energy-hub.md), I(θ) = ∇²Φ = Cov[T]. So this entry is
+the second-derivative face of Φ = ln Z; the S3 Ising susceptibility that diverged
+was literally ∂²Φ/∂h².
+
 ## Manifestations by domain (seed)
 
 - Statistics/ML: Fisher metric = natural-gradient geometry (Amari). anchor.
