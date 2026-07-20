@@ -28,6 +28,7 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 
 | Path | What lives there |
 |------|------------------|
+| [`SYNTHESIS.md`](./SYNTHESIS.md) | **State of the map in one read** — the ledger of what has teeth, the through-line, and the frontier. Start here for the big picture. |
 | [`METHODOLOGY.md`](./METHODOLOGY.md) | The correspondence ladder, evidence standards, anti-patterns, and the expansion⇄restraint rhythm. Read this first. |
 | [`PREDICTION-FIELD.md`](./PREDICTION-FIELD.md) | The organizing frame: the environment we map *is* a prediction field; invariants are its measurement-invariant structure. |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Conventions for adding or revising an invariant or a domain. How "we" work. |
