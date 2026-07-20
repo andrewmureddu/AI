@@ -47,6 +47,7 @@ carries its own limit.
 | **S1** | [Replicator = MW = Bayes = Gibbs](./derivations/S1-universal-update.md) | derivation | **L3, exact** — all are `x_i ∝ x_i·e^{−η g_i}` (entropic mirror descent); bonus L3: free energy = −log-evidence = log-loss = −log-growth | *Global* dynamics **not** shared — game-coupled losses cycle forever; "they converge alike" retired to L1 |
 | **S3** | [Fisher curvature spikes at transitions](./experiments/S3-fisher-geometry/) | experiment | **strong L2** — χ→∞ at Ising T_c (exact); inverse-Fisher blows up exactly at the double-descent test-error peak | A Fisher-magnitude *proxy*, not full Riemann curvature; **grokking** untested |
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; spurious feature best in-distribution, worst on transfer | Constructed SCM where invariance = causation *by design*; real cross-domain test still open |
+| **§6.1** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed + sharpened** — across different mechanisms, transfer skill has a *cliff at the L2/L3 boundary* (0.03 / 0.48 / 0.92 / 0.89); mechanism and theorem transfer equally | Controlled within the CLT family; synthetic, not real data; L3≈L4 so it's a step, not a ramp |
 
 Everything else in [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (S2, S4–S17) is a
 stone with a falsifier attached — not yet load-bearing.
@@ -125,10 +126,14 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 
 ## 6. The open frontier (prioritized)
 
-1. **The real transfer test (P0).** Repeat S18's invariance⇒transfer measurement on
-   *genuine* catalog invariants across actually-different domains. This is the one
-   experiment that moves the prediction-field frame from *self-consistent* to
-   *empirically load-bearing*. Highest stakes.
+1. **The real transfer test (P0).** *Partially done — a controlled cross-mechanism
+   version passed* ([`experiments/ladder-vs-transfer/`](./experiments/ladder-vs-transfer/)):
+   holding the surface phenomenon fixed and varying only correspondence depth,
+   transfer skill has a sharp **cliff at the L2/L3 boundary** (appearance→mechanism),
+   with L3≈L4 (mechanism and theorem transfer equally well). That independently
+   re-derived the methodology's central L2/L3 line from a transfer measurement. Still
+   open — the version that makes the frame *empirically* load-bearing: *different*
+   catalog invariants on *real* data, A→B. Highest stakes.
 2. **Redundancy deletion (P0).** Formalize "how much of the catalog is Φ." If #3 and
    #16 are facets, the catalog should say so and stop double-counting — a real
    simplification, and a sharp test of the through-line.

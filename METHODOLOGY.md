@@ -26,6 +26,17 @@ form), that is a real and interesting finding, but it is a **separate claim** �
 label it "convergent (distinct mechanisms)" and do not silently promote it to
 L3/L4.
 
+**The L2/L3 line is the one that matters — and it is empirically the transfer
+cliff.** A controlled experiment
+([`experiments/ladder-vs-transfer/`](./experiments/ladder-vs-transfer/)) held a
+surface phenomenon fixed and varied only correspondence depth: predictive transfer
+across domains stayed near-useless at L1–L2 (word / shared form) and jumped to high
+at L3–L4 (shared mechanism / theorem), with the *cliff exactly at the L2/L3
+boundary*. So the appearance→mechanism line isn't just a bookkeeping distinction —
+it is where a correspondence starts to *carry predictions across the boundary*.
+Notably L3 ≈ L4 in transfer skill (mechanism and theorem transfer equally well);
+they differ in the *strength of the guarantee*, not the transfer.
+
 ## Evidence standards
 
 To move a candidate *up* the ladder, an entry must supply the relevant evidence:
