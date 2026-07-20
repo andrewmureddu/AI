@@ -110,6 +110,18 @@ transfer ↑). If transfer is uncorrelated with level, the reframing is decorati
 and should drop to 🔴-only. This turns a metaphysical-sounding idea into something
 the restraint stroke can actually grade.
 
+**Restraint pass (2026-07-19) — falsifier tested, survived.** A controlled version
+of that test was run ([`experiments/S18-invariance-transfer/`](./experiments/S18-invariance-transfer/)):
+in a linear structural causal model, the invariance of a predictor *measured on
+training environments* ranks its error on a *held-out* environment at Spearman
+ρ = 0.985 — and the most in-distribution-predictive feature is the worst-transferring
+(8×). So "invariance ⇒ transfer" holds and has teeth. This lifts the 🟢 operational
+core from "true by definition" to **"true and demonstrated to bite"** — but it does
+*not* touch the 🔴 metaphysical reading, and the identity invariance = causation was
+baked into the SCM. The honest next step is the *real* version: measure A→B transfer
+for genuine catalog invariants at different ladder levels. Only that moves the frame
+from self-consistent to empirically load-bearing.
+
 ## See also
 
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — the ladder and the expansion⇄restraint rhythm.
@@ -117,3 +129,5 @@ the restraint stroke can actually grade.
   become statements *about the prediction field* under this frame.
 - [`experiments/S3-fisher-geometry/`](./experiments/S3-fisher-geometry/) — the
   prediction field's metric going singular at a transition, measured.
+- [`experiments/S18-invariance-transfer/`](./experiments/S18-invariance-transfer/) —
+  the frame's falsifier, tested: invariance predicts transfer (ρ = 0.985).

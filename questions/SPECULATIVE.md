@@ -282,6 +282,14 @@ part is whether the "same operation, different scope" reading yields a real tran
 (e.g., does ladder level predict causal robustness?). This is also the concrete
 falsifier for the [prediction-field frame](../PREDICTION-FIELD.md). **Falsifier:** a
 mechanism causally stable but *not* environment-invariant, or vice versa.
+> **⟳ Restraint pass (2026-07-19):** *tested — falsifier survived* — see
+> [`../experiments/S18-invariance-transfer/`](../experiments/S18-invariance-transfer/).
+> In a linear SCM, coefficient instability measured on training environments ranks
+> transfer error on a *held-out* environment at Spearman ρ = 0.985, and the most
+> in-distribution-predictive (spurious) feature is the worst-transferring (8×). The
+> prediction-field claim "invariance predicts transfer" holds and has teeth. Honest
+> limit: invariance = causation *by construction* in the SCM; the real test is the
+> same measurement on genuine catalog invariants across genuinely different domains.
 
 ---
 

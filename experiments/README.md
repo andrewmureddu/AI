@@ -8,6 +8,7 @@ verdict including what it does *not* show.
 | Experiment | Tests | Result |
 |------------|-------|--------|
 | [`S3-fisher-geometry/`](./S3-fisher-geometry/) | [S3](../questions/SPECULATIVE.md): does a Fisher/statistical-curvature quantity spike at a phase transition, in physics *and* in learning? | **Partially confirmed** — χ→∞ at the Ising T_c; inverse-Fisher blows up exactly at the double-descent test-error peak (P/N=1). Grokking still open. |
+| [`S18-invariance-transfer/`](./S18-invariance-transfer/) | [S18](../questions/SPECULATIVE.md) / the [prediction-field](../PREDICTION-FIELD.md) falsifier: does invariance-across-environments predict transfer? | **Falsifier survived** — train-measured coefficient instability ranks held-out transfer error at ρ=0.985; the most in-distribution-predictive feature is the worst-transferring. Confirmed in a constructed SCM; real cross-domain test still open. |
 
 ## Conventions
 
