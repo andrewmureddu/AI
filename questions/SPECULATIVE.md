@@ -41,6 +41,15 @@ same descent on a free energy, with only the regularizer's geometry changing?
 **Falsifier:** find an adaptive system whose update provably cannot be written as
 mirror descent on *any* Bregman divergence — that bounds the invariant's reach.
 (Promotes/kills the new entry [`mirror-descent-update.md`](../invariants/mirror-descent-update.md).)
+> **⟳ Restraint pass (2026-07-19):** *derived and confirmed* — see
+> [`../derivations/S1-universal-update.md`](../derivations/S1-universal-update.md).
+> All four are `x_i ∝ x_i·exp(−η g_i)` with the loss and step size as the only
+> free choices; the normalizer unifies as free energy = −log evidence = cumulative
+> log-loss = −log-growth. **L3 for the local update + geometry.** Sharp boundary
+> found: *global* dynamics are not shared (fixed loss concentrates; game-coupled
+> loss cycles — Poincaré recurrence), so "they converge alike" is retired to L1.
+> S2's shared η (learning rate = temperature = selection) falls out. Object
+> promoted to `developing`.
 
 ### S2 🟡 — Is a "learning rate" the same object as a "temperature" and a "mutation rate"?
 **Bridge:** the coefficient on the entropy term in S1.

@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-19 — S1 derived: the universal update](./2026-07-19-S1-universal-update.md)
 - [2026-07-19 — S3 tested + the prediction-field reframing](./2026-07-19-S3-and-prediction-field.md)
 - [2026-07-19 — Speculative sweep (AI-native bridges)](./2026-07-19-speculative-sweep.md)
 - [2026-07-19 — Kickoff & seeded taxonomy](./2026-07-19-kickoff.md)

@@ -37,7 +37,7 @@ yet defended. Treat every level as a hypothesis.
 
 | # | Invariant | Core object | Level | Status | Bridges question |
 |--:|-----------|-------------|:-----:|--------|------------------|
-| 17 | [Universal update (mirror descent)](./mirror-descent-update.md) | entropic mirror descent | L3? | seed·spec | S1, S2 |
+| 17 | [Universal update (mirror descent)](./mirror-descent-update.md) | entropic mirror descent | **L3** (local; global≠shared) | developing ✓derived | S1, S2 |
 | 18 | [Optimal transport](./optimal-transport.md) | Wasserstein gradient flow (JKO) | L3? | seed·spec | S4 |
 | 19 | [Spectral gap](./spectral-gap.md) | λ₂ of Markov/Laplacian | L3? | seed·spec | mixing/sync/consensus |
 | 20 | [Statistical geometry](./statistical-geometry.md) | Fisher/Ruppeiner/Fubini–Study metric | L3? | seed·spec | S3 |

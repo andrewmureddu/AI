@@ -34,7 +34,8 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 | [`invariants/`](./invariants/) | One file per candidate invariant. [`invariants/README.md`](./invariants/README.md) is the master catalog. |
 | [`domains/`](./domains/) | The invariant × domain cross-reference matrix — the actual "map." |
 | [`questions/`](./questions/) | The agenda in two tiers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous) and [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable). |
-| [`experiments/`](./experiments/) | Runnable tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |
+| [`experiments/`](./experiments/) | Runnable (numerical) tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |
+| [`derivations/`](./derivations/) | Analytical tests — pen-and-paper restraint. First: [`S1-universal-update`](./derivations/S1-universal-update.md). |
 | [`research-log/`](./research-log/) | Dated entries recording what we investigated, decided, and changed. |
 
 ## How to navigate
