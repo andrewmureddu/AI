@@ -21,6 +21,9 @@ descent** and its continuous-time limit (a replicator/Fokker–Planck flow).
 - Inference: Bayesian update is a multiplicative reweighting by likelihood. L3.
 - Physics: relaxation to Boltzmann–Gibbs = entropy-regularized equilibrium. L3.
 - Economics: fictitious play / evolutionary game dynamics. L2–L3.
+- Deep learning: **softmax attention** = one Bayesian update over memories, exactly
+  (loss ½‖q−k‖², η = 1/σ²). **L3, verified** —
+  [`../experiments/S23-attention-bayes/`](../experiments/S23-attention-bayes/).
 
 ## Result (2026-07-19) — derived, sharpened, bounded
 

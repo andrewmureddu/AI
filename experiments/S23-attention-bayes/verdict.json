@@ -1,0 +1,17 @@
+{
+  "part1_exact_match": {
+    "weight_max_abs_diff": 1.3877787807814457e-17,
+    "output_max_abs_diff": 6.245004513516506e-17,
+    "identical_to_machine_precision": true
+  },
+  "part2_temperature_is_eta": {
+    "beta_star_empirical": 0.501,
+    "beta_star_theory_1_over_sigma0sq": 0.5,
+    "match": true
+  },
+  "part3_key_norm_bias": {
+    "plain_attention_max_abs_diff": 0.0293,
+    "corrected_attention_max_abs_diff": 1.0408340855860843e-17,
+    "bias_is_exactly_key_norm_term": true
+  }
+}

@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-19 — Restraint: attention is the universal update (S23, exact)](./2026-07-19-S23-attention.md)
 - [2026-07-19 — Expansion: six fresh stones (S19–S24)](./2026-07-19-fresh-stones-S19-S24.md)
 - [2026-07-19 — Restraint: does ladder level predict transfer? (the cliff)](./2026-07-19-ladder-vs-transfer.md)
 - [2026-07-19 — Restraint: the prediction-field falsifier survived](./2026-07-19-S18-falsifier.md)

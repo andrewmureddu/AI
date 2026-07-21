@@ -364,6 +364,15 @@ learning is literally the universal update executed in the forward pass. **Falsi
 an attention mechanism not expressible as an entropic reweighting over a memory.
 **Tractable next step:** show softmax attention and a Bayesian posterior over
 Gaussian memories coincide numerically (numpy-feasible).
+> **⟳ Restraint pass (2026-07-19):** *derived + verified exactly* — see
+> [`../experiments/S23-attention-bayes/`](../experiments/S23-attention-bayes/).
+> Softmax attention = the Bayes posterior over which Gaussian memory generated the
+> query = one step of the universal update (loss gᵢ=½‖q−kᵢ‖², η=1/σ²): weights match
+> to 1.4e-17, and the Bayes-optimal attention temperature is exactly 1/σ0². Honest
+> nuance surfaced: *plain* dot-product attention is a biased posterior (missing the
+> ‖kᵢ‖² key-norm term) — which is why QK-normalization exists. Attention promoted to
+> a confirmed **L3 manifestation** of
+> [the universal update](../invariants/mirror-descent-update.md).
 
 ### S24 🔴 — The invariant is the minimal sufficient statistic (and the rest is Landauer-erasable)
 **Bridge:** a minimal sufficient statistic keeps all predictive information and

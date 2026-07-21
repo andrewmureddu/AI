@@ -48,6 +48,7 @@ carries its own limit.
 | **S3** | [Fisher curvature spikes at transitions](./experiments/S3-fisher-geometry/) | experiment | **strong L2** — χ→∞ at Ising T_c (exact); inverse-Fisher blows up exactly at the double-descent test-error peak | A Fisher-magnitude *proxy*, not full Riemann curvature; **grokking** untested |
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; spurious feature best in-distribution, worst on transfer | Constructed SCM where invariance = causation *by design*; real cross-domain test still open |
 | **§6.1** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed + sharpened** — across different mechanisms, transfer skill has a *cliff at the L2/L3 boundary* (0.03 / 0.48 / 0.92 / 0.89); mechanism and theorem transfer equally | Controlled within the CLT family; synthetic, not real data; L3≈L4 so it's a step, not a ramp |
+| **S23** | [Attention = the universal update](./experiments/S23-attention-bayes/) | derivation + experiment | **exact** — softmax attention = a Bayesian update over memories to 1.4e-17; attention temperature = η = 1/σ²; attention now a confirmed L3 instance of #17 | Single-head, single-step, Gaussian memory model; multi-layer/head not shown; nets learn β rather than set it optimally |
 
 Everything else in [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (S2, S4–S17) is a
 stone with a falsifier attached — not yet load-bearing.
@@ -116,11 +117,11 @@ singularities (criticality, power laws). Conjecture, not result.
 - **1 hub:** Φ = ln Z (L3, L4 via Lee–Yang).
 - **~6 hub-core invariants** (developing): the Φ-facets above.
 - **~10 periphery invariants** (seed): candidates not yet reduced or refuted.
-- **24 speculative stones** (S1–S24): 3 cashed (S1, S3, S18), 21 on the board.
+- **24 speculative stones** (S1–S24): 4 cashed (S1, S3, S18, S23), 20 on the board.
   The newest six (S19–S24) build on this session's scaffolding — "learning is the
   thermodynamics of prediction" (S20–S22, S24) and "climbing the ladder is
-  inference" (S19, S23).
-- **2 experiments + 1 derivation** with teeth.
+  inference" (S19, S23 — S23 now confirmed).
+- **4 experiments + 1 derivation** with teeth (S3, S18, ladder-vs-transfer, S23; S1).
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
