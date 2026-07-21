@@ -129,6 +129,26 @@ cross-*environment* with a signal-strength confound (the synthetic SCM controls
 that; real data doesn't), so the fullest test — many different real datasets across
 different fields — is the last rung, now P1 rather than P0.
 
+**Restraint pass (2026-07-21) — the 🔴 tier tested directly for the first
+time, and it does not promote.** The sharpened strong reading (the field is a
+field of *distributions*, de-agented via causal-state structure) predicts that
+different measurement channels must agree on WHERE the field's Fisher metric
+degenerates. [S25](./experiments/S25-channel-independence/) tested this:
+exact-enumeration Ising channels plus probe-distribution channels on the S3
+double-descent system. Result: **invariance holds only for unstructured
+channels.** All 16 generic probes on the learning system peak at exactly
+P/N = 1; all 16 unstructured Ising channels (random subsets, hashes, linear
+bins) lock onto the full-state peak. But channels with intrinsic structure
+deviate persistently under finite-size scaling: block-majority coarse-graining
+shifts the peak up ~0.2 (an RG step — the channel measures the coarse-grained
+system), and global parity (even sizes only) is informative yet peaks ~0.5
+away, deep in the ordered phase. Per this document's own rule, 🔴 stays
+scaffolding-only. What survives is sharper than what failed: *peak location
+tracks channel structure, not channel informativeness* — the field's
+singularities are invariant under generic measurement and **compose** with
+structured measurement. One pre-registration error is on record: parity was
+declared blind, which is true only at odd site counts.
+
 ## See also
 
 - [`METHODOLOGY.md`](./METHODOLOGY.md) — the ladder and the expansion⇄restraint rhythm.

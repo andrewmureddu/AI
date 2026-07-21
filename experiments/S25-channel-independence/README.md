@@ -1,6 +1,8 @@
 # S25 — Channel-independence of the prediction field's singularities
 
-**Status: sketch — designed, not yet run.**
+**Status: RUN (2026-07-21). Verdict: the clean channel-independence claim
+FAILS — but with structure. See Results at the bottom. Per the pre-registered
+criteria, the 🔴 tier stays scaffolding-only.**
 
 This is the first experiment that tests the 🔴 tier of
 [PREDICTION-FIELD.md](../../PREDICTION-FIELD.md) rather than the 🟢 operational
@@ -143,6 +145,73 @@ It is the only test on the table where the 🟢 and 🔴 tiers make different
 predictions. 🟢 is agnostic about channel-independence; 🔴 requires it.
 Cheap (exact enumeration + the existing S3 harness), deterministic, and the
 outcome moves a tier boundary in either direction.
+
+## Results (2026-07-21)
+
+`run.py` (main experiment) + `scaling_check.py` (the pre-registered
+tie-breaker). Outputs: `verdict.json`, `scaling_check.json`,
+`legA_fisher_curves.csv`, `legB_mse_curves.csv`.
+
+### Leg B — clean PASS
+
+All 16 generic probe distributions (lognormal-diagonal covariances,
+random-rotation power-law covariances, random low-dimensional slices down to
+d=4) peak at **exactly P/N = 1.000**, deviation 0.000 against tolerance 0.10.
+The adversarial train-span probe is blind exactly as predicted: peak MSE
+0.96 vs. 753 for the natural probe (ratio 0.0013). For the learning system,
+the interpolation singularity is visible through every generic channel and
+invisible only through the one deliberately-constructed blind subspace.
+
+### Leg A — fails the clean claim, in an instructive way
+
+Full-state peak T* = 2.150 (4×4). Three findings:
+
+1. **Unstructured generic channels lock on.** Subset magnetizations, random
+   8-bit hashes, and |a·s| bins — 16 channels — all peak within 0.125 of
+   T*, most within 0.075. For *random* measurement, channel-independence
+   holds.
+2. **Block-majority (coarse-graining) channels shift systematically UP**
+   (+0.15 to +0.175 at 4×4), and the tie-breaker shows the shift does NOT
+   vanish with size (mean dev 0.200 / 0.156 / 0.200 at 3×3 / 4×4 / 4×5).
+   This is not noise and not a finite-size artifact within reach of our
+   sizes: a channel that is itself a renormalization step measures the
+   *coarse-grained* system's pseudo-critical point, i.e. the channel moves
+   you along the RG flow. The field's geometry **composes with** structured
+   channels rather than being invariant under them.
+3. **The parity pre-registration was wrong physics, and the correction
+   matters.** We pre-registered global parity as "exactly blind at h=0."
+   That is true only for ODD site counts (global spin flip inverts parity →
+   p(y)=1/2 identically; confirmed: integrated info ~1e-28 at 3×3). At even
+   sizes parity is genuinely informative (~18–22% of full-state info) and
+   peaks near T ≈ 1.6 — deviation ~0.5, persistent across 4×4 and 4×5. It
+   peaks deep in the ordered phase, where single-flip excitations (which
+   toggle parity) fluctuate most. So parity is not blind; it is an
+   informative channel about a *different* structure than criticality.
+
+### Verdict against the pre-registered criteria
+
+The FAIL condition — non-degenerate channels exhibiting comparable-strength
+peaks elsewhere — is met by the block-majority family (persistent under the
+scaling tie-breaker) and by parity (misclassified as a control, but
+non-degenerate by the stated 10× rule and peaked 0.5 away). **The strong
+reading's clean prediction is falsified: peak location is invariant only
+under UNSTRUCTURED channels.** Per PREDICTION-FIELD.md's own rule, 🔴 stays
+scaffolding-only; it does not promote.
+
+### What survives (the interesting middle, as pre-registered)
+
+The result is exactly the flagged middle case, sharpened: **where a channel's
+Fisher curve peaks tracks the channel's own structure, not its
+informativeness.** Random channels — no structure of their own — inherit the
+field's singularity. Channels with intrinsic structure (coarse-graining = an
+RG step; parity = a topological/global statistic) locate *their own*
+distinguishability peaks. A defensible weaker invariance survives:
+*the singularity is invariant under generic (structure-free) measurement* —
+true in both legs, and arguably the operationally relevant version, since a
+measurement with its own dynamics is part system, part probe. Follow-up
+question: is the block-majority shift quantitatively the first step of the
+exact RG flow of pseudo-T_c? That would convert the failure into a
+composition law for the field.
 
 ## See also
 

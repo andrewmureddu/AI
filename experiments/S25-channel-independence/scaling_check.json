@@ -1,0 +1,23 @@
+{
+  "3x3": {
+    "full_peak": 2.025,
+    "block_majority_mean_dev": 0.20000000000000018,
+    "parity_peak": 1.5,
+    "parity_dev": 0.5249999999999999,
+    "parity_info_share": 3.4233165200162568e-28
+  },
+  "4x4": {
+    "full_peak": 2.15,
+    "block_majority_mean_dev": 0.15625,
+    "parity_peak": 1.65,
+    "parity_dev": 0.5,
+    "parity_info_share": 0.2206027168787461
+  },
+  "4x5": {
+    "full_peak": 2.15,
+    "block_majority_mean_dev": 0.20000000000000018,
+    "parity_peak": 1.6,
+    "parity_dev": 0.5499999999999998,
+    "parity_info_share": 0.17481238150232922
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "legA_full_state_peak_T": 2.15,
+  "legA_n_generic": 20,
+  "legA_n_nondegenerate": 20,
+  "legA_max_peak_deviation": 0.17500000000000027,
+  "legA_generics_outside_tolerance": 2,
+  "legA_controls_info_ratio_vs_natural": 0.22537988031157638,
+  "legB_max_peak_deviation": 0.0,
+  "legB_generics_outside_tolerance": 0,
+  "legB_trainspan_peak_mse_ratio": 0.0012797503932694537,
+  "PASS": false,
+  "channels": {
+    "legA": {
+      "full_state": {
+        "family": "full",
+        "peak_T": 2.15,
+        "total_info": 3.330901218486911,
+        "Fmax": 2.4938267125073734
+      },
+      "abs_magnetization": {
+        "family": "natural",
+        "peak_T": 2.125,
+        "total_info": 3.189697314417652,
+        "Fmax": 2.429301524670073
+      },
+      "energy": {
+        "family": "natural",
+        "peak_T": 2.15,
+        "total_info": 3.3309012184869378,
+        "Fmax": 2.4938267125074294
+      },
+      "subset_mag_k2_0": {
+        "family": "generic",
+        "peak_T": 2.15,
+        "total_info": 0.6930550766170759,
+        "Fmax": 0.6029148690619955
+      },
+      "subset_mag_k2_1": {
+        "family": "generic",
+        "peak_T": 2.15,
+        "total_info": 0.7288690206640982,
+        "Fmax": 0.6404393684571471
+      },
+      "subset_mag_k4_0": {
+        "family": "generic",
+        "peak_T": 2.175,
+        "total_info": 1.33091484217897,
+        "Fmax": 1.0830705299546308
+      },
+      "subset_mag_k4_1": {
+        "family": "generic",
+        "peak_T": 2.175,
+        "total_info": 1.35677199512426,
+        "Fmax": 1.1056849880511987
+      },
+      "subset_mag_k8_0": {
+        "family": "generic",
+        "peak_T": 2.175,
+        "total_info": 2.2691496322126565,
+        "Fmax": 1.7730969311739293
+      },
+      "subset_mag_k8_1": {
+        "family": "generic",
+        "peak_T": 2.175,
+        "total_info": 2.251687012534787,
+        "Fmax": 1.7594772773915675
+      },
+      "hash8_0": {
+        "family": "generic",
+        "peak_T": 2.05,
+        "total_info": 1.1207986494240412,
+        "Fmax": 0.9750675878671435
+      },
+      "hash8_1": {
+        "family": "generic",
+        "peak_T": 2.075,
+        "total_info": 1.2437949374776596,
+        "Fmax": 1.0777890659253813
+      },
+      "hash8_2": {
+        "family": "generic",
+        "peak_T": 2.025,
+        "total_info": 1.2030117023177904,
+        "Fmax": 1.082436245873071
+      },
+      "hash8_3": {
+        "family": "generic",
+        "peak_T": 2.075,
+        "total_info": 1.279961910449968,
+        "Fmax": 1.1120391389837532
+      },
+      "hash8_4": {
+        "family": "generic",
+        "peak_T": 2.05,
+        "total_info": 1.2425649763469597,
+        "Fmax": 1.1039748501795963
+      },
+      "hash8_5": {
+        "family": "generic",
+        "peak_T": 2.1,
+        "total_info": 1.053979767695572,
+        "Fmax": 0.9057343547330015
+      },
+      "block_majority_0": {
+        "family": "generic",
+        "peak_T": 2.325,
+        "total_info": 1.668470775332668,
+        "Fmax": 1.3371186879886263
+      },
+      "block_majority_1": {
+        "family": "generic",
+        "peak_T": 2.3,
+        "total_info": 1.7071483281690472,
+        "Fmax": 1.367188474664448
+      },
+      "block_majority_2": {
+        "family": "generic",
+        "peak_T": 2.3,
+        "total_info": 1.6911047354087372,
+        "Fmax": 1.3542950805783665
+      },
+      "block_majority_3": {
+        "family": "generic",
+        "peak_T": 2.3,
+        "total_info": 1.681872745921421,
+        "Fmax": 1.3483857338880267
+      },
+      "abs_linear_0": {
+        "family": "generic",
+        "peak_T": 2.0,
+        "total_info": 1.6473224100127677,
+        "Fmax": 1.4434136549438226
+      },
+      "abs_linear_1": {
+        "family": "generic",
+        "peak_T": 2.025,
+        "total_info": 1.6666043907857704,
+        "Fmax": 1.4579012771635231
+      },
+      "abs_linear_2": {
+        "family": "generic",
+        "peak_T": 1.975,
+        "total_info": 1.741790587613564,
+        "Fmax": 1.566847061525717
+      },
+      "abs_linear_3": {
+        "family": "generic",
+        "peak_T": 2.0,
+        "total_info": 1.705616052064982,
+        "Fmax": 1.5167481606601039
+      },
+      "single_spin": {
+        "family": "control",
+        "peak_T": NaN,
+        "total_info": 8.02451867237864e-24,
+        "Fmax": 5.1415925959980266e-23
+      },
+      "parity": {
+        "family": "control",
+        "peak_T": 1.65,
+        "total_info": 0.7348058584529384,
+        "Fmax": 0.9461224433138409
+      },
+      "sign_M": {
+        "family": "control",
+        "peak_T": 2.875,
+        "total_info": 0.0026465489477537196,
+        "Fmax": 0.002454224539549111
+      }
+    },
+    "legB": {
+      "iid_natural": {
+        "family": "natural",
+        "peak_ratio": 1.0,
+        "peak_mse": 753.4934120346614
+      },
+      "diag_lognormal_0": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 773.8093153233497
+      },
+      "diag_lognormal_1": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 843.531977557998
+      },
+      "diag_lognormal_2": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 731.7585681639985
+      },
+      "diag_lognormal_3": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 708.1322129014294
+      },
+      "diag_lognormal_4": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 846.6376208061083
+      },
+      "diag_lognormal_5": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 708.2619027394578
+      },
+      "rot_powerlaw_0": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 982.352240736388
+      },
+      "rot_powerlaw_1": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 659.3409080656202
+      },
+      "rot_powerlaw_2": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 815.5235630187475
+      },
+      "rot_powerlaw_3": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 895.8143122855824
+      },
+      "slice_d4_0": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 248.44145067101945
+      },
+      "slice_d4_1": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 627.1461328882535
+      },
+      "slice_d16_0": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 976.1605545381296
+      },
+      "slice_d16_1": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 869.2709238371963
+      },
+      "slice_d64_0": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 725.6758905001556
+      },
+      "slice_d64_1": {
+        "family": "generic",
+        "peak_ratio": 1.0,
+        "peak_mse": 839.5072694490466
+      },
+      "train_span": {
+        "family": "control",
+        "peak_ratio": 0.05,
+        "peak_mse": 0.9642834903773005
+      }
+    }
+  }
+}
