@@ -148,6 +148,13 @@ tracks channel structure, not channel informativeness* — the field's
 singularities are invariant under generic measurement and **compose** with
 structured measurement. One pre-registration error is on record: parity was
 declared blind, which is true only at odd site counts.
+**Same-day follow-up:** the structured-channel deviation is itself lawful —
+F_c(T) = F_eff(T′(T))·(dT′/dT)², exact to 10⁻¹⁴ where the RG map is exact
+(1D decimation) and predictive to grid resolution for majority-rule
+coarse-graining (measured shift +0.14 vs predicted +0.15). Corrected
+statement: the field's singularities are *invariant* under generic channels
+and *covariant* under structured ones — channels preserve or transport the
+singular structure, never create it.
 
 ## See also
 

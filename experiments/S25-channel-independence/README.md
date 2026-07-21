@@ -213,6 +213,40 @@ question: is the block-majority shift quantitatively the first step of the
 exact RG flow of pseudo-T_c? That would convert the failure into a
 composition law for the field.
 
+## Follow-up (2026-07-21): the deviation IS a composition law
+
+`rg_composition.py` tests whether the structured-channel peak shift is
+predicted by renormalization: **F_c(T) = F_eff(T′(T)) · (dT′/dT)²** — the
+channel's Fisher curve is the effective (renormalized) system's curve pulled
+back through the RG map. Results (`rg_composition_verdict.json`,
+`rg_*.csv`):
+
+- **Exact anchor (1D ring, decimation).** The induced distribution is the
+  half-ring at the exact RG temperature tanh K′ = tanh²K to machine
+  precision (KL ~10⁻¹⁵), and the composition law holds to **7×10⁻¹⁴**
+  relative error. Where the RG map is exact, the law is exact.
+- **4×4 → 2×2 majority rule (geometric blocks).** The induced distribution
+  is a near-perfect effective 2×2 Ising (KL ≤ 0.010 bits). Fitting T′(T) by
+  exact moment matching, the composed prediction reproduces the measured
+  channel peak to **0.01** (grid resolution): measured shift +0.14,
+  predicted +0.15, curve correlation 0.9998.
+- **Random (non-geometric) blocks — the expected control that wasn't.**
+  Also obeys the law: fit residual ≤ 0.045 bits, peak predicted to 0.01,
+  correlation 0.9995. Random 4-spin majority blocks are apparently still
+  close enough to an effective Ising family for composition to hold.
+
+**Upshot: the S25 "failure" is a law.** A structured channel does not break
+the field's singular structure; it *renormalizes* it, and the shifted peak
+is exactly the effective system's singularity pulled back through the
+channel's map. Unstructured channels are the special case T′ ≈ T (identity
+map). One honesty note: the composition law is automatic *whenever* the
+induced family lies near a one-parameter exponential family — the
+non-trivial empirical content here is (a) that these channels' induced
+distributions really are near-Ising (small KL, which did not have to
+happen), and (b) that the sign and size of the peak shift then come out
+right. A channel whose induced family is far from any one-parameter model
+would be the real stress test — none of ours is.
+
 ## See also
 
 - [PREDICTION-FIELD.md](../../PREDICTION-FIELD.md) — the tiered claim; this

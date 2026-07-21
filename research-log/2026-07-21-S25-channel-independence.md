@@ -61,6 +61,36 @@ and composes with structured measurement.* The block-majority shift looks
 like the first step of an RG flow of the pseudo-critical point — if that is
 quantitative, the "failure" becomes a composition law for the field.
 
+## Same-day follow-up: the failure promoted to a law
+
+The first P2 was run immediately (`rg_composition.py`). Claim: a structured
+channel renormalizes the field, so F_c(T) = F_eff(T′(T)) · (dT′/dT)².
+
+- 1D decimation (exact RG known): law holds to 7×10⁻¹⁴. Anchor confirmed.
+- 4×4 → 2×2 majority rule: induced distribution is near-perfect effective
+  Ising (≤0.01 bits); moment-matched T′(T) predicts the measured peak shift
+  to grid resolution (+0.15 predicted vs +0.14 measured, corr 0.9998).
+- Random blocks, expected to be the negative control, also obey the law
+  (peak predicted to 0.01) — their induced family is still near-Ising.
+
+So the corrected statement of channel-independence, now with empirical
+teeth on both sides: **the field's singular structure is invariant under
+generic channels and covariant under structured ones** — the peak moves
+exactly as far as the channel's induced RG map says it must. Nothing about
+the singularity is channel-created; channels either preserve it (T′≈T) or
+transport it. Caveat on record: the law is automatic when the induced
+family is near a one-parameter exponential family; the finding is that it
+IS near one, and that the transported peak lands where measured. The next
+real stress test is a channel whose induced family is far from any
+one-parameter model.
+
+Methodological note: the first run of the follow-up "refuted" the law
+(peak mismatch 0.27) purely through numerics — a finite-difference
+derivative of a grid-quantized fit, and a temperature grid that clipped
+the 1D peak. Exact ingredients deserve exact numerics; with an analytic
+derivative and moment-matched fit the mismatch fell from 0.27 to 0.01.
+Worth remembering which side of that experience to trust first.
+
 ## Follow-ups
 
 - **P2:** check whether the block-majority peak shift matches the exact
