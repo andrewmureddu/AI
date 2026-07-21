@@ -247,6 +247,61 @@ happen), and (b) that the sign and size of the peak shift then come out
 right. A channel whose induced family is far from any one-parameter model
 would be the real stress test — none of ours is.
 
+## Stress test (2026-07-21): the far-from-exponential-family channel
+
+`stress_channel.py`. The composition law's honesty caveat said it is
+near-automatic when the induced family is close to a one-parameter
+exponential family. This run (1) measures one-parameterness intrinsically —
+the induced family is 1-param exponential iff the per-T-centered,
+probability-weighted log-prob matrix is rank 1, so the SVD rank-1 energy
+fraction is the distance, and the best rank-1 approximation *is* the
+best-fit effective model — and (2) attacks with channels engineered to
+break it: energy-shell mixing, and a "crossover pairs" channel merging
+shell pairs whose Boltzmann weights invert at different in-window
+temperatures (the design a single effective temperature cannot track).
+
+Results (`stress_verdict.json`, `stress_*.csv`; full-state peak 2.14):
+
+| channel | rank-1 | KL max (bits) | peak meas. | law mismatch |
+|---|---|---|---|---|
+| geometric_majority (ref) | 0.9998 | 0.0015 | 2.28 | 0.000 |
+| hash8 (ref) | 0.9983 | 0.0046 | 2.07 | 0.000 |
+| energy_mod_5 | 0.9922 | 0.015 | 1.90 | 0.020 |
+| EM_interleave_7 | 0.9930 | 0.015 | 2.00 | 0.120 |
+| abs_magnetization (ref) | 0.9921 | 0.058 | 2.13 | 0.160 |
+| crossover_pairs | 0.9628 | 0.215 | 1.87 | 0.010 |
+| shell_scramble_6 | **0.9483** | **0.386** | 2.10 | **0.490** |
+
+Three findings:
+
+1. **One-parameterness is hard to escape.** The most adversarial
+   deterministic channels we could design reach only rank-1 ≈ 0.95: the
+   Boltzmann curve's image under coarse-graining stays nearly e-flat over
+   this window. That the composition law's precondition is *generically
+   satisfied* is itself a structural fact about channels of exponential
+   families (conjecture, not theorem — logged as a follow-up).
+2. **Where one-parameterness finally slips, the law fails — as predicted
+   by our own caveat.** shell_scramble_6 (0.948 / 0.39 bits) has a fitted-
+   law peak 0.49 away from measured. The degradation is not monotone in KL
+   (crossover_pairs at 0.21 bits happens to land within 0.01), so small KL
+   is necessary-ish but the law can luck out beyond it; abs_magnetization
+   shows even 0.06 bits can already cost 0.16.
+3. **Peak displacement and law failure are independent axes.** energy_mod_5
+   and crossover_pairs sit far from the full-state peak (−0.24, −0.27,
+   pulled DOWN — energy-shell channels weight the ordered phase) yet obey
+   the law: their displacement is lawful transport through their own
+   fitted maps. shell_scramble_6 breaks the law yet its measured peak
+   stays near full-state (dev 0.04). Channels can move the peak lawfully,
+   or defy the effective-model description without moving it.
+
+Net for the frame: the corrected invariant-under-generic /
+covariant-under-structured statement survives the stress test, with its
+domain of validity now mapped: the composition law is quantitative while
+the induced family stays within ~0.01 bits of one-parameter, degrades
+beyond, and fails by ~0.5 at 0.39 bits — and reaching even 0.39 bits
+required deliberately engineered shell-scrambling that no natural
+measurement resembles.
+
 ## See also
 
 - [PREDICTION-FIELD.md](../../PREDICTION-FIELD.md) — the tiered claim; this

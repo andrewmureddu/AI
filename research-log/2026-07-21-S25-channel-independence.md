@@ -91,6 +91,29 @@ the 1D peak. Exact ingredients deserve exact numerics; with an analytic
 derivative and moment-matched fit the mismatch fell from 0.27 to 0.01.
 Worth remembering which side of that experience to trust first.
 
+## Second follow-up: the stress test finds the law's edge
+
+Built the far-from-one-parameter channel the caveat demanded
+(`stress_channel.py`), with an intrinsic measure of one-parameterness
+(weighted rank-1 fraction of the centered log-prob matrix — the best
+rank-1 approximation doubles as the best-fit effective model). Findings:
+
+1. Deterministic channels of a Boltzmann family resist leaving
+   one-parameterness: the most adversarial design (scrambled energy-shell
+   merging) reaches only 0.948. The law's precondition is generically
+   satisfied — a structural conjecture worth its own attention.
+2. Where one-parameterness does slip, the law fails as the caveat
+   predicted: shell_scramble (0.39 bits from 1-param) → fitted-law peak
+   0.49 off. Degradation is real but not monotone in KL.
+3. New axis separation: peak displacement ≠ law failure. Energy-shell
+   channels displace the peak DOWNWARD lawfully (their maps weight the
+   ordered phase); the law-breaking channel barely displaces it at all.
+
+The covariance statement survives with a mapped domain: quantitative
+within ~0.01 bits of one-parameter, lucky-or-degraded to ~0.4 bits,
+broken past that — and past that took deliberate engineering no natural
+measurement resembles.
+
 ## Follow-ups
 
 - **P2:** check whether the block-majority peak shift matches the exact
