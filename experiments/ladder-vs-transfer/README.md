@@ -82,8 +82,40 @@ peel away in the tails (where the heavy-tailed universality class lives).
 - Reinforces the [prediction-field frame](../../PREDICTION-FIELD.md): what transfers
   is the shared-mechanism (measurement-invariant) content, not the shared appearance.
 
+## Follow-up: varying n (`vary_n.py`)
+
+How does transfer skill scale with n, the number of contributions per aggregate?
+Run `python3 vary_n.py` then `python3 plot_vary_n.py` → [`vary_n.png`](./vary_n.png).
+
+| n | L1 | L2 | L3 | L4 | cliff (L3−L2) |
+|---:|:--:|:--:|:--:|:--:|:--:|
+| 2 | 0.03 | 0.12 | 0.36 | 0.30 | 0.23 |
+| 8 | 0.04 | 0.31 | 0.75 | 0.67 | 0.44 |
+| 64 | 0.01 | 0.44 | 0.89 | 0.90 | 0.45 |
+| 1024 | 0.02 | **0.54** | **0.93** | **0.92** | 0.39 |
+
+**Findings (one of which corrects a prior conjecture):**
+
+1. **L3/L4 climb to the ceiling.** As n grows the CLT kicks in; finite-variance
+   levels rise to the finite-sample ceiling (~0.94, = full transfer given metric
+   noise). More data ⇒ genuine shared-mechanism invariants transfer *better*.
+2. **L2 saturates far below — and my earlier guess was wrong.** I had conjectured
+   "L2 skill *falls* as n grows." **It does not.** L2 *rises* then **plateaus at
+   ~0.5**: the aggregate of infinite-variance increments converges to a fixed
+   α-stable (α=1.5) law that is *permanently non-Gaussian*, so skill converges to a
+   constant — bounded away from 1, never improving past it. The correct invariant
+   here is **"L2 is capped," not "L2 declines."** Logged as a corrected prediction.
+3. **The cliff opens fast and persists.** The L2/L3 gap is already wide by n≈8 and
+   stays ~0.4–0.5; it does not close, because the two sides saturate at different
+   ceilings (0.94 vs 0.5). *More evidence of the mechanism sharpens the diagnostic:
+   real invariants keep improving, appearance-only ones hit a wall.*
+
+**Caveat on the ~0.5 plateau:** the metric trims the extreme 2% tails, so it is
+*generous* to L2 (the untrimmed heavy tails would push it lower). The robust,
+metric-independent claim is *bounded away from the ceiling*, not the exact 0.5.
+
 ## Next
 
 - The real one: 3–4 *different* catalog invariants, real data, A→B transfer.
-- Vary n (contributions per aggregate): the L2 skill should *fall* as n grows (the
-  stable-law tails become more pronounced), sharpening the cliff — a clean follow-up.
+- Repeat the plateau with less tail-trimming to show L2's ceiling drop (metric
+  sensitivity check).

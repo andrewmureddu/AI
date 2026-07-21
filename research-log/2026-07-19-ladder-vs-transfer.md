@@ -56,8 +56,23 @@ Two findings:
   documented as the empirical transfer cliff.
 - SYNTHESIS §6.1 marked partially done; ledger row added.
 
+## Follow-up (same day): varied n — and corrected a conjecture
+
+Ran `vary_n.py` sweeping n = 2…1024. Findings:
+
+- **L3/L4 climb to the finite-sample ceiling (~0.94)** as the CLT engages — more
+  data makes genuine shared-mechanism invariants transfer *better*.
+- **L2 does NOT fall (my conjecture was wrong).** I had predicted L2 skill would
+  fall as n grows; it instead *rises then plateaus at ~0.5*. Reason: infinite-
+  variance aggregates converge to a fixed α-stable law (permanently non-Gaussian),
+  so skill saturates at a constant — **bounded away from 1, not declining.** The
+  corrected invariant: "L2 is capped," not "L2 declines." (Restraint working as
+  intended — the guess got pruned.)
+- **The cliff opens fast (by n≈8) and persists** at ~0.4–0.5 because the two sides
+  saturate at different ceilings (0.94 vs 0.5). Diagnostic sharpens with evidence:
+  real invariants keep improving, appearance-only ones hit a wall.
+
 ## Next
 
-- Vary n (contributions per aggregate): L2 skill should *fall* as n grows (stable
-  tails sharpen) — a clean follow-up that widens the cliff.
 - The real one still stands: real-data A→B transfer across different invariants.
+- Metric sensitivity: repeat with less tail-trimming to show L2's ceiling drop.
