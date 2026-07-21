@@ -1,0 +1,55 @@
+{
+  "legA_real_dataset": {
+    "dataset": "sklearn diabetes (442 samples)",
+    "environments": "age quartiles (4)",
+    "spearman_invariance_vs_transfer": 0.983,
+    "most_invariant_feature": [
+      "bmi",
+      0.851,
+      0.289
+    ],
+    "least_invariant_feature": [
+      "sex",
+      0.135,
+      -0.077
+    ],
+    "invariance_predicts_transfer": true
+  },
+  "legB_benford": {
+    "mean_transfer_skill_mechanism_domains": 0.97,
+    "mean_transfer_skill_control_domains": 0.0,
+    "invariant_transfers_controls_dont": true,
+    "per_domain": {
+      "2^n": {
+        "tv_to_benford": 0.0012,
+        "transfer_skill": 0.996,
+        "benford_mechanism": true
+      },
+      "3^n": {
+        "tv_to_benford": 0.0016,
+        "transfer_skill": 0.994,
+        "benford_mechanism": true
+      },
+      "n!": {
+        "tv_to_benford": 0.0278,
+        "transfer_skill": 0.896,
+        "benford_mechanism": true
+      },
+      "Fibonacci": {
+        "tv_to_benford": 0.0013,
+        "transfer_skill": 0.995,
+        "benford_mechanism": true
+      },
+      "uniform[100,999]": {
+        "tv_to_benford": 0.2709,
+        "transfer_skill": 0.0,
+        "benford_mechanism": false
+      },
+      "narrow lognormal": {
+        "tv_to_benford": 0.6066,
+        "transfer_skill": 0.0,
+        "benford_mechanism": false
+      }
+    }
+  }
+}

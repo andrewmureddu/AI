@@ -49,6 +49,7 @@ carries its own limit.
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; spurious feature best in-distribution, worst on transfer | Constructed SCM where invariance = causation *by design*; real cross-domain test still open |
 | **§6.1** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed + sharpened** — across different mechanisms, transfer skill has a *cliff at the L2/L3 boundary* (0.03 / 0.48 / 0.92 / 0.89); mechanism and theorem transfer equally | Controlled within the CLT family; synthetic, not real data; L3≈L4 so it's a step, not a ramp |
 | **S23** | [Attention = the universal update](./experiments/S23-attention-bayes/) | derivation + experiment | **exact** — softmax attention = a Bayesian update over memories to 1.4e-17; attention temperature = η = 1/σ²; attention now a confirmed L3 instance of #17 | Single-head, single-step, Gaussian memory model; multi-layer/head not shown; nets learn β rather than set it optimally |
+| **§6.1** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — on the real diabetes dataset invariance predicts transfer at ρ=0.983; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97) and fails on controls (0.00). Frame now empirically load-bearing | Leg A is cross-environment with a signal-strength confound; Leg B's domains are computable sequences; full multi-field study still open |
 
 Everything else in [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (S2, S4–S17) is a
 stone with a falsifier attached — not yet load-bearing.
@@ -121,7 +122,8 @@ singularities (criticality, power laws). Conjecture, not result.
   The newest six (S19–S24) build on this session's scaffolding — "learning is the
   thermodynamics of prediction" (S20–S22, S24) and "climbing the ladder is
   inference" (S19, S23 — S23 now confirmed).
-- **4 experiments + 1 derivation** with teeth (S3, S18, ladder-vs-transfer, S23; S1).
+- **5 experiments + 1 derivation** with teeth (S3, S18, ladder-vs-transfer, S23,
+  real-transfer; S1).
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -130,14 +132,17 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 
 ## 6. The open frontier (prioritized)
 
-1. **The real transfer test (P0).** *Partially done — a controlled cross-mechanism
-   version passed* ([`experiments/ladder-vs-transfer/`](./experiments/ladder-vs-transfer/)):
-   holding the surface phenomenon fixed and varying only correspondence depth,
-   transfer skill has a sharp **cliff at the L2/L3 boundary** (appearance→mechanism),
-   with L3≈L4 (mechanism and theorem transfer equally well). That independently
-   re-derived the methodology's central L2/L3 line from a transfer measurement. Still
-   open — the version that makes the frame *empirically* load-bearing: *different*
-   catalog invariants on *real* data, A→B. Highest stakes.
+1. **The real transfer test — largely done, frame now load-bearing.** Three passes,
+   each more real than the last: (a) [S18](./experiments/S18-invariance-transfer/) —
+   invariance⇒transfer in a synthetic SCM (ρ=0.985); (b)
+   [ladder-vs-transfer](./experiments/ladder-vs-transfer/) — a controlled
+   cross-*mechanism* ladder with a sharp cliff at the L2/L3 boundary; (c)
+   [real-transfer](./experiments/real-transfer/) — **on real data I did not
+   construct**, invariance predicts transfer at ρ=0.983 (diabetes) and Benford
+   transfers across 2ⁿ/3ⁿ/n!/Fibonacci but not controls. The frame's 🟢 core is now
+   *empirically load-bearing*, not just self-consistent. **What remains** (P1, no
+   longer P0): break Leg A's signal-strength confound (residual-invariance version),
+   and the fullest study — many *different* real datasets from *different fields*.
 2. **Redundancy deletion (P0).** Formalize "how much of the catalog is Φ." If #3 and
    #16 are facets, the catalog should say so and stop double-counting — a real
    simplification, and a sharp test of the through-line.

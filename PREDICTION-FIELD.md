@@ -110,17 +110,24 @@ transfer ↑). If transfer is uncorrelated with level, the reframing is decorati
 and should drop to 🔴-only. This turns a metaphysical-sounding idea into something
 the restraint stroke can actually grade.
 
-**Restraint pass (2026-07-19) — falsifier tested, survived.** A controlled version
-of that test was run ([`experiments/S18-invariance-transfer/`](./experiments/S18-invariance-transfer/)):
-in a linear structural causal model, the invariance of a predictor *measured on
-training environments* ranks its error on a *held-out* environment at Spearman
-ρ = 0.985 — and the most in-distribution-predictive feature is the worst-transferring
-(8×). So "invariance ⇒ transfer" holds and has teeth. This lifts the 🟢 operational
-core from "true by definition" to **"true and demonstrated to bite"** — but it does
-*not* touch the 🔴 metaphysical reading, and the identity invariance = causation was
-baked into the SCM. The honest next step is the *real* version: measure A→B transfer
-for genuine catalog invariants at different ladder levels. Only that moves the frame
-from self-consistent to empirically load-bearing.
+**Restraint pass (2026-07-19) — falsifier tested three times, survived each, now on
+real data.** (1) Synthetic SCM
+([S18](./experiments/S18-invariance-transfer/)): invariance measured on training
+environments ranks held-out error at ρ = 0.985, and the most in-distribution-
+predictive feature is the *worst*-transferring (8×). (2) Controlled cross-mechanism
+ladder ([ladder-vs-transfer](./experiments/ladder-vs-transfer/)): transfer has a
+sharp cliff at the L2/L3 (appearance→mechanism) boundary. (3) **Real data**
+([real-transfer](./experiments/real-transfer/)): on the diabetes dataset with
+age-group environments *I did not construct*, invariance predicts transfer at
+ρ = 0.983, and Benford's law transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97) but not
+non-mechanism controls (0.00).
+
+Net: the 🟢 operational core is now **empirically load-bearing** — it holds on data
+whose structure I did not design, not merely in constructed setups. It still does
+*not* touch the 🔴 metaphysical reading. Honest remaining gap: the real-data leg is
+cross-*environment* with a signal-strength confound (the synthetic SCM controls
+that; real data doesn't), so the fullest test — many different real datasets across
+different fields — is the last rung, now P1 rather than P0.
 
 ## See also
 
@@ -131,3 +138,6 @@ from self-consistent to empirically load-bearing.
   prediction field's metric going singular at a transition, measured.
 - [`experiments/S18-invariance-transfer/`](./experiments/S18-invariance-transfer/) —
   the frame's falsifier, tested: invariance predicts transfer (ρ = 0.985).
+- [`experiments/real-transfer/`](./experiments/real-transfer/) — the falsifier on
+  real data: invariance predicts transfer at ρ = 0.983; Benford transfers by
+  mechanism. The frame is empirically load-bearing.
