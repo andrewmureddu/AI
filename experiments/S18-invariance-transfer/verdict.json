@@ -1,0 +1,12 @@
+{
+  "spearman_instability_vs_transfer": 0.985,
+  "in_dist_MSE_spurious_only": 0.16,
+  "in_dist_MSE_causal_only": 0.986,
+  "transfer_MSE_spurious_only": 7.705,
+  "transfer_MSE_causal_only": 0.952,
+  "transfer_MSE_ERM_both": 6.564,
+  "spurious_beats_causal_in_distribution": true,
+  "causal_beats_spurious_on_transfer": true,
+  "invariance_predicts_transfer_monotone": true,
+  "ICP_selection_picks": "X_c (causal)"
+}

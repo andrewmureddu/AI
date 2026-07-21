@@ -1,0 +1,17 @@
+{
+  "transfer_skill_by_level": {
+    "L1": 0.033,
+    "L2": 0.484,
+    "L3": 0.916,
+    "L4": 0.894
+  },
+  "shape_distance_by_level": {
+    "L1": 0.209,
+    "L2": 0.111,
+    "L3": 0.018,
+    "L4": 0.023
+  },
+  "spearman_level_vs_skill": 0.8,
+  "cliff_between": "L2/L3 (finite vs infinite variance = the shared-mechanism boundary)",
+  "monotone_level_predicts_transfer": false
+}

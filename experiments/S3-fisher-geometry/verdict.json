@@ -1,0 +1,7 @@
+{
+  "ising_chi_peak_T": 1.0,
+  "ising_Tc_theory": 1.0,
+  "dd_testerr_peak_ratio": 1.0,
+  "dd_fisher_peak_ratio": 1.0,
+  "dd_peaks_coincide": true
+}

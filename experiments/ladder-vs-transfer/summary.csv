@@ -1,0 +1,5 @@
+level,name,description,mean_shape_distance,mean_transfer_skill
+4,L4,exponential increments (CLT forces Gaussian),0.0227,0.8937
+3,L3,skewed finite-variance mix (same CLT mechanism),0.0181,0.9156
+2,L2,"heavy-tailed increments, ν=1.5 (infinite var → stable, not Gaussian)",0.1107,0.4840
+1,L1,single heavy draw (not an aggregate; word only),0.2094,0.0329
