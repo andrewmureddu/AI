@@ -1,0 +1,34 @@
+{
+  "legA_calibration": {
+    "A1 linear d=5 (regular)": {
+      "lambda_hat": 2.605,
+      "exact_localized": 2.491,
+      "lambda_theory": 2.5,
+      "d_half": 2.5
+    },
+    "A2 y=abx (singular)": {
+      "lambda_hat": 0.245,
+      "exact_localized": 0.221,
+      "lambda_theory": 0.5,
+      "d_half": 1.0
+    },
+    "A3 y=w^2x (singular)": {
+      "lambda_hat": 0.258,
+      "exact_localized": 0.261,
+      "lambda_theory": 0.25,
+      "d_half": 0.5
+    }
+  },
+  "legA_within_15pct_of_exact_functional": true,
+  "P1_final_lambda": 1.38,
+  "P1_singular_solution": true,
+  "P2_evaluable": false,
+  "P2_note": "mid-training checkpoints are non-critical; lambda_hat<0 there measures escape, not dimension",
+  "P3_lambda_early_converged": 1.16,
+  "P3_lambda_late_converged": 1.38,
+  "P3_loss_flat_during_drift": true,
+  "P3_drifts_toward_degeneracy": false,
+  "posthoc_fullbatch_lambda": 1.4,
+  "posthoc_fullbatch_loss": 0.4665,
+  "posthoc_sgd_noise_seeks_degeneracy": false
+}
