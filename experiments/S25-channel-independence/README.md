@@ -302,6 +302,40 @@ beyond, and fails by ~0.5 at 0.39 bits — and reaching even 0.39 bits
 required deliberately engineered shell-scrambling that no natural
 measurement resembles.
 
+## The conjecture, proved (2026-07-21)
+
+The stress test's structural conjecture — deterministic channels of a
+Boltzmann family are pinned near one-parameterness — is now a theorem:
+[`derivations/S25-one-parameterness.md`](../../derivations/S25-one-parameterness.md),
+verified by `verify_theorem.py` (`theorem_verdict.json`). Core results:
+
+- **Exact characterization (Lemma 1):** the induced family is one-parameter
+  exponential iff the conditional mean energies μ_y(β) = E[E|y,β] are
+  affine in a single statistic for all β — equivalently, the whole
+  conditional cumulant hierarchy is enslaved to one statistic. Verified
+  exactly: 1D decimation's conditional-mean matrix is rank-1 to machine
+  precision (defect 0.0).
+- **The obstruction is the dispersion of conditional VARIANCE across
+  cells, not its size** (Theorem 2): if every cell has the same variance
+  profile, the second-order term is a normalization constant and
+  one-parameterness survives regardless of how much information the
+  channel destroys. This is why self-averaging channels (coarse-grainings,
+  hashes, subsets) can't escape, and why shell-scrambling — engineered
+  variance heterogeneity — was the unique successful attack.
+- **Quantitative bound + scaling (Theorem 3):** rank defect ≤
+  [Δ·sd_w(V*)/(2·sd_w(μ))]², holds 8/8 channels (loose — validity
+  confirmed, not tightness), with defect ∝ Δ⁴ — measured slopes 4.03,
+  3.80, 3.67 — stepping to Δ⁶ (measured 6.27) for crossover_pairs, whose
+  symmetric crossover placement cancels the leading variance dispersion so
+  the third cumulant leads. The cumulant hierarchy is visible in the data.
+- Covers **stochastic channels too** — nothing in the proof uses
+  determinism.
+
+This closes the loop opened by the stress test: the composition law's
+domain of validity is now derived, not just mapped. Generic measurement
+cannot leave the one-parameter regime because it would need to manufacture
+conditional-variance heterogeneity, which self-averaging destroys.
+
 ## See also
 
 - [PREDICTION-FIELD.md](../../PREDICTION-FIELD.md) — the tiered claim; this

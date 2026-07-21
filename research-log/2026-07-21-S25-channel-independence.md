@@ -114,6 +114,34 @@ within ~0.01 bits of one-parameter, lucky-or-degraded to ~0.4 bits,
 broken past that — and past that took deliberate engineering no natural
 measurement resembles.
 
+## Third follow-up: the one-parameterness conjecture, proved
+
+[`derivations/S25-one-parameterness.md`](../derivations/S25-one-parameterness.md)
++ `verify_theorem.py`. Since ∂_β log q(y|β) = ⟨E⟩ − E[E|y,β], the induced
+family is one-parameter exponential iff the conditional mean energies are
+affine in one statistic across β (Lemma 1, verified to machine precision
+on 1D decimation). Taylor structure then shows the leading obstruction is
+the **dispersion of conditional variance across cells** — not its size —
+so self-averaging channels (all natural measurement) are pinned near
+one-parameterness, and shell-scrambling was not just *a* successful attack
+but the *only possible kind*. Bound verified 8/8 (loose); defect scaling
+Δ⁴ measured at slopes 3.7–4.0, stepping to Δ⁶ where the variance
+dispersion cancels (crossover_pairs, slope 6.3) — the conditional cumulant
+hierarchy is directly visible in the rank spectrum. The proof covers
+stochastic channels; determinism was never needed.
+
+Second methodological instance of numerics disciplining theory: the
+verifier's first run measured slope 4 against a predicted 2; the error was
+a wrong norm count (carrier dominates), and the corrected prediction then
+also explained the slope-6 outlier for free.
+
+The upshot for the frame, now fully closed: **generic measurement cannot
+break the field's one-parameter structure because doing so requires
+manufacturing conditional-variance heterogeneity, which self-averaging
+destroys.** Invariance under generic channels, covariance under structured
+ones, and the boundary between them are all now derived from one identity:
+∂_β log q = ⟨E⟩ − μ_y.
+
 ## Follow-ups
 
 - **P2:** check whether the block-majority peak shift matches the exact

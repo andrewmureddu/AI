@@ -1,0 +1,90 @@
+{
+  "claim1_decimation_mu_rank1_defect": 0.0,
+  "claim1_mu_rank1": {
+    "geometric_majority": 0.9995137664461691,
+    "shell_scramble_6": 0.987840044339303
+  },
+  "claim2_channels": {
+    "energy_mod_5": {
+      "family": "stress",
+      "sd_mu": 5.757810361710111,
+      "sd_V": 37.88440338608767,
+      "rho2": 0.3927680561418081,
+      "tail3": 6.0162751337632685e-05,
+      "one_minus_frac1": 0.0033348853662227285,
+      "bound_ok": true
+    },
+    "energy_mod_8": {
+      "family": "stress",
+      "sd_mu": 6.941584363913992,
+      "sd_V": 91.45918777853734,
+      "rho2": 1.5749524151847107,
+      "tail3": 1.746079439305929e-05,
+      "one_minus_frac1": 0.005064805577388531,
+      "bound_ok": true
+    },
+    "shell_scramble_6": {
+      "family": "stress",
+      "sd_mu": 6.610121031094371,
+      "sd_V": 20.938944475495084,
+      "rho2": 0.09103758244833617,
+      "tail3": 0.0006536942952151523,
+      "one_minus_frac1": 0.02134556416628053,
+      "bound_ok": true
+    },
+    "EM_interleave_7": {
+      "family": "stress",
+      "sd_mu": 6.2668405278838115,
+      "sd_V": 51.41858830298916,
+      "rho2": 0.6107633658892642,
+      "tail3": 7.615087926213059e-06,
+      "one_minus_frac1": 0.003375829386381035,
+      "bound_ok": true
+    },
+    "crossover_pairs": {
+      "family": "stress",
+      "sd_mu": 5.5047374314889845,
+      "sd_V": 49.29665816068267,
+      "rho2": 0.7275983577930497,
+      "tail3": 0.00021884001625681513,
+      "one_minus_frac1": 0.015934609324014137,
+      "bound_ok": true
+    },
+    "geometric_majority": {
+      "family": "reference",
+      "sd_mu": 4.395995561842701,
+      "sd_V": 11.5941247022092,
+      "rho2": 0.06310901654941059,
+      "tail3": 4.5195382926055245e-06,
+      "one_minus_frac1": 0.00013982229144227087,
+      "bound_ok": true
+    },
+    "abs_magnetization": {
+      "family": "reference",
+      "sd_mu": 6.869702673158658,
+      "sd_V": 4.061532054033551,
+      "rho2": 0.003171274659181767,
+      "tail3": 3.050802982468992e-06,
+      "one_minus_frac1": 0.0031749557052578314,
+      "bound_ok": true
+    },
+    "hash8": {
+      "family": "reference",
+      "sd_mu": 4.58766404460835,
+      "sd_V": 23.511401120455844,
+      "rho2": 0.2382888803436922,
+      "tail3": 2.380347932631851e-05,
+      "one_minus_frac1": 0.0007772152988858583,
+      "bound_ok": true
+    }
+  },
+  "claim2_loglog_correlation": 0.36918046106090263,
+  "claim2_bound_holds": 8,
+  "claim2_n_channels": 8,
+  "claim3_slopes": {
+    "geometric_majority": 4.0330611546238355,
+    "abs_magnetization": 3.7994516994321423,
+    "shell_scramble_6": 3.665932584776077,
+    "crossover_pairs": 6.2724694292935
+  }
+}
