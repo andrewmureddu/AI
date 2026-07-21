@@ -385,6 +385,28 @@ erasable, and the cost of erasing it is the "price" of abstraction. Ties suffici
 Landauer, and the [prediction-field](../PREDICTION-FIELD.md) frame. **Falsifier:** an
 invariant that is provably *not* a minimal sufficient statistic of its domain-pair.
 
+### S25 🟡 — The RLCT charts the prediction field where the Fisher metric degenerates
+**Bridge:** Watanabe's singular learning theory: where S3's Fisher metric goes
+singular, the learning coefficient λ (real log canonical threshold) — not the
+parameter count d/2 — is the effective dimension that prices generalization and
+transfer.
+**Connects:** information geometry (S3) · algebraic geometry (resolution of
+singularities) · Bayesian free energy (the hub) · transfer (the ladder).
+Conjecture: singular points of the prediction field are *charted* by λ: free energy
+grows as λ log n, Bayes generalization ≈ λ/n, and past a singularity added
+parameters contribute zero λ (why overparameterization is free). **Falsifier:** a
+measured singular point where generalization/transfer scales with d/2 rather than λ.
+> **⟳ Restraint pass (2026-07-21):** *tested and confirmed* — see
+> [`../experiments/S25-rlct-singularity/`](../experiments/S25-rlct-singularity/).
+> A quadrature free-energy estimator recovers exact RLCTs on solved singular models
+> (0.508 vs ½ where d/2=1; 0.248 vs ¼ where d/2=½). At the random-feature model's
+> population singularity (P=D) the registered prediction λ(P)=min(P,D)/2 held —
+> plateau at D/2 to 0.08 — and both Bayes excess risk and covariate-shift transfer
+> error plateau with λ while d/2 predicts 3× growth. Bonus: λ̂ overshoots in a
+> narrow *critical window* at the singular point itself (finite-size crossover,
+> matching S3's phenomenology). Limits: linear-Gaussian singularities are rank/2,
+> the simplest kind; shift-transfer is not cross-domain L3 transfer.
+
 ---
 
 ## How to work a speculative stone
