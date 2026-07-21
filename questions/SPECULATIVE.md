@@ -293,6 +293,91 @@ mechanism causally stable but *not* environment-invariant, or vice versa.
 
 ---
 
+## Cluster I — Learning is the thermodynamics of prediction (added 2026-07-19)
+
+These use the [free-energy hub](../invariants/free-energy-hub.md), Landauer's bound,
+and the Fisher spectrum. If the universal update descends −Φ, then *inefficient*
+learning should dissipate, and the thing dissipated should be information.
+
+### S20 🟡 — Is a learner's inefficiency exactly its non-predictive memory?
+**Bridge:** Still–Sivak–Bell–Crooks "thermodynamics of prediction" — a driven
+system's dissipation is bounded below by the *nonpredictive* information it retains
+about its past.
+**Connects:** stochastic thermodynamics · online learning (regret) · Bayesian
+sufficiency.
+Conjecture: every learner's excess loss / regret equals the information it keeps
+about the training past that is *not* predictive of the future — "nostalgia" as
+dissipation. A perfectly efficient learner retains only predictive information (a
+sufficient statistic) and dissipates nothing. **Falsifier:** a maximally efficient
+predictor that provably retains non-predictive information, or a dissipative one
+that retains none. **Tractable next step:** a toy driven 2-state Markov model —
+measure dissipation vs. retained-nonpredictive-info directly (numpy-feasible).
+
+### S21 🟡 — Sloppiness = learnability = renormalizability (one Fisher-spectrum fact)
+**Bridge:** the eigenvalue spectrum of the Fisher metric (= the hub's Hessian ∇²Φ)
+spans many decades — a few "stiff" directions, many "sloppy" ones.
+**Connects:** systems biology / physics ("sloppy models," Sethna) · statistical
+learning (sample complexity) · renormalization (parameter-space compression).
+Conjecture: a model is *learnable* from few samples, a theory is *renormalizable*,
+and a system shows *emergent simplicity* for the **same** reason — the Fisher
+spectrum is sloppy, so only a low-dimensional stiff subspace matters. Ladder level
+may equal the number of stiff directions. **Falsifier:** a learnable model with a
+flat (non-sloppy) Fisher spectrum, or a sloppy one that resists compression.
+**Tractable next step:** compute Fisher eigenvalue spectra for a few small models
+and correlate stiff-dimension count with sample complexity (numpy-feasible; ties to
+[S3](../experiments/S3-fisher-geometry/)).
+
+### S22 🟡 — The ladder is a renormalization scale
+**Bridge:** coarse-graining keeps "relevant" operators and discards "irrelevant"
+ones — exactly what climbing L2→L3→L4 does to spurious detail.
+**Connects:** RG (physics) · causal abstraction (CS) · **this repo's own ladder**.
+Conjecture: an invariant's ladder level = its *renormalization depth* — how many
+layers of irrelevant/measurement-specific detail have been integrated out. L4
+invariants are RG fixed points; L2 correspondences are irrelevant operators that
+wash out under coarse-graining (which is *why* they don't transfer — see the
+[transfer cliff](../experiments/ladder-vs-transfer/)). Self-referential like S18:
+the methodology is itself an RG flow. **Falsifier:** an L4 invariant that is *not*
+stable under coarse-graining, or an L2 one that is.
+
+## Cluster J — The ladder as a dynamical process (climbing it is inference)
+
+### S19 🟡 — Grokking is a climb up the ladder
+**Bridge:** the memorization→generalization transition as an L2→L3 jump in the
+learned representation.
+**Connects:** ML (grokking) · the ladder · the [transfer cliff](../experiments/ladder-vs-transfer/).
+Conjecture: grokking is the moment a model stops using L2 memorized correlations and
+finds the L3 *mechanism* (the actual algorithm), which is exactly why generalization
+appears *suddenly* — it's a discrete jump across the L2/L3 cliff, not a smooth ramp.
+Unifies [S3](../experiments/S3-fisher-geometry/) (a transition), S13 (Lee–Yang),
+and the ladder. **Falsifier:** a grokking event whose post-grok solution is *not*
+more mechanism-invariant (across data subsets) than the pre-grok one. **Test:** needs
+torch, but the invariance-across-subsets metric is cheap once a grokked model exists.
+
+### S23 🟡 — Attention is the universal update (amortized Bayesian filtering)
+**Bridge:** softmax attention = exp(scores)/Z — a Gibbs/Bayes reweighting, i.e. one
+step of [entropic mirror descent](../invariants/mirror-descent-update.md).
+**Connects:** transformers (ML) · Bayesian filtering · the universal update · the hub.
+Conjecture: a transformer layer performs the *same* reweighting as Bayesian updating
+over its key–value memories — the model does amortized inference at run time, and
+"attention temperature" is the update's η (= inverse temperature). If so, in-context
+learning is literally the universal update executed in the forward pass. **Falsifier:**
+an attention mechanism not expressible as an entropic reweighting over a memory.
+**Tractable next step:** show softmax attention and a Bayesian posterior over
+Gaussian memories coincide numerically (numpy-feasible).
+
+### S24 🔴 — The invariant is the minimal sufficient statistic (and the rest is Landauer-erasable)
+**Bridge:** a minimal sufficient statistic keeps all predictive information and
+discards the rest; the discarded remainder is erasable at Landauer cost.
+**Connects:** statistics (sufficiency) · thermodynamics (Landauer) · our invariants ·
+the info bottleneck.
+Conjecture: a domain-pair's invariant *is* the minimal sufficient statistic of one
+domain for predicting the other; everything non-invariant is thermodynamically
+erasable, and the cost of erasing it is the "price" of abstraction. Ties sufficiency,
+Landauer, and the [prediction-field](../PREDICTION-FIELD.md) frame. **Falsifier:** an
+invariant that is provably *not* a minimal sufficient statistic of its domain-pair.
+
+---
+
 ## How to work a speculative stone
 
 1. Pick one. Restate it as a **quantitative** claim (an exponent, a ratio, a

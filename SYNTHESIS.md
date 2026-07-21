@@ -116,7 +116,10 @@ singularities (criticality, power laws). Conjecture, not result.
 - **1 hub:** Φ = ln Z (L3, L4 via Lee–Yang).
 - **~6 hub-core invariants** (developing): the Φ-facets above.
 - **~10 periphery invariants** (seed): candidates not yet reduced or refuted.
-- **18 speculative stones** (S1–S18): 3 cashed (S1, S3, S18), 15 on the board.
+- **24 speculative stones** (S1–S24): 3 cashed (S1, S3, S18), 21 on the board.
+  The newest six (S19–S24) build on this session's scaffolding — "learning is the
+  thermodynamics of prediction" (S20–S22, S24) and "climbing the ladder is
+  inference" (S19, S23).
 - **2 experiments + 1 derivation** with teeth.
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
