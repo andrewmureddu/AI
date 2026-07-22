@@ -18,6 +18,7 @@ ladder level. An essay can be wrong in ways the catalog is not allowed to be.
 | 1 | [The Ladder Is an Epistemology](./01-the-ladder-is-an-epistemology.md) | Why does the L2/L3 boundary — form vs. mechanism — turn out to be the line where knowledge starts to travel? What does that say about explanation itself? |
 | 2 | [One Object Seen Sideways](./02-one-object-seen-sideways.md) | The catalog keeps collapsing onto Φ = ln Z. Is that a discovery about the world, about mathematics, or about us? |
 | 3 | [Expansion and Restraint](./03-expansion-and-restraint.md) | The method alternates leaping and pruning. What is that rhythm, and why does either stroke alone fail? |
+| 4 | [The Periphery Split](./04-the-periphery-split.md) | The invariants that resist Φ — is the residue a backlog, or a taxonomy? Three primitive questions, and power laws as the boundary of one of them. |
 
 ## Ground rules
 
