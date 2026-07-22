@@ -415,6 +415,22 @@ provably neither (a) nor (b), i.e. a third irreducible component.
 (If the split survives here, run the cheaper siblings next: diffusion must reduce
 to Φ (maxent's home game — its failure kills the sorting rule outright), and
 percolation must resist even through the Potts/random-cluster q→1 dressing.)
+> **⟳ Restraint pass (2026-07-22):** *falsifier fired — stone retired as stated,
+> conjecture upgraded* — see
+> [`../derivations/S25-control-split.md`](../derivations/S25-control-split.md).
+> Half (a) confirmed easily (KL-control value = path free energy; maxent-RL
+> softmax; LQG↔Kalman — L3 within those classes). Half (b) **reduced against
+> prediction**: the controllability Gramian is identically the covariance of the
+> noise-driven ensemble (∇²Φ), and minimum control energy = the large-deviations
+> rate function = Legendre dual of Φ (exact linear-Gaussian; Freidlin–Wentzell
+> in the small-noise limit) — with predictive work (Gramian eigenvalue → 0
+> forecasts controllability loss). But every binary reachability fact landed in
+> Φ's **singular set** (supports, null Fisher directions, I = ∞), never its
+> regular part. Replacement claim: **connectivity facts are Φ-boundary facts** —
+> the connectivity sector is Φ's singular face, not a separate sector.
+> Percolation's Potts q→1 non-analyticity now reads as the same pattern, not
+> dressing. Remaining candidate for a true second axis: the invariance/symmetry
+> sector only.
 
 ---
 

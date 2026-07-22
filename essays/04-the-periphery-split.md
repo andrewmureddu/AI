@@ -232,3 +232,23 @@ of the hub thesis. If the split survives its falsifiers, the periphery
 becomes something better — the discovery that the map has more than one
 cardinal direction, and that we had simply been walking the best-lit one
 first.
+
+> **⟳ Restraint pass (2026-07-22):** falsifiers 1 and 3 were run together, by
+> derivation — [`derivations/S25-control-split.md`](../derivations/S25-control-split.md)
+> — and **fired against this essay's geometry while confirming its taxonomy.**
+> Control did not refuse to split (falsifier 3 survived on that side: the
+> inference half is exact Φ-machinery). But the "irreducible" reachability half
+> *reduced*: the controllability Gramian is the covariance of the noise-driven
+> ensemble (∇²Φ), and minimum control energy is exactly the large-deviations
+> rate function — Legendre dual of Φ, with predictive work done (falsifier 1's
+> condition met). The saving structure: every binary reachability fact reduced
+> only to Φ's **singular set** — supports, null Fisher directions, divergent
+> rate functions — never to its regular derivatives. So §5's "three sectors
+> over three quotients" is retired and replaced: the map is **two-layered, not
+> three-sectored** — Φ's regular part (prediction), Φ's boundary (connectivity,
+> power laws, percolation-via-Potts, and plausibly the spectral gap), and one
+> remaining candidate for a genuine second axis: invariance/symmetry. Section
+> 4's boundary-marker reading of power laws turns out to be the load-bearing
+> idea of the essay, promoted from aside to architecture. The sharpest open
+> question is now the one this essay filed under "too roomy": does the
+> symmetry sector reduce too, or is it the map's one true second primitive?

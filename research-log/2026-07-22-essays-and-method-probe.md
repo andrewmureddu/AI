@@ -46,3 +46,24 @@
 - Meta-observation worth one line: the probe found the boundary by lemma while
   *preparing* the listed empirical falsifier. Falsifiers earn their keep even
   when the kill arrives from elsewhere.
+
+## Addendum (same day) — S25 run
+
+[`derivations/S25-control-split.md`](../derivations/S25-control-split.md):
+attacked the "irreducible" reachability half as the stone instructed, and it
+reduced. Controllability Gramian ≡ covariance of the noise-driven ensemble
+(∇²Φ); minimum control energy = large-deviations rate function (Legendre dual
+of Φ; exact linear-Gaussian, Freidlin–Wentzell small-noise beyond). Predictive
+work: Gramian eigenvalue → 0 forecasts controllability loss (balanced
+truncation already exploits this). But all *binary* reachability facts landed
+in Φ's singular set (supports, null Fisher, I = ∞), never its regular part.
+
+**Stone retired as stated; replacement claim: connectivity facts are
+Φ-boundary facts.** The periphery split's geometry corrected: two layers
+(regular Φ = prediction; singular Φ = connectivity, power laws,
+percolation-via-Potts) plus at most one true second axis — invariance/
+symmetry. Percolation's q→1 non-analyticity re-read from "dressing" to
+systematic. Queued: spectral gap as Φ-degeneracy (gap-closing = critical
+slowing down from the connectivity side); the symmetry-sector question is now
+the map's sharpest open problem. Restraint notes placed in S25 and essay 4;
+feedback-control entry flagged for promotion from seed.
