@@ -141,6 +141,19 @@ work on training-loss curves before a model collapses or groks? **Falsifier:** a
 well-characterized tipping point in one domain that arrives with *no* rise in
 autocorrelation/variance. (New entry
 [`critical-slowing-down.md`](../invariants/critical-slowing-down.md).)
+> **⟳ Restraint pass (2026-07-22):** tested —
+> [`../experiments/S7-critical-slowing/`](../experiments/S7-critical-slowing/).
+> **Split verdict.** The mechanism reading is confirmed L3 on-model: τ·λ_min =
+> 0.94±0.13 across a saddle-node, mean-field Ising, and GD at the
+> Marchenko–Pastur edge — one relation (relaxation time = inverse curvature),
+> no per-domain tuning; and the curvature is ∇²(free energy), so critical
+> slowing down reduces to **Φ's Hessian softening** (the middle-zone
+> prediction; fourth arrival at the singular-set object after S3, S25,
+> Goldstone). The "one universal statistic/exponent" reading is **retired to
+> L1**: divergence exponents are domain-specific (−½ / −1 / −2). Boundary
+> observed on schedule: nearest T_c the quartic term outweighs the softened
+> linear curvature and the linear early-warning law degrades. Grokking leg
+> still open (no torch).
 
 ---
 
@@ -464,6 +477,19 @@ constraint; (ii) a conserved charge provably unable to parameterize any
 invariant ensemble; (iii) the SGD stationarity test failing — train to
 stationarity, test sufficiency of the conserved invariants for the stationary
 distribution. (iii) is runnable with torch and is the designed experiment.
+> **⟳ Restraint pass (2026-07-22):** (iii) run, pure numpy —
+> [`../experiments/S26-sgd-charges/`](../experiments/S26-sgd-charges/).
+> **Falsifier did not fire; the result is sharper than the claim.** On the
+> minimal scale-symmetric model: Q conserved in the flow limit (drift ∝ lr);
+> weight-decay breaking follows the exact law dQ/dt = −4λQ (rel. err 1e-5);
+> under label-noise SGD the stationary norm is a function of the charge alone
+> — √(Q²+4w*²), predicted to 3e-4 — while the charge erodes slowly
+> (5.6e-7/step, ~1.8M-step quasi-conservation window). So SGD's "stationary"
+> law is a **prethermalization plateau coordinatized by quasi-charges**,
+> precisely the near-integrable GGE phenomenology: the tower transfers *with*
+> its known failure mode. L2 exact on-model; L3 route = timescale separation
+> (noise-vs-charge). Open: matrix/deep/ReLU charges; minibatch-only noise;
+> the claim is now explicitly timescale-indexed.
 
 ---
 
