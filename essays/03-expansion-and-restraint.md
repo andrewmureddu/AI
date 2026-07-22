@@ -125,6 +125,24 @@ unrun** (would intervening on the method's "temperature" — the expansion
 rate η — move the map's quality the way the update equation predicts? That
 is actually testable across research-log epochs, and nobody has done it).
 
+> **⟳ Restraint pass (2026-07-22):** probed — see
+> [`derivations/essay3-method-as-update.md`](../derivations/essay3-method-as-update.md).
+> The suspicion is settled, mostly against this section. Decomposed into faces:
+> level assignment is per-entry Bayes over {L0…L4} — exactly (★), L3, but
+> trivially so (no competition across the catalog; each entry runs its own
+> five-hypothesis update). Attention allocation — the only place a population-
+> level (★) could live — drops to **L1–L2**: the update rule is written down
+> nowhere and one log epoch cannot falsify it. And expansion is **provably
+> outside (★)**: multiplicative updates preserve zeros, so mirror descent cannot
+> grow its support, while expansion is exactly support growth. Corrected
+> identification: the method is a **replicator–mutator with a zero-sum attention
+> budget** — its selection term is S1's object; its mutation term is the
+> expansion stroke, which (★) cannot express. §2's "you cannot prune your way to
+> a frame" was the zero-preservation lemma in prose; this section refuted itself
+> two sections early. "The method = the universal update" is retired to L1 *as
+> stated*; the perturbation test above survives as the revival condition for the
+> attention face.
+
 ## 5. The worry: a self-licensing loop 🔴
 
 If the method is an instance of the universal update, and the universal
@@ -156,6 +174,23 @@ of Section 4 were run and *failed* — if cranking expansion rate did not move
 map quality the way mirror descent's η moves regret — the L3 suspicion dies,
 the loop deflates into an L2 curiosity, and this essay's Section 4 gets a
 strikethrough rather than a deletion. The essays keep their dead too.
+
+> **⟳ Restraint pass (2026-07-22):** discharged early, by derivation rather
+> than by the perturbation test — and by a route this section didn't list.
+> The [probe](../derivations/essay3-method-as-update.md) found the identity
+> fails *structurally*: the method's expansion stroke is support growth, which
+> no multiplicative update can express, so the method is a replicator–mutator,
+> not the universal update. The alarming version of the loop required the
+> procedure to *be* its own best result; a process whose generative half lies
+> provably outside the object it studies is not a closed loop. **Downgraded
+> 🔴 → 🟡:** the selection half still self-resembles (and the attention face
+> is untested, pending the multi-epoch η experiment), but the worry as
+> written is retired. Note for the method's books: this section predicted its
+> own discharge condition and got the mechanism wrong — it assumed the test
+> would be empirical and it turned out to be a lemma. Boundaries arrive from
+> directions the falsifier list didn't anticipate; that is an argument for
+> writing falsifiers down anyway, since this one was found *while trying to
+> run* the listed one.
 
 ## 6. What the rhythm is
 

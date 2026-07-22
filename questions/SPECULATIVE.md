@@ -387,6 +387,37 @@ invariant that is provably *not* a minimal sufficient statistic of its domain-pa
 
 ---
 
+## Cluster K — The periphery split (added 2026-07-22, from [`essays/04`](../essays/04-the-periphery-split.md))
+
+### S25 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
+**Bridge:** the estimation–control dualities (Kalman filter ↔ LQR; KL-control /
+control-as-inference) versus the Kalman rank conditions.
+**Connects:** control theory · Bayesian filtering · the free-energy hub ·
+networks/reachability.
+The periphery-split conjecture sorts Φ-resistant invariants by which primitive
+question they answer: *prediction* (reduces to Φ), *connectivity* ("what can reach
+what"), or *invariance* ("what cannot change"). Feedback/control is the sharpest
+test because it should be **two invariants fused by historical accident**:
+optimal control under noise dualizes to inference (LQG ↔ Kalman, KL-control writes
+the optimal policy as a posterior — Φ-machinery through and through), while
+controllability/observability are *reachability* properties (rank of the
+controllability Gramian — which states can be steered to, which can be seen), with
+no distributional content. Quantitative form of the claim: every result in the
+[`feedback-control`](../invariants/feedback-control.md) entry can be classified as
+(a) derivable from a log-partition/free-energy object, or (b) equivalent to a
+Gramian/rank/reachability statement — and the two classes do not mix: no (b)-fact
+is recoverable from Φ-derivatives alone.
+**Falsifier — two-sided:** (kills the split) a derivation recovering Kalman rank
+conditions or Gramian spectra as a limit of a partition-function object *that does
+predictive work* — e.g. predicts loss of controllability under system perturbation
+from Φ-derivatives; (kills the fusion claim) a control-theoretic result that is
+provably neither (a) nor (b), i.e. a third irreducible component.
+(If the split survives here, run the cheaper siblings next: diffusion must reduce
+to Φ (maxent's home game — its failure kills the sorting rule outright), and
+percolation must resist even through the Potts/random-cluster q→1 dressing.)
+
+---
+
 ## How to work a speculative stone
 
 1. Pick one. Restate it as a **quantitative** claim (an exponent, a ratio, a
