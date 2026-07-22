@@ -174,6 +174,16 @@ conserved quantity during training? Bridges
 [`optimization-variational.md`](../invariants/optimization-variational.md).
 **Falsifier:** a continuous loss symmetry with demonstrably no conserved quantity
 under gradient flow.
+> **⟳ Restraint pass (2026-07-22):** sharpened in passing by
+> [`../derivations/symmetry-sector.md`](../derivations/symmetry-sector.md) §3.
+> The pairing (symmetry ↔ charge) is real in gradient flow (scale →
+> balancedness, translation → parameter sums; Kunin et al. 2021), but the
+> mechanism differs from physics' Noether: bracket antisymmetry there,
+> generator-orthogonal-to-∇L here. Honest tag **L2 with a live L3 route**
+> (both as momentum maps over symplectic vs. metric structure — derivation
+> not yet done). New consequence via S26: the conserved invariants should be
+> the natural parameters of SGD's *stationary distribution* — a designed
+> experiment.
 
 ### S10 🔴 — Is gauge symmetry just "redundancy of description," and does fixing it always cost something?
 **Bridge:** gauge freedom / reparameterization invariance.
@@ -431,6 +441,29 @@ percolation must resist even through the Potts/random-cluster q→1 dressing.)
 > Percolation's Potts q→1 non-analyticity now reads as the same pattern, not
 > dressing. Remaining candidate for a true second axis: the invariance/symmetry
 > sector only.
+
+### S26 🟡 — Conserved charges are the coordinates of the prediction field
+**Bridge:** Noether charges ↔ natural parameters / sufficient statistics of
+long-time ensembles (Gibbs, generalized Gibbs, Jaynes-in-reverse).
+**Connects:** physics (conservation, GGE/ETH) · statistics (sufficiency,
+exponential families) · the free-energy hub · ML training dynamics.
+From [`../derivations/symmetry-sector.md`](../derivations/symmetry-sector.md):
+symmetry-breaking reduces to Φ's singular set, but Noether proper does not
+reduce to Φ at all — it sits **under** it. A quantity can serve as a natural
+parameter of an invariant ensemble iff it is conserved, and at long times the
+ensemble is parameterized by *nothing but* the charges (GGE for integrable
+systems; plain Gibbs for thermalizing ones). Conjecture: this is a map-level
+fact, not a physics fact — **the sufficient statistics of any stationary
+prediction field are its conserved quantities**; symmetry chooses Φ's
+coordinates, Φ predicts, Φ's breakdown ends prediction ("one tower, three
+floors"). ML instance: SGD's stationary law should be sufficient-statisticked
+by its Kunin balancedness invariants.
+**Falsifier — three-sided:** (i) a natural parameter of a genuine long-time
+ensemble whose conjugate quantity is neither conserved nor a bookkeeping
+constraint; (ii) a conserved charge provably unable to parameterize any
+invariant ensemble; (iii) the SGD stationarity test failing — train to
+stationarity, test sufficiency of the conserved invariants for the stationary
+distribution. (iii) is runnable with torch and is the designed experiment.
 
 ---
 

@@ -252,3 +252,18 @@ first.
 > idea of the essay, promoted from aside to architecture. The sharpest open
 > question is now the one this essay filed under "too roomy": does the
 > symmetry sector reduce too, or is it the map's one true second primitive?
+
+> **⟳ Second restraint pass (2026-07-22, later):** answered — see
+> [`derivations/symmetry-sector.md`](../derivations/symmetry-sector.md). The
+> sector splits. Symmetry-*breaking* reduces completely, and to the boundary
+> layer: SSB exists only at Φ's non-analyticities, and Goldstone modes are
+> null directions of ∇²Φ — §4's hunch was not an analogue of the boundary
+> signature but the boundary itself. Noether proper does **not** reduce — the
+> obstruction is structural (Noether consumes a bracket, Φ consumes a measure)
+> — but it isn't a parallel sector either: conserved charges turn out to be
+> exactly the quantities that can, and at long times the only ones that do,
+> serve as Φ's natural parameters (Gibbs/GGE). Symmetry sits *under* Φ,
+> choosing its coordinates. Final architecture: **one tower, three floors** —
+> symmetry picks the coordinates, Φ's regular part predicts, Φ's singular
+> part ends prediction. Promoted to stone S26 with a runnable falsifier (the
+> SGD stationary-sufficiency test).
