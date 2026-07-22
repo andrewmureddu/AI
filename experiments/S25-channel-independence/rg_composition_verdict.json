@@ -1,0 +1,35 @@
+{
+  "leg1_exact_anchor": {
+    "kl_max": 1.5570450278558735e-15,
+    "law_max_rel_err": 7.233942291818419e-14,
+    "full_peak": 0.6699999999999999,
+    "channel_peak": 0.6599999999999999,
+    "predicted_peak": 0.6599999999999999
+  },
+  "leg2_majority_rule": {
+    "geometric_2x2": {
+      "channel_peak": 2.2800000000000002,
+      "predicted_peak": 2.29,
+      "peak_mismatch": 0.009999999999999787,
+      "shift_measured": 0.14000000000000012,
+      "shift_predicted": 0.1499999999999999,
+      "fit_residual_bits_max": 0.009841418008217953,
+      "fit_residual_bits_at_peak": 0.008432778202668294,
+      "curve_correlation": 0.9997897426425418
+    },
+    "random_blocks": {
+      "channel_peak": 2.3200000000000003,
+      "predicted_peak": 2.33,
+      "peak_mismatch": 0.009999999999999787,
+      "shift_measured": 0.18000000000000016,
+      "shift_predicted": 0.18999999999999995,
+      "fit_residual_bits_max": 0.04537837439247259,
+      "fit_residual_bits_at_peak": 0.026903682563631466,
+      "curve_correlation": 0.999501081529776
+    },
+    "full_peak": 2.14
+  },
+  "composition_law_exact_where_RG_exact": true,
+  "geometric_peak_predicted": true,
+  "random_blocks_peak_predicted": true
+}

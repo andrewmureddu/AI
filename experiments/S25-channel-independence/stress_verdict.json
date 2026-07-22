@@ -1,0 +1,75 @@
+{
+  "energy_mod_5": {
+    "family": "stress",
+    "rank1_fraction": 0.9921976287059399,
+    "kl_bits_max": 0.01496290866403558,
+    "peak_measured": 1.9,
+    "peak_fitlaw": 1.92,
+    "law_mismatch": 0.020000000000000018,
+    "dev_from_full": 0.2400000000000002
+  },
+  "energy_mod_8": {
+    "family": "stress",
+    "rank1_fraction": 0.9850623809966956,
+    "kl_bits_max": 0.15529636311956557,
+    "peak_measured": 2.13,
+    "peak_fitlaw": 2.19,
+    "law_mismatch": 0.06000000000000005,
+    "dev_from_full": 0.010000000000000231
+  },
+  "shell_scramble_6": {
+    "family": "stress",
+    "rank1_fraction": 0.9483356432383157,
+    "kl_bits_max": 0.3863382399614861,
+    "peak_measured": 2.1,
+    "peak_fitlaw": 2.59,
+    "law_mismatch": 0.48999999999999977,
+    "dev_from_full": 0.040000000000000036
+  },
+  "EM_interleave_7": {
+    "family": "stress",
+    "rank1_fraction": 0.9930392186669229,
+    "kl_bits_max": 0.014698147501416757,
+    "peak_measured": 2.0,
+    "peak_fitlaw": 2.12,
+    "law_mismatch": 0.1200000000000001,
+    "dev_from_full": 0.14000000000000012
+  },
+  "crossover_pairs": {
+    "family": "stress",
+    "rank1_fraction": 0.9627720238959141,
+    "kl_bits_max": 0.214498116008979,
+    "peak_measured": 1.87,
+    "peak_fitlaw": 1.8599999999999999,
+    "law_mismatch": 0.010000000000000231,
+    "dev_from_full": 0.27
+  },
+  "geometric_majority": {
+    "family": "reference",
+    "rank1_fraction": 0.9997679238706416,
+    "kl_bits_max": 0.0015357058903163832,
+    "peak_measured": 2.2800000000000002,
+    "peak_fitlaw": 2.2800000000000002,
+    "law_mismatch": 0.0,
+    "dev_from_full": 0.14000000000000012
+  },
+  "abs_magnetization": {
+    "family": "reference",
+    "rank1_fraction": 0.9921327181376323,
+    "kl_bits_max": 0.05751729609894126,
+    "peak_measured": 2.13,
+    "peak_fitlaw": 2.29,
+    "law_mismatch": 0.16000000000000014,
+    "dev_from_full": 0.010000000000000231
+  },
+  "hash8": {
+    "family": "reference",
+    "rank1_fraction": 0.998307252068206,
+    "kl_bits_max": 0.0045519996677177025,
+    "peak_measured": 2.0700000000000003,
+    "peak_fitlaw": 2.0700000000000003,
+    "law_mismatch": 0.0,
+    "dev_from_full": 0.06999999999999984
+  },
+  "full_peak": 2.14
+}

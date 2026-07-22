@@ -222,6 +222,14 @@ optimization, unifying [`criticality-phase-transitions.md`](../invariants/critic
 with [`optimization-variational.md`](../invariants/optimization-variational.md).
 **Falsifier:** an optimizing system that maximizes a capacity measure and provably
 sits *away* from criticality.
+> **⟳ Restraint pass (2026-07-21, via S26):** first counter-evidence for the
+> *strong* form in the learning domain — see
+> [`../experiments/S26-llc-trajectory/`](../experiments/S26-llc-trajectory/).
+> A tanh net's SGD endpoint is deeply singular (λ̂=1.38 vs d/2=8), but noiseless
+> full-batch GD lands at the *same* λ̂ (1.40), and post-convergence λ̂ drifts *up*
+> with residual fitting, not down toward degeneracy. In learning, the low-loss
+> set appears *generically* singular: degeneracy is where you end up, not what
+> pulls you. Weak form (optimized systems *sit at* singular points) survives.
 
 ### S12 🔴 — Predictive information as the single axis that "interesting" systems share
 **Bridge:** excess entropy / predictive information (mutual information between past
@@ -407,6 +415,48 @@ domain for predicting the other; everything non-invariant is thermodynamically
 erasable, and the cost of erasing it is the "price" of abstraction. Ties sufficiency,
 Landauer, and the [prediction-field](../PREDICTION-FIELD.md) frame. **Falsifier:** an
 invariant that is provably *not* a minimal sufficient statistic of its domain-pair.
+
+### S25 🟡 — The RLCT charts the prediction field where the Fisher metric degenerates
+**Bridge:** Watanabe's singular learning theory: where S3's Fisher metric goes
+singular, the learning coefficient λ (real log canonical threshold) — not the
+parameter count d/2 — is the effective dimension that prices generalization and
+transfer.
+**Connects:** information geometry (S3) · algebraic geometry (resolution of
+singularities) · Bayesian free energy (the hub) · transfer (the ladder).
+Conjecture: singular points of the prediction field are *charted* by λ: free energy
+grows as λ log n, Bayes generalization ≈ λ/n, and past a singularity added
+parameters contribute zero λ (why overparameterization is free). **Falsifier:** a
+measured singular point where generalization/transfer scales with d/2 rather than λ.
+> **⟳ Restraint pass (2026-07-21):** *tested and confirmed* — see
+> [`../experiments/S25-rlct-singularity/`](../experiments/S25-rlct-singularity/).
+> A quadrature free-energy estimator recovers exact RLCTs on solved singular models
+> (0.508 vs ½ where d/2=1; 0.248 vs ¼ where d/2=½). At the random-feature model's
+> population singularity (P=D) the registered prediction λ(P)=min(P,D)/2 held —
+> plateau at D/2 to 0.08 — and both Bayes excess risk and covariate-shift transfer
+> error plateau with λ while d/2 predicts 3× growth. Bonus: λ̂ overshoots in a
+> narrow *critical window* at the singular point itself (finite-size crossover,
+> matching S3's phenomenology). Limits: linear-Gaussian singularities are rank/2,
+> the simplest kind; shift-transfer is not cross-domain L3 transfer.
+
+### S26 🟡 — Degeneracy is an attractor of learning dynamics (S11 × S25)
+**Bridge:** if singular (low-λ) regions of the prediction field attract
+optimization, criticality's recurrence is a consequence of learning itself.
+**Connects:** S11 (criticality as attractor) · S25 (the RLCT chart) · SGD
+flat-minima lore · developmental interpretability.
+Conjecture: along a training trajectory the local learning coefficient λ̂(t)
+flows toward low values — SGD noise drifts along loss level-sets toward more
+singular points. **Falsifier:** λ̂ drifting up after convergence, or noiseless
+descent reaching equally-singular endpoints.
+> **⟳ Restraint pass (2026-07-21):** *mixed — the attractor claim FALSIFIED in
+> this setup* — see [`../experiments/S26-llc-trajectory/`](../experiments/S26-llc-trajectory/).
+> An SGLD local-λ̂ estimator (validated to ≤11% against S25's quadrature on the
+> same solved models) shows the endpoint is deeply singular (λ̂=1.38 vs d/2=8 —
+> registered P1 confirmed), but post-convergence λ̂ drifts *up* with residual
+> fitting (P3 falsified) and full-batch GD reaches λ̂=1.40 ≈ SGD's (post-hoc
+> control): no degeneracy-seeking beyond loss descent. Also mapped: λ̂ is only a
+> dimension at near-critical points — mid-training values go negative (escape
+> rate), so trajectory-tracking needs plateau-rich tasks (grokking is the right
+> escalation). Deflationary survivor: *the low-loss set is generically singular.*
 
 ---
 
