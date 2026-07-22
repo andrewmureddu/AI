@@ -38,6 +38,7 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 | [`experiments/`](./experiments/) | Runnable (numerical) tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |
 | [`derivations/`](./derivations/) | Analytical tests — pen-and-paper restraint. First: [`S1-universal-update`](./derivations/S1-universal-update.md). |
 | [`research-log/`](./research-log/) | Dated entries recording what we investigated, decided, and changed. |
+| [`essays/`](./essays/) | Philosophy essays — the questions the ledger format can't hold (what an invariant *is*, why one object keeps recurring, what the method itself is). Grounded in the results, but explicitly not entries in the map. |
 
 ## How to navigate
 

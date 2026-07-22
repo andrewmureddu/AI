@@ -174,6 +174,16 @@ conserved quantity during training? Bridges
 [`optimization-variational.md`](../invariants/optimization-variational.md).
 **Falsifier:** a continuous loss symmetry with demonstrably no conserved quantity
 under gradient flow.
+> **⟳ Restraint pass (2026-07-22):** sharpened in passing by
+> [`../derivations/symmetry-sector.md`](../derivations/symmetry-sector.md) §3.
+> The pairing (symmetry ↔ charge) is real in gradient flow (scale →
+> balancedness, translation → parameter sums; Kunin et al. 2021), but the
+> mechanism differs from physics' Noether: bracket antisymmetry there,
+> generator-orthogonal-to-∇L here. Honest tag **L2 with a live L3 route**
+> (both as momentum maps over symplectic vs. metric structure — derivation
+> not yet done). New consequence via S26: the conserved invariants should be
+> the natural parameters of SGD's *stationary distribution* — a designed
+> experiment.
 
 ### S10 🔴 — Is gauge symmetry just "redundancy of description," and does fixing it always cost something?
 **Bridge:** gauge freedom / reparameterization invariance.
@@ -384,6 +394,76 @@ domain for predicting the other; everything non-invariant is thermodynamically
 erasable, and the cost of erasing it is the "price" of abstraction. Ties sufficiency,
 Landauer, and the [prediction-field](../PREDICTION-FIELD.md) frame. **Falsifier:** an
 invariant that is provably *not* a minimal sufficient statistic of its domain-pair.
+
+---
+
+## Cluster K — The periphery split (added 2026-07-22, from [`essays/04`](../essays/04-the-periphery-split.md))
+
+### S25 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
+**Bridge:** the estimation–control dualities (Kalman filter ↔ LQR; KL-control /
+control-as-inference) versus the Kalman rank conditions.
+**Connects:** control theory · Bayesian filtering · the free-energy hub ·
+networks/reachability.
+The periphery-split conjecture sorts Φ-resistant invariants by which primitive
+question they answer: *prediction* (reduces to Φ), *connectivity* ("what can reach
+what"), or *invariance* ("what cannot change"). Feedback/control is the sharpest
+test because it should be **two invariants fused by historical accident**:
+optimal control under noise dualizes to inference (LQG ↔ Kalman, KL-control writes
+the optimal policy as a posterior — Φ-machinery through and through), while
+controllability/observability are *reachability* properties (rank of the
+controllability Gramian — which states can be steered to, which can be seen), with
+no distributional content. Quantitative form of the claim: every result in the
+[`feedback-control`](../invariants/feedback-control.md) entry can be classified as
+(a) derivable from a log-partition/free-energy object, or (b) equivalent to a
+Gramian/rank/reachability statement — and the two classes do not mix: no (b)-fact
+is recoverable from Φ-derivatives alone.
+**Falsifier — two-sided:** (kills the split) a derivation recovering Kalman rank
+conditions or Gramian spectra as a limit of a partition-function object *that does
+predictive work* — e.g. predicts loss of controllability under system perturbation
+from Φ-derivatives; (kills the fusion claim) a control-theoretic result that is
+provably neither (a) nor (b), i.e. a third irreducible component.
+(If the split survives here, run the cheaper siblings next: diffusion must reduce
+to Φ (maxent's home game — its failure kills the sorting rule outright), and
+percolation must resist even through the Potts/random-cluster q→1 dressing.)
+> **⟳ Restraint pass (2026-07-22):** *falsifier fired — stone retired as stated,
+> conjecture upgraded* — see
+> [`../derivations/S25-control-split.md`](../derivations/S25-control-split.md).
+> Half (a) confirmed easily (KL-control value = path free energy; maxent-RL
+> softmax; LQG↔Kalman — L3 within those classes). Half (b) **reduced against
+> prediction**: the controllability Gramian is identically the covariance of the
+> noise-driven ensemble (∇²Φ), and minimum control energy = the large-deviations
+> rate function = Legendre dual of Φ (exact linear-Gaussian; Freidlin–Wentzell
+> in the small-noise limit) — with predictive work (Gramian eigenvalue → 0
+> forecasts controllability loss). But every binary reachability fact landed in
+> Φ's **singular set** (supports, null Fisher directions, I = ∞), never its
+> regular part. Replacement claim: **connectivity facts are Φ-boundary facts** —
+> the connectivity sector is Φ's singular face, not a separate sector.
+> Percolation's Potts q→1 non-analyticity now reads as the same pattern, not
+> dressing. Remaining candidate for a true second axis: the invariance/symmetry
+> sector only.
+
+### S26 🟡 — Conserved charges are the coordinates of the prediction field
+**Bridge:** Noether charges ↔ natural parameters / sufficient statistics of
+long-time ensembles (Gibbs, generalized Gibbs, Jaynes-in-reverse).
+**Connects:** physics (conservation, GGE/ETH) · statistics (sufficiency,
+exponential families) · the free-energy hub · ML training dynamics.
+From [`../derivations/symmetry-sector.md`](../derivations/symmetry-sector.md):
+symmetry-breaking reduces to Φ's singular set, but Noether proper does not
+reduce to Φ at all — it sits **under** it. A quantity can serve as a natural
+parameter of an invariant ensemble iff it is conserved, and at long times the
+ensemble is parameterized by *nothing but* the charges (GGE for integrable
+systems; plain Gibbs for thermalizing ones). Conjecture: this is a map-level
+fact, not a physics fact — **the sufficient statistics of any stationary
+prediction field are its conserved quantities**; symmetry chooses Φ's
+coordinates, Φ predicts, Φ's breakdown ends prediction ("one tower, three
+floors"). ML instance: SGD's stationary law should be sufficient-statisticked
+by its Kunin balancedness invariants.
+**Falsifier — three-sided:** (i) a natural parameter of a genuine long-time
+ensemble whose conjugate quantity is neither conserved nor a bookkeeping
+constraint; (ii) a conserved charge provably unable to parameterize any
+invariant ensemble; (iii) the SGD stationarity test failing — train to
+stationarity, test sufficiency of the conserved invariants for the stationary
+distribution. (iii) is runnable with torch and is the designed experiment.
 
 ---
 
