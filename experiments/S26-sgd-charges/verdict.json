@@ -1,0 +1,61 @@
+{
+  "sufficiency_norm_eq_f_of_charge": {
+    "Q0=+2.73": {
+      "predicted_norm_from_charge": 4.015561782717674,
+      "observed_norm": 4.015028209734542,
+      "rel_err": 0.00013289395622134985
+    },
+    "Q0=0.00": {
+      "predicted_norm_from_charge": 3.0,
+      "observed_norm": 2.999132960854594,
+      "rel_err": 0.0002890966011586624
+    },
+    "Q0=-2.73": {
+      "predicted_norm_from_charge": 4.015561782717674,
+      "observed_norm": 4.015028209734542,
+      "rel_err": 0.00013289395622134985
+    }
+  },
+  "sufficiency_confirmed": true,
+  "sgd_charge_decay_per_step": 5.628810636059777e-07,
+  "quasi_conservation_window_steps": 1776574.243933013,
+  "legA_drift_by_lr": {
+    "lr=0.01": 0.0009487895725501226,
+    "lr=0.001": 9.346259829023198e-05,
+    "lr=0.0001": 9.332300182609206e-06
+  },
+  "legA_drift_ratio_lr10x": [
+    10.151542862138502,
+    10.014958419833093
+  ],
+  "legA_conserved_in_flow_limit": true,
+  "legB_broken_conservation_law": {
+    "k_fit": 0.20000197125447958,
+    "k_theory": 0.2,
+    "rel_err": 9.856272397829047e-06
+  },
+  "legB_exact_law_confirmed": true,
+  "legC_stationary_by_init": {
+    "Q0=+2.73": {
+      "Q0": 2.7299999999999995,
+      "Q_stationary_mean": 2.6692201915208766,
+      "Q_stationary_std": 0.011227541493226061,
+      "norm_stationary_mean": 4.015028209734542
+    },
+    "Q0=0.00": {
+      "Q0": 0.0,
+      "Q_stationary_mean": 0.0,
+      "Q_stationary_std": 0.0,
+      "norm_stationary_mean": 2.999132960854594
+    },
+    "Q0=-2.73": {
+      "Q0": -2.7299999999999995,
+      "Q_stationary_mean": -2.6692201915208766,
+      "Q_stationary_std": 0.011227541493226061,
+      "norm_stationary_mean": 4.015028209734542
+    }
+  },
+  "legC_separation_over_spread": 713.2158522321125,
+  "legC_stationary_law_forgets_Q0": false,
+  "legC_Q_relaxes_toward_balance": false
+}

@@ -97,3 +97,31 @@ question S25 left open. **Monism fails, but so does "second sector."**
 **SYNTHESIS.md is now materially out of date** (through-line changed twice
 today: three sectors → two layers → tower). Needs a refresh pass as its own
 piece of work, not a drive-by edit.
+
+## Third addendum (same day) — two experiments: S26(iii) and S7
+
+Unworked-stone audit: S2, S4–S8, S10–S17, S19–S22, S24 had never had a
+restraint pass. Ran two that today's tower made most informative.
+
+**S26(iii)** ([`experiments/S26-sgd-charges/`](../experiments/S26-sgd-charges/)):
+falsifier did not fire, and the structure is better than the claim. Minimal
+scale-symmetric model: charge conserved in the flow limit (drift ∝ lr);
+weight-decay breaking follows dQ/dt = −4λQ to 1e-5 (the broken law is a law);
+stationary norm predicted from the charge alone to 3e-4; charge erosion
+5.6e-7/step ⇒ ~1.8M-step quasi-conservation window. SGD's stationary law is a
+**prethermalization plateau coordinatized by quasi-charges** — GGE
+phenomenology transferring with its known failure mode intact.
+
+**S7** ([`experiments/S7-critical-slowing/`](../experiments/S7-critical-slowing/)):
+split verdict, and a middle-zone reduction confirmed. τ·λ_min = 0.94±0.13
+across saddle-node / mean-field Ising / GD at the MP edge — one mechanism
+(curvature softening), L3 on-model. Universal-exponent reading retired to L1
+(−½/−1/−2 by domain). Critical slowing down = Φ's Hessian going soft: fourth
+independent arrival at the ∇²Φ singular-set object (S3 divergence, S25 null
+spaces, Goldstone flat directions, now the slow mode). Boundary observed on
+schedule: quartic dominance nearest T_c degrades the linear law.
+
+Still unworked: S2, S4–S6, S8, S10–S17, S19–S22, S24. Cheapest next: S5
+(three thresholds), S22 (ladder as RG scale). SYNTHESIS refresh still pending
+— today added: tower architecture, prethermalization plateau, fourth ∇²Φ
+arrival.
