@@ -1,0 +1,28 @@
+{
+  "legA_estimator": {
+    "M1 y=wx (regular)": {
+      "lambda_hat": 0.492,
+      "lambda_theory": 0.5,
+      "d_half": 0.5
+    },
+    "M2 y=abx (singular)": {
+      "lambda_hat": 0.508,
+      "lambda_theory": 0.5,
+      "d_half": 1.0
+    },
+    "M3 y=w^2x (singular)": {
+      "lambda_hat": 0.248,
+      "lambda_theory": 0.25,
+      "d_half": 0.5
+    }
+  },
+  "legA_all_within_0.06": true,
+  "legB_rise_mean_dev": 0.441,
+  "legB_critical_window_max_dev": 1.39,
+  "legB_plateau_max_dev": 0.078,
+  "legB_kink_confirmed": true,
+  "legB_n_gen_ratio_60_vs_20": 0.97,
+  "legB_gen_tracks_lambda_not_d": true,
+  "legC_transfer_ratio_60_vs_20": 0.97,
+  "legC_transfer_plateaus_with_lambda": true
+}
