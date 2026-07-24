@@ -1,10 +1,10 @@
 # The symmetry sector — does it reduce to Φ, or is it the second primitive?
 
-**Question (from [S25's verdict](./S25-control-split.md) and
+**Question (from [S27's verdict](./S27-control-split.md) and
 [essay 4's closing note](../essays/04-the-periphery-split.md)):** after the
 connectivity sector collapsed into Φ's singular structure, invariance/symmetry
 (Noether, symmetry-breaking) is the last candidate for a genuine second axis of
-the map. Same discipline as S25: attack the reduction as hard as possible.
+the map. Same discipline as S27: attack the reduction as hard as possible.
 **Method:** pure derivation, two reduction attempts plus a cross-check on the
 existing stone [S9](../questions/SPECULATIVE.md) (Noether for learning).
 
@@ -57,7 +57,7 @@ not merely correlated with it.
 effective potential (the Legendre transform of Φ — the rate-function face
 again) is flat along the orbit G/H of degenerate ground states. Flat direction
 = zero eigenvalue of the Hessian of the free energy = a null direction of the
-same object whose null spaces encoded unreachability (S25 §4) and whose
+same object whose null spaces encoded unreachability (S27 §4) and whose
 divergences encoded susceptibility blow-up (S3). One signature class, third
 independent arrival.
 
@@ -171,7 +171,7 @@ tower's most falsifiable consequence outside physics.
 - Quantum subtleties (non-commuting charges, non-abelian GGE) untouched.
 
 **Bookkeeping:** the "is the map monist?" question is answered *no, but it is
-one tower*: promote the constitution claim to a stone (S26) with falsifiers
+one tower*: promote the constitution claim to a stone (S28) with falsifiers
 1–3; ⟳ notes to essay 4 and S9; the synthesis's through-line ("one object
 seen sideways") now needs a revision pass — the honest slogan is closer to
 **"one object, three floors: chosen by symmetry, read by prediction, ended by

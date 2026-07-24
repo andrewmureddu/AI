@@ -49,7 +49,7 @@
 
 ## Addendum (same day) — S25 run
 
-[`derivations/S25-control-split.md`](../derivations/S25-control-split.md):
+[`derivations/S25-control-split.md`](../derivations/S27-control-split.md):
 attacked the "irreducible" reachability half as the stone instructed, and it
 reduced. Controllability Gramian ≡ covariance of the noise-driven ensemble
 (∇²Φ); minimum control energy = large-deviations rate function (Legendre dual
@@ -103,7 +103,7 @@ piece of work, not a drive-by edit.
 Unworked-stone audit: S2, S4–S8, S10–S17, S19–S22, S24 had never had a
 restraint pass. Ran two that today's tower made most informative.
 
-**S26(iii)** ([`experiments/S26-sgd-charges/`](../experiments/S26-sgd-charges/)):
+**S26(iii)** ([`experiments/S26-sgd-charges/`](../experiments/S28-sgd-charges/)):
 falsifier did not fire, and the structure is better than the claim. Minimal
 scale-symmetric model: charge conserved in the flow limit (drift ∝ lr);
 weight-decay breaking follows dQ/dt = −4λQ to 1e-5 (the broken law is a law);

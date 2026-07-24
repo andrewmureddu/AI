@@ -1,4 +1,4 @@
-"""S26(iii) — are conserved charges the coordinates of SGD's stationary law?
+"""S28(iii) — are conserved charges the coordinates of SGD's stationary law?
 
 Setup: two-layer linear network f(x) = v^T (W x) ... reduced here to the
 scalar deep-linear case f(x) = u*v*x (the standard minimal model for scale
@@ -15,7 +15,7 @@ Three legs:
      dynamics, and is the stationary law parameterized by the initial Q?
      Tower/GGE logic says: only charges of the actual dynamics survive; if
      noise breaks Q, the stationary law must FORGET initial Q (Q relaxes,
-     thermalization), and naive S26(iii) sufficiency fails.
+     thermalization), and naive S28(iii) sufficiency fails.
 
 Pure numpy, deterministic seeds. ~seconds.
 """

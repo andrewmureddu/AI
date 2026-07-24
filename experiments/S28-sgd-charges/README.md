@@ -1,6 +1,6 @@
-# S26(iii) — conserved charges as coordinates of SGD's stationary law (result)
+# S28(iii) — conserved charges as coordinates of SGD's stationary law (result)
 
-**Question ([S26](../../questions/SPECULATIVE.md)):** the tower claims the
+**Question ([S28](../../questions/SPECULATIVE.md)):** the tower claims the
 sufficient statistics of a stationary prediction field are its conserved
 quantities. ML instance: SGD's stationary distribution should be
 parameterized by the training dynamics' charges. **Falsifier (iii):** train to

@@ -148,7 +148,7 @@ autocorrelation/variance. (New entry
 > Marchenko–Pastur edge — one relation (relaxation time = inverse curvature),
 > no per-domain tuning; and the curvature is ∇²(free energy), so critical
 > slowing down reduces to **Φ's Hessian softening** (the middle-zone
-> prediction; fourth arrival at the singular-set object after S3, S25,
+> prediction; fourth arrival at the singular-set object after S3, S27,
 > Goldstone). The "one universal statistic/exponent" reading is **retired to
 > L1**: divergence exponents are domain-specific (−½ / −1 / −2). Boundary
 > observed on schedule: nearest T_c the quartic term outweighs the softened
@@ -194,7 +194,7 @@ under gradient flow.
 > mechanism differs from physics' Noether: bracket antisymmetry there,
 > generator-orthogonal-to-∇L here. Honest tag **L2 with a live L3 route**
 > (both as momentum maps over symplectic vs. metric structure — derivation
-> not yet done). New consequence via S26: the conserved invariants should be
+> not yet done). New consequence via S28: the conserved invariants should be
 > the natural parameters of SGD's *stationary distribution* — a designed
 > experiment.
 
@@ -462,7 +462,12 @@ descent reaching equally-singular endpoints.
 
 ## Cluster K — The periphery split (added 2026-07-22, from [`essays/04`](../essays/04-the-periphery-split.md))
 
-### S25 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
+> **Numbering note (2026-07-24):** this cluster was originally filed as S25/S26,
+> colliding with Cluster G's stones of those numbers. Renumbered to **S27** and
+> **S28**; `derivations/S27-control-split.md` and `experiments/S28-sgd-charges/`
+> follow. Research-log entries dated before 2026-07-24 use the old numbers.
+
+### S27 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
 **Bridge:** the estimation–control dualities (Kalman filter ↔ LQR; KL-control /
 control-as-inference) versus the Kalman rank conditions.
 **Connects:** control theory · Bayesian filtering · the free-energy hub ·
@@ -490,7 +495,7 @@ to Φ (maxent's home game — its failure kills the sorting rule outright), and
 percolation must resist even through the Potts/random-cluster q→1 dressing.)
 > **⟳ Restraint pass (2026-07-22):** *falsifier fired — stone retired as stated,
 > conjecture upgraded* — see
-> [`../derivations/S25-control-split.md`](../derivations/S25-control-split.md).
+> [`../derivations/S27-control-split.md`](../derivations/S27-control-split.md).
 > Half (a) confirmed easily (KL-control value = path free energy; maxent-RL
 > softmax; LQG↔Kalman — L3 within those classes). Half (b) **reduced against
 > prediction**: the controllability Gramian is identically the covariance of the
@@ -505,7 +510,7 @@ percolation must resist even through the Potts/random-cluster q→1 dressing.)
 > dressing. Remaining candidate for a true second axis: the invariance/symmetry
 > sector only.
 
-### S26 🟡 — Conserved charges are the coordinates of the prediction field
+### S28 🟡 — Conserved charges are the coordinates of the prediction field
 **Bridge:** Noether charges ↔ natural parameters / sufficient statistics of
 long-time ensembles (Gibbs, generalized Gibbs, Jaynes-in-reverse).
 **Connects:** physics (conservation, GGE/ETH) · statistics (sufficiency,
@@ -528,7 +533,7 @@ invariant ensemble; (iii) the SGD stationarity test failing — train to
 stationarity, test sufficiency of the conserved invariants for the stationary
 distribution. (iii) is runnable with torch and is the designed experiment.
 > **⟳ Restraint pass (2026-07-22):** (iii) run, pure numpy —
-> [`../experiments/S26-sgd-charges/`](../experiments/S26-sgd-charges/).
+> [`../experiments/S28-sgd-charges/`](../experiments/S28-sgd-charges/).
 > **Falsifier did not fire; the result is sharper than the claim.** On the
 > minimal scale-symmetric model: Q conserved in the flow limit (drift ∝ lr);
 > weight-decay breaking follows the exact law dQ/dt = −4λQ (rel. err 1e-5);

@@ -1,6 +1,6 @@
-# S25 — does control split into a Φ-half and a reachability half?
+# S27 — does control split into a Φ-half and a reachability half?
 
-**Question ([S25](../questions/SPECULATIVE.md)):** the periphery-split conjecture
+**Question ([S27](../questions/SPECULATIVE.md)):** the periphery-split conjecture
 ([essay 4](../essays/04-the-periphery-split.md)) predicts feedback/control is two
 invariants fused: an inference half that reduces to Φ = ln Z, and a reachability
 half (Kalman rank, Gramians) that no Φ-derivation can recover *with predictive
@@ -19,14 +19,14 @@ promotes the conjecture instead of burying it.** Results:
    ensemble**, and the minimum control energy to reach a state is **exactly the
    large-deviations rate function** — the Legendre dual of Φ (§2–3). This does
    predictive work: loss of controllability is *predicted* by a divergence of the
-   rate function. That is precisely what S25 said could not happen.
+   rate function. That is precisely what S27 said could not happen.
 3. But the reduction lands entirely in Φ's **singular structure** — supports,
    degeneracies, divergences of the dual — never in Φ's regular part (finite
    moments and response coefficients). Binary reachability ("can this state be
    reached at all?") is the statement that the rate function is infinite there:
    a fact about *where Φ's description breaks*, not about its derivatives (§4).
 
-So the corrected claim, replacing S25: **the connectivity sector is not disjoint
+So the corrected claim, replacing S27: **the connectivity sector is not disjoint
 from Φ — it is Φ's boundary face.** Prediction-facts are Φ-regular; connectivity-
 facts are Φ-singular. This is the same relationship the synthesis already
 conjectured for power laws ("heavy tails live where Φ misbehaves"), now derived
@@ -70,7 +70,7 @@ the identity is exact for these classes and only variational beyond them.
 
 ## 2. Attacking half (b): the Gramian is a covariance
 
-Now the half S25 declared irreducible. The finite-horizon controllability
+Now the half S27 declared irreducible. The finite-horizon controllability
 Gramian of ẋ = Ax + Bu is
 
 ```
@@ -131,7 +131,7 @@ advance, the divergence of control energy along that mode — loss of
 controllability forecast from a covariance spectrum. (Engineering already
 exploits exactly this identity without the framing: balanced truncation ranks
 modes by Gramian eigenvalues — i.e., prunes state directions by their
-noise-ensemble variance.) **S25's side-one falsifier has fired.**
+noise-ensemble variance.) **S27's side-one falsifier has fired.**
 
 ## 4. What survives: the reduction never leaves Φ's singular set
 
@@ -155,7 +155,7 @@ reflex as the essay-3 probe's zero-preservation lemma: exponential-family /
 multiplicative machinery is expressive *on* a support and mute *about* the
 support. Support structure is where this whole family of tools ends.
 
-So the refined statement, replacing S25's "the two classes do not mix":
+So the refined statement, replacing S27's "the two classes do not mix":
 
 > **Connectivity facts are Φ-boundary facts.** They reduce to the hub — but
 > only ever to its singular structure (supports, null spaces, divergences of
@@ -204,7 +204,7 @@ in the criticality entry.
   original content) was not addressed at all; this derivation covered the
   optimal-control and reachability faces. The entry needs a third column.
 
-**Bookkeeping:** S25 retired as stated (falsifier fired), replaced by the
+**Bookkeeping:** S27 retired as stated (falsifier fired), replaced by the
 Φ-boundary claim above; essay 4 §5–6 need a restraint note (the "three
 sectors over three quotients" picture becomes "regular/singular Φ + symmetry");
 [`feedback-control.md`](../invariants/feedback-control.md) can be promoted from

@@ -9,6 +9,9 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-24 — Synthesis refresh, and a numbering collision fixed (S25/S26 → S27/S28)](./2026-07-24-synthesis-refresh.md)
+- [2026-07-22 — Essays, the periphery split, and probing the method's self-description](./2026-07-22-essays-and-method-probe.md)
+- [2026-07-21 — Restraint: channels of a Boltzmann family stay near one-parameter](./2026-07-21-S25-channel-independence.md)
 - [2026-07-21 — Restraint: degeneracy is where you end up, not what pulls you (S26)](./2026-07-21-S26-llc-trajectory.md)
 - [2026-07-21 — Restraint: the RLCT charts the field's singularities (S25)](./2026-07-21-S25-rlct-singularity.md)
 - [2026-07-19 — The real frontier: the frame on data I did not construct](./2026-07-19-real-frontier.md)
