@@ -530,6 +530,34 @@ form.
 **First test.** **Existing S26 code plus a sweep — the best
 information-per-effort ratio on the list. Top-1 pick.**
 
+> **⟳ Restraint pass (2026-07-25):** *run — the ML leg confirms the mechanism* —
+> see [`../experiments/M15-adiabatic-charges/`](../experiments/M15-adiabatic-charges/).
+> The averaging structure is exact, not approximate: the symmetry generator is
+> orthogonal to the *stochastic* gradient for every noise realization, so the
+> first-order term vanishes identically and the drift is purely second order
+> (verified to 1.6e-16 scalar, 1.0e-15 in a wide two-layer net). Registered
+> scaling confirmed: k ∝ η^2.021 σ^1.999 B^−1.003, with the parameter-free
+> absolute rate k = η²σ²E[x²]/B good to 2% across 18 grid points. **The
+> discriminator answers "ordinary averaging"**: the power law beats the
+> Nekhoroshev form exp(−c/η) by ΔAIC = 73.6 — the plateau is long because η is
+> small, not because anything protects it, which is the expected consequence of
+> a *stochastic, broadband* perturbation. Breakdown (registered as exploratory)
+> is the sharpest secondary result: coordinatization degrades as
+> suff_err = 1.12·R^−0.97 in the timescale-separation ratio R, reaching unity at
+> **R = 1.13** — O(1), where an adiabatic argument says it must.
+> Two honest marks on the record: (a) the pre-registered wide-net estimator
+> **failed** (p = 1.64) and was diagnosed rather than swapped — it measured
+> displacement, not rate, and saturated (displacement-vs-window slope 0.39
+> instead of 1), because in the wide net ΔQ_j can be *positive* and charges
+> relax to an alignment-dependent quasi-equilibrium rather than to zero; the
+> corrected observable (relaxation time) gives τ ∝ η^−2.038 at R² = 0.99994.
+> (b) S26's erosion rate is corrected from 5.6e-7 to **7.30e-7/step** (window
+> 1.37M, not 1.8M) — its estimator mixed in the burn-in.
+> **Scope:** this establishes the mechanism's fingerprint in the ML instance
+> only. The cross-domain identity claim — same averaging mechanism as plasma
+> confinement, the quantum adiabatic theorem, near-integrable prethermalization
+> — is untouched and is what a second leg would have to test.
+
 ---
 
 ## E — Landscape and search mechanisms
@@ -598,9 +626,10 @@ correlations collapsing on t − t_w.
 
 Ranked by (what it moves on the map) × (cheapness), with the first concrete step:
 
-1. **M15 adiabatic invariance** — sweep learning rate in the existing
-   [S26](../experiments/S26-sgd-charges/) script; fit erosion rate vs lr;
-   power-law or exp(−c/lr)? Converts a result we already have into a mechanism.
+1. ~~**M15 adiabatic invariance**~~ — **done 2026-07-25**, see
+   [`experiments/M15-adiabatic-charges/`](../experiments/M15-adiabatic-charges/).
+   Ordinary averaging, exact first-order cancellation, breakdown at R ≈ 1. The
+   ML leg only; a second domain is what would make it cross-domain.
 2. **M11 stochastic resetting** — one script, three domains (diffusive search,
    Michaelis–Menten, backtracking SAT), one parameter-free criterion. Also the
    only current candidate for a non-symmetry second axis.

@@ -42,6 +42,25 @@ function u·v but with Q₀ ∈ {+2.73, 0, −2.73}). On the stationary half:
   discretization + label noise erode it at 5.6e-7 per step — a
   **quasi-conservation window of ~1.8M steps**, ~40× our run length.
 
+> **⟳ Restraint pass (2026-07-25, via [M15](../M15-adiabatic-charges/)):** two
+> corrections and one upgrade.
+> **(1) The erosion number above is ~24% low.** It was estimated from Q₀ against
+> a whole-run stationary mean, which mixes in the burn-in. Measured cleanly on
+> the plateau: **7.30e-7/step**, window **~1.37M steps** (not 5.6e-7 / 1.8M).
+> **(2) The rate is derivable, not just measurable.** The stochastic gradients
+> factor through one scalar m, giving u·ĝ_u − v·ĝ_v = 0 *for every noise
+> realization*, hence the exact per-step law **Q' = Q(1 − η²m²)** and
+> **k = η²σ²E[x²]/B** — parameter-free, matching to 2% over an 18-point grid.
+> The same formula covers leg A: away from the optimum m² is the deterministic
+> squared gradient, so leg A's "drift linear in lr over fixed physical time" is
+> this law's other face, not a separate fact.
+> **(3) "Prethermalization plateau" is upgraded from label to mechanism.** The
+> drift is second-order with p=2, and the regime is *ordinary averaging* — the
+> Nekhoroshev form exp(−c/η) is rejected at ΔAIC = 73.6. The plateau is long
+> because η is small, not because anything protects it. Its end is predicted
+> too: coordinatization fails as the timescale separation R → O(1), measured as
+> suff_err = 1.12·R^−0.97 reaching unity at R = 1.13.
+
 ## Verdict
 
 Falsifier (iii) does **not** fire on accessible timescales: the stationary

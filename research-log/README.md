@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-25 — Restraint: SGD's plateau is ordinary averaging, and it ends at R ≈ 1 (M15)](./2026-07-25-M15-adiabatic-charges.md)
 - [2026-07-25 — Expansion: the L3 mechanism register (M1–M17)](./2026-07-25-L3-mechanism-register.md)
 - [2026-07-22 — Essays, the periphery split, and probing the method's self-description](./2026-07-22-essays-and-method-probe.md)
 - [2026-07-21 — Restraint: degeneracy is where you end up, not what pulls you (S26)](./2026-07-21-S26-llc-trajectory.md)
