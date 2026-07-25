@@ -267,3 +267,20 @@ first.
 > symmetry picks the coordinates, Φ's regular part predicts, Φ's singular
 > part ends prediction. Promoted to stone S26 with a runnable falsifier (the
 > SGD stationary-sufficiency test).
+
+> **⟳ Third restraint pass (2026-07-25, via [M11](../experiments/M11-stochastic-resetting/)):**
+> a fourth candidate for a sector was tested and dissolved, but it leaves the
+> architecture a sharper question than it had. Stochastic resetting was filed as
+> the one candidate primitive that is neither prediction, connectivity, nor
+> symmetry: first-passage structure, which is not obviously a Φ-derivative. The
+> mechanism confirmed cleanly across three fields — but its criterion turns out
+> to be *restart helps iff the completion time is more dispersed than the
+> maximum-entropy law at the same mean* (the exponential, CV = 1, is exactly
+> neutral). That is log-partition machinery, on an **exit time** rather than on
+> a state. So the residue does not grow; instead the reduction question splits.
+> **Φ's form is portable; Φ's variable is not** — and §2's "does it reduce to
+> Φ?" is under-specified until one says *Φ of what*. Every reduction this essay
+> and its successors record (control→∇²Φ, symmetry-breaking→non-analyticity,
+> slowing-down→soft Hessian) was a reduction to Φ of the *state*; M11 is the
+> first to Φ of something else, which means "the tower" may be a family of
+> towers indexed by base variable rather than one.

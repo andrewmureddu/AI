@@ -410,6 +410,35 @@ is 0.
 run a diffusive search, a Michaelis–Menten cycle, and a backtracking SAT solver
 through the same CV analysis. **Top-2 pick.**
 
+> **⟳ Restraint pass (2026-07-25):** *run — the mechanism confirms, the framing
+> above does not* — see
+> [`../experiments/M11-stochastic-resetting/`](../experiments/M11-stochastic-resetting/).
+> **The identity test passes.** At the optimal rate the restarted process has
+> CV = 0.998 / 1.001 / 1.028 in diffusive search, enzymatic turnover and
+> randomized backtracking — three processes with nothing in common (one with an
+> *infinite* un-reset mean) landing on the same universal constant. The criterion
+> predicts whether restarting helps (0/10 misclassified), where the optimum sits
+> (diffusion: 2.62 vs the analytic 2.5396), and the entire restart curve from the
+> un-reset distribution alone (≤2.9%) — including where ⟨T⟩ = ∞, because the
+> Laplace transform exists when the moments do not. Two sign flips *within*
+> single domains are the sharpest part: one enzyme scheme goes from "unbinding
+> hurts" (multi-step, CV 0.50) to "unbinding helps 25×" (dynamic disorder,
+> CV 1.71), and one search paradigm from no help (3-SAT, CV 0.73) to 19.4×
+> (quasigroup-with-holes, CV 2.71).
+> **But "candidate second axis" is retired.** The registered Φ-check was
+> *vacuous* — Φ_T(−r) ≡ log T̃(r), so it verified algebra, not nature. The
+> substantive fact is better: the exponential is the **maximum-entropy** law on
+> [0,∞) at fixed mean and has CV exactly 1, so the criterion reads *restart helps
+> iff the completion time is more dispersed than MaxEnt at the same mean.*
+> First-passage structure is therefore not a new primitive — it is the hub's own
+> log-partition form on a different **base variable** (an exit time, not a
+> state). Consequence for the map: **what is portable is Φ's form, not Φ's
+> variable**, and "does X reduce to Φ?" is under-specified until the base
+> variable is named. Filed, not settled.
+> **Scope:** restart is instantaneous and Poissonian throughout; all three
+> domains are simulated. Three estimator failures were diagnosed en route (see
+> the experiment README) — none changed a conclusion, all changed a verdict.
+
 ### M12 — Heavy-tailed waiting times (CTRW) 🟡
 
 **Process.** Motion is jumps separated by waiting times drawn from
@@ -630,9 +659,10 @@ Ranked by (what it moves on the map) × (cheapness), with the first concrete ste
    [`experiments/M15-adiabatic-charges/`](../experiments/M15-adiabatic-charges/).
    Ordinary averaging, exact first-order cancellation, breakdown at R ≈ 1. The
    ML leg only; a second domain is what would make it cross-domain.
-2. **M11 stochastic resetting** — one script, three domains (diffusive search,
-   Michaelis–Menten, backtracking SAT), one parameter-free criterion. Also the
-   only current candidate for a non-symmetry second axis.
+2. ~~**M11 stochastic resetting**~~ — **done 2026-07-25**, see
+   [`experiments/M11-stochastic-resetting/`](../experiments/M11-stochastic-resetting/).
+   Identity test passed (CV → 1 at the optimum in all three domains); the
+   "second axis" framing retired — it is Φ's form on a different base variable.
 3. **M3 Molloy–Reed + rewiring** — runs
    [essay 04's falsifier 1](../essays/04-the-periphery-split.md) with the
    predictive-work condition it demands. Settles whether connectivity is Φ's
