@@ -41,7 +41,7 @@ yet defended. Treat every level as a hypothesis.
 | 18 | [Optimal transport](./optimal-transport.md) | Wasserstein gradient flow (JKO) | L3? | seed·spec | S4 |
 | 19 | [Spectral gap](./spectral-gap.md) | λ₂ of Markov/Laplacian | L3? | seed·spec | mixing/sync/consensus |
 | 20 | [Statistical geometry](./statistical-geometry.md) | Fisher/Ruppeiner/Fubini–Study metric | L3? | seed·spec | S3 |
-| 21 | [Noise thresholds](./noise-thresholds.md) | recoverability transition p_c | L2–L3? | seed·spec | S5 |
+| 21 | [Noise thresholds](./noise-thresholds.md) | recoverability transition p_c | **L2–L3** (taxonomy) / L1 ("one threshold") | developing ✓tested | S5 |
 | 22 | [Critical slowing down](./critical-slowing-down.md) | autocorr→1, variance blow-up | L3–L4? | seed·spec | S6, S7 |
 
 ### Consolidations (a hub the other entries turn out to orbit)
