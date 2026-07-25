@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L3–L4 candidate (a real physics phenomenon;
 > reach is the open part). *(seed — speculative)*
 > **Status:** seed
+> **Floor:** **3** (Φ-singular) — tested ([S7](../experiments/S7-critical-slowing/)): the Hessian going soft, i.e. the approach to the singular set
 
 ## Statement
 

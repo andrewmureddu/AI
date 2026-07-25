@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L3 candidate (the metric is genuinely shared;
 > the curvature-at-criticality claim spans it). *(seed — speculative)*
 > **Status:** developing — *first evidence in* ([experiment](../experiments/S3-fisher-geometry/))
+> **Floor:** **2 ▸ 3** — ∇²Φ. Spans the boundary: the metric is floor 2, its degeneration is floor 3. ▸facet
 
 ## Statement
 

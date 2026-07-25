@@ -75,6 +75,7 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | — | [The symmetry sector](./derivations/symmetry-sector.md) | derivation | **monism fails, "second sector" also fails** — SSB reduces to Φ-singular; Noether does *not* reduce but **constitutes**: conserved charges are the natural parameters of long-time ensembles. Architecture: **one tower, three floors** | equilibrium/long-time only; GGE exhaustiveness heuristic away from integrability |
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
+| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
 
 ### Where "one law" claims keep landing
 
@@ -126,6 +127,23 @@ graph TB
     SING -. "open: fourth floor?" .-> OUT
 ```
 
+**What sorting the catalog against it revealed.** Running every entry through the
+tower ([`invariants/FLOORS.md`](./invariants/FLOORS.md)) exposed an asymmetry the
+old "one object seen sideways" slogan could not express:
+
+> **Floor 2 collapses. Floor 3 stratifies.**
+
+The regular part of Φ really is one function seen from seven angles — entropy,
+duality, the bottleneck, the universal update, replicator dynamics, Pareto
+frontiers and statistical geometry are ∇Φ, ∇²Φ, Φ* or −Φ of the *same* convex
+function, and the catalog now marks them ▸facet and stops double-counting them.
+The singular part does **not** collapse: criticality, power laws, percolation,
+SSB, slowing-down and the noise thresholds are *different* singularities —
+non-analyticity, divergent moments, null directions, lost supports — and
+[S5](./experiments/S5-noise-thresholds/) measured that they carry *different
+exponents*. Redundancy deletion is a floor-2 operation; floor 3 needs
+classification instead.
+
 **Honest scope.** The tower is derived for equilibrium / long-time (stationary)
 prediction fields. Driven, non-stationary systems can carry non-conserved
 quantities in their description indefinitely, and the base-floor claim does not
@@ -167,10 +185,13 @@ exponent" premise had to fail.
 - **1 frame:** the prediction field (🟢 core empirically load-bearing; 🔴 metaphysical
   reading tested once and explicitly *not* promoted).
 - **1 hub:** Φ = ln Z (L3; L4 via Lee–Yang).
-- **3 floors:** symmetry-constituted · Φ-regular · Φ-singular.
-- **23 catalog entries**, of which ~6 are hub-core facets, ~10 periphery — and the
-  periphery is now substantially *smaller* than it looks, since control,
-  reachability, percolation and symmetry-breaking have been sorted onto floors.
+- **3 floors:** symmetry-constituted · Φ-regular · Φ-singular — plus a **proposed
+  fourth** (the scheme layer), which is equally the tower's falsifier.
+- **23 catalog entries, [now sorted](./invariants/FLOORS.md)**: 1 hub, 1 on floor 1,
+  6 floor-2 facets (▸ deleted as independent), 2 floor-2 non-facets, 6 distinct
+  floor-3 members, 5 splitting across floors, **2 refusing the tower**. Effective
+  independent count **~16**. There is no longer an unexamined "periphery" — every
+  entry now carries a floor and a reason.
 - **28 speculative stones** (S1–S26, with two number collisions — see §8).
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25(J), S25(K), S26(J), S26(K). **Unworked:** S2, S4, S6, S8, S10, S12–S17,
@@ -184,22 +205,30 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 
 ## 7. The open frontier (reprioritized)
 
-1. **Re-sort the catalog by floor — redundancy deletion (P0, and now tractable).**
-   This has been P0 since the first synthesis and is still undone, but the tower
-   has made it a mechanical job rather than a research one: every entry should
-   declare which floor it sits on (symmetry-constituted / Φ-regular / Φ-singular /
-   not-a-Φ-fact). If #3 and #16 are facets, the catalog should say so and stop
-   double-counting. This is the sharpest available test of the through-line,
-   because the sorting rule now makes falsifiable claims about entries nobody has
-   examined yet.
-2. **Is there a fourth floor? (P0, new — from S5.)** The tower's own falsifier #4
-   asks for an invariant reducible to none of the three floors, and S5 just
-   produced a candidate: a concatenation threshold is an unstable fixed point of a
-   *decoder's* recursion, with an exponent (ln n₀/ln(t+1)) that is a property of
-   the scheme, not of Φ or of any symmetry. Either scheme/algorithm-level
-   structure is a fourth floor, or it belongs under symmetry (a code *is* a
-   redundancy chosen to be invariant under the noise) — deciding this is now the
-   map's sharpest architectural question.
+1. **Is there a fourth floor? (P0 — now the map's sharpest question.)** The tower's
+   own falsifier #4 asks for an invariant reducible to none of the three floors.
+   [Sorting the catalog](./invariants/FLOORS.md) produced not one candidate but a
+   *cluster*, and they share a signature: **their invariant is a log-ratio —
+   log(multiplicity) over log(rescaling) — not a derivative of Φ.** S5's
+   concatenation exponent ln n₀/ln(t+1) is literally of the same form as a fractal
+   dimension ln N/ln b; RG eigenvalues are the general case; a code is a designed
+   one; double-entry accounting is a trivial one, conserving *because of the
+   representation*. So the catalog's oldest embarrassment (accounting
+   "conservation" that isn't Noether) and its newest result (S5's type R) land in
+   the same bin — facts about the **description map**, not about the system's
+   prediction field. **The live question is not whether they are separate from
+   floors 2–3 but whether they collapse into floor 1**: a code *is* a redundancy
+   chosen to be invariant under the noise, and "invariance chooses the
+   coordinates" is exactly floor 1's job. Two-sided falsifier in
+   [`FLOORS.md`](./invariants/FLOORS.md) §4.
+2. **Cash the sort's predictions (P0/P1, cheap).** The sort made claims about
+   entries it had no hand in shaping. The cheapest with real teeth: **P-A, the
+   spectral gap** (#19, never tested) — if gap-closure *is* the ∇²Φ degeneracy,
+   the entry's four readouts are one number because they are the softest direction
+   of one Hessian, and the gap must vanish exactly where Φ goes singular, joining
+   S7's τ·λ_min = 1 from the connectivity side. **P-D, allometry**, is the sort's
+   most falsifiable negative: Kleiber's 3/4 should *not* be derivable from a
+   partition function.
 3. **Grokking / Lee–Yang (P1, S13).** Does a genuine grokking transition show a
    non-analyticity of the appropriate Φ? Closes the gap S3 left open, and
    [S26(J)](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the

@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L2–L3 (shared rate–distortion / IB
 > objective). *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **2** (Φ-regular) — rate–distortion is a constrained-Φ / Legendre object. ▸facet
 
 ## Statement
 

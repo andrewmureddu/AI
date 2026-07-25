@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-25 — The catalog sorted by floor (floor 2 collapses, floor 3 stratifies; three entries refuse the tower)](./2026-07-25-catalog-sorted-by-floor.md)
 - [2026-07-25 — S5 run (thresholds are one object, three degeneracy orders) + synthesis refreshed to the tower](./2026-07-25-S5-and-synthesis-refresh.md)
 - [2026-07-22 — Essays, the periphery split, the symmetry sector, and two restraint passes](./2026-07-22-essays-and-method-probe.md)
 - [2026-07-21 — Restraint: degeneracy is where you end up, not what pulls you (S26)](./2026-07-21-S26-llc-trajectory.md)

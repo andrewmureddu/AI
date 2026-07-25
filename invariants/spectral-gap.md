@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L3 candidate (one operator invariant, many
 > readouts). *(seed — speculative)*
 > **Status:** seed
+> **Floor:** **3** (Φ-singular) — **predicted, never tested**: gap-closure *is* the ∇²Φ degeneracy ([P-A](./FLOORS.md))
 
 ## Statement
 

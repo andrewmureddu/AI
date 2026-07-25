@@ -1,0 +1,194 @@
+# The catalog, sorted by floor
+
+*2026-07-25. The P0 that outlived three syntheses.*
+
+[`derivations/symmetry-sector.md`](../derivations/symmetry-sector.md) derived the
+map's architecture: not sectors side by side but **one tower, three floors**.
+
+```
+  FLOOR 1  symmetry / conservation  →  chooses Φ's coordinates (which quantities exist)
+  FLOOR 2  Φ, regular part          →  prediction (∇Φ, ∇²Φ, Φ*, −Φ)
+  FLOOR 3  Φ, singular part         →  boundaries (non-analyticity, degeneracy, supports)
+```
+
+Sorting the catalog against that architecture is a **test**, not bookkeeping: the
+rule makes claims about entries nobody has examined, and an entry that refuses all
+three floors is the tower's own falsifier #4. This document records the sort, what
+it deletes, what it predicts, and what refused.
+
+---
+
+## 1. The sort
+
+| # | Entry | Floor | Why |
+|--:|-------|:-----:|-----|
+| 23 | [free-energy hub](./free-energy-hub.md) | **2 + 3** | Not *on* a floor — it is the object the floors are floors of. Regular part = floor 2, singular part = floor 3. |
+| 2 | [conservation & Noether](./conservation-noether.md) | **1** | Derived: charges are the natural parameters of long-time ensembles. The entry's own split holds — symmetry-induced conservation is floor 1; *bookkeeping identities* (double-entry) are **not floor 1 and not a Φ fact**, see §4. |
+| 3 | [entropy & information](./entropy-information.md) | **2** ▸facet | Φ* — the Legendre dual. Literally a derivative-face of the hub. |
+| 20 | [statistical geometry](./statistical-geometry.md) | **2**▸3 | ∇²Φ. The entry *spans* the 2/3 boundary: the metric is floor 2, its degeneration is floor 3. The bridge entry. |
+| 15 | [duality & conjugates](./duality.md) | **2 + 1** | **Splits.** Legendre duality = Φ* = floor 2 (facet). Fourier / canonical conjugacy (position–momentum) is *symplectic* — a bracket, which Φ does not have — so it belongs to floor 1. |
+| 17 | [universal update](./mirror-descent-update.md) | **2** ▸facet | −Φ is its Lyapunov function (S1, derived). |
+| 12 | [selection & replicator](./selection-replicator.md) | **2** ▸facet | Same object as #17 (S1: replicator = MW = Bayes = Gibbs). |
+| 16 | [information bottleneck](./information-bottleneck.md) | **2** ▸facet | Rate–distortion is a constrained-Φ / Legendre object. |
+| 14 | [trade-offs & Pareto](./tradeoffs-pareto.md) | **2** ▸facet, partial | Where a trade-off has a real exchange rate, its frontier *is* a Legendre transform (rate–distortion). Where it doesn't, it is not an invariant at all (L1). |
+| 4 | [diffusion & random walks](./diffusion-random-walks.md) | **2** (→3 in the tails) | Reduction demonstrated: CLT forces the Gaussian, the Gaussian is the max-entropy exponential family, and by JKO diffusion is gradient flow of that free energy. **Heavy-tailed/Lévy instances move to floor 3** — see prediction P-B. |
+| 18 | [optimal transport](./optimal-transport.md) | **2** (+ open) | The *flow* is Φ-driven (JKO). But the Wasserstein *metric* is not ∇²Φ — a second geometry on the same space, not derived from Φ. Flagged, §4. |
+| 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S25(K)](../derivations/S25-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
+| 7 | [optimization & variational](./optimization-variational.md) | **2 + 1** | **Splits by what the functional is over.** Objective = a free energy ⇒ floor 2. Objective = an *action* (least action) ⇒ floor 1, since that is the bracket structure Noether consumes. "As-if" optimization (adaptationism, utility) is neither — L1. |
+| 5 | [criticality & universality](./criticality-phase-transitions.md) | **3** | Lee–Yang: transition ⇔ non-analyticity of Φ. The floor's L4 core. |
+| 10 | [symmetry breaking](./symmetry-breaking.md) | **3** | Derived, and the sort's best non-trivial case: an entry *named* for symmetry lands on floor 3, because SSB requires a non-analyticity of Φ and Goldstone modes are null directions of ∇²Φ. |
+| 1 | [power laws](./power-laws.md) | **3** | Heavy tails are where Z or its moments diverge — the complement of the well-behaved exponential-family world. |
+| 8 | [networks & percolation](./networks-percolation.md) | **3** | Connectivity facts are Φ-boundary facts (S25(K)); the Potts q→1 non-analyticity is systematic, not dressing. |
+| 22 | [critical slowing down](./critical-slowing-down.md) | **3** | Tested ([S7](../experiments/S7-critical-slowing/)): τ·λ_min = 0.94±0.13 — the Hessian going soft, i.e. the *approach* to the singular set. |
+| 21 | [noise thresholds](./noise-thresholds.md) | **3 + 4?** | **Splits, tested** ([S5](../experiments/S5-noise-thresholds/)): type M (metric merge) and type S (support loss) are floor 3; **type R (decoder RG fixed point) is not a Φ fact at all** — see §4. |
+| 19 | [spectral gap](./spectral-gap.md) | **3** (predicted) | Never tested. The sort predicts gap-closure *is* the ∇²Φ degeneracy — see P-A. |
+| 13 | [emergence & renormalization](./emergence-renormalization.md) | **none — an operation** | RG is not a fact *inside* Φ; it is a map that carries Φ at one scale to Φ at another. [S25's channel law](../experiments/S25-channel-independence/) measured exactly this: F_c(T) = F_eff(T′)·(dT′/dT)². See §4. |
+| 9 | [scaling & allometry](./scaling-allometry.md) | **refuses** | The WBE exponent comes from space-filling branching geometry, not from a partition function. See P-D. |
+| 11 | [fractals & self-similarity](./self-similarity-fractals.md) | **3 + 4?** | **Splits.** Statistical self-affinity at a critical point is floor 3. *Deterministic* self-similarity of a constructed hierarchy is scheme structure — and its dimension has the same form as the type-R exponent, §4. |
+
+**Legend.** ▸facet = not an independent invariant; a derivative-face of #23.
+
+---
+
+## 2. What the sort deletes — and what it doesn't
+
+**On floor 2, redundancy deletion succeeds.** Seven entries (#3, #12, #14, #15
+Legendre half, #16, #17, #20) are ∇Φ, ∇²Φ, Φ*, or −Φ of *one convex function*.
+They are not seven invariants that happen to agree; they are one function
+differentiated seven ways. The catalog should stop counting them separately, and
+the domain matrix should stop treating their per-domain cells as independent
+evidence.
+
+**On floor 3, redundancy deletion fails — and that is the more interesting
+result.** Criticality, power laws, percolation, SSB, critical slowing down and the
+noise thresholds are *all* "Φ goes singular," but they are **different
+singularities**: non-analyticity, divergent moments, null Hessian directions,
+support loss, soft modes. [S5](../experiments/S5-noise-thresholds/) showed these
+carry *different exponents* — metric merge gives 2, support loss gives 1 — so they
+cannot be collapsed into each other.
+
+So the asymmetry, which the original "one object seen sideways" slogan could not
+express:
+
+> **Floor 2 collapses. Floor 3 stratifies.**
+
+The regular part of Φ is one function seen from several angles. The singular part
+is a *classified set* of ways for a prediction field to end, and classifying them
+is open work rather than deletion.
+
+**Net effect on the count.** The bins, non-overlapping, summing to 23:
+
+| Bin | Entries | n |
+|-----|---------|--:|
+| the hub itself | #23 | 1 |
+| floor 1 only | #2 | 1 |
+| floor 2, ▸facet | #3, #12, #14, #16, #17, #20 | 6 |
+| floor 2, not a facet | #4, #18 | 2 |
+| floor 3 only | #1, #5, #8, #10, #19, #22 | 6 |
+| splits across floors | #6, #7, #11, #15, #21 | 5 |
+| refuses the tower (§4) | #9, #13 | 2 |
+
+Six whole entries are deleted as independent, and #15 survives only in its
+symplectic half — **seven facet-faces of Φ in total**. Effective independent count:
+**23 → ~16**. A real simplification, and a smaller one than "much of the map is
+one object" implied: the deletion is confined to floor 2, which is exactly the
+asymmetry above.
+
+---
+
+## 3. What the sort predicts (the part that makes this a test)
+
+Each prediction is about an entry the sort had no hand in shaping.
+
+**P-A — spectral gap (#19, never tested).** If gap-closure is the ∇²Φ degeneracy,
+then the entry's four readouts (mixing time, algebraic connectivity, consensus
+rate, sync threshold) are one number *because* they are all the softest direction
+of the same Hessian, and the gap must vanish exactly where Φ goes singular —
+joining [S7](../experiments/S7-critical-slowing/)'s τ·λ_min = 1 from the
+connectivity side. **Falsifier:** a system whose mixing time diverges while the
+relevant Hessian stays gapped, or whose gap closes with Φ analytic.
+
+**P-B — diffusion splits at finite variance (#4).** Normal diffusion is floor 2
+(Gaussian = max-entropy exponential family); Lévy/anomalous diffusion is floor 3
+(divergent moments = Φ misbehaving). The boundary is exactly finite-vs-infinite
+variance. **This retrodicts a result already in the repo**: the
+[transfer cliff](../experiments/ladder-vs-transfer/) sits at precisely that line,
+measured before the tower existed. **Falsifier:** a finite-variance diffusion whose
+Φ is non-analytic in the relevant variable, or a heavy-tailed one whose moments
+behave.
+
+**P-C — variational principles come in exactly two kinds (#7).** Over a measure
+(free energy) ⇒ floor 2; over an action (bracket) ⇒ floor 1. **Falsifier:** a
+genuine variational law — one that predicts, rather than re-describes — whose
+functional is over neither.
+
+**P-D — allometry does not reduce (#9).** Kleiber's 3/4 should *not* be derivable
+from a partition function; it should come out of branching geometry, making it
+scheme structure. **Falsifier:** derive the 3/4 exponent from a Φ, which would put
+it on floor 2 and refute this line.
+
+**P-E — the fourth floor has a signature (§4).** See below.
+
+---
+
+## 4. What refused the tower — and the shape it makes
+
+Four things refused floors 1–3, and they refuse it *the same way*:
+
+| What | Where it came from | Its exponent |
+|------|--------------------|--------------|
+| Type-R noise thresholds | [S5](../experiments/S5-noise-thresholds/), measured | α = **ln n₀ / ln(t+1)** |
+| Deterministic fractals (#11) | catalog | D = **ln N / ln b** |
+| RG / coarse-graining (#13) | catalog + [S25 channel law](../experiments/S25-channel-independence/) | eigenvalues of the flow map |
+| Bookkeeping identities (#2's second half) | catalog | — (conserved by construction) |
+| *(candidate)* allometry (#9) | catalog | b from branching ratio |
+
+**They share a signature: their invariant is a log-ratio — log(multiplicity) over
+log(rescaling) — not a derivative of Φ.** The concatenated code's α = ln n₀/ln(t+1)
+is *literally of the same form* as a fractal dimension ln N/ln b: multiplicity per
+level over rescaling per level. This was not designed; S5 measured that exponent
+before the sort noticed what it was.
+
+What unites them conceptually is that each is a fact about **the map between
+descriptions** — the encoding, the coarse-graining, the recursion — rather than
+about the system's prediction field. RG is the general form of such a map; a code
+is a designed one; a deterministic fractal is one's fixed point; double-entry
+accounting is a trivial one, conserving *because of the representation*, exactly
+as a code's redundancy does. That is why the catalog's oldest embarrassment
+(accounting "conservation" that isn't Noether) and the newest result (S5's type R)
+land in the same bin.
+
+**Proposed floor 4 — the scheme layer:** invariants of the description map, whose
+signature is a log-ratio exponent rather than a Φ-derivative. This is a
+**proposal, not a result.** It is exactly the tower's falsifier #4 (an invariant
+reducible to none of the three floors), so if it stands the tower gains a floor.
+
+**P-E, its falsifier, two-sided:** (kills the floor) reduce a log-ratio exponent to
+a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
+Φ-derivative; (kills the *separateness*) show the scheme layer is floor 1 in
+disguise — a code *is* a redundancy chosen to be invariant under the noise, and
+"invariance selects the coordinates" is precisely floor 1's job. **The second
+horn is the live one**, and deciding it is now the map's sharpest architectural
+question.
+
+One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
+space that is not the Fisher metric and is not derived from Φ. It is not a
+log-ratio object either, so it fits neither the three floors nor the proposed
+fourth. Either it reduces (Otto calculus relates the two geometries) or it is a
+second, unrelated exhibit against monism. Unresolved, and recorded as such.
+
+---
+
+## 5. Boundaries of this sort
+
+- The tower is derived for **equilibrium / long-time (stationary)** prediction
+  fields. Every floor-1 assignment inherits that restriction.
+- Assignments for `seed`-status entries are *predictions*, not findings. Only
+  #6, #10, #21, #22 and the #4 reduction rest on a derivation or an experiment;
+  the rest are the sort's claims and can be wrong.
+- "Refuses the tower" is a statement about the reductions **attempted here**. A
+  successful reduction of allometry or OT would move them, and that is a cheaper
+  result than a new floor.
+- The sort does not touch per-domain levels in
+  [`../domains/README.md`](../domains/README.md); floors and ladder levels are
+  orthogonal axes (a floor-3 entry can be L4 in physics and L1 in finance).

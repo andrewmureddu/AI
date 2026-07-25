@@ -6,6 +6,7 @@
 > **Headline correspondence level:** **L3** for the local update + its geometry
 > (derived, exact); global convergence is explicitly *not* shared.
 > **Status:** developing — *derived* ([derivation](../derivations/S1-universal-update.md))
+> **Floor:** **2** (Φ-regular) — −Φ is its Lyapunov function (S1). ▸facet
 
 ## Statement
 

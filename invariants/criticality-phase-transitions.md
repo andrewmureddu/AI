@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L4 where the renormalization group applies;
 > L1–L2 where "criticality" is invoked loosely (markets, cities, "edge of chaos").
 > **Status:** developing
+> **Floor:** **3** (Φ-singular) — Lee–Yang: transition ⇔ non-analyticity of Φ. The floor's L4 core
 
 ## Statement
 

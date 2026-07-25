@@ -10,6 +10,7 @@
 > (exact), **L4** where Lee–Yang makes "transition = non-analyticity of Φ" a
 > theorem; L2 where "free energy" is borrowed loosely.
 > **Status:** developing — *consolidation* of #3, #5, #12, #15, #16, #17, #20
+> **Floor:** **2 + 3** — not *on* a floor: the object the floors are floors of (regular part = 2, singular part = 3)
 
 ## Why this entry exists
 

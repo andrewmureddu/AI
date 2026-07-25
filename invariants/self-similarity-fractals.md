@@ -5,6 +5,7 @@
 > **Headline correspondence level:** L2 (shared geometric measure); L3 where a
 > shared growth mechanism is identified. *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **3 + 4?** — splits: statistical self-affinity at a critical point is floor 3; *deterministic* self-similarity is scheme structure, its dimension ln N/ln b sharing the form of S5's type-R exponent
 
 ## Statement
 

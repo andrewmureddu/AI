@@ -9,6 +9,7 @@
 > **Headline correspondence level:** L2–L3 for the taxonomy; **L1 for "one
 > threshold"** (retired).
 > **Status:** developing ✓tested ([S5](../experiments/S5-noise-thresholds/))
+> **Floor:** **3 + 4?** — splits (tested, [S5](../experiments/S5-noise-thresholds/)): types M and S are floor 3; **type R is not a Φ fact at all** — the scheme-layer candidate ([FLOORS §4](./FLOORS.md))
 
 ## Statement
 
