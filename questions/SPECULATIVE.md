@@ -25,6 +25,13 @@ impressive-sounding fake unifications (exactly the "universality inflation" the
 
 Each carries a **falsifier**: the concrete observation that would confirm or sink it.
 
+**Companion register.** A stone here is a *question* about whether two things are
+the same object. [`L3-MECHANISMS.md`](./L3-MECHANISMS.md) holds the other unit:
+candidate **generative processes** (M1–M17) proposed to run identically in two or
+more domains, each with the off-pattern observable that separates mechanism
+identity from convergence. Stones ask; mechanisms are what an affirmative answer
+has to name.
+
 ---
 
 ## Cluster A — "Is there only one update rule?"

@@ -34,7 +34,7 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Conventions for adding or revising an invariant or a domain. How "we" work. |
 | [`invariants/`](./invariants/) | One file per candidate invariant. [`invariants/README.md`](./invariants/README.md) is the master catalog. |
 | [`domains/`](./domains/) | The invariant × domain cross-reference matrix — the actual "map." |
-| [`questions/`](./questions/) | The agenda in two tiers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous) and [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable). |
+| [`questions/`](./questions/) | The agenda in three registers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous), [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable), and [`L3-MECHANISMS.md`](./questions/L3-MECHANISMS.md) (candidate shared *mechanisms*, each with a convergence discriminator). |
 | [`experiments/`](./experiments/) | Runnable (numerical) tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |
 | [`derivations/`](./derivations/) | Analytical tests — pen-and-paper restraint. First: [`S1-universal-update`](./derivations/S1-universal-update.md). |
 | [`research-log/`](./research-log/) | Dated entries recording what we investigated, decided, and changed. |
