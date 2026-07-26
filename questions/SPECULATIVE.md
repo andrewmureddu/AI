@@ -25,6 +25,13 @@ impressive-sounding fake unifications (exactly the "universality inflation" the
 
 Each carries a **falsifier**: the concrete observation that would confirm or sink it.
 
+**Companion register.** A stone here is a *question* about whether two things are
+the same object. [`L3-MECHANISMS.md`](./L3-MECHANISMS.md) holds the other unit:
+candidate **generative processes** (M1–M17) proposed to run identically in two or
+more domains, each with the off-pattern observable that separates mechanism
+identity from convergence. Stones ask; mechanisms are what an affirmative answer
+has to name.
+
 ---
 
 ## Cluster A — "Is there only one update rule?"
@@ -588,6 +595,21 @@ distribution. (iii) is runnable with torch and is the designed experiment.
 > its known failure mode. L2 exact on-model; L3 route = timescale separation
 > (noise-vs-charge). Open: matrix/deep/ReLU charges; minibatch-only noise;
 > the claim is now explicitly timescale-indexed.
+> **⟳ Second pass (2026-07-25, via [M15](./L3-MECHANISMS.md)):** the L3 route
+> named above — timescale separation — has now been **walked**, see
+> [`../experiments/M15-adiabatic-charges/`](../experiments/M15-adiabatic-charges/).
+> The mechanism is ordinary averaging: the symmetry generator is orthogonal to
+> the *stochastic* gradient for every realization (first order vanishes
+> identically, not on average), giving the exact law Q' = Q(1−η²m²) and the
+> parameter-free rate k = η²σ²E[x²]/B. Discriminator says power-law, not
+> Nekhoroshev (ΔAIC = 73.6): nothing protects the plateau but the smallness of
+> η. The plateau's *end* is now predicted as well as its length — sufficiency
+> degrades as R^−0.97 in the timescale ratio, hitting O(1) error at R = 1.13.
+> Bookkeeping: this pass corrects the erosion rate quoted above from 5.6e-7 to
+> **7.30e-7/step** (window 1.37M, not 1.8M). The GGE reading is unaffected; the
+> "matrix/deep charges" opening is partly closed (a wide two-layer net keeps the
+> exact first-order cancellation and the η^−2 relaxation scaling, though there
+> charges relax to an alignment-dependent equilibrium rather than to zero).
 
 ---
 

@@ -267,3 +267,44 @@ first.
 > symmetry picks the coordinates, Φ's regular part predicts, Φ's singular
 > part ends prediction. Promoted to stone S26 with a runnable falsifier (the
 > SGD stationary-sufficiency test).
+
+> **⟳ Third restraint pass (2026-07-25, via [M11](../experiments/M11-stochastic-resetting/)):**
+> a fourth candidate for a sector was tested and dissolved, but it leaves the
+> architecture a sharper question than it had. Stochastic resetting was filed as
+> the one candidate primitive that is neither prediction, connectivity, nor
+> symmetry: first-passage structure, which is not obviously a Φ-derivative. The
+> mechanism confirmed cleanly across three fields — but its criterion turns out
+> to be *restart helps iff the completion time is more dispersed than the
+> maximum-entropy law at the same mean* (the exponential, CV = 1, is exactly
+> neutral). That is log-partition machinery, on an **exit time** rather than on
+> a state. So the residue does not grow; instead the reduction question splits.
+> **Φ's form is portable; Φ's variable is not** — and §2's "does it reduce to
+> Φ?" is under-specified until one says *Φ of what*. Every reduction this essay
+> and its successors record (control→∇²Φ, symmetry-breaking→non-analyticity,
+> slowing-down→soft Hessian) was a reduction to Φ of the *state*; M11 is the
+> first to Φ of something else, which means "the tower" may be a family of
+> towers indexed by base variable rather than one.
+
+> **⟳ Fourth restraint pass (2026-07-25, via [M3](../experiments/M3-molloy-reed-rewiring/)):**
+> **§2's falsifier 1 was finally run, and this essay's central factual claim
+> holds.** §2 asserts that you can know two graphs' full degree distributions and
+> still not know which percolates, "because reachability depends on the wiring,
+> not the histogram," and that degree-preserving rewiring moves p_c. Measured, at
+> bit-for-bit identical degree sequences: **35% / 72% / 148%** shifts across
+> bimodal / trimodal / power-law graphs, with random swaps neutral (<2.5%). The
+> quotient §5 names — "Φ lives on the quotient by everything except sufficient
+> statistics" — is exactly the quotient that rewiring preserves, and it is
+> demonstrably too coarse for connectivity.
+> But the falsifier's *other* horn also fires, in the form §5 did not anticipate.
+> Connectivity **is** recovered by log-partition machinery — the leading
+> eigenvalue of the edge-end branching operator predicts the rewiring shifts to
+> ≤4.6% — built on the **edge-pair** measure e_{jk} rather than the node measure.
+> Nor is one summary statistic enough: at fixed degrees *and* fixed assortativity
+> the feasible λ_max still spans 11.8%, and two graphs matched to Δr = 1e-5 have
+> thresholds 11.9% apart. So the connectivity sector is not a separate axis and
+> not a mere Φ-boundary either; it is the same form on a coarser-grained-in-the-
+> wrong-place variable. Taken with M11, the architecture question this essay
+> should now be asked is not "how many sectors?" but **"how many base variables,
+> and is there a rule for which one a question needs?"** — with a measured
+> residue on record: e_{jk} suffices only while the graph is locally tree-like
+> (+10.4% error at clustering 0.030, +124% at 0.211).
