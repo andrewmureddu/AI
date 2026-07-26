@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-25 — Restraint: the degree histogram does not determine connectivity (M3)](./2026-07-25-M3-molloy-reed-rewiring.md)
 - [2026-07-25 — Restraint: resetting is one mechanism, and it is Φ on a different variable (M11)](./2026-07-25-M11-stochastic-resetting.md)
 - [2026-07-25 — Restraint: SGD's plateau is ordinary averaging, and it ends at R ≈ 1 (M15)](./2026-07-25-M15-adiabatic-charges.md)
 - [2026-07-25 — Expansion: the L3 mechanism register (M1–M17)](./2026-07-25-L3-mechanism-register.md)

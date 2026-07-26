@@ -169,6 +169,36 @@ corrected Molloy–Reed criterion predicts (a third thing is at work).
 
 **First test.** Pure numpy, hours. **Top-3 pick.**
 
+> **⟳ Restraint pass (2026-07-25):** *run — essay 04's falsifier 1 survives, and
+> the base-variable reading generalises* — see
+> [`../experiments/M3-molloy-reed-rewiring/`](../experiments/M3-molloy-reed-rewiring/).
+> With the degree sequence held **bit-for-bit identical** (per-node, not just the
+> histogram), rewiring moves the percolation threshold by **35% / 72% / 148%**
+> across bimodal / trimodal / power-law graphs, while random swaps move it <2.5%.
+> So the degree histogram — the sufficient statistic of the degree-constrained
+> maximum-entropy ensemble, i.e. all a Φ on node degrees can see — **does not
+> determine connectivity.** The pair statistic recovers it: predicted shift
+> ratios λ_config/λ_variant match measured ones to **≤4.6%** (a 41% shift
+> predicted to 1.7%).
+> **The sharpest leg is P5, and it needed settling twice.** Rewiring failed to
+> construct the discriminating pair, so the question was answered *exactly*
+> instead: scanning the feasible polytope of e_{jk} at fixed marginals and fixed
+> r gives λ_max ∈ [7.810, 8.730] — an **11.8% range**, so (degrees, r) provably
+> does not determine the threshold. Rewiring toward the polytope's maximiser then
+> reached **100.0% of that range**, producing two graphs with identical degrees,
+> assortativity matched to **1e-5**, and thresholds **11.9% apart** (predicted
+> ratio 0.895 vs measured 0.881). Also learned: with only *two* degree classes
+> the test is impossible — fixed marginals plus r determine e_{jk} — which is why
+> the first attempt could never have worked.
+> **Boundary, signed and measured:** e_{jk} suffices only while the graph is
+> locally tree-like. Triangle enrichment at fixed degrees pushes p_c *above*
+> 1/λ_max by **+10.4%** at C = 0.030, and the strongly assortative power-law
+> graph — which builds a dense looped hub core, C = 0.211 — misses by **+124%**.
+> **Reading for the map:** connectivity is not a Φ-derivative of the *node*
+> measure but is one of the *edge-pair* measure. That is
+> [M11](../experiments/M11-stochastic-resetting/)'s "Φ of what?" lesson arriving
+> from the connectivity side: the base variable moves, the form does not.
+
 ### M4 — k-core / bootstrap percolation 🟡
 
 **Process.** A node remains (or activates) only if at least k of its neighbours
@@ -663,10 +693,11 @@ Ranked by (what it moves on the map) × (cheapness), with the first concrete ste
    [`experiments/M11-stochastic-resetting/`](../experiments/M11-stochastic-resetting/).
    Identity test passed (CV → 1 at the optimum in all three domains); the
    "second axis" framing retired — it is Φ's form on a different base variable.
-3. **M3 Molloy–Reed + rewiring** — runs
-   [essay 04's falsifier 1](../essays/04-the-periphery-split.md) with the
-   predictive-work condition it demands. Settles whether connectivity is Φ's
-   boundary or something else.
+3. ~~**M3 Molloy–Reed + rewiring**~~ — **done 2026-07-25**, see
+   [`experiments/M3-molloy-reed-rewiring/`](../experiments/M3-molloy-reed-rewiring/).
+   Essay 04's falsifier 1 survives: the degree histogram does not determine p_c
+   (72% spread at fixed degrees). Connectivity is a Φ-derivative of the
+   *edge-pair* measure, not the node measure.
 4. **M8 extreme value / best-of-n** — fit a reward tail index, predict the
    max-over-n curve. Cheapest AI-native parameter transfer available.
 5. **M10 TUR in learning** — the unrun S15 with the right instrument (an
