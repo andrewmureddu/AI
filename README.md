@@ -9,6 +9,24 @@ The goal is not to collect metaphors. It is to build a vetted map where every
 claimed correspondence is placed on an explicit ladder of rigor, backed by a
 quantitative signature and, where possible, a shared mechanism.
 
+## Two operations
+
+The repo runs two distinct operations, and they have separate registers because
+they fail in different ways.
+
+- **Recognition** — take a law already known in field A and ask whether the thing
+  that resembles it in field B is the same object. Everything through
+  [`SPECULATIVE.md`](./questions/SPECULATIVE.md) is this. Its ceiling is the union
+  of the textbooks; its failure mode is universality inflation.
+- **Discovery** — find a law that is in nobody's textbook, usually by explaining a
+  number our own experiments produced and never accounted for. Register:
+  [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md), graded on its own
+  [novelty ladder](./questions/UNKNOWN-LAWS.md#2-the-novelty-ladder) (N0
+  restatement → N3 new object) *in addition to* the rigor ladder. Its failure
+  modes are rediscovery and tautology-by-construction, so every candidate carries
+  a prior-art note written before the work and an explicit split between the
+  predictions that are analytic identities and the ones that can come out wrong.
+
 ## The core question
 
 When two domains seem to "obey the same law," which of these is actually true?
@@ -34,7 +52,7 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Conventions for adding or revising an invariant or a domain. How "we" work. |
 | [`invariants/`](./invariants/) | One file per candidate invariant. [`invariants/README.md`](./invariants/README.md) is the master catalog. |
 | [`domains/`](./domains/) | The invariant × domain cross-reference matrix — the actual "map." |
-| [`questions/`](./questions/) | The agenda in three registers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous), [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable), and [`L3-MECHANISMS.md`](./questions/L3-MECHANISMS.md) (candidate shared *mechanisms*, each with a convergence discriminator). |
+| [`questions/`](./questions/) | The agenda in four registers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous), [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable), [`L3-MECHANISMS.md`](./questions/L3-MECHANISMS.md) (candidate shared *mechanisms*, each with a convergence discriminator), and [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) (**discovery** — candidate laws nobody has stated, on a separate novelty ladder). |
 | [`experiments/`](./experiments/) | Runnable (numerical) tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |
 | [`derivations/`](./derivations/) | Analytical tests — pen-and-paper restraint. First: [`S1-universal-update`](./derivations/S1-universal-update.md). |
 | [`research-log/`](./research-log/) | Dated entries recording what we investigated, decided, and changed. |
@@ -45,6 +63,7 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 - Want the **big-picture map**? → [`domains/README.md`](./domains/README.md)
 - Want the **list of candidates and their status**? → [`invariants/README.md`](./invariants/README.md)
 - Want to know **what to work on next**? → [`questions/OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md)
+- Want the **unknown-law hunt**? → [`questions/UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
 - Want to **add something**? → [`CONTRIBUTING.md`](./CONTRIBUTING.md) and copy [`invariants/_TEMPLATE.md`](./invariants/_TEMPLATE.md)
 
 ## Status
