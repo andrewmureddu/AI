@@ -41,7 +41,7 @@ it deletes, what it predicts, and what refused.
 | 8 | [networks & percolation](./networks-percolation.md) | **3** | Connectivity facts are Φ-boundary facts (S25(K)); the Potts q→1 non-analyticity is systematic, not dressing. |
 | 22 | [critical slowing down](./critical-slowing-down.md) | **3** | Tested ([S7](../experiments/S7-critical-slowing/)): τ·λ_min = 0.94±0.13 — the Hessian going soft, i.e. the *approach* to the singular set. |
 | 21 | [noise thresholds](./noise-thresholds.md) | **3 + 4?** | **Splits, tested** ([S5](../experiments/S5-noise-thresholds/)): type M (metric merge) and type S (support loss) are floor 3; **type R (decoder RG fixed point) is not a Φ fact at all** — see §4. |
-| 19 | [spectral gap](./spectral-gap.md) | **3** (predicted) | Never tested. The sort predicts gap-closure *is* the ∇²Φ degeneracy — see P-A. |
+| 19 | [spectral gap](./spectral-gap.md) | **3** ✓tested | The sort's prediction, [run and confirmed](../experiments/PA-spectral-gap/) — but in the *directional* form: gap-closure is a **null direction** of the trajectory free energy's Hessian, not a scalar divergence. See P-A below. |
 | 13 | [emergence & renormalization](./emergence-renormalization.md) | **none — an operation** | RG is not a fact *inside* Φ; it is a map that carries Φ at one scale to Φ at another. [S25's channel law](../experiments/S25-channel-independence/) measured exactly this: F_c(T) = F_eff(T′)·(dT′/dT)². See §4. |
 | 9 | [scaling & allometry](./scaling-allometry.md) | **refuses** | The WBE exponent comes from space-filling branching geometry, not from a partition function. See P-D. |
 | 11 | [fractals & self-similarity](./self-similarity-fractals.md) | **3 + 4?** | **Splits.** Statistical self-affinity at a critical point is floor 3. *Deterministic* self-similarity of a constructed hierarchy is scheme structure — and its dimension has the same form as the type-R exponent, §4. |
@@ -100,13 +100,22 @@ asymmetry above.
 
 Each prediction is about an entry the sort had no hand in shaping.
 
-**P-A — spectral gap (#19, never tested).** If gap-closure is the ∇²Φ degeneracy,
-then the entry's four readouts (mixing time, algebraic connectivity, consensus
-rate, sync threshold) are one number *because* they are all the softest direction
-of the same Hessian, and the gap must vanish exactly where Φ goes singular —
-joining [S7](../experiments/S7-critical-slowing/)'s τ·λ_min = 1 from the
-connectivity side. **Falsifier:** a system whose mixing time diverges while the
-relevant Hessian stays gapped, or whose gap closes with Φ analytic.
+**P-A — spectral gap (#19) — ✓ RUN, [`experiments/PA-spectral-gap/`](../experiments/PA-spectral-gap/).**
+*Predicted:* gap-closure is the ∇²Φ degeneracy; the entry's four readouts are one
+number because they are the softest direction of one Hessian; joins S7's
+τ·λ_min = 1 from the connectivity side.
+*Found:* the floor assignment holds with Φ fixed in advance — the slow mode comes
+to carry the entire divergence of Λ''(0) (Λ''·gap = 2⟨f,v₂⟩² = 2.0000) — **but the
+scalar reading is wrong**: for an observable orthogonal to the slow mode Λ'' is
+unchanged (1.00×) while the gap falls 31×. Gap-closure is a **null-direction**
+fact, filing #19 with S25(K)'s unreachable null spaces rather than with S3's
+scalar blow-up. Three of the four readouts turned out to be one number *by
+construction* and tested nothing; the fourth (Kuramoto) gives one mechanism with
+**family-specific constants** (0.410–0.632) — the S7/S5 shape again. And the
+listed falsifier **fired** against the naive reading: in a double well the gap
+falls 3540× while the local curvature *rises* 6×, which cost S7 a boundary
+condition (**its law is single-basin**). One registered threshold failed as
+written: I predicted >2× across-family spread; it is 1.54×.
 
 **P-B — diffusion splits at finite variance (#4).** Normal diffusion is floor 2
 (Gaussian = max-entropy exponential family); Lévy/anomalous diffusion is floor 3

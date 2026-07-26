@@ -182,6 +182,18 @@ autocorrelation/variance. (New entry
 > observed on schedule: nearest T_c the quartic term outweighs the softened
 > linear curvature and the linear early-warning law degrades. Grokking leg
 > still open (no torch).
+> **⟳ Boundary found (2026-07-26, via [P-A](../experiments/PA-spectral-gap/)):**
+> **τ·λ = 1 is a *single-basin* law.** All three of S7's legs relax *within* a
+> basin, so the law was never exposed to barrier crossing. In a double well the
+> spectral gap falls **3540×** while the local potential curvature U″(±1)
+> **rises 6×** — opposite directions — and S7's product runs from 3.5e1 to
+> 7.5e5 instead of staying at 1. The law is restored by taking λ from the
+> *trajectory* free energy (the SCGF of a time-averaged observable): Λ''·gap
+> stays O(1), converging to 2. Restated: τ·λ = 1 holds where the slow mode *is*
+> a local curvature; where relaxation is barrier crossing, the potential's
+> Hessian is the wrong object. P-A also makes the arrival directional — for an
+> observable orthogonal to the slow mode the free energy's second derivative
+> does not move at all while the gap closes.
 
 ---
 

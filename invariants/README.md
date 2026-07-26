@@ -54,7 +54,7 @@ These are "same object, different names" bridges. Treat every level as a hypothe
 |--:|-----------|-------------|:-----:|:-----:|--------|---------|
 | 17 | [Universal update (mirror descent)](./mirror-descent-update.md) | entropic mirror descent | **L3** (local; global≠shared) | **2** ▸facet | developing ✓derived | S1, S2 |
 | 18 | [Optimal transport](./optimal-transport.md) | Wasserstein gradient flow (JKO) | L3? | **2** + open | seed·spec | S4 |
-| 19 | [Spectral gap](./spectral-gap.md) | λ₂ of Markov/Laplacian | L3? | **3** (predicted) | seed·spec | mixing/sync/consensus |
+| 19 | [Spectral gap](./spectral-gap.md) | λ₂ of Markov/Laplacian | **L3** (one mechanism, family constants) | **3** ✓tested | developing ✓tested | mixing/sync/consensus |
 | 20 | [Statistical geometry](./statistical-geometry.md) | Fisher/Ruppeiner/Fubini–Study metric | L3? | **2 ▸ 3** | seed·spec | S3 |
 | 21 | [Noise thresholds](./noise-thresholds.md) | recoverability transition p_c | **L2–L3** (taxonomy) / L1 ("one threshold") | **3 + 4?** | developing ✓tested | S5 |
 | 22 | [Critical slowing down](./critical-slowing-down.md) | autocorr→1, variance blow-up | L3–L4? | **3** | seed·spec | S6, S7 |

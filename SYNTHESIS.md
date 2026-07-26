@@ -75,6 +75,7 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | — | [The symmetry sector](./derivations/symmetry-sector.md) | derivation | **monism fails, "second sector" also fails** — SSB reduces to Φ-singular; Noether does *not* reduce but **constitutes**: conserved charges are the natural parameters of long-time ensembles. Architecture: **one tower, three floors** | equilibrium/long-time only; GGE exhaustiveness heuristic away from integrability |
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
+| **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
 | — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
 
 ### Where "one law" claims keep landing
@@ -164,7 +165,7 @@ people (well, passes) looking for different things:
 | 1 | [S3](./experiments/S3-fisher-geometry/) | **divergence** — χ→∞ at T_c, inverse-Fisher→∞ at double descent |
 | 2 | [S25(K)](./derivations/S25-control-split.md) | **null spaces** — unreachable directions are null Fisher directions / support facts |
 | 3 | [symmetry sector](./derivations/symmetry-sector.md) | **flat directions** — Goldstone modes are null directions of ∇²Φ |
-| 4 | [S7](./experiments/S7-critical-slowing/) | **the slow mode** — τ = 1/λ_min; critical slowing is the Hessian going soft |
+| 4 | [S7](./experiments/S7-critical-slowing/), sharpened by [P-A](./experiments/PA-spectral-gap/) | **the slow mode** — τ = 1/λ_min; critical slowing is the Hessian going soft. P-A found *which* Hessian: in a double well the gap falls 3540× while the local curvature **rises** 6×, so S7's law is a **single-basin** law and the general object is the trajectory free energy's Hessian |
 | 5 | [S5](./experiments/S5-noise-thresholds/) | **the order of the degeneracy** — the redundancy exponent counts how fast the induced Fisher information vanishes (2 = metric merge, 1 = support loss) |
 
 [The RLCT result](./experiments/S25-rlct-singularity/) is best read not as a sixth
@@ -221,14 +222,12 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    chosen to be invariant under the noise, and "invariance chooses the
    coordinates" is exactly floor 1's job. Two-sided falsifier in
    [`FLOORS.md`](./invariants/FLOORS.md) §4.
-2. **Cash the sort's predictions (P0/P1, cheap).** The sort made claims about
-   entries it had no hand in shaping. The cheapest with real teeth: **P-A, the
-   spectral gap** (#19, never tested) — if gap-closure *is* the ∇²Φ degeneracy,
-   the entry's four readouts are one number because they are the softest direction
-   of one Hessian, and the gap must vanish exactly where Φ goes singular, joining
-   S7's τ·λ_min = 1 from the connectivity side. **P-D, allometry**, is the sort's
-   most falsifiable negative: Kleiber's 3/4 should *not* be derivable from a
-   partition function.
+2. **Cash the rest of the sort's predictions (P1).** **P-A is done**
+   ([result](./experiments/PA-spectral-gap/)): #19's floor-3 assignment holds, in
+   the directional form, and it cost S7 a boundary condition. Remaining:
+   **P-D, allometry** — the sort's most falsifiable negative, that Kleiber's 3/4
+   should *not* be derivable from a partition function; **P-C**, that variational
+   principles come in exactly two kinds; and **P-B**'s untested half.
 3. **Grokking / Lee–Yang (P1, S13).** Does a genuine grokking transition show a
    non-analyticity of the appropriate Φ? Closes the gap S3 left open, and
    [S26(J)](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the
