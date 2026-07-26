@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L4 in physics; L2–L3 analogues elsewhere.
 > *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **3** (Φ-singular) — *not* floor 1 despite the name: SSB requires a non-analyticity of Φ, and Goldstone modes are null directions of ∇²Φ ([derived](../derivations/symmetry-sector.md))
 
 ## Statement
 

@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L2–L3; the "variation–selection–retention"
 > algorithm is substrate-neutral, the equations sometimes coincide. *(seed)*
 > **Status:** seed
+> **Floor:** **2** (Φ-regular) — same object as #17 (S1: replicator = MW = Bayes = Gibbs). ▸facet
 
 ## Statement
 

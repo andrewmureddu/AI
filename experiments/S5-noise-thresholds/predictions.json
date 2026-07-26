@@ -1,0 +1,49 @@
+{
+  "_comment": "Pre-registered BEFORE running run.py. Each prediction is derived analytically in the note field; the run either matches it or does not.",
+  "stone": "S5 (questions/SPECULATIVE.md, Cluster C) - Shannon capacity = Eigen error catastrophe = quantum fault-tolerance threshold?",
+  "stated_falsifier": "the redundancy-vs-(threshold - p) scaling exponents differ across the three",
+  "resource_definition": "N(p) = minimum physical resource per protected bit needed to keep information recoverable indefinitely, as noise p -> p_c from the good side. Exponent alpha defined by N ~ (p_c - p)^(-alpha).",
+  "predictions": {
+    "P1_BSC": {
+      "alpha": 2.0,
+      "tol": 0.01,
+      "note": "N = 1/C = 1/(1-h2(p)); 1-h2(1/2-d) = 2 d^2/ln2 + O(d^4) so alpha=2. Also predict C*8*ln2/chi2(P0||P1) -> 1, i.e. the quadratic coefficient IS the Fisher/chi-square form."
+    },
+    "P2_BEC": {
+      "alpha": 1.0,
+      "tol": 0.01,
+      "note": "C = 1-e exactly, so N = 1/(1-e), alpha=1. Discriminator: chi2(P0||P1) = infinity (disjoint supports) - the conditional laws never merge; what vanishes is the probability of the informative event."
+    },
+    "P3_Zchannel": {
+      "alpha": 1.0,
+      "tol": 0.03,
+      "note": "OUT-OF-SAMPLE test of the discriminator. The Z-channel's conditional laws DO merge in total variation as q->1, so a naive merge-reading predicts 2; the chi-square rule says infinite chi2 (support mismatch at y=1) => alpha=1. Registering 1, against the naive reading."
+    },
+    "P4_BIAWGN": {
+      "alpha": 2.0,
+      "tol": 0.05,
+      "note": "Binary-input Gaussian, amplitude a->0: I ~ a^2/(2 ln2) bits. Smooth merge, finite chi2 => 2. Second, structurally different member of the same class."
+    },
+    "P5_eigen_bare": {
+      "L_times_mu_c": "ln(sigma)",
+      "tol_rel": 0.05,
+      "note": "Eigen's classic condition sigma*(1-mu)^L > 1. Structural prediction with no free exponent: the BARE quasispecies has NO redundancy knob (every site is functional, N/k = 1), so the stone's 'required redundancy vs gap' question is malformed for this leg, and the threshold moves with L instead of sitting at a fixed p_c."
+    },
+    "P6_eigen_majority_repair": {
+      "threshold_mu_c": 0.5,
+      "alpha": 2.0,
+      "tol": 0.15,
+      "note": "Add a decoder (majority repair across r copies) and the threshold should move from ln(sigma)/L to mu=1/2, with r_min ~ ln(k/ln sigma)/D(1/2||mu) and D(1/2||1/2-d) = 2d^2 + O(d^4) => alpha=2. Tolerance is wide because the binomial prefactor contributes a log correction. Secondary prediction: r_min*d^2 / (N_BSC*d^2) tends to a CONSTANT > 1 - the coding gap between a repetition code and an optimal one is a constant, not an exponent."
+    },
+    "P7_ft_concatenation": {
+      "alpha": "log(n0)/log(t+1)",
+      "tol_rel": 0.01,
+      "cases": [[5, 1], [7, 1], [9, 1], [23, 3]],
+      "note": "Level-L logical error p_th*(p/p_th)^((t+1)^L), resource n0^L. alpha = ln n0 / ln(t+1) - an RG eigenvalue ratio (log resource growth / log rescaling), hence SCHEME-dependent, and different from 2 for every case listed."
+    },
+    "P8_falsifier": {
+      "expect": "fires",
+      "note": "P1-P7 cannot all share an exponent, so the stone's stated falsifier should fire. Registering the replacement claim in advance: the exponent is not a domain label but a DEGENERACY ORDER - alpha=2 where the conditional laws merge smoothly (Fisher/grad^2-Phi second-order term), alpha=1 where the informative support loses mass (first-order, since probability is linear), alpha=log n0/log(t+1) where the threshold is an unstable fixed point of a decoder recursion rather than a capacity zero."
+    }
+  }
+}

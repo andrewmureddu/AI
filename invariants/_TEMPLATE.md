@@ -3,6 +3,7 @@
 > **One-line claim:** <the domain-neutral assertion in one sentence>
 > **Headline correspondence level:** L<0–4> — <one-line justification>
 > **Status:** seed | developing | vetted | contested | retired
+> **Floor:** <1 symmetry-constituted | 2 Φ-regular | 3 Φ-singular | refuses> — one line of reason; see [FLOORS.md](./FLOORS.md)
 
 ## Statement
 

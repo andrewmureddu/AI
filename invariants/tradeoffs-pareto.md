@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L1–L2; often a consequence of constrained
 > optimization rather than an independent law. *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **2** (Φ-regular), partial — a frontier with a real exchange rate *is* a Legendre transform; without one it is not an invariant. ▸facet
 
 ## Statement
 

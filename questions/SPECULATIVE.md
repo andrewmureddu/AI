@@ -114,6 +114,34 @@ these one invariant — a redundancy-vs-noise transition — with a shared scali
 required redundancy in the noise gap? **Falsifier:** the redundancy-vs-(threshold−p)
 scaling exponents differ across the three. (New entry
 [`noise-thresholds.md`](../invariants/noise-thresholds.md).)
+> **⟳ Restraint pass (2026-07-25):** *falsifier fires — stone retired as stated,
+> replaced by a taxonomy* —
+> [`../experiments/S5-noise-thresholds/`](../experiments/S5-noise-thresholds/).
+> Exponents span **1.00 → 3.17**, and the variation is *within* domains, not
+> across them: coding theory alone supplies both 1.00 (BEC, Z-channel) and 2.00
+> (BSC, BI-AWGN), and concatenated fault tolerance supplies four values set only
+> by which code you concatenate. **Replacement claim (L2–L3, on-model): α is a
+> degeneracy order, not a domain label.** α = 2 where the two conditional laws
+> merge smoothly — *forced*, since the first-order term of any divergence
+> cancels identically and the leading term is the Fisher quadratic form; α = 1
+> where the informative support loses mass (mass is a linear functional);
+> α = ln n₀/ln(t+1) where the "threshold" is not a capacity zero at all but the
+> unstable fixed point of a decoder recursion — an RG eigenvalue. Discriminator
+> verified: **α = the order of vanishing of χ²_sym**, to 0.0015 across four
+> channels. (The pre-registered version, "infinite χ² ⇒ α=1", was
+> direction-dependent and ill-posed; the Z-channel exposed it, while confirming
+> the *prediction* it was meant to support.) Biology leg: Eigen's bare model has
+> **no redundancy knob** — the stone's question is malformed there — and its
+> threshold L·μ_c = ln σ is the zero-redundancy corner of Shannon's; add a
+> decoder and the threshold moves to μ=½ with r_min·δ² = 1.32 (constant to 0.5%
+> over an 8× range of gaps, to 10% over 33×), the coding gap appearing as a
+> constant (3.81→3.59), not an exponent.
+> Fifth arrival at ∇²Φ's singular set, and the first to measure its *order* —
+> both of [S25(K)](../derivations/S25-control-split.md)'s named singular faces
+> (null Fisher directions; supports) appear here with *different* exponents,
+> which is why a single-exponent premise had to fail. Open: does type R
+> (scheme/decoder structure) constitute a **fourth floor** of the tower? See
+> [`../SYNTHESIS.md`](../SYNTHESIS.md) §7.2.
 
 ### S6 🟢 — Is the SAT solvability transition the same phase transition as a physical one?
 **Bridge:** the replica/cavity method; computational phase transitions.
@@ -154,6 +182,18 @@ autocorrelation/variance. (New entry
 > observed on schedule: nearest T_c the quartic term outweighs the softened
 > linear curvature and the linear early-warning law degrades. Grokking leg
 > still open (no torch).
+> **⟳ Boundary found (2026-07-26, via [P-A](../experiments/PA-spectral-gap/)):**
+> **τ·λ = 1 is a *single-basin* law.** All three of S7's legs relax *within* a
+> basin, so the law was never exposed to barrier crossing. In a double well the
+> spectral gap falls **3540×** while the local potential curvature U″(±1)
+> **rises 6×** — opposite directions — and S7's product runs from 3.5e1 to
+> 7.5e5 instead of staying at 1. The law is restored by taking λ from the
+> *trajectory* free energy (the SCGF of a time-averaged observable): Λ''·gap
+> stays O(1), converging to 2. Restated: τ·λ = 1 holds where the slow mode *is*
+> a local curvature; where relaxation is barrier crossing, the potential's
+> Hessian is the wrong object. P-A also makes the arrival directional — for an
+> observable orthogonal to the slow mode the free energy's second derivative
+> does not move at all while the gap closes.
 
 ---
 
@@ -462,7 +502,15 @@ descent reaching equally-singular endpoints.
 
 ## Cluster K — The periphery split (added 2026-07-22, from [`essays/04`](../essays/04-the-periphery-split.md))
 
-### S25 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
+> **Numbering note (2026-07-25).** This cluster's two stones were filed as S25
+> and S26, numbers already in use in Cluster J (the RLCT stone and the
+> degeneracy-attractor stone). Where the distinction matters, write **S25(J)** /
+> **S26(J)** for Cluster J and **S25(K)** / **S26(K)** for the two below. The
+> dated [research-log](../research-log/) entries and the experiment/derivation
+> directory names are left as originally written — they are a historical record,
+> not an index.
+
+### S25(K) 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
 **Bridge:** the estimation–control dualities (Kalman filter ↔ LQR; KL-control /
 control-as-inference) versus the Kalman rank conditions.
 **Connects:** control theory · Bayesian filtering · the free-energy hub ·
@@ -505,7 +553,7 @@ percolation must resist even through the Potts/random-cluster q→1 dressing.)
 > dressing. Remaining candidate for a true second axis: the invariance/symmetry
 > sector only.
 
-### S26 🟡 — Conserved charges are the coordinates of the prediction field
+### S26(K) 🟡 — Conserved charges are the coordinates of the prediction field
 **Bridge:** Noether charges ↔ natural parameters / sufficient statistics of
 long-time ensembles (Gibbs, generalized Gibbs, Jaynes-in-reverse).
 **Connects:** physics (conservation, GGE/ETH) · statistics (sufficiency,

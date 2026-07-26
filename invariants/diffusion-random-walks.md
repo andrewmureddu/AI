@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L3–L4. The CLT is a theorem (L4) that *forces*
 > the shared Gaussian/diffusive behavior on an entire class of systems.
 > **Status:** developing
+> **Floor:** **2** (Φ-regular), → 3 in the tails — CLT forces the max-entropy Gaussian; JKO makes diffusion its gradient flow. Lévy/anomalous instances move to floor 3 ([P-B](./FLOORS.md))
 
 ## Statement
 

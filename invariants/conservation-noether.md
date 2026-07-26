@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L4 within physics (Noether); L2–L3 for the
 > economic/probabilistic analogues, sharply demarcated below.
 > **Status:** developing
+> **Floor:** **1** (symmetry-constituted) — charges are the natural parameters of long-time ensembles. *Bookkeeping identities are not floor 1* — see [FLOORS §4](./FLOORS.md)
 
 ## Statement
 

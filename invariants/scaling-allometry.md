@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L2 broadly; L3 contested (WBE theory);
 > a key open case. *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **refuses the tower** — the WBE exponent comes from branching geometry, not a partition function ([P-D](./FLOORS.md))
 
 ## Statement
 
