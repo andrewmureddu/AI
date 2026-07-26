@@ -6,8 +6,29 @@ this inside one constructed SCM (where invariance = transfer by design). This is
 honest step up: **genuinely different generative mechanisms**, with the transfer
 outcome forced by probability theory rather than baked in.
 
-**Status: confirmed, with a sharper finding than expected — the transfer *cliff*
-sits at the L2/L3 boundary (appearance → mechanism).**
+**Status: confirmed — level orders transfer. The original "cliff at L2/L3"
+reading is *partially retracted*; see the restraint pass at the bottom.**
+
+> **⟳ Restraint pass (2026-07-26, [`paper/transfer-cliff.md`](../../paper/transfer-cliff.md)).**
+> Re-analysis of this experiment's own output, with three additions the original
+> run did not make.
+> **(1) The step-size claim is wrong.** Adjacent steps are L1→L2 = **+0.451**,
+> L2→L3 = **+0.432**, L3→L4 = **−0.022**. The L2/L3 step is *not* uniquely large
+> — L1→L2 is the same size or larger. "Near-useless at L1–L2" is also wrong:
+> 0.48 is roughly half the attainable skill. **Retracted.**
+> **(2) What is real is a ceiling, not a step.** The `vary_n` sweep below is the
+> load-bearing evidence: L3/L4 climb to the ceiling, L2 saturates at ~0.54
+> permanently, L1 never moves. *More evidence redeems a shared mechanism and
+> never redeems a shared form.*
+> **(3) The ceiling is now measured** (it never was): scoring domain A against an
+> **independent draw of A itself** gives **0.920 ± 0.023** over 8 seeds. L3 scores
+> 0.916 — statistically indistinguishable from transferring the law to itself. So
+> L3/L4 achieve *complete* transfer, and the ~0.08 shortfall in every L3/L4 number
+> is metric noise, not a transfer deficit.
+> Also: Spearman(level, skill) = 0.80 has n = 4, whose minimum two-sided p is
+> 1/12 ≈ 0.083. It cannot reach significance and is reported for continuity only;
+> the real statistics are the per-seed separation (L2 max 0.538 < L3 min 0.886,
+> zero overlap in 8 seeds) and the divergent ceilings across 10 values of n.
 
 Run: `python3 run.py` (pure numpy, deterministic) → `python3 plot.py` →
 [`ladder_transfer.png`](./ladder_transfer.png).

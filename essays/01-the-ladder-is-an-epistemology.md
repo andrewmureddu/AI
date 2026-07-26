@@ -2,6 +2,16 @@
 
 *On why the form/mechanism boundary is where knowledge starts to travel.*
 
+> **⟳ Note (2026-07-26).** [Paper 1](../paper/transfer-cliff.md) §3.3 retracts the
+> *step*-size reading this essay leans on: L1→L2 (+0.451) is the same size as
+> L2→L3 (+0.432), so "a cliff, located exactly at the boundary" (§1 below) is not
+> what the data show. The essay's argument survives in the corrected form —
+> the L2/L3 boundary is where the transfer **ceiling** becomes attainable, L2
+> being permanently capped at ~59% of it — and §5's compression conjecture is
+> arguably *strengthened* by a ceiling reading, since a cap is what a limit on
+> descriptive compression should look like. Left as written, per the repo's rule
+> that superseded work is corrected in place rather than rewritten.
+
 ---
 
 ## 1. A bookkeeping device that turned out to be a claim
