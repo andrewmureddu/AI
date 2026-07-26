@@ -5,6 +5,7 @@
 > processing, with a shared uncertainty/tradeoff structure.
 > **Headline correspondence level:** L2–L3 (shared transform structure). *(seed)*
 > **Status:** seed
+> **Floor:** **2 + 1** — splits: Legendre duality = Φ* (floor 2, ▸facet); Fourier/canonical conjugacy is symplectic, so floor 1
 
 ## Statement
 

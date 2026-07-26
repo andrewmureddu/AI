@@ -5,6 +5,7 @@
 > **Headline correspondence level:** L2 in general; L3 for specific mechanism-matched
 > families (e.g. preferential-attachment networks).
 > **Status:** developing
+> **Floor:** **3** (Φ-singular) — heavy tails are where Z or its moments diverge: the complement of the exponential-family world
 
 ## Statement
 

@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L4 where RG applies; L1 as loose
 > "emergence" talk. *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **none — an operation on the tower**, not a fact inside it: RG carries Φ at one scale to Φ at another ([measured](../experiments/S25-channel-independence/))
 
 ## Statement
 

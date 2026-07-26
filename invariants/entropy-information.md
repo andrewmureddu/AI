@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L3 for the statistical-mechanics ↔
 > information-theory link (Jaynes); L2 for most downstream uses.
 > **Status:** developing
+> **Floor:** **2** (Φ-regular) — Φ*, the Legendre dual. ▸facet of [the hub](./free-energy-hub.md), not an independent invariant
 
 ## Statement
 

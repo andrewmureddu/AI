@@ -6,6 +6,7 @@
 > **Headline correspondence level:** L3 candidate (JKO is a theorem; cross-domain
 > reach is the open part). *(seed — speculative)*
 > **Status:** seed
+> **Floor:** **2** (Φ-regular) + open — the *flow* is Φ-driven (JKO), but the Wasserstein metric is not ∇²Φ and is not derived from Φ. Flagged unresolved in [FLOORS §4](./FLOORS.md)
 
 ## Statement
 

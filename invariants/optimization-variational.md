@@ -5,6 +5,7 @@
 > **Headline correspondence level:** L1–L2, with a few L3 pockets; high risk of
 > teleological over-reach. *(provisional — seed)*
 > **Status:** seed
+> **Floor:** **2 + 1** — splits by what the functional is over: a free energy ⇒ floor 2; an *action* ⇒ floor 1. "As-if" optimization is neither ([P-C](./FLOORS.md))
 
 ## Statement
 
