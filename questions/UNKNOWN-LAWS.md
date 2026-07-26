@@ -160,8 +160,29 @@ and the engine that produced it.
 
 **Engine:** residue mining ([S7](../experiments/S7-critical-slowing/)'s discarded
 exponents) + gap prediction (floor 3's missing classification).
-**Novelty: N2 claimed.** **Status: ⟳ RUN — see
-[`experiments/D1-chart-invariance/`](../experiments/D1-chart-invariance/).**
+**Novelty: N2 claimed; N0–N1 for the formula, N2 survives for the classification.**
+**Status: ⟳ RUN 2026-07-26 — [`experiments/D1-chart-invariance/`](../experiments/D1-chart-invariance/).**
+
+> **⟳ Restraint pass (2026-07-26):** *chart claim confirmed in the strong form;
+> the formula deflated to N0–N1 exactly as the prior-art note warned.*
+> *k* is removable **by inference** — a fold in population dynamics (k = ½) and an
+> SIS epidemic (k = 1), anharmonic coefficients differing 3×, give bare exponents
+> 0.667 vs 0.333 and λ-chart exponents **0.33333 vs 0.33333**; *g* enters the
+> amplitude exactly as claimed (prefactor ratio 2.0801 measured at all nine noise
+> scales vs 3^{2/3} = 2.0801 predicted) — and **by manipulation**: under ε′ = ε^a
+> the bare exponent moves by exactly a while the λ-chart exponent does not move at
+> all. Both **at-risk** legs pass: full all-orders models give 0.4961 (p = 4) and
+> 0.6635 (p = 6) against 0.5000 and 0.6667. The bare chart **inverts** the
+> classification — fold (p = 3) and tricritical point (p = 6) agree to three
+> decimals while fold and epidemic, the *same* degeneracy, differ by 2×.
+> **Deflation, declared in advance:** legs A and B are analytic identities inside
+> a truncated normal form and are not evidence; the formula is the Ginzburg
+> calculation for general *p*. What survives at N2 is the cross-domain
+> classification and the removability of *k*. **One registered direction refuted**
+> (P8's crossover is the large-D end, not the small-D end); its mechanism survived
+> and gave a post-hoc D_× ~ δa³ law, measured at δa^3.211 — logged as a
+> consistency check, not a result. Scope: 1-D gradient systems, additive noise,
+> degeneracy-type singularities only; both at-risk legs are physics.
 
 **The residue.** S7 measured one relation that transferred across three domains
 (τ·λ_min = 0.94 ± 0.13) and three exponents that did not (−½ / −1 / −2). The repo
@@ -233,7 +254,9 @@ then the invariance claim is simply false.
 ### D2 — Floor 4 is not a floor, it is the gauge group
 
 **Engine:** gap prediction — the map's [sharpest open question](../SYNTHESIS.md) §7.1.
-**Novelty: N2 claimed. Status: unworked, but D1 supplies its central evidence.**
+**Novelty: N2 claimed. Status: unworked. D1 has now supplied the removability half
+— under ε′ = ε^a the chart order changes while every λ-chart exponent is
+untouched, so *k* is demonstrably gauge rather than content.**
 
 [`FLOORS.md`](../invariants/FLOORS.md) §4 found that four things refused the tower
 and refused it *the same way*: their invariant is a **log-ratio** —

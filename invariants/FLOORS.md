@@ -67,6 +67,24 @@ support loss, soft modes. [S5](../experiments/S5-noise-thresholds/) showed these
 carry *different exponents* — metric merge gives 2, support loss gives 1 — so they
 cannot be collapsed into each other.
 
+> **⟳ Update (2026-07-26, [D1](../experiments/D1-chart-invariance/)).** The
+> classification this section called open work now has a partial answer, and a
+> correction to how the exponents were being read. A degeneracy-type floor-3
+> singularity carries **two** numbers: the **chart order** *k* (λ ~ ε^k in
+> whatever coordinate the domain supplies) and the **degeneracy order** *p* (first
+> non-vanishing anharmonic term of Φ). ***k* is gauge** — removed by inference
+> across two fields and by explicit reparameterization — and ***p* classifies**,
+> via λ_c ~ D^{(p−2)/p} on the noise-rounding crossover. So the exponent spreads
+> S5 and S7 reported as "domain-specific" are largely a **chart artifact**: in the
+> bare chart a fold (p = 3) and a tricritical point (p = 6) agree to three decimals
+> while a fold and an SIS epidemic — the same degeneracy — differ by 2×.
+> **Scope, and it matters here:** this classifies the part of floor 3 where Φ has a
+> Taylor expansion. **Support loss has no *p*** — S5's type S is precisely a
+> boundary rather than a degeneracy — so the stratification of floor 3 is now
+> "degeneracy-type, indexed by *p*" plus "everything else, still unclassified"
+> ([D6](../questions/UNKNOWN-LAWS.md)). Redundancy deletion still fails on floor 3;
+> it is now failing in a countable way.
+
 So the asymmetry, which the original "one object seen sideways" slogan could not
 express:
 
@@ -179,6 +197,31 @@ disguise — a code *is* a redundancy chosen to be invariant under the noise, an
 "invariance selects the coordinates" is precisely floor 1's job. **The second
 horn is the live one**, and deciding it is now the map's sharpest architectural
 question.
+
+> **⟳ A third horn, opened 2026-07-26 ([D2](../questions/UNKNOWN-LAWS.md)).**
+> Neither a floor nor floor 1: **the gauge group.** D1's chart order is
+>
+> ```
+>         k  =  d ln λ / d ln ε
+> ```
+>
+> log-response over log-rescaling — *the signature in the table above, exactly*.
+> On that reading a fractal dimension is the chart order of a self-similar map, an
+> RG eigenvalue the chart order of the coarse-graining map, S5's type-R exponent
+> the chart order of a decoder recursion, and double-entry accounting the
+> degenerate case k = 0, conserving because the chart is constant. That would
+> explain both facts this section found puzzling: why they refused floors 1–3 (a
+> gauge parameter is not a fact on any floor) and why four unrelated objects
+> carried the *same* signature, which a genuine new floor has no reason to
+> produce.
+> **[D1](../experiments/D1-chart-invariance/) supplies the removability half**:
+> under an explicit reparameterization ε′ = ε^a the chart order changes while every
+> λ-chart exponent is unmoved to four decimals. **It does not supply the rest**,
+> and the counter-horn is real: an RG eigenvalue *predicts which perturbations are
+> relevant*, and it is not obvious that predictive work survives being called
+> gauge. If it does, the P0 **dissolves** rather than resolving — there is no fourth
+> floor, only a coordinate freedom the first three were always defined up to.
+> Unworked; now the map's most valuable question.
 
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a

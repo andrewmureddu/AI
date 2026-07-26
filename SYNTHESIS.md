@@ -1,8 +1,9 @@
 # State of the map — synthesis
 
-*Snapshot: 2026-07-25. Supersedes the 2026-07-19 snapshot, whose through-line
+*Snapshot: 2026-07-26. Supersedes the 2026-07-19 snapshot, whose through-line
 ("much of the map is one object seen sideways") has since been corrected twice —
-three sectors → two layers → one tower.*
+three sectors → two layers → one tower. Updated 2026-07-26 with floor 3's partial
+classification and the opening of the [discovery register](./questions/UNKNOWN-LAWS.md).*
 
 This document makes the whole structure legible in one read: what we're doing,
 what has actually been established, what is still a speculative stone, and the
@@ -41,6 +42,15 @@ breakdown.**
   bookkeeping. Leaps that survive a falsifier graduate; leaps that die are logged
   and marked L1 — and, as §7 records, the ones that die have been the more
   productive half.
+- **The second axis (added 2026-07-26).** The ladder grades how well a
+  correspondence is *established*; it says nothing about whether it is *new*.
+  Every stone through S26 takes a law already known in one field and asks how far
+  it travels — **recognition**, whose ceiling is the union of the textbooks.
+  [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) opens **discovery**, graded on
+  a **novelty ladder** (N0 restatement → N3 new object) that *multiplies* with the
+  rigor ladder, and guarded by two rules recognition does not need: a prior-art
+  note written before the work, and a pre-registration that marks which
+  predictions are analytic identities before the run.
 
 ---
 
@@ -76,6 +86,7 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
+| **D1** | [The chart law — two integers classify floor 3](./experiments/D1-chart-invariance/) | experiment | **chart claim confirmed, formula deflated by its own prior-art note** — a floor-3 degeneracy carries a **chart order** *k* (gauge) and a **degeneracy order** *p* (invariant), λ_c ~ D^{(p−2)/p}. *k* removed by inference (two fields, λ-chart 0.33333 vs 0.33333 where bare exponents differ 2×) and by manipulation (ε′=ε^a moves the bare exponent by exactly a, the λ-chart exponent not at all). **S5's and S7's "domain-specific exponents" are largely a chart artifact** | 1-D gradient systems, additive noise; **support-type singularities have no *p*** and are excluded; both at-risk legs are physics; legs A/B are declared identities, not evidence |
 | — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
 
 ### Where "one law" claims keep landing
@@ -145,6 +156,31 @@ non-analyticity, divergent moments, null directions, lost supports — and
 exponents*. Redundancy deletion is a floor-2 operation; floor 3 needs
 classification instead.
 
+**Floor 3's classification, partially delivered — and a correction to how its
+exponents were read.** [D1](./experiments/D1-chart-invariance/) found that a
+degeneracy-type floor-3 singularity carries **two** numbers, and that only one of
+them is a fact about the singularity:
+
+```
+   k = chart order       lambda ~ eps^k in whatever coordinate the domain supplies   -> GAUGE
+   p = degeneracy order  first non-vanishing anharmonic term of Phi                  -> CLASSIFIES
+```
+
+Since ε′ = ε^a describes the same singularity and divides every exponent by a, a
+*bare* exponent is a property of the coordinate, not the object. Measured: a fold
+in population dynamics and an SIS epidemic — same *p*, chart orders differing 2× —
+have bare exponents 0.667 and 0.333 and λ-chart exponents 0.33333 and 0.33333. In
+the bare chart the fold (p = 3) and a tricritical point (p = 6) *agree to three
+decimals* while the fold and the epidemic, the same degeneracy, differ by a factor
+of two. **So the exponent spreads S5 and S7 filed as "domain-specific" are largely
+a chart artifact** — which retro-reads S7's τ·λ = 1 as the statement that the
+relaxation exponent is −1 in the λ chart in every domain.
+
+The scope is a real limit, not a caveat: this classifies the part of floor 3 where
+Φ has a Taylor expansion. **Support loss has no *p* at all** — S5's type S is a
+boundary, not a degeneracy — so floor 3 now reads "degeneracy-type, indexed by *p*"
+plus a still-unclassified remainder.
+
 **Honest scope.** The tower is derived for equilibrium / long-time (stationary)
 prediction fields. Driven, non-stationary systems can carry non-conserved
 quantities in their description indefinitely, and the base-floor claim does not
@@ -197,7 +233,11 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25(J), S25(K), S26(J), S26(K). **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **11 experiments + 5 derivations** with teeth; **4 essays**.
+- **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
+  register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
+  own prior-art note). **Unworked:** D2–D6, of which **D2 is the map's most
+  valuable open question**.
+- **12 experiments + 5 derivations** with teeth; **4 essays**.
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -206,7 +246,22 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 
 ## 7. The open frontier (reprioritized)
 
-1. **Is there a fourth floor? (P0 — now the map's sharpest question.)** The tower's
+0. **Is the "fourth floor" a floor at all, or the tower's gauge group? (P0 — the
+   sharpest question, and it now has a third answer on the table.)**
+   [D2](./questions/UNKNOWN-LAWS.md) observes that D1's chart order is
+   k = d ln λ / d ln ε — **a log-ratio, which is exactly the signature
+   [`FLOORS.md`](./invariants/FLOORS.md) §4 used to identify the scheme layer.** On
+   that reading a fractal dimension is the chart order of a self-similar map, an RG
+   eigenvalue that of the coarse-graining map, S5's type-R exponent that of a
+   decoder recursion, and double-entry accounting the degenerate k = 0. It would
+   explain both why they refused floors 1–3 and why four unrelated objects carried
+   the same signature. [D1](./experiments/D1-chart-invariance/) supplies the
+   removability half — under ε′ = ε^a the chart order changes and every λ-chart
+   exponent is unmoved. **The counter-horn is live:** an RG eigenvalue predicts
+   which perturbations are relevant, and predictive work is not obviously
+   gauge. If it survives, the P0 **dissolves** — no fourth floor, just a coordinate
+   freedom the first three were always defined up to. Unworked.
+1. **Is there a fourth floor? (P0, as previously posed.)** The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
    [Sorting the catalog](./invariants/FLOORS.md) produced not one candidate but a
    *cluster*, and they share a signature: **their invariant is a log-ratio —
@@ -263,6 +318,20 @@ is the L3/L4 distinction the [methodology](./METHODOLOGY.md) drew on other
 grounds, showing up unbidden in the results — the ladder predicting its own
 findings. It also suggests where to aim: claims of the form "*the same mechanism*"
 have been surviving; claims of the form "*the same number*" have not.
+
+> **⟳ Amended 2026-07-26 by [D1](./experiments/D1-chart-invariance/), and this is
+> the sharpest thing the process has produced about itself.** The pattern above was
+> recorded three times (S5, S7, P-A) and *explained* zero times — "domain-specific"
+> was doing the work of an explanation while naming only a failure to have one.
+> D1 says the exponents were never domain-specific: a bare exponent is a property
+> of the coordinate the domain happens to use, and the domain-dependence factors
+> through the chart map ε ↦ λ. So the meta-pattern has a mechanism, and it is not
+> that mechanisms are deeper than numbers — it is that **a dimensionless relation
+> is reparameterization-invariant and a bare exponent is not.** The lesson for
+> aiming generalises accordingly: prefer claims that survive re-charting, and treat
+> any recurring phrase in our own verdicts ("domain-specific," "convergent,"
+> "family-specific constants") as an unexplained residue with a law hiding in it —
+> which is now [engine 1](./questions/UNKNOWN-LAWS.md) of the discovery register.
 
 **Bookkeeping defect on record.** Two stone numbers were reused: **S25** names both
 the RLCT stone (Cluster J) and the control-split stone (Cluster K), and **S26**

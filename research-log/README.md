@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-26 — Turning to discovery: the chart law (D1), and what it does to floor 3](./2026-07-26-D1-chart-invariance.md)
 - [2026-07-26 — P-A run: the spectral gap is a null direction, and S7 is a single-basin law](./2026-07-26-PA-spectral-gap.md)
 - [2026-07-25 — The catalog sorted by floor (floor 2 collapses, floor 3 stratifies; three entries refuse the tower)](./2026-07-25-catalog-sorted-by-floor.md)
 - [2026-07-25 — S5 run (thresholds are one object, three degeneracy orders) + synthesis refreshed to the tower](./2026-07-25-S5-and-synthesis-refresh.md)
