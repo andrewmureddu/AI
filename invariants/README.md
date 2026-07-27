@@ -19,7 +19,7 @@ column in [`../domains/README.md`](../domains/README.md). See
 | **1** | symmetry / conservation — *chooses Φ's coordinates* | a charge that can parameterize an invariant ensemble |
 | **2** | Φ regular — *prediction* | ∇Φ, ∇²Φ, Φ*, −Φ of one convex function |
 | **3** | Φ singular — *where prediction ends* | non-analyticity, null Hessian directions, lost supports |
-| **4?** | *proposed:* the scheme layer — facts about the description map | a **log-ratio** exponent (ln N / ln b), not a Φ-derivative |
+| ~~4?~~ | *retired 2026-07-26* — not a floor but the tower's **structure group**: the floors are defined up to G_diff, cross-domain comparison has only G_pow, and the "scheme layer" is the difference ([D2](../derivations/D2-gauge-of-the-tower.md)) | a **log-ratio** exponent (ln N / ln b) — transformation data, not a fact; its chart-free residue is the codimension p − 2 |
 
 Floors and ladder levels are **orthogonal**: a floor-3 entry can be L4 in physics
 and L1 in finance. ▸facet marks entries that are *not independent invariants* —
@@ -89,6 +89,15 @@ symplectic half — seven facet-faces in total. Effective independent count:
 
 Three entries refused the tower altogether (#9, #13, and the type-R half of #21,
 with #11's deterministic half joining them). They share a signature — a log-ratio
-exponent rather than a Φ-derivative — which is the evidence for a proposed
-**fourth floor**, and equally the tower's own falsifier. See
+exponent rather than a Φ-derivative — which was read as evidence for a proposed
+**fourth floor**, and equally as the tower's own falsifier.
+
+**Resolved 2026-07-26 ([D2](../derivations/D2-gauge-of-the-tower.md)): there is no
+fourth floor.** The floors are defined up to *G_diff* — reparameterizations smooth
+at the singular point — while cross-domain comparison has only *G_pow* (φ ~ ε^a,
+smooth away from the point but not at it). The shared log-ratio signature is the
+**transformation data of one group relative to the other**, and a transformation
+parameter is not a fact on any floor, which is why these entries refused. Their
+chart-free residue is the **codimension p − 2**, i.e.
+[D1](../experiments/D1-chart-invariance/)'s degeneracy order — floor-3 data. See
 [`FLOORS.md`](./FLOORS.md) §4.

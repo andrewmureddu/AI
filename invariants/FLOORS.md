@@ -67,6 +67,44 @@ support loss, soft modes. [S5](../experiments/S5-noise-thresholds/) showed these
 carry *different exponents* — metric merge gives 2, support loss gives 1 — so they
 cannot be collapsed into each other.
 
+> **⟳ Update (2026-07-26, [D1](../experiments/D1-chart-invariance/)).** The
+> classification this section called open work now has a partial answer, and a
+> correction to how the exponents were being read. A degeneracy-type floor-3
+> singularity carries **two** numbers: the **chart order** *k* (λ ~ ε^k in
+> whatever coordinate the domain supplies) and the **degeneracy order** *p* (first
+> non-vanishing anharmonic term of Φ). ***k* is gauge** — removed by inference
+> across two fields and by explicit reparameterization — and ***p* classifies**,
+> via λ_c ~ D^{(p−2)/p} on the noise-rounding crossover. So the exponent spreads
+> S5 and S7 reported as "domain-specific" are largely a **chart artifact**: in the
+> bare chart a fold (p = 3) and a tricritical point (p = 6) agree to three decimals
+> while a fold and an SIS epidemic — the same degeneracy — differ by 2×.
+> **Scope, and it matters here:** this classifies the part of floor 3 where Φ has a
+> Taylor expansion. **Support loss has no *p*** — S5's type S is precisely a
+> boundary rather than a degeneracy — so the stratification of floor 3 is now
+> "degeneracy-type, indexed by *p*" plus "everything else, still unclassified"
+> ([D6](../questions/UNKNOWN-LAWS.md)). Redundancy deletion still fails on floor 3;
+> it is now failing in a countable way.
+>
+> **⟳ Extended (2026-07-27, [D6](../experiments/D6-support-singularities/)): *p*
+> was a special case, and the "everything else" above is now nearly empty.**
+> Writing Φ's two leading terms at the singular point as A|y|^{q1} + B|y|^{q2}
+> with A → 0, the crossover locus is **A_c ~ D^{1 − q1/q2}**, and:
+>
+> ```
+>    q1 = 2      what SMOOTHNESS forces   ->  D1's degeneracy order, exponent (p-2)/p
+>    q1 = 1      a kink or a boundary     ->  support loss (S5's type S)
+>    q2 -> oo    a hard wall              ->  exponent 1  (measured 0.9979)
+> ```
+>
+> So support loss is not p = ∞ — that would be a value in the q2 slot — but a
+> different value in the *q1* slot, and M/M/1 with an infinite buffer has **no
+> second term and therefore no crossover at all** (kurtosis pinned at 6.0000 over
+> four decades). **Floor 3's classifier is the ratio q1/q2**, which is exactly the
+> form [D2](../derivations/D2-gauge-of-the-tower.md) derived the chart-free
+> residue must take; D2's "residue = codimension p − 2" is its smooth-case face.
+> The unclassified remainder is now **essential singularities only** — Φ with no
+> leading power at all.
+
 So the asymmetry, which the original "one object seen sideways" slogan could not
 express:
 
@@ -211,6 +249,8 @@ land in the same bin.
 signature is a log-ratio exponent rather than a Φ-derivative. This is a
 **proposal, not a result.** It is exactly the tower's falsifier #4 (an invariant
 reducible to none of the three floors), so if it stands the tower gains a floor.
+*(⟳ Retired 2026-07-26 by [D2](../derivations/D2-gauge-of-the-tower.md) — kept as
+written because the reason it fails is the result. Read the resolution below.)*
 
 **P-E, its falsifier, two-sided:** (kills the floor) reduce a log-ratio exponent to
 a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
@@ -218,7 +258,9 @@ a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
 disguise — a code *is* a redundancy chosen to be invariant under the noise, and
 "invariance selects the coordinates" is precisely floor 1's job. **The second
 horn is the live one**, and deciding it is now the map's sharpest architectural
-question.
+question. *(⟳ Both horns are now answered — the second by
+[P-D](../experiments/PD-allometry-reduction/), the floor itself by a third horn
+neither anticipated. Below.)*
 
 **First evidence on the live horn, from P-D — and it points to *takes input from*
 rather than *is*.** Allometry's two ratios are selected by conditions that are
@@ -230,6 +272,80 @@ predicted. But floor 1's job is to choose *Φ's coordinates*, and here there is 
 pair exists for it to be an exchange rate between. Evidence for separateness, not
 a settlement: one instance, and the argument that floor 1 must terminate in a Φ
 is a claim about the tower rather than a measurement.
+
+> **⟳ RESOLVED 2026-07-26 — the third horn is the right one.** Worked in
+> [`derivations/D2-gauge-of-the-tower.md`](../derivations/D2-gauge-of-the-tower.md)
+> and [`experiments/D2-gauge-group/`](../experiments/D2-gauge-group/).
+> **There is no fourth floor.** Writing **G_diff** for reparameterizations smooth
+> *at* the singular point and **G_pow** for φ(ε) ~ ε^a (smooth away from it, not
+> at it), the floors are defined up to G_diff while cross-domain comparison has
+> only G_pow — and **the scheme layer is the difference between the two.** RG
+> eigenvalues are G_diff-invariant by conjugation (5.3e-15) and G_pow-covariant
+> as y → a·y (≤2.4e-12): identical behaviour to D1's chart order, so all five
+> rows of the table above are one object, the transformation datum of G_pow
+> modulo G_diff. A transformation parameter is not a fact on any floor, which is
+> why they refused, and why five unrelated things shared one signature.
+> **The chart-free residue is the codimension p − 2** — signs, counts and ratios
+> being three faces of it — measured as β/k = 0.5000 (p = 4) and 0.2503 (p = 6)
+> against 1/(p−2). So the refusers dissolve into gauge plus floor 3, and what was
+> under them was [D1](../experiments/D1-chart-invariance/)'s degeneracy order.
+> **This section's asymmetry (§2) also stops being a bare observation:** away from
+> the singular point G_pow = G_diff, so floor 2 lives under the smooth group where
+> tensors have real invariants and collapses; at the singular point the group
+> enlarges, eats exponent magnitudes, and leaves a discrete residue — so floor 3
+> stratifies. Load-bearing caveat: the ratios require the **common-a** commitment
+> (one distance-to-threshold per singularity, not one per eigendirection); under
+> independent re-charting only signs and counts survive.
+>
+> *The original statement of the horn follows, unedited.*
+>
+> **⟳ A third horn, opened 2026-07-26 ([D2](../questions/UNKNOWN-LAWS.md)).**
+> Neither a floor nor floor 1: **the gauge group.** D1's chart order is
+>
+> ```
+>         k  =  d ln λ / d ln ε
+> ```
+>
+> log-response over log-rescaling — *the signature in the table above, exactly*.
+> On that reading a fractal dimension is the chart order of a self-similar map, an
+> RG eigenvalue the chart order of the coarse-graining map, S5's type-R exponent
+> the chart order of a decoder recursion, and double-entry accounting the
+> degenerate case k = 0, conserving because the chart is constant. That would
+> explain both facts this section found puzzling: why they refused floors 1–3 (a
+> gauge parameter is not a fact on any floor) and why four unrelated objects
+> carried the *same* signature, which a genuine new floor has no reason to
+> produce.
+> **[D1](../experiments/D1-chart-invariance/) supplies the removability half**:
+> under an explicit reparameterization ε′ = ε^a the chart order changes while every
+> λ-chart exponent is unmoved to four decimals. **It does not supply the rest**,
+> and the counter-horn is real: an RG eigenvalue *predicts which perturbations are
+> relevant*, and it is not obvious that predictive work survives being called
+> gauge. If it does, the P0 **dissolves** rather than resolving — there is no fourth
+> floor, only a coordinate freedom the first three were always defined up to.
+> Unworked; now the map's most valuable question.
+
+> **⟳ Reconciliation (2026-07-27) — how P-D and D2 fit.** They were run on
+> parallel branches and neither pass saw the other, so this note states the
+> relation rather than adding a result.
+> **They agree on the negative and differ only on what to call the remainder.**
+> P-D killed the *second* horn from the measurement side (the scheme layer takes
+> input from floor 1 without being it); D2 retired the *fourth floor* from the
+> structural side. So "evidence for separateness" above should be read as
+> **separate from floors 1–3** — which both passes support — and not as "is a
+> fourth floor", which D2 retires. The "Proposed floor 4" paragraph and P-E's
+> two-sided falsifier are superseded in that order.
+> **The fit is closer than bare compatibility:** P-D's three negatives are the
+> signature D2's reading predicts. An exponent **blind to magnitudes** (1.1e-8
+> over six decades), reached through a cost functional that only *selects* the
+> scheme, with **∇²log Z rank 1 for every λ** so that no conjugate pair exists,
+> is what a transformation parameter looks like — a quantity with no conjugate is
+> not an exchange rate on any floor. What P-D measured as *terminal*, D2 derived
+> as *gauge*.
+> **Left open, and not claimed by either pass:** P-D's θ = min(1, ln n/−ln(β²γ))
+> is non-analytic at nβ²γ = 1, while D2's chart-free residue is a discrete
+> codimension. Whether that kink is a floor-3 degeneracy read in a scheme
+> variable, or a fact about the description map with no floor-3 counterpart, is
+> untested — flagged here for whoever takes the next pass.
 
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a

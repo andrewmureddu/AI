@@ -25,12 +25,22 @@ impressive-sounding fake unifications (exactly the "universality inflation" the
 
 Each carries a **falsifier**: the concrete observation that would confirm or sink it.
 
-**Companion register.** A stone here is a *question* about whether two things are
+**Companion registers.** A stone here is a *question* about whether two things are
 the same object. [`L3-MECHANISMS.md`](./L3-MECHANISMS.md) holds the other unit:
 candidate **generative processes** (M1–M17) proposed to run identically in two or
 more domains, each with the off-pattern observable that separates mechanism
 identity from convergence. Stones ask; mechanisms are what an affirmative answer
 has to name.
+
+And note what *every* stone in this file has in common: it names a law already
+known in some field and asks how far it travels. That is **recognition**, and its
+ceiling is the union of the textbooks.
+[`UNKNOWN-LAWS.md`](./UNKNOWN-LAWS.md) opens the complementary register —
+**discovery**, whose candidates come from unexplained numbers in our own
+measurements rather than from anyone's textbook, and which is graded on a separate
+[novelty ladder](./UNKNOWN-LAWS.md#2-the-novelty-ladder). Its first stone,
+[D1](./UNKNOWN-LAWS.md#d1--the-chart-law-two-integers-classify-floor-3), was
+built out of the exponents S5 and S7 discarded as "domain-specific."
 
 ---
 
