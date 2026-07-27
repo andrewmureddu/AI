@@ -192,14 +192,62 @@ is reported rather than dropped, and replaced by the 4×4 2D Ising enumeration
 over all 65 536 configurations, where the two statistics are genuinely
 independent.
 
+### F — is θ *gauge*? (post-hoc, added 2026-07-27 after D2)
+
+[D2](../../derivations/D2-gauge-of-the-tower.md), run in parallel with this
+experiment, argues there is **no fourth floor**: the log-ratio signature is the
+transformation data of `G_pow` relative to `G_diff`, so a log-ratio exponent is
+*gauge*, not a fact. That argument applies directly to θ, and if it lands as
+stated then leg A measured a coordinate rather than an invariant.
+
+**It does not land, and D2's own rules are why.** D2 says an exponent's
+*magnitude* is gauge but a **ratio** of exponents at the same singularity is
+invariant (its §4 table). θ is built as a ratio of two per-level log-quantities,
+so it should sit in the invariant residue. Measured:
+
+| Test | Result |
+|---|---|
+| **F1** θ under coarse-graining the scheme by `a` levels (n → nᵃ, β → βᵃ, γ → γᵃ) | **invariant to 2.6e-15** across a = 1…8, while the bare per-level chart ln n moves **8×** |
+| **F2** is `G_pow` even available? mass is extensive, so M(A ⊎ B) = M(A) + M(B) | additivity defect **0** at a = 1; **29% / 50% / 41%** at a = 1.5 / 2 / 0.5 |
+| **F3** same estimator on a genuine floor-3 chart (λ ~ εᵏ, ε′ = εᵃ) | k moves **3.0×**, tracking 1/a exactly — the estimator *can* see gauge |
+
+F1 is the direct test: coarse-graining is the legitimate reparameterization of a
+branching scheme, numerator and denominator both raise to the a-th power, and the
+ratio survives exactly. F3 shows that invariance is not an artifact of the
+estimator — the same fit reports a moving exponent where gauge freedom is real.
+
+F2 answers the prior question of whether the freedom exists here at all. D2's
+`G_pow` is available because a distance-to-threshold ε carries no canonical
+scale: ε′ = ε^a is an equally good distance. **Mass is not like that.** It is
+extensive, and under M → M^a with a ≠ 1 masses stop adding — two organisms side
+by side no longer have the mass of the pair. Extensivity pins the chart to
+`G_diff`, where by D2's own rule (i) exponents are *invariant*. (The defect
+shrinks toward zero when one subsystem dominates the other, which is correct:
+a single system has no additivity constraint to violate. The equal-depth numbers
+above are the test.)
+
+**So P-D and D2 compose rather than collide**, and the composition is sharper
+than either alone: the log-ratio *signature* is indeed transformation data, as D2
+argues — but θ is a **ratio of two** such quantities, measured against an
+extensive observable, and is therefore a fact. What P-D established survives; what
+it called "the floor-4 signature" is better named the scheme layer's *invariant
+residue*. See the reconciliation in [`FLOORS.md`](../../invariants/FLOORS.md) §4.
+
 ## What this establishes
 
 **P-D confirmed on every registered leg.** The allometric exponent is
 θ = min(1, ln n / −ln(β²γ)): log(multiplicity per level) over log(rescaling per
-level). That is *literally* the [floor-4 signature](../../invariants/FLOORS.md) §4
+level). That is *literally* the signature [FLOORS.md](../../invariants/FLOORS.md) §4
 already measured elsewhere — S5's type-R threshold exponent ln n₀/ln(t+1) and the
 deterministic fractal dimension ln N/ln b. Allometry moves from **candidate** to
 **third measured exhibit** for the scheme layer.
+
+> **⟳ Reframed by leg F and [D2](../../derivations/D2-gauge-of-the-tower.md).**
+> The scheme layer is not a fourth *floor* — it is the tower's structure group.
+> But θ is not in its gauge part: it is a **ratio** of two log-quantities,
+> invariant under scheme coarse-graining to 2.6e-15, measured against an
+> extensive observable that admits no power reparameterization. So allometry is
+> the scheme layer's **invariant residue**, not an exhibit for a new floor.
 
 **Optimization is present and does real work — as a selector, not as a source.**
 This is the finding that keeps P-D from being a strawman. Six cost functionals

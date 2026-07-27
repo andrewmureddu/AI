@@ -119,6 +119,35 @@ powers the expansion stroke is exactly what makes fake unifications cheap, so it
 must be paired with a disciplined restraint stroke. Do what breadth is good at —
 *with explicit hedging.*
 
+## The second axis: novelty
+
+The ladder above grades how well a correspondence is *established*. It says
+nothing about whether the claim is *new*, because for the project's first seven
+cycles every claim was, by construction, old — each stone asked whether a law
+already known in field A is the same object as the thing that resembles it in
+field B. That is **recognition**, and its ceiling is the union of the textbooks.
+
+[`questions/UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) opens the other
+operation — **discovery** — and grades it on an orthogonal ladder: **N0**
+restatement · **N1** recombination of known parts · **N2** a relation between
+standard quantities that no single field states · **N3** a new object that does
+predictive work. Levels **multiply**: an N3 claim at L1 is a fantasy, an N0 claim
+at L4 is a textbook.
+
+Two rules carry over into that register with extra force, because in discovery
+there is no field expert to object:
+
+- **Assume N0 until a prior-art search has failed.** Every N2+ claim carries a
+  written prior-art note naming where the result would already live if it were
+  old, including the near-misses it did turn up.
+- **Separate identities from risks before running.** A pre-registration must mark
+  which of its predictions are analytic identities — forced by the construction
+  and therefore incapable of coming out wrong — and which are genuinely at risk.
+  A stone whose predictions are all identities has not been tested no matter how
+  well the numbers agree. This rule exists because
+  [P-A](./experiments/PA-spectral-gap/) discovered mid-run that three of its four
+  readouts were one number by construction.
+
 ## The unit of work
 
 One research increment = take one candidate, gather its manifestations, assign a
