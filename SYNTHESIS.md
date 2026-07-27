@@ -86,6 +86,7 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
+| **D2** | [The scheme layer is the tower's gauge group](./derivations/D2-gauge-of-the-tower.md) | derivation + experiment | **the P0 is answered — there is no fourth floor.** The floors are defined up to G_diff, cross-domain comparison has only G_pow, and the scheme layer is the difference: RG eigenvalues are conjugation-invariant (5.3e-15) and G_pow-covariant as y → a·y (≤2.4e-12), exactly like D1's chart order. **The chart-free residue is the codimension p − 2** (β/k = 0.5000, 0.2503 vs 1/(p−2)). Also explains why floor 2 collapses and floor 3 stratifies | most of the experiment is a theorem check; both at-risk legs are physics; the **common-a** commitment is load-bearing; the G_diff half is Wegner's nonlinear scaling fields in other words |
 | **D1** | [The chart law — two integers classify floor 3](./experiments/D1-chart-invariance/) | experiment | **chart claim confirmed, formula deflated by its own prior-art note** — a floor-3 degeneracy carries a **chart order** *k* (gauge) and a **degeneracy order** *p* (invariant), λ_c ~ D^{(p−2)/p}. *k* removed by inference (two fields, λ-chart 0.33333 vs 0.33333 where bare exponents differ 2×) and by manipulation (ε′=ε^a moves the bare exponent by exactly a, the λ-chart exponent not at all). **S5's and S7's "domain-specific exponents" are largely a chart artifact** | 1-D gradient systems, additive noise; **support-type singularities have no *p*** and are excluded; both at-risk legs are physics; legs A/B are declared identities, not evidence |
 | — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
 
@@ -135,8 +136,8 @@ graph TB
     REG -. tested .-> T2["S1 ✓ one update · S23 ✓ attention · S25 ✓ RLCT"]
     SING -. tested .-> T3["S3 ✓ · S7 ✓ · S5 ✓ · S25(K) ✓ · Goldstone"]
 
-    OUT["OUTSIDE THE TOWER?<br/>scheme-level structure — a decoder's RG fixed point<br/>is not a fact about Φ at all (S5, type R)"]
-    SING -. "open: fourth floor?" .-> OUT
+    OUT["NOT A FLOOR — THE STRUCTURE GROUP<br/>log-ratio exponents (RG eigenvalues, fractal dims,<br/>S5 type R) are G_pow/G_diff transformation data.<br/>Chart-free residue = codimension p−2 → floor 3"]
+    SING -. "resolved 2026-07-26 (D2)" .-> OUT
 ```
 
 **What sorting the catalog against it revealed.** Running every entry through the
@@ -222,8 +223,12 @@ exponent" premise had to fail.
 - **1 frame:** the prediction field (🟢 core empirically load-bearing; 🔴 metaphysical
   reading tested once and explicitly *not* promoted).
 - **1 hub:** Φ = ln Z (L3; L4 via Lee–Yang).
-- **3 floors:** symmetry-constituted · Φ-regular · Φ-singular — plus a **proposed
-  fourth** (the scheme layer), which is equally the tower's falsifier.
+- **3 floors:** symmetry-constituted · Φ-regular · Φ-singular — and **no fourth.**
+  The proposed scheme layer resolved (2026-07-26,
+  [D2](./derivations/D2-gauge-of-the-tower.md)) into the tower's **structure
+  group**: the floors are defined up to G_diff, cross-domain comparison has only
+  G_pow, and the log-ratio "signature" was the difference between them. Its
+  chart-free residue is the codimension p − 2 — floor-3 data.
 - **23 catalog entries, [now sorted](./invariants/FLOORS.md)**: 1 hub, 1 on floor 1,
   6 floor-2 facets (▸ deleted as independent), 2 floor-2 non-facets, 6 distinct
   floor-3 members, 5 splitting across floors, **2 refusing the tower**. Effective
@@ -235,9 +240,9 @@ exponent" premise had to fail.
   S19–S22, S24.
 - **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
-  own prior-art note). **Unworked:** D2–D6, of which **D2 is the map's most
-  valuable open question**.
-- **12 experiments + 5 derivations** with teeth; **4 essays**.
+  own prior-art note) and **D2 (the P0 answered — no fourth floor)**. **Unworked:**
+  D3–D6, of which **D6 (the singularities with no *p*) is what D2 left open**.
+- **13 experiments + 6 derivations** with teeth; **4 essays**.
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -246,22 +251,27 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 
 ## 7. The open frontier (reprioritized)
 
-0. **Is the "fourth floor" a floor at all, or the tower's gauge group? (P0 — the
-   sharpest question, and it now has a third answer on the table.)**
-   [D2](./questions/UNKNOWN-LAWS.md) observes that D1's chart order is
-   k = d ln λ / d ln ε — **a log-ratio, which is exactly the signature
-   [`FLOORS.md`](./invariants/FLOORS.md) §4 used to identify the scheme layer.** On
-   that reading a fractal dimension is the chart order of a self-similar map, an RG
-   eigenvalue that of the coarse-graining map, S5's type-R exponent that of a
-   decoder recursion, and double-entry accounting the degenerate k = 0. It would
-   explain both why they refused floors 1–3 and why four unrelated objects carried
-   the same signature. [D1](./experiments/D1-chart-invariance/) supplies the
-   removability half — under ε′ = ε^a the chart order changes and every λ-chart
-   exponent is unmoved. **The counter-horn is live:** an RG eigenvalue predicts
-   which perturbations are relevant, and predictive work is not obviously
-   gauge. If it survives, the P0 **dissolves** — no fourth floor, just a coordinate
-   freedom the first three were always defined up to. Unworked.
-1. **Is there a fourth floor? (P0, as previously posed.)** The tower's
+0. **~~Is there a fourth floor?~~ — ANSWERED 2026-07-26. There is not.**
+   ([D2](./derivations/D2-gauge-of-the-tower.md) ·
+   [experiment](./experiments/D2-gauge-group/).) The scheme layer is the tower's
+   **structure group**, not a layer of facts. Write **G_diff** for
+   reparameterizations smooth *at* the singular point and **G_pow** for
+   φ(ε) ~ ε^a — smooth away from it, not at it, so G_diff ⊊ G_pow with the
+   enlargement living **entirely on floor 3**. The floors are defined up to
+   G_diff; cross-domain comparison has only G_pow; the scheme layer is the
+   difference. RG eigenvalues are G_diff-invariant by conjugation (5.3e-15) and
+   G_pow-covariant as y → a·y (≤2.4e-12) — identical to D1's chart order, so the
+   log-ratio signature is transformation data, and a transformation parameter is
+   not a fact on any floor. **The chart-free residue is one integer, the
+   codimension p − 2** (signs, counts and ratios are three faces of it), measured
+   as β/k = 0.5000 and 0.2503 against 1/(p−2) on full models. **What was under
+   the fourth floor was [D1](./experiments/D1-chart-invariance/)'s *p*.** The
+   counter-horn survives where the derivation said it would: "which perturbations
+   are relevant" is a claim about a *sign*, and signs are G_pow-invariant.
+   *Remaining:* the residue for **support-type** singularities, which have no *p*
+   ([D6](./questions/UNKNOWN-LAWS.md)).
+1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
+   The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
    [Sorting the catalog](./invariants/FLOORS.md) produced not one candidate but a
    *cluster*, and they share a signature: **their invariant is a log-ratio —

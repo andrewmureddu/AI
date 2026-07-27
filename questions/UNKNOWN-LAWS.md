@@ -254,9 +254,38 @@ then the invariance claim is simply false.
 ### D2 — Floor 4 is not a floor, it is the gauge group
 
 **Engine:** gap prediction — the map's [sharpest open question](../SYNTHESIS.md) §7.1.
-**Novelty: N2 claimed. Status: unworked. D1 has now supplied the removability half
-— under ε′ = ε^a the chart order changes while every λ-chart exponent is
-untouched, so *k* is demonstrably gauge rather than content.**
+**Novelty: N2 for the architectural reading; N0–N1 for the group analysis, as its
+prior-art note warned. Status: ⟳ WORKED 2026-07-26 —
+[`derivations/D2-gauge-of-the-tower.md`](../derivations/D2-gauge-of-the-tower.md)
++ [`experiments/D2-gauge-group/`](../experiments/D2-gauge-group/).**
+
+> **⟳ Restraint pass (2026-07-26): the P0 is answered, and the answer is that
+> the question presupposed too much.** Neither a fourth floor nor floor 1 in
+> disguise: the scheme layer is the tower's **structure group**. Make the two
+> groups explicit — **G_diff** (reparameterizations smooth *at* the singular
+> point) and **G_pow** (φ ~ ε^a: smooth away from it, not at it, so
+> G_diff ⊊ G_pow with the enlargement living entirely on floor 3). Then RG
+> eigenvalues are G_diff-invariant by conjugation (verified to 5.3e-15) and
+> G_pow-covariant as y → a·y (verified to ≤2.4e-12), which is **exactly D1's
+> chart order's behaviour** — so the log-ratio signature is the transformation
+> datum of G_pow modulo G_diff, and a transformation parameter is not a fact on
+> any floor. **The chart-free residue is one integer**: signs, counts and ratios
+> are three faces of the codimension p − 2 — the coefficients that must be tuned
+> to sit on the singularity, the relevant RG directions, and the reciprocal of
+> β/k. Measured on full models: β/k = **0.5000** (p = 4) and **0.2503** (p = 6)
+> against 1/(p−2), while β spans 4× and k spans 2×. **So what was under the
+> fourth floor was D1's *p*.** The counter-horn survives where the derivation
+> said it would — "which perturbations are relevant" is a claim about a *sign*,
+> and signs are G_pow-invariant, so the predictive work is real and lives in the
+> non-gauge part. Bonus: it explains `FLOORS.md`'s unexplained asymmetry —
+> **floor 2 collapses because G_pow = G_diff away from the singularity; floor 3
+> stratifies because the group enlarges exactly there.** And it settles the worry
+> D1 left open: **within a domain exponents are facts (universality is a G_diff
+> statement); across domains only ratios, signs and counts are.** Honest limits:
+> most of the experiment is a theorem check, both at-risk legs are physics, the
+> common-a commitment is load-bearing (independent per-direction re-charting kills
+> the ratios and leaves only signs), and the G_diff half is Wegner's nonlinear
+> scaling fields in other words.
 
 [`FLOORS.md`](../invariants/FLOORS.md) §4 found that four things refused the tower
 and refused it *the same way*: their invariant is a **log-ratio** —

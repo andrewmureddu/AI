@@ -198,6 +198,32 @@ disguise — a code *is* a redundancy chosen to be invariant under the noise, an
 horn is the live one**, and deciding it is now the map's sharpest architectural
 question.
 
+> **⟳ RESOLVED 2026-07-26 — the third horn is the right one.** Worked in
+> [`derivations/D2-gauge-of-the-tower.md`](../derivations/D2-gauge-of-the-tower.md)
+> and [`experiments/D2-gauge-group/`](../experiments/D2-gauge-group/).
+> **There is no fourth floor.** Writing **G_diff** for reparameterizations smooth
+> *at* the singular point and **G_pow** for φ(ε) ~ ε^a (smooth away from it, not
+> at it), the floors are defined up to G_diff while cross-domain comparison has
+> only G_pow — and **the scheme layer is the difference between the two.** RG
+> eigenvalues are G_diff-invariant by conjugation (5.3e-15) and G_pow-covariant
+> as y → a·y (≤2.4e-12): identical behaviour to D1's chart order, so all five
+> rows of the table above are one object, the transformation datum of G_pow
+> modulo G_diff. A transformation parameter is not a fact on any floor, which is
+> why they refused, and why four unrelated things shared one signature.
+> **The chart-free residue is the codimension p − 2** — signs, counts and ratios
+> being three faces of it — measured as β/k = 0.5000 (p = 4) and 0.2503 (p = 6)
+> against 1/(p−2). So the refusers dissolve into gauge plus floor 3, and what was
+> under them was [D1](../experiments/D1-chart-invariance/)'s degeneracy order.
+> **This section's asymmetry (§2) also stops being a bare observation:** away from
+> the singular point G_pow = G_diff, so floor 2 lives under the smooth group where
+> tensors have real invariants and collapses; at the singular point the group
+> enlarges, eats exponent magnitudes, and leaves a discrete residue — so floor 3
+> stratifies. Load-bearing caveat: the ratios require the **common-a** commitment
+> (one distance-to-threshold per singularity, not one per eigendirection); under
+> independent re-charting only signs and counts survive.
+>
+> *The original statement of the horn follows, unedited.*
+>
 > **⟳ A third horn, opened 2026-07-26 ([D2](../questions/UNKNOWN-LAWS.md)).**
 > Neither a floor nor floor 1: **the gauge group.** D1's chart order is
 >
