@@ -54,6 +54,18 @@ with unrelated mechanisms (→ L2)? Also test the standing critique that even th
 biological 3/4 exponent isn't universal. See
 [`scaling-allometry.md`](../invariants/scaling-allometry.md).
 
+**Sharpened by [P-D](../experiments/PD-allometry-reduction/), which supplies a
+discriminator this question previously lacked.** The biological exponent is now
+measured to be a *log-ratio of a branching scheme*, θ = min(1, ln n/−ln(β²γ)),
+blind to every magnitude. So the mechanism is shared **iff the urban exponent is
+also a log-ratio of a scheme**, and there are three concrete legs to run — does
+the exponent move with a magnitude, does a cost functional enter it except by
+selecting a scheme, and is the (log N, log Y) covariance rank-deficient
+everywhere. Prior after P-D: 0.85 and 1.15 are conspicuously *not* simple
+dimension ratios the way 3/4 and d/(d+1) are, and superlinear output has no
+transport-network route at all — so the likely answer is that the two halves of
+urban scaling do not even share a mechanism with *each other*.
+
 ### Q7 (P2) — Is "replicator dynamics ≡ multiplicative-weights ≡ Bayesian update" a real L3 identity?
 Formalize the claim that evolutionary replicator dynamics, exponential-weights /
 multiplicative-weights learning, and (a form of) Bayesian updating are the *same*

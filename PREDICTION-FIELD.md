@@ -115,8 +115,11 @@ real data.** (1) Synthetic SCM
 ([S18](./experiments/S18-invariance-transfer/)): invariance measured on training
 environments ranks held-out error at ρ = 0.985, and the most in-distribution-
 predictive feature is the *worst*-transferring (8×). (2) Controlled cross-mechanism
-ladder ([ladder-vs-transfer](./experiments/ladder-vs-transfer/)): transfer has a
-sharp cliff at the L2/L3 (appearance→mechanism) boundary. (3) **Real data**
+ladder ([ladder-vs-transfer](./experiments/ladder-vs-transfer/)): ladder level
+orders transfer, and — after [paper 1](./paper/transfer-cliff.md)'s re-analysis
+retracted the "cliff" reading — what is real is a **ceiling**: L3/L4 reach complete
+transfer (0.916 against a measured ceiling of 0.920±0.023) while L2 saturates at
+~0.54 however much evidence it is given. (3) **Real data**
 ([real-transfer](./experiments/real-transfer/)): on the diabetes dataset with
 age-group environments *I did not construct*, invariance predicts transfer at
 ρ = 0.983, and Benford's law transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97) but not

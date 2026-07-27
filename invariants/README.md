@@ -37,7 +37,7 @@ derivative-faces of [#23](./free-energy-hub.md).
 | 6 | [Feedback & control](./feedback-control.md) | feedback loop; stability criterion | L2–L3 | **2 + 3** | seed | Splits, derived (S25(K)) |
 | 7 | [Optimization & variational](./optimization-variational.md) | argmin of functional; EL/KKT | L1–L2 | **2 + 1** | seed | Measure ⇒ 2, action ⇒ 1 |
 | 8 | [Networks & percolation](./networks-percolation.md) | giant-component transition | L3 / L2 | **3** | seed | Connectivity = Φ-boundary |
-| 9 | [Scaling & allometry](./scaling-allometry.md) | Y ∝ M^b | L2 (L3 contested) | **refuses** | seed | Branching geometry, not a Φ |
+| 9 | [Scaling & allometry](./scaling-allometry.md) | Y ∝ M^b | L2 (L3 contested) | **refuses** ✓tested | developing | θ = min(1, ln n/−ln(β²γ)) — a log-ratio, not a Φ-derivative ([P-D](../experiments/PD-allometry-reduction/)) |
 | 10 | [Symmetry breaking](./symmetry-breaking.md) | G → H, order parameter | L4 (phys) / L2–L3 | **3** | seed | *Not* floor 1 — the sort's best case |
 | 11 | [Fractals & self-similarity](./self-similarity-fractals.md) | fractal dim D ; Hurst H | L2 (L3 mechanistic) | **3 + 4?** | seed | D = ln N/ln b is a scheme signature |
 | 12 | [Selection & replicator](./selection-replicator.md) | ẋ_i = x_i(f_i−f̄) ; Price eq. | L2–L3 | **2** ▸facet | seed | Same object as #17 |
