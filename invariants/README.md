@@ -34,7 +34,7 @@ derivative-faces of [#23](./free-energy-hub.md).
 | 3 | [Entropy & information](./entropy-information.md) | −Σ p log p ; MaxEnt | L3 (L2 downstream) | **2** ▸facet | developing | Φ*, the Legendre dual |
 | 4 | [Diffusion & random walks](./diffusion-random-walks.md) | ∂u/∂t = D∇²u ; CLT | L3–L4 | **2** → 3 | developing | Splits at finite vs. infinite variance |
 | 5 | [Criticality & universality](./criticality-phase-transitions.md) | RG fixed point; critical exponents | L4 (core) / L1–L2 (loose) | **3** | developing | Lee–Yang; the floor's L4 core |
-| 6 | [Feedback & control](./feedback-control.md) | feedback loop; stability criterion | L2–L3 | **2 + 3** | seed | Splits, derived (S25(K)) |
+| 6 | [Feedback & control](./feedback-control.md) | feedback loop; stability criterion | L2–L3 | **2 + 3** | seed | Splits, derived (S27) |
 | 7 | [Optimization & variational](./optimization-variational.md) | argmin of functional; EL/KKT | L1–L2 | **2 + 1** | seed | Measure ⇒ 2, action ⇒ 1 |
 | 8 | [Networks & percolation](./networks-percolation.md) | giant-component transition | L3 / L2 | **3** | seed | Connectivity = Φ-boundary |
 | 9 | [Scaling & allometry](./scaling-allometry.md) | Y ∝ M^b | L2 (L3 contested) | **refuses** ✓tested | developing | θ = min(1, ln n/−ln(β²γ)) — not a Φ-derivative; the structure group's **invariant residue** ([P-D](../experiments/PD-allometry-reduction/) + [D2](../derivations/D2-gauge-of-the-tower.md)) |

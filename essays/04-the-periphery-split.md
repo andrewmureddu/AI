@@ -234,7 +234,7 @@ cardinal direction, and that we had simply been walking the best-lit one
 first.
 
 > **⟳ Restraint pass (2026-07-22):** falsifiers 1 and 3 were run together, by
-> derivation — [`derivations/S25-control-split.md`](../derivations/S25-control-split.md)
+> derivation — [`derivations/S27-control-split.md`](../derivations/S27-control-split.md)
 > — and **fired against this essay's geometry while confirming its taxonomy.**
 > Control did not refuse to split (falsifier 3 survived on that side: the
 > inference half is exact Φ-machinery). But the "irreducible" reachability half

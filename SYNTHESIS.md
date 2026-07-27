@@ -81,10 +81,10 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
-| **S25(K)** | [Control splits — and the "irreducible" half reduces](./derivations/S25-control-split.md) | derivation | **falsifier fired, conjecture upgraded** — Gramian ≡ ∇²Φ of the noise-driven ensemble; min control energy = Legendre dual of Φ. But binary reachability lands in Φ's *singular* set. **Connectivity facts are Φ-boundary facts** | exact linear-Gaussian; Freidlin–Wentzell beyond |
+| **S27** | [Control splits — and the "irreducible" half reduces](./derivations/S27-control-split.md) | derivation | **falsifier fired, conjecture upgraded** — Gramian ≡ ∇²Φ of the noise-driven ensemble; min control energy = Legendre dual of Φ. But binary reachability lands in Φ's *singular* set. **Connectivity facts are Φ-boundary facts** | exact linear-Gaussian; Freidlin–Wentzell beyond |
 | — | [The symmetry sector](./derivations/symmetry-sector.md) | derivation | **monism fails, "second sector" also fails** — SSB reduces to Φ-singular; Noether does *not* reduce but **constitutes**: conserved charges are the natural parameters of long-time ensembles. Architecture: **one tower, three floors** | equilibrium/long-time only; GGE exhaustiveness heuristic away from integrability |
-| **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
-| **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
+| **S28** | [SGD's stationary law is charge-coordinatized](./experiments/S28-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
+| **S26** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
 | **D6** | [Support singularities: D1 was a special case](./experiments/D6-support-singularities/) | experiment | **floor 3's classifier is the ratio q1/q2 of Φ's two leading exponents.** A_c ~ D^{1−q1/q2}: **q1 = 2 is what smoothness forces** (D1's (p−2)/p), **support loss is q1 = 1**, a hard wall is q2 → ∞ (0.9979 vs 1). Support loss is not p = ∞ — that would be a q2 value; M/M/1 has an *empty* q2 slot and no crossover at all (kurtosis 6.0000 over four decades). Three at-risk legs pass and **none are physics** | P1/P2 are identities and **P2 was mis-registered as at-risk**; the ratio claim is untested on real models; remainder narrows to **essential singularities only** |
 | **D2** | [The scheme layer is the tower's gauge group](./derivations/D2-gauge-of-the-tower.md) | derivation + experiment | **the P0 is answered — there is no fourth floor.** The floors are defined up to G_diff, cross-domain comparison has only G_pow, and the scheme layer is the difference: RG eigenvalues are conjugation-invariant (5.3e-15) and G_pow-covariant as y → a·y (≤2.4e-12), exactly like D1's chart order. **The chart-free residue is the codimension p − 2** (β/k = 0.5000, 0.2503 vs 1/(p−2)). Also explains why floor 2 collapses and floor 3 stratifies | most of the experiment is a theorem check; both at-risk legs are physics; the **common-a** commitment is load-bearing; the G_diff half is Wegner's nonlinear scaling fields in other words |
@@ -134,9 +134,9 @@ graph TB
     SYM -->|"fixes the coordinates"| REG
     REG -->|"non-analyticity ends prediction"| SING
 
-    SYM -. tested .-> T1["S26(K) ✓ SGD charges — prethermalization plateau"]
+    SYM -. tested .-> T1["S28 ✓ SGD charges — prethermalization plateau"]
     REG -. tested .-> T2["S1 ✓ one update · S23 ✓ attention · S25 ✓ RLCT"]
-    SING -. tested .-> T3["S3 ✓ · S7 ✓ · S5 ✓ · S25(K) ✓ · Goldstone"]
+    SING -. tested .-> T3["S3 ✓ · S7 ✓ · S5 ✓ · S27 ✓ · Goldstone"]
 
     OUT["NOT A FLOOR — THE STRUCTURE GROUP<br/>log-ratio exponents (RG eigenvalues, fractal dims,<br/>S5 type R) are G_pow/G_diff transformation data.<br/>Chart-free residue = codimension p−2 → floor 3"]
     SING -. "resolved 2026-07-26 (D2)" .-> OUT
@@ -216,7 +216,7 @@ people (well, passes) looking for different things:
 | Arrival | Route | What it saw there |
 |---------|-------|-------------------|
 | 1 | [S3](./experiments/S3-fisher-geometry/) | **divergence** — χ→∞ at T_c, inverse-Fisher→∞ at double descent |
-| 2 | [S25(K)](./derivations/S25-control-split.md) | **null spaces** — unreachable directions are null Fisher directions / support facts |
+| 2 | [S27](./derivations/S27-control-split.md) | **null spaces** — unreachable directions are null Fisher directions / support facts |
 | 3 | [symmetry sector](./derivations/symmetry-sector.md) | **flat directions** — Goldstone modes are null directions of ∇²Φ |
 | 4 | [S7](./experiments/S7-critical-slowing/), sharpened by [P-A](./experiments/PA-spectral-gap/) | **the slow mode** — τ = 1/λ_min; critical slowing is the Hessian going soft. P-A found *which* Hessian: in a double well the gap falls 3540× while the local curvature **rises** 6×, so S7's law is a **single-basin** law and the general object is the trajectory free energy's Hessian |
 | 5 | [S5](./experiments/S5-noise-thresholds/) | **the order of the degeneracy** — the redundancy exponent counts how fast the induced Fisher information vanishes (2 = metric merge, 1 = support loss) |
@@ -250,9 +250,9 @@ exponent" premise had to fail.
   floor-3 members, 5 splitting across floors, **2 refusing the tower**. Effective
   independent count **~16**. There is no longer an unexamined "periphery" — every
   entry now carries a floor and a reason.
-- **28 speculative stones** (S1–S26, with two number collisions — see §8).
+- **28 speculative stones** (S1–S28; the two number collisions were resolved 2026-07-27 — Cluster K's stones are S27/S28 and the S25(J)/S25(K) suffixes are retired).
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
-  S23, S25(J), S25(K), S26(J), S26(K). **Unworked:** S2, S4, S6, S8, S10, S12–S17,
+  S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
 - **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
@@ -339,7 +339,7 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    half.
 3. **Grokking / Lee–Yang (P1, S13).** Does a genuine grokking transition show a
    non-analyticity of the appropriate Φ? Closes the gap S3 left open, and
-   [S26(J)](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the
+   [S26](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the
    escalation for the same machinery.
 4. **Multi-field real transfer (P1).** Break Leg A's signal-strength confound and
    run many *different* real datasets from *different* fields.
@@ -357,7 +357,7 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 Six cycles in, two patterns have become hard to miss.
 
 **The falsifiers that fire produce more structure than the ones that survive.**
-S25(K) fired and upgraded to "connectivity facts are Φ-boundary facts." S26(J)
+S27 fired and upgraded to "connectivity facts are Φ-boundary facts." S26
 fired and left "the low-loss set is generically singular." S7 refuted its exponent
 claim and confirmed its mechanism. S5 fired and left a three-class taxonomy with
 derived exponents. Essay 3's self-referential claim died and located an exact
@@ -390,7 +390,7 @@ have been surviving; claims of the form "*the same number*" have not.
 **Bookkeeping defect on record.** Two stone numbers were reused: **S25** names both
 the RLCT stone (Cluster J) and the control-split stone (Cluster K), and **S26**
 names both the degeneracy-attractor stone (J) and the conserved-charges stone (K).
-This synthesis disambiguates with S25(J)/S25(K)/S26(J)/S26(K), and
+This synthesis disambiguates with S25/S27/S26/S28, and
 [`SPECULATIVE.md`](./questions/SPECULATIVE.md) now carries forward-numbering for
 Cluster K. The dated [research-log](./research-log/) entries are left as written —
 they are a historical record, not an index.

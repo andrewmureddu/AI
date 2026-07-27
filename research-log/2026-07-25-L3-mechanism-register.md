@@ -45,7 +45,7 @@ currently circulate as mechanism.
 
 **Three entries attach to existing unrun work and sharpen its instrument:**
 
-- **M15 (adiabatic invariance)** re-reads [S26](../experiments/S26-sgd-charges/)'s
+- **M15 (adiabatic invariance)** re-reads [S26](../experiments/S28-sgd-charges/)'s
   "prethermalization plateau" as an averaging-theorem claim, testable by
   sweeping the learning rate: does charge erosion scale as a power of lr or as
   exp(−c/lr)? Existing code, one sweep, and it converts a phenomenological label

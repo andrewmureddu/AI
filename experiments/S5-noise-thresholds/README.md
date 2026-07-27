@@ -123,7 +123,7 @@ two laws at the threshold* — no capacity computation needed.
   metric merge, 1 for support loss, ln n₀/ln(t+1) for a decoder's RG fixed
   point.
 - **Fifth arrival at the ∇²Φ singular set**, and the first that measures its
-  *order*. S3 found divergence, [S25](../../derivations/S25-control-split.md)
+  *order*. S3 found divergence, [S25](../../derivations/S27-control-split.md)
   found null spaces, the [symmetry sector](../../derivations/symmetry-sector.md)
   found Goldstone flat directions, [S7](../S7-critical-slowing/) found the slow
   mode. Here the capacity threshold is where the induced Fisher information

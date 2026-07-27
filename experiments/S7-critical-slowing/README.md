@@ -2,7 +2,7 @@
 
 **Question ([S7](../../questions/SPECULATIVE.md)):** is "slowing down before a
 transition" one cross-domain signal? Plus the middle-zone prediction from
-[essay 4](../../essays/04-the-periphery-split.md) / [S25's verdict](../../derivations/S25-control-split.md):
+[essay 4](../../essays/04-the-periphery-split.md) / [S25's verdict](../../derivations/S27-control-split.md):
 critical slowing down should reduce to **softening of Φ's Hessian** — the
 same ∇²Φ object as S3's susceptibilities and the Goldstone/reachability null
 spaces, approached from the dynamical side.

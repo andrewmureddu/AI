@@ -33,12 +33,12 @@ it deletes, what it predicts, and what refused.
 | 14 | [trade-offs & Pareto](./tradeoffs-pareto.md) | **2** ▸facet, partial | Where a trade-off has a real exchange rate, its frontier *is* a Legendre transform (rate–distortion). Where it doesn't, it is not an invariant at all (L1). |
 | 4 | [diffusion & random walks](./diffusion-random-walks.md) | **2** (→3 in the tails) | Reduction demonstrated: CLT forces the Gaussian, the Gaussian is the max-entropy exponential family, and by JKO diffusion is gradient flow of that free energy. **Heavy-tailed/Lévy instances move to floor 3** — see prediction P-B. |
 | 18 | [optimal transport](./optimal-transport.md) | **2** (+ open) | The *flow* is Φ-driven (JKO). But the Wasserstein *metric* is not ∇²Φ — a second geometry on the same space, not derived from Φ. Flagged, §4. |
-| 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S25(K)](../derivations/S25-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
+| 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S27](../derivations/S27-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
 | 7 | [optimization & variational](./optimization-variational.md) | **2 + 1** | **Splits by what the functional is over.** Objective = a free energy ⇒ floor 2. Objective = an *action* (least action) ⇒ floor 1, since that is the bracket structure Noether consumes. "As-if" optimization (adaptationism, utility) is neither — L1. |
 | 5 | [criticality & universality](./criticality-phase-transitions.md) | **3** | Lee–Yang: transition ⇔ non-analyticity of Φ. The floor's L4 core. |
 | 10 | [symmetry breaking](./symmetry-breaking.md) | **3** | Derived, and the sort's best non-trivial case: an entry *named* for symmetry lands on floor 3, because SSB requires a non-analyticity of Φ and Goldstone modes are null directions of ∇²Φ. |
 | 1 | [power laws](./power-laws.md) | **3** | Heavy tails are where Z or its moments diverge — the complement of the well-behaved exponential-family world. |
-| 8 | [networks & percolation](./networks-percolation.md) | **3** | Connectivity facts are Φ-boundary facts (S25(K)); the Potts q→1 non-analyticity is systematic, not dressing. |
+| 8 | [networks & percolation](./networks-percolation.md) | **3** | Connectivity facts are Φ-boundary facts (S27); the Potts q→1 non-analyticity is systematic, not dressing. |
 | 22 | [critical slowing down](./critical-slowing-down.md) | **3** | Tested ([S7](../experiments/S7-critical-slowing/)): τ·λ_min = 0.94±0.13 — the Hessian going soft, i.e. the *approach* to the singular set. |
 | 21 | [noise thresholds](./noise-thresholds.md) | **3 + 4?** | **Splits, tested** ([S5](../experiments/S5-noise-thresholds/)): type M (metric merge) and type S (support loss) are floor 3; **type R (decoder RG fixed point) is not a Φ fact at all** — see §4. |
 | 19 | [spectral gap](./spectral-gap.md) | **3** ✓tested | The sort's prediction, [run and confirmed](../experiments/PA-spectral-gap/) — but in the *directional* form: gap-closure is a **null direction** of the trajectory free energy's Hessian, not a scalar divergence. See P-A below. |
@@ -146,7 +146,7 @@ number because they are the softest direction of one Hessian; joins S7's
 to carry the entire divergence of Λ''(0) (Λ''·gap = 2⟨f,v₂⟩² = 2.0000) — **but the
 scalar reading is wrong**: for an observable orthogonal to the slow mode Λ'' is
 unchanged (1.00×) while the gap falls 31×. Gap-closure is a **null-direction**
-fact, filing #19 with S25(K)'s unreachable null spaces rather than with S3's
+fact, filing #19 with S27's unreachable null spaces rather than with S3's
 scalar blow-up. Three of the four readouts turned out to be one number *by
 construction* and tested nothing; the fourth (Kuramoto) gives one mechanism with
 **family-specific constants** (0.410–0.632) — the S7/S5 shape again. And the

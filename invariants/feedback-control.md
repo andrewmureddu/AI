@@ -6,7 +6,7 @@
 > **Headline correspondence level:** L2–L3 (shared control equations; sometimes
 > shared mechanism). *(provisional — seed)*
 > **Status:** seed
-> **Floor:** **2 + 3** — splits (derived, [S25(K)](../derivations/S25-control-split.md)): inference half floor 2, binary reachability floor 3
+> **Floor:** **2 + 3** — splits (derived, [S27](../derivations/S27-control-split.md)): inference half floor 2, binary reachability floor 3
 
 ## Statement
 

@@ -6,7 +6,7 @@
 > **Headline correspondence level:** L3 for percolation/threshold phenomena;
 > L2 for structural motifs. *(provisional — seed)*
 > **Status:** seed
-> **Floor:** **3** (Φ-singular) — connectivity facts are Φ-boundary facts ([S25(K)](../derivations/S25-control-split.md)); the Potts q→1 non-analyticity is systematic
+> **Floor:** **3** (Φ-singular) — connectivity facts are Φ-boundary facts ([S27](../derivations/S27-control-split.md)); the Potts q→1 non-analyticity is systematic
 
 ## Statement
 

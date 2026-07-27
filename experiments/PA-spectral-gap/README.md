@@ -46,7 +46,7 @@ P3 is the one that matters. The gap can close by any amount and the free energy'
 second derivative *does not move* unless the observable overlaps the slow mode. So
 "gap-closure is the Hessian degenerating" is true as a **null-direction**
 statement and false as a statement about a number. That places the spectral gap
-with [S25(K)](../../derivations/S25-control-split.md)'s unreachable null spaces
+with [S27](../../derivations/S27-control-split.md)'s unreachable null spaces
 and the Goldstone flat directions rather than with S3's scalar divergence — and
 it **demotes the scalar reading of P-A as I wrote it.**
 

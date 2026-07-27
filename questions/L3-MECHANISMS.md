@@ -79,7 +79,7 @@ or below it.** The prediction floor is where the confirmed L3s already are
 
 ## A — Connectivity mechanisms (Φ's boundary layer)
 
-Per [`derivations/S25-control-split.md`](../derivations/S25-control-split.md),
+Per [`derivations/S27-control-split.md`](../derivations/S27-control-split.md),
 connectivity facts land in Φ's singular set, not its regular part. These are the
 processes that put them there.
 
@@ -402,7 +402,7 @@ mechanism is not a Markov current), or a bound so loose it is vacuous at these
 scales.
 
 **First test.** Numpy-feasible on a small model; reuses
-[S26](../experiments/S26-sgd-charges/) machinery.
+[S26](../experiments/S28-sgd-charges/) machinery.
 
 ### M11 — Stochastic resetting 🟢
 
@@ -568,7 +568,7 @@ exponentially small in 1/ε, and fails abruptly at resonance crossings.
 **Roles.** Classical mechanics and plasma confinement · the quantum adiabatic
 theorem · **prethermalization in near-integrable systems** · slow–fast ecology
 and climate · **SGD's quasi-conserved charges** — this repo's own
-[S26 result](../experiments/S26-sgd-charges/): erosion 5.6e-7/step, a
+[S26 result](../experiments/S28-sgd-charges/): erosion 5.6e-7/step, a
 ~1.8M-step conservation window, described there as a "prethermalization
 plateau."
 

@@ -1,7 +1,7 @@
 # 2026-07-25 — Restraint: SGD's plateau is ordinary averaging, and it ends at R ≈ 1
 
 **Worked on:** [M15](../questions/L3-MECHANISMS.md) (adiabatic invariance under
-slow drive); [S26(iii)](../experiments/S26-sgd-charges/) as its ML instance.
+slow drive); [S26(iii)](../experiments/S28-sgd-charges/) as its ML instance.
 **Change:** new experiment
 [`experiments/M15-adiabatic-charges/`](../experiments/M15-adiabatic-charges/);
 M15 gains a ⟳ restraint note; S26's erosion rate corrected (5.6e-7 → 7.30e-7);
