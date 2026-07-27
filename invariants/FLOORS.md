@@ -249,6 +249,8 @@ land in the same bin.
 signature is a log-ratio exponent rather than a Φ-derivative. This is a
 **proposal, not a result.** It is exactly the tower's falsifier #4 (an invariant
 reducible to none of the three floors), so if it stands the tower gains a floor.
+*(⟳ Retired 2026-07-26 by [D2](../derivations/D2-gauge-of-the-tower.md) — kept as
+written because the reason it fails is the result. Read the resolution below.)*
 
 **P-E, its falsifier, two-sided:** (kills the floor) reduce a log-ratio exponent to
 a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
@@ -256,7 +258,20 @@ a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
 disguise — a code *is* a redundancy chosen to be invariant under the noise, and
 "invariance selects the coordinates" is precisely floor 1's job. **The second
 horn is the live one**, and deciding it is now the map's sharpest architectural
-question.
+question. *(⟳ Both horns are now answered — the second by
+[P-D](../experiments/PD-allometry-reduction/), the floor itself by a third horn
+neither anticipated. Below.)*
+
+**First evidence on the live horn, from P-D — and it points to *takes input from*
+rather than *is*.** Allometry's two ratios are selected by conditions that are
+plainly floor-1-flavoured: impedance matching is a reflectionless (flux-matching)
+condition, and space-filling is a geometric constraint. So the scheme layer does
+draw its parameters from invariance arguments, which is what the second horn
+predicted. But floor 1's job is to choose *Φ's coordinates*, and here there is no
+Φ downstream at all — the log-ratio is terminal, and the run showed no conjugate
+pair exists for it to be an exchange rate between. Evidence for separateness, not
+a settlement: one instance, and the argument that floor 1 must terminate in a Φ
+is a claim about the tower rather than a measurement.
 
 > **⟳ RESOLVED 2026-07-26 — the third horn is the right one.** Worked in
 > [`derivations/D2-gauge-of-the-tower.md`](../derivations/D2-gauge-of-the-tower.md)
@@ -269,7 +284,7 @@ question.
 > as y → a·y (≤2.4e-12): identical behaviour to D1's chart order, so all five
 > rows of the table above are one object, the transformation datum of G_pow
 > modulo G_diff. A transformation parameter is not a fact on any floor, which is
-> why they refused, and why four unrelated things shared one signature.
+> why they refused, and why five unrelated things shared one signature.
 > **The chart-free residue is the codimension p − 2** — signs, counts and ratios
 > being three faces of it — measured as β/k = 0.5000 (p = 4) and 0.2503 (p = 6)
 > against 1/(p−2). So the refusers dissolve into gauge plus floor 3, and what was
@@ -309,12 +324,40 @@ question.
 > floor, only a coordinate freedom the first three were always defined up to.
 > Unworked; now the map's most valuable question.
 
-> **⟳ Follow-on, 2026-07-27 — where [P-D](../experiments/PD-allometry-reduction/)
-> lands under the resolution, and it is not where P-D first filed it.**
-> P-D was run before D2 and reported allometry as the scheme layer's *third
-> measured exhibit*, on the strength of its log-ratio form. Under D2 that form is
-> transformation data, so the natural reading is that P-D measured a coordinate.
-> **Measured (leg F), it did not:** θ is a **ratio** of two per-level
+> **⟳ Reconciliation (2026-07-27) — how P-D and D2 fit.** They were run on
+> parallel branches and neither pass saw the other, so this note states the
+> relation rather than adding a result.
+> **They agree on the negative and differ only on what to call the remainder.**
+> P-D killed the *second* horn from the measurement side (the scheme layer takes
+> input from floor 1 without being it); D2 retired the *fourth floor* from the
+> structural side. So "evidence for separateness" above should be read as
+> **separate from floors 1–3** — which both passes support — and not as "is a
+> fourth floor", which D2 retires. The "Proposed floor 4" paragraph and P-E's
+> two-sided falsifier are superseded in that order.
+> **The fit is closer than bare compatibility:** P-D's three negatives are the
+> signature D2's reading predicts. An exponent **blind to magnitudes** (1.1e-8
+> over six decades), reached through a cost functional that only *selects* the
+> scheme, with **∇²log Z rank 1 for every λ** so that no conjugate pair exists,
+> is what a transformation parameter looks like — a quantity with no conjugate is
+> not an exchange rate on any floor. What P-D measured as *terminal*, D2 derived
+> as *gauge*.
+> **Left open, and not claimed by either pass:** P-D's θ = min(1, ln n/−ln(β²γ))
+> is non-analytic at nβ²γ = 1, while D2's chart-free residue is a discrete
+> codimension. Whether that kink is a floor-3 degeneracy read in a scheme
+> variable, or a fact about the description map with no floor-3 counterpart, is
+> untested — flagged here for whoever takes the next pass.
+>
+> **⟳ Leg F (2026-07-27, later the same day) — the reconciliation above is right
+> except in one sentence, and the correction is a measurement.** The note says
+> *"what P-D measured as terminal, D2 derived as gauge."* Measured, θ is **not**
+> gauge. D2's own §4 table puts an exponent's *magnitude* in the gauge column and
+> a **ratio** of exponents in the invariant one — and θ is a ratio of two
+> per-level log-quantities, so the table already predicts which column it lands
+> in. The rest of that note stands: P-D's three negatives really are the
+> signature D2's reading predicts, and "separate from floors 1–3, not a fourth
+> floor" is the right reading of the negative.
+>
+> **What leg F measured.** θ is a **ratio** of two per-level
 > log-quantities, and D2's own §4 table puts ratios in the invariant column.
 > Coarse-graining the scheme by `a` levels (n → nᵃ, β → βᵃ, γ → γᵃ) raises
 > numerator and denominator to the same power and leaves θ **invariant to

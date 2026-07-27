@@ -260,7 +260,11 @@ exponent" premise had to fail.
   *p* generalized; floor 3's classifier is a ratio). **Unworked:** D3, D4, D5 —
   of which **D3 (the ladder as a chart-invariance count) is the cheapest**, and
   sharper now that D2 and D6 independently say the invariant content is a ratio.
-- **18 experiments + 6 derivations** with teeth; **4 essays**; **1 paper**.
+- **19 experiments + 6 derivations** with teeth; **4 essays**; **1 paper**.
+  *(The count was stale on both sides of the 2026-07-27 merges — it predated
+  M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
+  carries a committed verdict. Checked against the tree: `S25-channel-independence`
+  had a verdict but no row in the experiments index, and was added.)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -325,6 +329,30 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    chosen to be invariant under the noise, and "invariance chooses the
    coordinates" is exactly floor 1's job. Two-sided falsifier in
    [`FLOORS.md`](./invariants/FLOORS.md) §4.
+   **First evidence, from [P-D](./experiments/PD-allometry-reduction/).** The bin
+   now has a *second measured* member, and this one was a prediction rather than a
+   retrofit: allometry's θ = min(1, ln n/−ln(β²γ)) is the same log-ratio form,
+   blind to magnitudes (1.1e-8 over six decades of six quantities) and responsive
+   only to structural counts. It also touches the live horn directly. Allometry's
+   ratios really *are* selected by floor-1-flavoured conditions — impedance
+   matching is flux-matching, space-filling is a geometric constraint — so the
+   scheme layer **takes input from** floor 1, exactly as the second horn predicted.
+   But the log-ratio is terminal: there is no Φ downstream, and the exponential
+   family's ∇²log Z is rank 1 for every parameter value, so no conjugate pair
+   exists for the exponent to be an exchange rate between. *Takes input from*, not
+   *is* — one instance, not a settlement. Two side benefits: the floor-3/floor-4
+   boundary is now a measurement (floor 3's supports are singular *on a set*; the
+   scheme layer's covariance is rank-deficient **everywhere**), and a scheme
+   exponent can be non-analytic in a scheme parameter with no Φ non-analytic in a
+   thermodynamic one — θ = min(1,·) has a kink, and Murray's law sits on it.
+   **⟳ How to read this under 0.** P-D and D2 ran on parallel branches and neither
+   saw the other; they **agree on the negative** and differ only on the label. P-D
+   killed the second horn from the measurement side, D2 retired the floor itself
+   from the structural side, and P-D's three negatives — magnitude-blindness, a
+   cost functional that only *selects*, and ∇²log Z rank 1 for every λ so no
+   conjugate pair exists — are the signature D2's reading predicts. Read
+   "separateness" above as **separate from floors 1–3**, not "is a fourth floor."
+   Full reconciliation in [`FLOORS.md`](./invariants/FLOORS.md) §4.
 2. **Cash the rest of the sort's predictions (P1).** **P-A and P-D are both done.**
    [P-A](./experiments/PA-spectral-gap/): #19's floor-3 assignment holds in the
    directional form, and it cost S7 a boundary condition.
