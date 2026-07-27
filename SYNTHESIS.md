@@ -76,7 +76,8 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
-| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
+| **P-D** | [Allometry is a log-ratio, not a Φ-derivative](./experiments/PD-allometry-reduction/) | experiment | **the sort's only *negative*, cashed** — θ = **min(1, ln n/−ln(β²γ))** to 7.1e-11, n cancelling to 4.0e-15. Blind to six decades of six magnitudes (1.1e-8), responsive to structural counts. Optimization is a **selector, not a source**: six cost functionals → six β, θ recovered from (β,γ) alone. **The variational route gives θ = 1, not 3/4.** ∇²log Z **rank 1 for every λ** (control swings 151%). Second route: θ = d/(d+1) | models of allometry, not organisms; P8 measures rank, doesn't prove no Φ exists; two registered items failed (MST construction, mean-field control) |
+| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — #6, #9, #10, #19, #21, #22 and #4's reduction now rest on evidence; the rest do not |
 
 ### Where "one law" claims keep landing
 
@@ -197,7 +198,7 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25(J), S25(K), S26(J), S26(K). **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **11 experiments + 5 derivations** with teeth; **4 essays**.
+- **12 experiments + 5 derivations** with teeth; **4 essays**.
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -222,12 +223,34 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    chosen to be invariant under the noise, and "invariance chooses the
    coordinates" is exactly floor 1's job. Two-sided falsifier in
    [`FLOORS.md`](./invariants/FLOORS.md) §4.
-2. **Cash the rest of the sort's predictions (P1).** **P-A is done**
-   ([result](./experiments/PA-spectral-gap/)): #19's floor-3 assignment holds, in
-   the directional form, and it cost S7 a boundary condition. Remaining:
-   **P-D, allometry** — the sort's most falsifiable negative, that Kleiber's 3/4
-   should *not* be derivable from a partition function; **P-C**, that variational
-   principles come in exactly two kinds; and **P-B**'s untested half.
+   **First evidence, from [P-D](./experiments/PD-allometry-reduction/).** The bin
+   now has a *second measured* member, and this one was a prediction rather than a
+   retrofit: allometry's θ = min(1, ln n/−ln(β²γ)) is the same log-ratio form,
+   blind to magnitudes (1.1e-8 over six decades of six quantities) and responsive
+   only to structural counts. It also touches the live horn directly. Allometry's
+   ratios really *are* selected by floor-1-flavoured conditions — impedance
+   matching is flux-matching, space-filling is a geometric constraint — so the
+   scheme layer **takes input from** floor 1, exactly as the second horn predicted.
+   But the log-ratio is terminal: there is no Φ downstream, and the exponential
+   family's ∇²log Z is rank 1 for every parameter value, so no conjugate pair
+   exists for the exponent to be an exchange rate between. *Takes input from*, not
+   *is* — one instance, not a settlement. Two side benefits: the floor-3/floor-4
+   boundary is now a measurement (floor 3's supports are singular *on a set*; the
+   scheme layer's covariance is rank-deficient **everywhere**), and a scheme
+   exponent can be non-analytic in a scheme parameter with no Φ non-analytic in a
+   thermodynamic one — θ = min(1,·) has a kink, and Murray's law sits on it.
+2. **Cash the rest of the sort's predictions (P1).** **P-A and P-D are both done.**
+   [P-A](./experiments/PA-spectral-gap/): #19's floor-3 assignment holds in the
+   directional form, and it cost S7 a boundary condition.
+   [P-D](./experiments/PD-allometry-reduction/): the sort's only negative,
+   confirmed on every registered leg — and the variational route that *would* have
+   reduced allometry to floor 2 gives θ = 1, not 3/4. So the sort has now been
+   graded on a positive and on a negative, both about `seed` entries, and survived
+   both. Remaining: **P-C**, that variational principles come in exactly two
+   kinds — now the most interesting of the three, because P-D showed an
+   optimization can be real and still not put its exponent on floor 2, which is a
+   third possibility P-C's binary does not have a slot for; and **P-B**'s untested
+   half.
 3. **Grokking / Lee–Yang (P1, S13).** Does a genuine grokking transition show a
    non-analyticity of the appropriate Φ? Closes the gap S3 left open, and
    [S26(J)](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the
