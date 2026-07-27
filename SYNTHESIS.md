@@ -86,6 +86,7 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
+| **D6** | [Support singularities: D1 was a special case](./experiments/D6-support-singularities/) | experiment | **floor 3's classifier is the ratio q1/q2 of Φ's two leading exponents.** A_c ~ D^{1−q1/q2}: **q1 = 2 is what smoothness forces** (D1's (p−2)/p), **support loss is q1 = 1**, a hard wall is q2 → ∞ (0.9979 vs 1). Support loss is not p = ∞ — that would be a q2 value; M/M/1 has an *empty* q2 slot and no crossover at all (kurtosis 6.0000 over four decades). Three at-risk legs pass and **none are physics** | P1/P2 are identities and **P2 was mis-registered as at-risk**; the ratio claim is untested on real models; remainder narrows to **essential singularities only** |
 | **D2** | [The scheme layer is the tower's gauge group](./derivations/D2-gauge-of-the-tower.md) | derivation + experiment | **the P0 is answered — there is no fourth floor.** The floors are defined up to G_diff, cross-domain comparison has only G_pow, and the scheme layer is the difference: RG eigenvalues are conjugation-invariant (5.3e-15) and G_pow-covariant as y → a·y (≤2.4e-12), exactly like D1's chart order. **The chart-free residue is the codimension p − 2** (β/k = 0.5000, 0.2503 vs 1/(p−2)). Also explains why floor 2 collapses and floor 3 stratifies | most of the experiment is a theorem check; both at-risk legs are physics; the **common-a** commitment is load-bearing; the G_diff half is Wegner's nonlinear scaling fields in other words |
 | **D1** | [The chart law — two integers classify floor 3](./experiments/D1-chart-invariance/) | experiment | **chart claim confirmed, formula deflated by its own prior-art note** — a floor-3 degeneracy carries a **chart order** *k* (gauge) and a **degeneracy order** *p* (invariant), λ_c ~ D^{(p−2)/p}. *k* removed by inference (two fields, λ-chart 0.33333 vs 0.33333 where bare exponents differ 2×) and by manipulation (ε′=ε^a moves the bare exponent by exactly a, the λ-chart exponent not at all). **S5's and S7's "domain-specific exponents" are largely a chart artifact** | 1-D gradient systems, additive noise; **support-type singularities have no *p*** and are excluded; both at-risk legs are physics; legs A/B are declared identities, not evidence |
 | — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
@@ -177,10 +178,24 @@ of two. **So the exponent spreads S5 and S7 filed as "domain-specific" are large
 a chart artifact** — which retro-reads S7's τ·λ = 1 as the statement that the
 relaxation exponent is −1 in the λ chart in every domain.
 
-The scope is a real limit, not a caveat: this classifies the part of floor 3 where
-Φ has a Taylor expansion. **Support loss has no *p* at all** — S5's type S is a
-boundary, not a degeneracy — so floor 3 now reads "degeneracy-type, indexed by *p*"
-plus a still-unclassified remainder.
+**And *p* itself turned out to be a special case.**
+[D6](./experiments/D6-support-singularities/) generalized the classifier by
+stopping treating *p* as primitive. Writing Φ's two leading terms as
+A|y|^{q1} + B|y|^{q2} with A → 0, the crossover locus is **A_c ~ D^{1 − q1/q2}**:
+
+```
+   q1 = 2      what SMOOTHNESS forces   ->  D1's p, exponent (p-2)/p
+   q1 = 1      a kink or a boundary     ->  support loss (S5's type S)
+   q2 -> oo    a hard wall              ->  exponent 1
+```
+
+So **floor 3's classifier is the ratio q1/q2** — which is exactly the form
+[D2](./derivations/D2-gauge-of-the-tower.md) derived the chart-free residue must
+take, arrived at independently and on the class D2's codimension argument could not
+reach. Support loss is *not* p = ∞ (that would be a value in the q2 slot); M/M/1
+has an **empty** q2 slot and therefore no crossover at all. The remaining
+unclassified part of floor 3 is now **essential singularities only** — Φ with no
+leading power whatsoever.
 
 **Honest scope.** The tower is derived for equilibrium / long-time (stationary)
 prediction fields. Driven, non-stationary systems can carry non-conserved
@@ -240,9 +255,11 @@ exponent" premise had to fail.
   S19–S22, S24.
 - **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
-  own prior-art note) and **D2 (the P0 answered — no fourth floor)**. **Unworked:**
-  D3–D6, of which **D6 (the singularities with no *p*) is what D2 left open**.
-- **13 experiments + 6 derivations** with teeth; **4 essays**.
+  own prior-art note), **D2** (the P0 answered — no fourth floor) and **D6** (D1's
+  *p* generalized; floor 3's classifier is a ratio). **Unworked:** D3, D4, D5 —
+  of which **D3 (the ladder as a chart-invariance count) is the cheapest**, and
+  sharper now that D2 and D6 independently say the invariant content is a ratio.
+- **14 experiments + 6 derivations** with teeth; **4 essays**.
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -268,8 +285,13 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    the fourth floor was [D1](./experiments/D1-chart-invariance/)'s *p*.** The
    counter-horn survives where the derivation said it would: "which perturbations
    are relevant" is a claim about a *sign*, and signs are G_pow-invariant.
-   *Remaining:* the residue for **support-type** singularities, which have no *p*
-   ([D6](./questions/UNKNOWN-LAWS.md)).
+   *Remaining, and now much smaller:* **[D6](./experiments/D6-support-singularities/)
+   closed the support-type gap on 2026-07-27.** Φ's two leading exponents give
+   A_c ~ D^{1−q1/q2}; **q1 = 2 is what smoothness forces**, so D1's *p* was the
+   smooth slice, and **support loss is q1 = 1**. The classifier is the **ratio**
+   q1/q2 — the form D2 derived the residue must take, now established on the class
+   D2's codimension argument could not reach. The unclassified remainder is
+   **essential singularities only**: Φ with no leading power at all.
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.

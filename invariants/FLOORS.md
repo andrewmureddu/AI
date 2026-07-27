@@ -84,6 +84,26 @@ cannot be collapsed into each other.
 > "degeneracy-type, indexed by *p*" plus "everything else, still unclassified"
 > ([D6](../questions/UNKNOWN-LAWS.md)). Redundancy deletion still fails on floor 3;
 > it is now failing in a countable way.
+>
+> **⟳ Extended (2026-07-27, [D6](../experiments/D6-support-singularities/)): *p*
+> was a special case, and the "everything else" above is now nearly empty.**
+> Writing Φ's two leading terms at the singular point as A|y|^{q1} + B|y|^{q2}
+> with A → 0, the crossover locus is **A_c ~ D^{1 − q1/q2}**, and:
+>
+> ```
+>    q1 = 2      what SMOOTHNESS forces   ->  D1's degeneracy order, exponent (p-2)/p
+>    q1 = 1      a kink or a boundary     ->  support loss (S5's type S)
+>    q2 -> oo    a hard wall              ->  exponent 1  (measured 0.9979)
+> ```
+>
+> So support loss is not p = ∞ — that would be a value in the q2 slot — but a
+> different value in the *q1* slot, and M/M/1 with an infinite buffer has **no
+> second term and therefore no crossover at all** (kurtosis pinned at 6.0000 over
+> four decades). **Floor 3's classifier is the ratio q1/q2**, which is exactly the
+> form [D2](../derivations/D2-gauge-of-the-tower.md) derived the chart-free
+> residue must take; D2's "residue = codimension p − 2" is its smooth-case face.
+> The unclassified remainder is now **essential singularities only** — Φ with no
+> leading power at all.
 
 So the asymmetry, which the original "one object seen sideways" slogan could not
 express:

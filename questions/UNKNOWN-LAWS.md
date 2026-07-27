@@ -410,7 +410,37 @@ potential.
 ### D6 — Is there a singularity with no *p*?
 
 **Engine:** negative space.
-**Novelty: N2. Status: unworked.**
+**Novelty: N2 for the "one classifier" reading; N0–N1 for the formula.
+Status: ⟳ RUN 2026-07-27 —
+[`experiments/D6-support-singularities/`](../experiments/D6-support-singularities/).**
+
+> **⟳ Restraint pass (2026-07-27): the question presupposed too much, the same
+> way D2's did. Support loss is neither a separate class nor p = ∞ — D1 was a
+> special case.** Write Φ's two leading terms as A|y|^{q1} + B|y|^{q2} with
+> A → 0; the crossover locus is **A_c ~ D^{1 − q1/q2}**. **q1 = 2 is what
+> *smoothness* forces**, giving D1's (p−2)/p with q2 = p; **support loss is
+> q1 = 1** — a kink or a boundary — where D1's formula is undefined rather than
+> wrong. p = ∞ would be a value in the q2 slot; support loss is a different value
+> in the *q1* slot. The observable had to change with it: D1's Var·λ/D needs a
+> curvature a kink does not have, so distribution *shape* is used instead (excess
+> kurtosis, defined at q = 1 → +3.0000 and q = 2 → 0.0000 alike).
+> **Three at-risk legs, all passing, and none of them physics** — closing a gap
+> D1 and D2 both recorded and neither closed: L1-penalized logistic regression
+> (all orders) gives τ_c ~ D^**0.5000** against 0.5000; **M/M/1 has no crossover
+> at all**, as registered — kurtosis pinned at 6.0000 across four decades of
+> 1 − ρ, spread 0.0111, no locus to fit; and the hard-wall corner q2 → ∞ gives
+> **0.9979** against 1, so a boundary is a continuous corner of the same
+> classifier rather than a separate class.
+> **The classifier is the ratio q1/q2** — precisely the form
+> [D2](../derivations/D2-gauge-of-the-tower.md) derived the chart-free residue
+> must take, now established on the class D2's codimension argument could not
+> reach, so D2's "residue = codimension p − 2" is the smooth-case face of it.
+> Honest: P1/P2 are identities and **P2 was mis-registered as at-risk** — the
+> third such slip, all the same failure (§4's tautology-by-construction, caught
+> by the rule and missed by me three times); the ratio claim is untested on real
+> models; the remainder narrows from "all of support-type" to **essential
+> singularities only**; the q1 → 0 logarithmic corner (where the density becomes
+> a power law) was registered as noted-not-tested and remains so.
 
 D1's classification presumes Φ has a Taylor expansion at the singular point, with
 some first non-vanishing anharmonic term. Floor 3 contains objects for which that
