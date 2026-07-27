@@ -330,7 +330,16 @@ survives being called gauge.
 
 **Engine:** negative space — no cross-domain relation in this repo has ever
 survived as a bare exponent.
-**Novelty: N2 claimed. Status: unworked.**
+**Novelty: N2 claimed. Status: unworked — and now the cheapest thing in the
+register.**
+
+> **⟳ Sharpened 2026-07-27 by [D7](#d7--what-the-residue-is-eliminate-the-chart-and-the-count-is-n--1).** This stone's phrase "a count of how many
+> coordinate choices have been quotiented out" had no definite referent when it was
+> written. It has one now: **n − 1**, for n observables under one chart. So D3 is
+> no longer a metaphor looking for a measurement — it asks whether a
+> correspondence's transfer score is predicted by the *dimension of its chart-free
+> quotient*, which is a number one can compute per rung with the estimator D7
+> already validated across three classes.
 
 If D1 is right, "does this correspondence transfer?" has a mechanical answer:
 **it transfers iff it is chart-invariant.** Which would mean the
@@ -463,9 +472,47 @@ follow (p−2)/p for some finite effective p, collapsing the distinction.
 [`SYNTHESIS.md`](../SYNTHESIS.md) §7.0 and [`FLOORS.md`](../invariants/FLOORS.md) §4.
 **Novelty: N1–N2 claimed, and the split is declared up front — N0 for
 projectivization, N1 for the Π-theorem reading, N2 only for the cross-domain
-identification and the count. Status: registered 2026-07-27,
+identification and the count. Status: ⟳ RUN 2026-07-27 —
 [`derivations/D7-the-residue.md`](../derivations/D7-the-residue.md) +
 [`experiments/D7-residue-projective/`](../experiments/D7-residue-projective/).**
+
+> **⟳ Restraint pass (2026-07-27): the residue has a general form, and one of the
+> map's standing statements is wrong.** The residue is the log-slope vector modulo
+> the **diagonal** ℝ⁺ — equivalently the slopes of observables against other
+> observables, in which no chart appears. All five at-risk legs pass on substance.
+> **The leg that carries the claim** is one estimator, `d ln O_a/d ln O_b`, handed
+> three different pairs of measured quantities without modification: it returns
+> **0.4996 / 0.2483** against D2's 1/(p−2) on a smooth germ, **0.5000 / 0.5000 /
+> 0.6667 / 0.6667** reproducing D6's table on support-type potentials, and
+> **0.7495–0.7500** against P-D's 3/4 on a branching scheme with no singularity, no
+> Φ and a discrete chart. **The count is measured at n > 2 for the first time**:
+> five slope vectors of a full all-orders germ span a *line* (σ₂/σ₁ = 2.96e-3 and
+> 3.45e-3), so the quotient is ℝP⁴ and the invariants number n − 1 = 4 — every
+> previously known member has n = 2, which is why each looked like *the* residue
+> rather than one coordinate among several. **What it corrects:** "the chart-free
+> residue is one integer, the codimension p − 2" is the smooth case's arithmetic,
+> not the residue's — Φ = A|y|² + |y|^{2π} gives **0.68169** against 1 − 1/π and a
+> germ with p = 2 + √2 gives **0.70698** against 1/√2, and a projective space has
+> no distinguished rational points. **D2's common-*a* caveat is derived rather than
+> stipulated** and exhibited: the same observables and the same estimator give
+> σ₂/σ₁ = 2.19e-3 under the diagonal and 0.227 under the product group, where only
+> the signs survive. **The scope condition the derivation had to state holds
+> sharply** — a chart-derivative is not an observable, transforms affinely, and its
+> slope *changes sign* at a = 1/(1 − k) (predicted 3.010, measured −0.0000 at
+> a = 3), which a weight-1 quantity cannot do. **And P-D's kink is settled**: the
+> min emerges from the exact sum rather than being imposed, the wall sits at
+> x = 1.00012, and it is the point [1 : 1] of ℝP¹ — a wall in the residue's own
+> space, chart-invariant, with no Φ in its statement.
+> **Honest: three registered tolerances were missed** (P2's ratio at p = 6, 6.73%
+> vs 5%; P5c's coarse-graining, 1.96e-6 vs 1e-10; P7's kink spread, 4.7e-6 vs
+> 1e-6), all three to the finite-window budget §5 of the registration had named one
+> section earlier — **a fourth registration slip, and a new kind**: not
+> tautology-by-construction but tolerances set from expectation instead of from the
+> scope section. A code bug in the kink locator is also on record, caught by a
+> diagnostic that got *worse* under refinement. P1/P6 are identities, P4 is a
+> control, P5b reuses D6's estimator so it checks the unification rather than the
+> ratio, every model is 1-D or separable, and **essential singularities remain
+> outside** — the remainder does not narrow.
 
 **The residue.** Three passes reached the invariant residue by three routes and
 none of them can state the other two:
