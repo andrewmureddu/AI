@@ -1,0 +1,73 @@
+{
+  "ladder_per_seed_skill": {
+    "L4": {
+      "mean": 0.894,
+      "sd": 0.032,
+      "min": 0.833,
+      "max": 0.933
+    },
+    "L3": {
+      "mean": 0.916,
+      "sd": 0.022,
+      "min": 0.886,
+      "max": 0.952
+    },
+    "L2": {
+      "mean": 0.484,
+      "sd": 0.038,
+      "min": 0.411,
+      "max": 0.538
+    },
+    "L1": {
+      "mean": 0.033,
+      "sd": 0.036,
+      "min": 0.0,
+      "max": 0.088
+    }
+  },
+  "ladder_cliff": {
+    "L3_minus_L2_mean": 0.432,
+    "L3_minus_L2_sd": 0.051,
+    "L3_minus_L2_min": 0.347,
+    "positive_in_all_seeds": true,
+    "n_seeds": 8,
+    "seed_wise_overlap": false
+  },
+  "ladder_adjacent_steps": {
+    "L1_to_L2": [
+      0.451,
+      0.058
+    ],
+    "L2_to_L3": [
+      0.432,
+      0.051
+    ],
+    "L3_to_L4": [
+      -0.022,
+      0.042
+    ],
+    "note": "[mean, sd] over seeds",
+    "paired_diff_L1L2_minus_L2L3": 0.019,
+    "paired_t_df7": 0.559,
+    "steps_differ_significantly": false
+  },
+  "real_legA_permutation": {
+    "n_features": 9,
+    "rho": 0.983,
+    "permutation_p_two_sided": 6e-05,
+    "n_permutations": 200000,
+    "exact_min_p_for_n9_two_sided": 5.51e-06
+  },
+  "metric_ceiling_self_transfer": {
+    "n=200": {
+      "mean": 0.92,
+      "sd": 0.023,
+      "min": 0.89
+    },
+    "n=1024": {
+      "mean": 0.924,
+      "sd": 0.043,
+      "min": 0.823
+    }
+  }
+}
