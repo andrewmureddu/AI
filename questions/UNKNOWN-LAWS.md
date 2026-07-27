@@ -457,6 +457,98 @@ follow (p−2)/p for some finite effective p, collapsing the distinction.
 
 ---
 
+### D7 — What the residue *is*: eliminate the chart, and the count is n − 1
+
+**Engine:** gap prediction — the successor to the P0, named as the live question in
+[`SYNTHESIS.md`](../SYNTHESIS.md) §7.0 and [`FLOORS.md`](../invariants/FLOORS.md) §4.
+**Novelty: N1–N2 claimed, and the split is declared up front — N0 for
+projectivization, N1 for the Π-theorem reading, N2 only for the cross-domain
+identification and the count. Status: registered 2026-07-27,
+[`derivations/D7-the-residue.md`](../derivations/D7-the-residue.md) +
+[`experiments/D7-residue-projective/`](../experiments/D7-residue-projective/).**
+
+**The residue.** Three passes reached the invariant residue by three routes and
+none of them can state the other two:
+
+| Route | The residue it found | The object it lives on |
+|---|---|---|
+| [D2](../derivations/D2-gauge-of-the-tower.md) | codimension **p − 2**, measured as β/k | a smooth floor-3 germ |
+| [D6](../experiments/D6-support-singularities/) | **q1/q2**, the two leading exponents of Φ | a support-type singularity |
+| [P-D](../experiments/PD-allometry-reduction/) | **θ = ln n / −ln(β²γ)** | a branching scheme with *no singularity and no Φ at all* |
+
+"The residue is the codimension" does not cover the third; "the residue is a ratio"
+covers all three and says nothing. The register's own §4 warns that stating a known
+special case with the constants removed is N0 with extra steps, so a general
+statement has to earn its keep by predicting something the three members do not.
+
+**The claim.** Let a singularity — or a description scheme — supply observables
+O₁,…,O_n that vary along one control family carried by a chart ε, and write
+y_i = d ln O_i / d ln ε for their log-slopes. G_pow acts by ε ↦ ε^a, and it acts on
+the whole slope vector by **one common scalar**:
+
+```
+        y  ↦  a · y          (every component, the same a)
+```
+
+> **D7.** The chart-free content of a floor-3 singularity or a description scheme
+> is exactly the image of its log-slope vector in projective space — the ratios
+> y_i/y_j and nothing else. Equivalently and more usefully: **the residue is the
+> set of log-slopes of observables taken against other observables**,
+> d ln O_i / d ln O_j, in which no chart appears. Four consequences, and the last
+> three are the content:
+>
+> 1. **Ratios are the only invariants** (this is the part that is not new).
+> 2. **Counting: exactly n − 1 functionally independent invariants**, for any n.
+>    This is the Π-theorem with the chart as the single "dimension" — r = 1, so
+>    n − r. No member of the residue has ever been measured at n > 2, so the count
+>    has never been tested.
+> 3. **The residue is not intrinsically discrete.** D2's integer is inherited from
+>    Taylor orders being integers in the smooth case, not from the residue. A
+>    singularity with incommensurable leading exponents has an irrational residue,
+>    which "the residue is the codimension" forbids.
+> 4. **The common-*a* commitment is the group, not a caveat.** D2 flagged it as
+>    load-bearing and left it as a stipulation. It is the statement that the action
+>    is the *diagonal* ℝ⁺; under independent per-direction re-charting the group is
+>    (ℝ⁺)ⁿ, every ratio moves, and the residue collapses from n − 1 invariants to
+>    the sign vector — which is exactly what D2 observed and could not derive.
+
+The reason the three members look heterogeneous is that each was read in the chart
+its own domain supplies. β/k is d ln y\* / d ln λ; q1/q2 is fixed by
+d ln A_c / d ln D; θ is d ln B / d ln M. All three are one observable differentiated
+against another, and that is what "eliminating the chart" means.
+
+**Prior-art note (written first).** *Old, and squarely so.* That a set of exponents
+defined against an arbitrary scale is meaningful only up to overall rescaling is
+elementary; quasi-homogeneous singularities have weight vectors normalized by
+convention exactly because they live in weighted projective space (Arnold), the
+slope of a Newton-polygon edge is q1/q2 by construction, scaling relations
+(Rushbrooke, Widom, Fisher) are the statement that certain exponent combinations
+are chart-free, and "two independent exponents" is the standard count in critical
+phenomena. The Π-theorem is 1914. **Nothing in the mathematics here is new, and
+claiming otherwise would be the register's §4 anti-pattern in its purest form.**
+*The nearest miss, recorded so it cannot be relabelled later:* dimensional analysis
+already gives n − r invariants from n quantities and r dimensions; D7's counting law
+is that arithmetic with r = 1, and if anyone has written "the chart is a dimension
+and exponents are its Π-groups", D7 is **N0** and only the cross-domain audit
+survives.
+*What is claimed at N2, and it is narrow:* that D2's codimension, D6's ratio and
+P-D's allometric exponent are **the same invariant computed on different slope
+vectors** — including in a system with no potential, no singularity and a discrete
+chart, where none of the classical statements apply — plus consequences 2–4, which
+the three members individually do not imply.
+
+**Falsifier — four-sided, one per consequence.** (i) An observable at a floor-3
+singularity whose log-slope transforms with weight ≠ 1 under ε ↦ ε^a — then the
+action is not by a common scalar, the residue is *weighted* projective, and the
+ratios are not the invariants. (ii) A singularity with n independent measured
+slopes carrying more or fewer than n − 1 independent chart-free combinations.
+(iii) A demonstration that the residue must be discrete after all — which would
+make consequence 3 false and D2's codimension the general statement. (iv) Ratios
+surviving independent per-direction re-charting, which would mean the invariance
+is an artifact of the estimator rather than of the group.
+
+---
+
 ## 6. Working a D-stone
 
 Same rhythm as a speculative stone, with two additions, both aimed at the two
