@@ -154,7 +154,7 @@ scaling exponents differ across the three. (New entry
 > over an 8× range of gaps, to 10% over 33×), the coding gap appearing as a
 > constant (3.81→3.59), not an exponent.
 > Fifth arrival at ∇²Φ's singular set, and the first to measure its *order* —
-> both of [S25(K)](../derivations/S25-control-split.md)'s named singular faces
+> both of [S27](../derivations/S27-control-split.md)'s named singular faces
 > (null Fisher directions; supports) appear here with *different* exponents,
 > which is why a single-exponent premise had to fail. Open: does type R
 > (scheme/decoder structure) constitute a **fourth floor** of the tower? See
@@ -519,15 +519,19 @@ descent reaching equally-singular endpoints.
 
 ## Cluster K — The periphery split (added 2026-07-22, from [`essays/04`](../essays/04-the-periphery-split.md))
 
-> **Numbering note (2026-07-25).** This cluster's two stones were filed as S25
-> and S26, numbers already in use in Cluster J (the RLCT stone and the
-> degeneracy-attractor stone). Where the distinction matters, write **S25(J)** /
-> **S26(J)** for Cluster J and **S25(K)** / **S26(K)** for the two below. The
-> dated [research-log](../research-log/) entries and the experiment/derivation
-> directory names are left as originally written — they are a historical record,
-> not an index.
+> **Numbering note (2026-07-25, resolved 2026-07-27).** This cluster's two stones
+> were filed as S25 and S26, numbers already in use in Cluster J (the RLCT stone
+> and the degeneracy-attractor stone). They were disambiguated for two days as
+> S25(J)/S26(J) versus S25(K)/S26(K); that suffix is now retired. **Cluster K's
+> stones are S27 and S28**, Cluster J's keep the bare S25 and S26, and the
+> directories were renamed to match (`derivations/S27-control-split.md`,
+> `experiments/S28-sgd-charges/`).
+> Dated [research-log](../research-log/) entries before 2026-07-27 still say
+> S25(K) and S26(K) in their prose. That is deliberate — the log is append-only
+> and records what things were called at the time — but every *link* in them was
+> repointed, so nothing is broken.
 
-### S25(K) 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
+### S27 🟡 — Feedback/control splits in two: an inference half that reduces to Φ and a reachability half that cannot
 **Bridge:** the estimation–control dualities (Kalman filter ↔ LQR; KL-control /
 control-as-inference) versus the Kalman rank conditions.
 **Connects:** control theory · Bayesian filtering · the free-energy hub ·
@@ -555,7 +559,7 @@ to Φ (maxent's home game — its failure kills the sorting rule outright), and
 percolation must resist even through the Potts/random-cluster q→1 dressing.)
 > **⟳ Restraint pass (2026-07-22):** *falsifier fired — stone retired as stated,
 > conjecture upgraded* — see
-> [`../derivations/S25-control-split.md`](../derivations/S25-control-split.md).
+> [`../derivations/S27-control-split.md`](../derivations/S27-control-split.md).
 > Half (a) confirmed easily (KL-control value = path free energy; maxent-RL
 > softmax; LQG↔Kalman — L3 within those classes). Half (b) **reduced against
 > prediction**: the controllability Gramian is identically the covariance of the
@@ -570,7 +574,7 @@ percolation must resist even through the Potts/random-cluster q→1 dressing.)
 > dressing. Remaining candidate for a true second axis: the invariance/symmetry
 > sector only.
 
-### S26(K) 🟡 — Conserved charges are the coordinates of the prediction field
+### S28 🟡 — Conserved charges are the coordinates of the prediction field
 **Bridge:** Noether charges ↔ natural parameters / sufficient statistics of
 long-time ensembles (Gibbs, generalized Gibbs, Jaynes-in-reverse).
 **Connects:** physics (conservation, GGE/ETH) · statistics (sufficiency,
@@ -593,7 +597,7 @@ invariant ensemble; (iii) the SGD stationarity test failing — train to
 stationarity, test sufficiency of the conserved invariants for the stationary
 distribution. (iii) is runnable with torch and is the designed experiment.
 > **⟳ Restraint pass (2026-07-22):** (iii) run, pure numpy —
-> [`../experiments/S26-sgd-charges/`](../experiments/S26-sgd-charges/).
+> [`../experiments/S28-sgd-charges/`](../experiments/S28-sgd-charges/).
 > **Falsifier did not fire; the result is sharper than the claim.** On the
 > minimal scale-symmetric model: Q conserved in the flow limit (drift ∝ lr);
 > weight-decay breaking follows the exact law dQ/dt = −4λQ (rel. err 1e-5);

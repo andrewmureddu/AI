@@ -523,6 +523,93 @@ def leg_E():
 
 
 # ==========================================================================
+# Leg F -- POST-HOC, added 2026-07-27 after D2.  Not pre-registered.
+#
+# D2 (derivations/D2-gauge-of-the-tower.md) argues there is no fourth floor: the
+# log-ratio signature is the transformation data of G_pow relative to G_diff, so
+# a log-ratio exponent is *gauge*.  That would apply to this experiment's theta.
+#
+# But D2's own rules say an exponent's magnitude is gauge while a **ratio** of
+# exponents at the same singularity is invariant, and theta is built as a ratio
+# of two per-level log-quantities.  This leg decides it by measurement.
+# ==========================================================================
+
+def leg_F():
+    out = {}
+    n, gamma, beta = 4, 4 ** (-1 / 3), 4 ** -0.5
+
+    # F1 -- the legitimate reparameterization of a branching scheme: describe the
+    # same hierarchy in super-levels of `a` original levels.  Under it the
+    # multiplicity per level and the rescaling per level BOTH raise to the a-th
+    # power, so a log-ratio should be exactly invariant (D2's common-a rule).
+    theta_fine = measured_theta(n, lambda N: beta, gamma, WINDOW)
+    rows = []
+    for a in [1, 2, 3, 4, 5, 8]:
+        n_c, beta_c, gamma_c = n ** a, beta ** a, gamma ** a
+        Ns_c = [max(4, N // a) for N in WINDOW]
+        theta_c = measured_theta(n_c, lambda N: beta_c, gamma_c, Ns_c)
+        rows.append({
+            "a": a, "n_coarse": n_c, "beta_coarse": beta_c,
+            "theta_coarse": theta_c,
+            "abs_dev_from_fine": abs(theta_c - theta_fine),
+            # the bare per-level log-quantity, for contrast: this SHOULD scale
+            "bare_chart_ln_n": math.log(n_c),
+            "bare_over_a_ln_n": math.log(n_c) / a,
+        })
+    out["F1_coarse_graining"] = {
+        "theta_fine": theta_fine, "rows": rows,
+        "max_abs_dev": max(r["abs_dev_from_fine"] for r in rows),
+        "bare_chart_ratio_max_over_min": (max(r["bare_chart_ln_n"] for r in rows)
+                                          / min(r["bare_chart_ln_n"] for r in rows)),
+    }
+
+    # F2 -- would G_pow even be available here?  D2's gauge freedom exists because
+    # a distance-to-threshold epsilon carries no canonical scale.  Mass does: it
+    # is extensive, so M(A + B) = M(A) + M(B) for disjoint sub-networks.  Under
+    # M -> M^a with a != 1 that additivity fails, which is what pins the chart to
+    # G_diff.  Measured rather than asserted.
+    # Volumes must be COMPARABLE or the larger one swamps the sum and hides the
+    # defect: V grows like (beta^2 gamma)^-N, so N=40 vs N=55 differ by ~10^11
+    # and (V1+V2)^a ~ V2^a ~ V1^a + V2^a for any a.  Use equal-depth networks.
+    add = []
+    for (N1, N2) in [(40, 40), (40, 41), (40, 42)]:
+        V1 = math.exp(log_volume(N1, n, beta, gamma))
+        V2 = math.exp(log_volume(N2, n, beta, gamma))
+        for a in [1.0, 1.5, 2.0, 0.5]:
+            lhs = (V1 + V2) ** a          # chart of the combined system
+            rhs = V1 ** a + V2 ** a       # sum of the charted parts
+            add.append({"N1": N1, "N2": N2, "a": a,
+                        "V2_over_V1": V2 / V1,
+                        "combined_charted": lhs, "sum_of_charted": rhs,
+                        "rel_additivity_defect": abs(lhs - rhs) / lhs})
+    at_1 = [r for r in add if r["a"] == 1.0]
+    off_1 = [r for r in add if r["a"] != 1.0]
+    out["F2_extensivity_pins_the_chart"] = {
+        "rows": add,
+        "max_defect_at_a_1": max(r["rel_additivity_defect"] for r in at_1),
+        "min_defect_at_a_neq_1": min(r["rel_additivity_defect"] for r in off_1),
+    }
+
+    # F3 -- the contrast case.  A floor-3 control parameter has no such pinning:
+    # epsilon is a distance to a threshold, and epsilon' = epsilon^a is an equally
+    # good distance.  Show the SAME estimator reports a moving exponent there,
+    # so F1's invariance is not an artifact of the estimator.
+    eps = np.logspace(-6, -1, 60)
+    lam = eps ** 1.0                                  # lambda ~ eps^k, k = 1
+    rows = []
+    for a in [1.0, 1.5, 2.0, 3.0]:
+        eps_p = eps ** a
+        k_meas = float(np.polyfit(np.log(eps_p), np.log(lam), 1)[0])
+        rows.append({"a": a, "chart_order_k": k_meas, "predicted_k_over_a": 1.0 / a})
+    out["F3_floor3_chart_moves"] = {
+        "rows": rows,
+        "k_ratio_max_over_min": (max(r["chart_order_k"] for r in rows)
+                                 / min(r["chart_order_k"] for r in rows)),
+    }
+    return out
+
+
+# ==========================================================================
 
 def main():
     print("Leg A: the log-ratio law ...")
@@ -573,6 +660,18 @@ def main():
         else:
             print(f"  {key}: max(1-corr) {v['max_one_minus_corr']:.2e}, "
                   f"ratio varies {v['ratio_rel_variation']:.2e}")
+
+    print("Leg F: is theta gauge under D2's G_pow? (post-hoc) ...")
+    OUT["legF"] = leg_F()
+    f1 = OUT["legF"]["F1_coarse_graining"]
+    print(f"  F1 theta under coarse-graining a=1..8: max deviation {f1['max_abs_dev']:.3e}"
+          f"  (bare per-level chart ln n moves {f1['bare_chart_ratio_max_over_min']:.1f}x)")
+    f2 = OUT["legF"]["F2_extensivity_pins_the_chart"]
+    d1 = f2["max_defect_at_a_1"]
+    d2 = f2["min_defect_at_a_neq_1"]
+    print(f"  F2 additivity defect: a=1 -> {d1:.1e}; a != 1 -> min {d2:.3f}")
+    f3 = OUT["legF"]["F3_floor3_chart_moves"]
+    print(f"  F3 same estimator on a floor-3 chart: k moves {f3['k_ratio_max_over_min']:.1f}x")
 
     with open("verdict.json", "w") as f:
         json.dump(OUT, f, indent=2)

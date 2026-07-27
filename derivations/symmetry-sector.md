@@ -1,6 +1,6 @@
 # The symmetry sector — does it reduce to Φ, or is it the second primitive?
 
-**Question (from [S25's verdict](./S25-control-split.md) and
+**Question (from [S25's verdict](./S27-control-split.md) and
 [essay 4's closing note](../essays/04-the-periphery-split.md)):** after the
 connectivity sector collapsed into Φ's singular structure, invariance/symmetry
 (Noether, symmetry-breaking) is the last candidate for a genuine second axis of

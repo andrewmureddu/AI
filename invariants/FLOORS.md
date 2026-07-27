@@ -33,12 +33,12 @@ it deletes, what it predicts, and what refused.
 | 14 | [trade-offs & Pareto](./tradeoffs-pareto.md) | **2** ▸facet, partial | Where a trade-off has a real exchange rate, its frontier *is* a Legendre transform (rate–distortion). Where it doesn't, it is not an invariant at all (L1). |
 | 4 | [diffusion & random walks](./diffusion-random-walks.md) | **2** (→3 in the tails) | Reduction demonstrated: CLT forces the Gaussian, the Gaussian is the max-entropy exponential family, and by JKO diffusion is gradient flow of that free energy. **Heavy-tailed/Lévy instances move to floor 3** — see prediction P-B. |
 | 18 | [optimal transport](./optimal-transport.md) | **2** (+ open) | The *flow* is Φ-driven (JKO). But the Wasserstein *metric* is not ∇²Φ — a second geometry on the same space, not derived from Φ. Flagged, §4. |
-| 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S25(K)](../derivations/S25-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
+| 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S27](../derivations/S27-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
 | 7 | [optimization & variational](./optimization-variational.md) | **2 + 1** | **Splits by what the functional is over.** Objective = a free energy ⇒ floor 2. Objective = an *action* (least action) ⇒ floor 1, since that is the bracket structure Noether consumes. "As-if" optimization (adaptationism, utility) is neither — L1. |
 | 5 | [criticality & universality](./criticality-phase-transitions.md) | **3** | Lee–Yang: transition ⇔ non-analyticity of Φ. The floor's L4 core. |
 | 10 | [symmetry breaking](./symmetry-breaking.md) | **3** | Derived, and the sort's best non-trivial case: an entry *named* for symmetry lands on floor 3, because SSB requires a non-analyticity of Φ and Goldstone modes are null directions of ∇²Φ. |
 | 1 | [power laws](./power-laws.md) | **3** | Heavy tails are where Z or its moments diverge — the complement of the well-behaved exponential-family world. |
-| 8 | [networks & percolation](./networks-percolation.md) | **3** | Connectivity facts are Φ-boundary facts (S25(K)); the Potts q→1 non-analyticity is systematic, not dressing. |
+| 8 | [networks & percolation](./networks-percolation.md) | **3** | Connectivity facts are Φ-boundary facts (S27); the Potts q→1 non-analyticity is systematic, not dressing. |
 | 22 | [critical slowing down](./critical-slowing-down.md) | **3** | Tested ([S7](../experiments/S7-critical-slowing/)): τ·λ_min = 0.94±0.13 — the Hessian going soft, i.e. the *approach* to the singular set. |
 | 21 | [noise thresholds](./noise-thresholds.md) | **3 + 4?** | **Splits, tested** ([S5](../experiments/S5-noise-thresholds/)): type M (metric merge) and type S (support loss) are floor 3; **type R (decoder RG fixed point) is not a Φ fact at all** — see §4. |
 | 19 | [spectral gap](./spectral-gap.md) | **3** ✓tested | The sort's prediction, [run and confirmed](../experiments/PA-spectral-gap/) — but in the *directional* form: gap-closure is a **null direction** of the trajectory free energy's Hessian, not a scalar divergence. See P-A below. |
@@ -146,7 +146,7 @@ number because they are the softest direction of one Hessian; joins S7's
 to carry the entire divergence of Λ''(0) (Λ''·gap = 2⟨f,v₂⟩² = 2.0000) — **but the
 scalar reading is wrong**: for an observable orthogonal to the slow mode Λ'' is
 unchanged (1.00×) while the gap falls 31×. Gap-closure is a **null-direction**
-fact, filing #19 with S25(K)'s unreachable null spaces rather than with S3's
+fact, filing #19 with S27's unreachable null spaces rather than with S3's
 scalar blow-up. Three of the four readouts turned out to be one number *by
 construction* and tested nothing; the fourth (Kuramoto) gives one mechanism with
 **family-specific constants** (0.410–0.632) — the S7/S5 shape again. And the
@@ -346,6 +346,44 @@ is a claim about the tower rather than a measurement.
 > codimension. Whether that kink is a floor-3 degeneracy read in a scheme
 > variable, or a fact about the description map with no floor-3 counterpart, is
 > untested — flagged here for whoever takes the next pass.
+>
+> **⟳ Leg F (2026-07-27, later the same day) — the reconciliation above is right
+> except in one sentence, and the correction is a measurement.** The note says
+> *"what P-D measured as terminal, D2 derived as gauge."* Measured, θ is **not**
+> gauge. D2's own §4 table puts an exponent's *magnitude* in the gauge column and
+> a **ratio** of exponents in the invariant one — and θ is a ratio of two
+> per-level log-quantities, so the table already predicts which column it lands
+> in. The rest of that note stands: P-D's three negatives really are the
+> signature D2's reading predicts, and "separate from floors 1–3, not a fourth
+> floor" is the right reading of the negative.
+>
+> **What leg F measured.** θ is a **ratio** of two per-level
+> log-quantities, and D2's own §4 table puts ratios in the invariant column.
+> Coarse-graining the scheme by `a` levels (n → nᵃ, β → βᵃ, γ → γᵃ) raises
+> numerator and denominator to the same power and leaves θ **invariant to
+> 2.6e-15** across a = 1…8, while the bare per-level chart ln n moves **8×**. The
+> same estimator on a genuine floor-3 chart reports k moving **3.0×**, tracking
+> 1/a — so the invariance is a fact about θ, not a blind estimator.
+> **And G_pow is not available here in the first place.** D2's freedom exists
+> because a distance-to-threshold carries no canonical scale. Mass does: it is
+> **extensive**, and under M → M^a with a ≠ 1 masses stop adding (additivity
+> defect 0 at a = 1; 29% / 50% / 41% at a = 1.5 / 2 / 0.5 for equal-depth
+> sub-networks). Extensivity pins the chart to G_diff, where by D2's rule (i)
+> exponents are invariant.
+> **Net: the two results compose.** The scheme layer is the structure group, as
+> D2 says; allometry's 3/4 is in its **invariant residue**, not its gauge part —
+> alongside the codimension p − 2, and for the same reason (both are ratios).
+> What P-D called "the floor-4 signature" should be read as *the residue*, and
+> the entry is corrected accordingly. One thing P-D observed survives the
+> reframing intact: allometry's ratios are selected by floor-1-flavoured
+> conditions (impedance matching is flux-matching, space-filling is geometric),
+> which is now unsurprising — selecting a scheme is exactly what a structure
+> group's parameters get chosen by.
+> **Still open:** the residue has two known members (p − 2 from a singularity,
+> θ from a branching scheme) and no statement of what the general one is. D2
+> derived its residue for floor-3 germs; allometry has no singularity and no Φ at
+> all, so "the residue is the codimension" does not cover it. That gap is now the
+> live question in this section.
 
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a

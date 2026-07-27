@@ -10,7 +10,7 @@ conserved to high order; the drift rate's **scaling in ε** identifies the
 regime — power-law (ordinary averaging) versus exponentially small in 1/ε
 (Neishtadt/Nekhoroshev).
 
-**Instance.** [S26](../S26-sgd-charges/) found SGD's balancedness charge
+**Instance.** [S26](../S28-sgd-charges/) found SGD's balancedness charge
 Q = u²−v² quasi-conserved, eroding at ~5.6e-7/step, and labelled the result a
 "prethermalization plateau." That is a *description*. M15 asks whether the
 averaging mechanism is actually running, which is a question about how the

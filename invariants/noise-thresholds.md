@@ -56,7 +56,7 @@ For types M and S the threshold is a **singularity of the prediction field**: th
 point where the Fisher information the channel carries about the message develops a
 null direction (M) or where the informative event's probability vanishes (S). Both
 are faces of Φ's singular set already identified by
-[S25(K)](../derivations/S25-control-split.md) — null Fisher directions and
+[S27](../derivations/S27-control-split.md) — null Fisher directions and
 supports — and they carry different exponents, which is exactly why they cannot be
 one law. Type R is **not** a Φ-fact: it is a property of a decoder's flow, and is
 the leading candidate for a fourth floor of the

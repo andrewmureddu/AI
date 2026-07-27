@@ -1836,5 +1836,207 @@
       "ratio_max": -0.018190349109124617,
       "ratio_rel_variation": 1.5132246479086762
     }
+  },
+  "legF": {
+    "F1_coarse_graining": {
+      "theta_fine": 0.7499999999999988,
+      "rows": [
+        {
+          "a": 1,
+          "n_coarse": 4,
+          "beta_coarse": 0.5,
+          "theta_coarse": 0.7499999999999988,
+          "abs_dev_from_fine": 0.0,
+          "bare_chart_ln_n": 1.3862943611198906,
+          "bare_over_a_ln_n": 1.3862943611198906
+        },
+        {
+          "a": 2,
+          "n_coarse": 16,
+          "beta_coarse": 0.25,
+          "theta_coarse": 0.7499999999999991,
+          "abs_dev_from_fine": 3.3306690738754696e-16,
+          "bare_chart_ln_n": 2.772588722239781,
+          "bare_over_a_ln_n": 1.3862943611198906
+        },
+        {
+          "a": 3,
+          "n_coarse": 64,
+          "beta_coarse": 0.125,
+          "theta_coarse": 0.7499999999999991,
+          "abs_dev_from_fine": 3.3306690738754696e-16,
+          "bare_chart_ln_n": 4.1588830833596715,
+          "bare_over_a_ln_n": 1.3862943611198906
+        },
+        {
+          "a": 4,
+          "n_coarse": 256,
+          "beta_coarse": 0.0625,
+          "theta_coarse": 0.749999999999998,
+          "abs_dev_from_fine": 7.771561172376096e-16,
+          "bare_chart_ln_n": 5.545177444479562,
+          "bare_over_a_ln_n": 1.3862943611198906
+        },
+        {
+          "a": 5,
+          "n_coarse": 1024,
+          "beta_coarse": 0.03125,
+          "theta_coarse": 0.7499999999999983,
+          "abs_dev_from_fine": 4.440892098500626e-16,
+          "bare_chart_ln_n": 6.931471805599453,
+          "bare_over_a_ln_n": 1.3862943611198906
+        },
+        {
+          "a": 8,
+          "n_coarse": 65536,
+          "beta_coarse": 0.00390625,
+          "theta_coarse": 0.7500000000000013,
+          "abs_dev_from_fine": 2.55351295663786e-15,
+          "bare_chart_ln_n": 11.090354888959125,
+          "bare_over_a_ln_n": 1.3862943611198906
+        }
+      ],
+      "max_abs_dev": 2.55351295663786e-15,
+      "bare_chart_ratio_max_over_min": 8.0
+    },
+    "F2_extensivity_pins_the_chart": {
+      "rows": [
+        {
+          "N1": 40,
+          "N2": 40,
+          "a": 1.0,
+          "V2_over_V1": 1.0,
+          "combined_charted": 2.186744353393338e+33,
+          "sum_of_charted": 2.186744353393338e+33,
+          "rel_additivity_defect": 0.0
+        },
+        {
+          "N1": 40,
+          "N2": 40,
+          "a": 1.5,
+          "V2_over_V1": 1.0,
+          "combined_charted": 1.022579355472954e+50,
+          "sum_of_charted": 7.230727965562947e+49,
+          "rel_additivity_defect": 0.2928932188134526
+        },
+        {
+          "N1": 40,
+          "N2": 40,
+          "a": 2.0,
+          "V2_over_V1": 1.0,
+          "combined_charted": 4.7818508670976474e+66,
+          "sum_of_charted": 2.3909254335488237e+66,
+          "rel_additivity_defect": 0.5
+        },
+        {
+          "N1": 40,
+          "N2": 40,
+          "a": 0.5,
+          "V2_over_V1": 1.0,
+          "combined_charted": 4.676263843490162e+16,
+          "sum_of_charted": 6.613235748698723e+16,
+          "rel_additivity_defect": 0.41421356237309515
+        },
+        {
+          "N1": 40,
+          "N2": 41,
+          "a": 1.0,
+          "V2_over_V1": 6.3496042217672235,
+          "combined_charted": 8.035852765812657e+33,
+          "sum_of_charted": 8.035852765812657e+33,
+          "rel_additivity_defect": 0.0
+        },
+        {
+          "N1": 40,
+          "N2": 41,
+          "a": 1.5,
+          "V2_over_V1": 6.3496042217672235,
+          "combined_charted": 7.203572913641645e+50,
+          "sum_of_charted": 6.146118789715543e+50,
+          "rel_additivity_defect": 0.1467957826766167
+        },
+        {
+          "N1": 40,
+          "N2": 41,
+          "a": 2.0,
+          "V2_over_V1": 6.3496042217672235,
+          "combined_charted": 6.457492967381893e+67,
+          "sum_of_charted": 4.939349944702668e+67,
+          "rel_additivity_defect": 0.2350978979532263
+        },
+        {
+          "N1": 40,
+          "N2": 41,
+          "a": 0.5,
+          "V2_over_V1": 6.3496042217672235,
+          "combined_charted": 8.964291810183701e+16,
+          "sum_of_charted": 1.163877281116852e+17,
+          "rel_additivity_defect": 0.2983482753145686
+        },
+        {
+          "N1": 40,
+          "N2": 42,
+          "a": 1.0,
+          "V2_over_V1": 40.3174737404377,
+          "combined_charted": 4.517537619918983e+34,
+          "sum_of_charted": 4.517537619918983e+34,
+          "rel_additivity_defect": 0.0
+        },
+        {
+          "N1": 40,
+          "N2": 42,
+          "a": 1.5,
+          "V2_over_V1": 40.3174737404377,
+          "combined_charted": 9.601800246495891e+51,
+          "sum_of_charted": 9.291485485265366e+51,
+          "rel_additivity_defect": 0.03231839376618688
+        },
+        {
+          "N1": 40,
+          "N2": 42,
+          "a": 2.0,
+          "V2_over_V1": 40.3174737404377,
+          "combined_charted": 2.0408146147383266e+69,
+          "sum_of_charted": 1.9444185413558773e+69,
+          "rel_additivity_defect": 0.04723411557634754
+        },
+        {
+          "N1": 40,
+          "N2": 42,
+          "a": 0.5,
+          "V2_over_V1": 40.3174737404377,
+          "combined_charted": 2.125449980573286e+17,
+          "sum_of_charted": 2.430233268058855e+17,
+          "rel_additivity_defect": 0.14339706427876578
+        }
+      ],
+      "max_defect_at_a_1": 0.0,
+      "min_defect_at_a_neq_1": 0.03231839376618688
+    },
+    "F3_floor3_chart_moves": {
+      "rows": [
+        {
+          "a": 1.0,
+          "chart_order_k": 1.0,
+          "predicted_k_over_a": 1.0
+        },
+        {
+          "a": 1.5,
+          "chart_order_k": 0.6666666666666667,
+          "predicted_k_over_a": 0.6666666666666666
+        },
+        {
+          "a": 2.0,
+          "chart_order_k": 0.5,
+          "predicted_k_over_a": 0.5
+        },
+        {
+          "a": 3.0,
+          "chart_order_k": 0.33333333333333337,
+          "predicted_k_over_a": 0.3333333333333333
+        }
+      ],
+      "k_ratio_max_over_min": 2.9999999999999996
+    }
   }
 }

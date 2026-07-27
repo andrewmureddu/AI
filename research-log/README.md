@@ -9,8 +9,9 @@ the map honest and reconstructable.
 
 ## Entries
 
-- [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)
+- [2026-07-27 — Reconciling P-D with D2: the residue is a ratio, twice over](./2026-07-27-PD-D2-reconciliation.md)
 - [2026-07-27 — P-D run: the exponent that has no conjugate variable (allometry is a log-ratio)](./2026-07-27-PD-allometry.md)
+- [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)
 - [2026-07-26 — D2: the P0 is answered, and there is no fourth floor](./2026-07-26-D2-gauge-of-the-tower.md)
 - [2026-07-26 — Turning to discovery: the chart law (D1), and what it does to floor 3](./2026-07-26-D1-chart-invariance.md)
 - [2026-07-26 — Paper 1: the transfer result re-analyzed, and the "cliff" retracted](./2026-07-26-paper-1-transfer-cliff.md)

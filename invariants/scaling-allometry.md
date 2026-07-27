@@ -8,8 +8,12 @@
 > **Status:** developing ✓tested (the *exponent's type*, not the biology)
 > **Floor:** **refuses the tower — measured, not asserted.** The exponent is a
 > log-ratio of the branching data, not a Φ-derivative
-> ([P-D, run](../experiments/PD-allometry-reduction/)). Third exhibit for the
-> proposed [floor 4](./FLOORS.md#4-what-refused-the-tower--and-the-shape-it-makes).
+> ([P-D, run](../experiments/PD-allometry-reduction/)). There is
+> [no fourth floor](../derivations/D2-gauge-of-the-tower.md) to be an exhibit for:
+> the scheme layer is the tower's **structure group**, and θ sits in its
+> **invariant residue** — a *ratio*, invariant under scheme coarse-graining to
+> 2.6e-15, measured against an extensive observable that admits no power
+> re-charting. Alongside the codimension p − 2, and for the same reason.
 
 ## Statement
 
@@ -86,5 +90,6 @@ Also open, and cheaper: **neural scaling laws.** Loss ∝ compute^(−α) is the
 instance here where a Φ-route is live (the exponent is plausibly set by a
 data/parameter spectrum, i.e. by an actual free energy — cf.
 [S25's RLCT result](../experiments/S25-rlct-singularity/)), which would make it a
-floor-2 exponent sitting in a floor-4 entry. If so this entry splits, and that
-would be the first split with a floor-4 half.
+genuine floor-2 exponent sitting in an entry whose other instances are structure-group
+residue. If so this entry splits — and it would be the first entry split across a
+floor and the residue rather than across two floors.

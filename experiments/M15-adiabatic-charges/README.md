@@ -5,7 +5,7 @@ under slow drive is a candidate L3 mechanism — fast motion plus a slowly varyi
 parameter (ratio ε) conserves action-like variables, and the **scaling of the
 drift rate in ε** identifies the regime: power-law (ordinary averaging) versus
 exponentially small in 1/ε (Neishtadt/Nekhoroshev). The register's
-discriminator, applied to [S26](../S26-sgd-charges/): that experiment found the
+discriminator, applied to [S26](../S28-sgd-charges/): that experiment found the
 balancedness charge quasi-conserved (erosion ~5.6e-7/step) and called it a
 "prethermalization plateau" — a *description*. M15 asks whether the averaging
 mechanism is actually running.
