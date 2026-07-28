@@ -596,6 +596,94 @@ is an artifact of the estimator rather than of the group.
 
 ---
 
+### D8 — The multi-parameter residue is a Grassmannian point, and its rank counts
+
+**Engine:** gap prediction — the question [D7](#d7--what-the-residue-is-eliminate-the-chart-and-the-count-is-n--1) left live.
+**Novelty: N1–N2, and the prior-art note is the most deflationary in the register.
+Status: ⟳ RUN 2026-07-28 —
+[`experiments/D8-grassmannian-residue/`](../experiments/D8-grassmannian-residue/).**
+
+> **⟳ Restraint pass (2026-07-28): the question's premise was about the wrong
+> space, and the answer generalizes D7 rather than qualifying it.** *State-space*
+> coupling changes nothing — D7's lemma never mentioned the state space. What
+> matters is how many **controls** carry the approach. With m of them the slope
+> **matrix** Y_{ij} = ∂ ln O_i/∂ ln ε_j transforms as **Y ↦ Y·A^{-1}** under the
+> monomial group ln ε ↦ A ln ε, so the residue is the **column space** of Y — a
+> point of **Gr(r, n)** carrying **r(n − r)** invariants — and D7's ℝP^{n−1} is the
+> **r = 1 slice**. All four at-risk legs pass. **The rank counts the *relevant*
+> directions, at a predicted rate**: a cusp with an added sixth-order coupling has
+> m = 3 controls and rank **2**, with the discarded singular value vanishing as
+> **t^1.988** against the 2.00 its scaling dimension forces — and on the
+> support-type class as **D^1.000** against 1.00. *Small is cheap; the rate is the
+> claim.* **Orbit dimension = r·m exactly** (4 / 6 / 2 / 9 measured), so the counts
+> 5 / 8 / 9 are measured rather than assumed. **Individual exponents span
+> 106×–450×** under the group while the column space is fixed — so at m > 1 even
+> the *ratios* move and only a subspace survives, which is the m > 1 form of a
+> statement [D2](../derivations/D2-gauge-of-the-tower.md) could make only at m = 1.
+> The leg that carries the grade is the **support-type** one: relevant/irrelevant
+> classification is textbook wherever there is a fixed point to linearize about,
+> and there is none there.
+> **Honest, and it is a fifth registration slip in a third category.** P1's
+> tolerance was set below what its own estimator can express — `arccos` of a
+> principal cosine floors at √(machine eps) ≈ 1.5e-8 — so it was unreachable
+> whatever the model did; in the sine form the same models give 1e-13 to 1e-16.
+> D7 logged setting tolerances from expectation instead of the modelling budget and
+> D8 announced a fix; the fix covered the modelling budget and not the
+> **estimator's numerical resolution**. Separately the P2 control is not merely
+> forced but **vacuous** — an n × 1 matrix's rank is fixed by its shape — and
+> "declared forced" is not the same as "has no content". One thing the registration
+> failed to anticipate and P4 implies: **the Grassmannian point is exact when every
+> direction is relevant and only asymptotic when one is not**, the tilt vanishing at
+> the irrelevant direction's own rate (measured t^1.988, matching). Marginal
+> directions (weight 0, hence logarithms) untested; **essential singularities remain
+> outside** and the remainder does not narrow.
+
+**The residue's third form.** D7 established that with one control the chart-free
+content is the log-slope *vector* modulo the diagonal ℝ⁺. But a floor-3 singularity
+of codimension c has c control directions, so the one-parameter case is the
+exception rather than the rule, and D7's own scope section admitted every germ it
+measured was 1-D or a direct sum.
+
+Write Y for the n × m matrix of log-slopes. The multi-parameter form of G_pow is
+the monomial group — ε′_k = Π_j ε_j^{A_{kj}}, i.e. ln ε ↦ A ln ε — under which
+Y ↦ Y·A^{-1}. Right multiplication by an invertible matrix preserves the column
+space and the rank, and nothing else.
+
+> **D8.** The residue of an m-parameter approach is **col(Y) ∈ Gr(r, n)** with
+> r = rank Y, carrying **r(n − r)** invariants. Three consequences:
+>
+> 1. **D7 is the r = 1 slice**, since Gr(1, n) = ℝP^{n−1} and n − 1 = 1·(n−1).
+> 2. **r counts the relevant directions.** An irrelevant control's column vanishes
+>    as the singularity is approached, at the rate its scaling dimension sets, so it
+>    contributes nothing to the rank.
+> 3. **Individual exponents are not invariants once m > 1.** Only the subspace is.
+>    At m = 1 this reads "the ratios survive"; at m > 1 the ratios move too.
+
+**Prior-art note (written first, and it is the most deflationary here).** Relevant,
+marginal and irrelevant perturbations classified by scaling dimension is textbook
+renormalization group — Wegner, Fisher, every book on critical phenomena — and that
+an irrelevant coupling drops out of the leading asymptotics is the *content* of the
+word. Quasi-homogeneous weight vectors, Newton polyhedra and the A_k unfoldings used
+here are all classical. **The nearest miss, recorded so it cannot be relabelled:**
+if anyone has written "the exponent data of an m-parameter approach is a point of
+the Grassmannian and its rank counts the relevant directions," D8's geometry is
+**N0** and only the cross-class audit survives. The honest prior is that a
+specialist would call the smooth half a restatement. What is claimed: the *count*
+r(n−r); that r is measurable from observables alone without knowing the fixed point;
+and that both hold on the support-type class, where there is no fixed point, no flow
+and no scaling field for the textbook argument to use.
+
+**Falsifier — four-sided.** (i) The slope matrix failing full rank when every
+control is relevant. (ii) The irrelevant column vanishing at a rate that is *not*
+its scaling dimension — then r counts numerical negligibility, not relevance.
+(iii) Orbit dimension ≠ r·m, which breaks the quotient and the count together.
+(iv) Individual exponents surviving the group — then the group is smaller than
+GL_m, the singularity supplies a canonical basis of control directions, and the
+residue is richer than a subspace. Horn (iv) would replace the count rather than
+merely kill it, and is the most informative way for this to be wrong.
+
+---
+
 ## 6. Working a D-stone
 
 Same rhythm as a speculative stone, with two additions, both aimed at the two

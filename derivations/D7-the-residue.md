@@ -188,6 +188,17 @@ Three further boundaries, inherited rather than new:
   *independently* measurable — the claim is about the dimension of the quotient, not
   about any particular observable list.
 
+> **⟳ Generalized 2026-07-28 by [D8](../experiments/D8-grassmannian-residue/), which
+> contains this rather than amending it.** Everything above is the **m = 1** case —
+> one control carrying the approach. A floor-3 singularity of codimension *c* has
+> *c* controls, so this is the exception rather than the rule. With m of them the
+> log-slope **matrix** transforms as Y ↦ Y·A^{-1} under the monomial group, the
+> residue is **col(Y) ∈ Gr(r, n)** with **r(n − r)** invariants, and §3's ℝP^{n−1}
+> is the r = 1 slice. Two things that are invisible at m = 1: the rank **counts the
+> relevant directions** (measured, at the rate their scaling dimension predicts),
+> and **the ratios stop being invariants** — at m > 1 only the subspace survives, so
+> §4.2's reading of common-*a* is itself the m = 1 shadow of a larger statement.
+
 ## 6. The three members, as instances
 
 | Member | n | slope vector y | residue = [y] | chart eliminated by |

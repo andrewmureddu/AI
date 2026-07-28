@@ -248,7 +248,10 @@ exponent" premise had to fail.
   (2026-07-27, [D7](./derivations/D7-the-residue.md)) — the slopes of observables
   against *other* observables, carrying **n − 1** invariants. For a smooth floor-3
   germ that is the codimension p − 2; the integrality is Taylor orders' and not the
-  residue's.
+  residue's. With **m controls** rather than one it is the column space of the slope
+  matrix, a point of **Gr(r, n)** with **r(n − r)** invariants whose rank counts the
+  relevant directions (2026-07-28,
+  [D8](./experiments/D8-grassmannian-residue/)) — D7 being the r = 1 slice.
 - **23 catalog entries, [now sorted](./invariants/FLOORS.md)**: 1 hub, 1 on floor 1,
   6 floor-2 facets (▸ deleted as independent), 2 floor-2 non-facets, 6 distinct
   floor-3 members, 5 splitting across floors, **2 refusing the tower**. Effective
@@ -258,14 +261,17 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **7 discovery stones** (D1–D7) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
+- **8 discovery stones** (D1–D8) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
   *p* generalized; floor 3's classifier is a ratio) and **D7** (the P0's successor —
-  the residue's general form, and a count). **Unworked:** D3, D4, D5 — of which
+  the residue's general form, and a count) and **D8** (the multi-parameter form —
+  a Grassmannian point whose rank counts the relevant directions). **Unworked:**
+  D3, D4, D5 — of which
   **D3 (the ladder as a chart-invariance count) is the cheapest**, and sharper again
-  now that D7 has given "count" a definite referent: n − 1.
-- **20 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
+  now that D7 and D8 have given "count" a definite referent: n − 1, and
+  r(n − r) when the approach is multi-parameter.
+- **21 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
   *(The count was stale on both sides of the 2026-07-27 merges — it predated
   M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
   carries a committed verdict. Checked against the tree: `S25-channel-independence`
@@ -348,11 +354,29 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    *Honest:* three registered tolerances missed to the finite-window budget, a
    fourth registration slip of a new kind, and a locator bug — all logged in the
    experiment's §4. **Essential singularities remain the unclassified remainder;
-   it does not narrow.** *What replaces this as the live question:* every germ D7
-   measured is one-dimensional or a direct sum, so **whether a genuinely coupled
-   multi-dimensional singularity still carries n − 1 invariants, or whether coupling
-   shrinks the quotient, is untested** — and it is the first question in this arc
-   whose answer is not already implied by a member of the residue.
+   it does not narrow.** ~~*What replaces this as the live question:* every germ D7 measured is
+   one-dimensional or a direct sum, so whether a coupled multi-dimensional
+   singularity still carries n − 1 invariants is untested.~~
+   **ANSWERED 2026-07-28 by [D8](./experiments/D8-grassmannian-residue/), and the
+   question was about the wrong space.** *State-space* coupling changes nothing —
+   D7's lemma never mentioned the state space. What matters is how many **controls**
+   carry the approach, and a floor-3 singularity of codimension c has c of them, so
+   the one-parameter case D7 measured is the exception rather than the rule. With m
+   controls the slope **matrix** Y_{ij} = ∂ ln O_i/∂ ln ε_j transforms as
+   **Y ↦ Y·A^{-1}** under the monomial group, so the residue is the **column space**
+   of Y — a point of **Gr(r, n)** carrying **r(n − r)** invariants — and D7's
+   ℝP^{n−1} is the **r = 1 slice**. **The rank counts the *relevant* directions, at
+   a rate their scaling dimension predicts**: a cusp with a sixth-order coupling has
+   m = 3 controls and rank **2**, the discarded singular value falling as
+   **t^1.988** against 2.00, and as **D^1.000** against 1.00 on the support-type
+   class where there is no fixed point to linearize about. Orbit dimension = r·m
+   exactly (4 / 6 / 2 / 9), so the counts 5 / 8 / 9 are measured. And **individual
+   exponents span 106×–450× under the group while the column space is fixed** — at
+   m > 1 even the *ratios* move, which sharpens D2's common-*a* statement one
+   further step. *Honest:* a fifth registration slip in a third category (a
+   tolerance set below what its own estimator can express), a vacuous control, and
+   marginal directions untested — all in the experiment's §5. **Essential
+   singularities remain the unclassified remainder; it still does not narrow.**
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
