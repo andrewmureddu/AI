@@ -1,0 +1,249 @@
+{
+  "P6_repaired": {
+    "pass_": true,
+    "table": {
+      "(type C, NOT floor 3) an argmin crossing": "width pinned at the resolution floor at every size (P-K)",
+      "3a  Phi diverges on a region (limit over support)": "Phi(0.9) converges to 2.302585093 (increments 0e+00); Phi(1.1) grows as M^0.981",
+      "3b  Phi finite, a derivative diverges at a point (limit over size)": "localised width, 117x floor, shrinking as N^-1.001",
+      "3c  Phi analytic, an eigenvalue exactly zero (exact at finite size)": "no localised feature (width/window = 1.000); eigen ratio 8.9e-16 at the noise floor"
+    }
+  },
+  "S25_kink": {
+    "P4_pass": true,
+    "P5_pass": true,
+    "max_err": 0.0,
+    "max_gap": 3.105228080262801e-17,
+    "rows": [
+      {
+        "D": 4,
+        "eigen_gap_at_P_eq_D_plus_1": 2.9267109714705454e-17,
+        "max_abs_err": 0.0
+      },
+      {
+        "D": 8,
+        "eigen_gap_at_P_eq_D_plus_1": 1.1702270633439062e-17,
+        "max_abs_err": 0.0
+      },
+      {
+        "D": 16,
+        "eigen_gap_at_P_eq_D_plus_1": 1.522956464879716e-17,
+        "max_abs_err": 0.0
+      },
+      {
+        "D": 32,
+        "eigen_gap_at_P_eq_D_plus_1": 3.105228080262801e-17,
+        "max_abs_err": 0.0
+      }
+    ]
+  },
+  "at_risk_passed": 1,
+  "at_risk_predictions": [
+    "P2_3a_boundary_stable",
+    "P3_3c_does_not_round",
+    "P5_S25_sharp_numerically",
+    "P6_one_instrument_three_behaviours"
+  ],
+  "at_risk_total": 4,
+  "declared_identities": [
+    "P1_3b_rounds_identity",
+    "P4_S25_sharp_by_construction"
+  ],
+  "identities_passed": 2,
+  "runtime_s": 5.3,
+  "seed": 20260728,
+  "stratum_3a": {
+    "P2_pass": false,
+    "growth_ratios": [
+      4.325855432539678,
+      6.197406882718071,
+      1.0031021101486164
+    ],
+    "lambda_c_drift": 0.4292330222037717,
+    "posthoc": {
+      "exact_limit_below": 2.302585092994046,
+      "phi_above_boundary": [
+        12.302539692033683,
+        102.30258509299414,
+        1002.302585092995,
+        10002.302585093003,
+        100002.30258509309
+      ],
+      "phi_above_growth_exponent_in_M": 0.9810243830412392,
+      "phi_below_boundary": [
+        2.3025396920336756,
+        2.302585092994046,
+        2.302585092994046,
+        2.302585092994046,
+        2.302585092994046
+      ],
+      "phi_below_increments": [
+        4.540096037031205e-05,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "phi_finite_at_3b_kink": [
+        -0.03465735902799726,
+        -0.002166084939249829,
+        -0.0001353803087031143
+      ],
+      "registered_claim_was": "lambda_c stable in system size -- not well posed",
+      "repaired_claim": "3a is a limit phenomenon too; the distinction that survives is WHAT diverges -- Phi itself on a region (3a) vs a derivative at a point (3b) vs nothing (3c)"
+    },
+    "posthoc_repaired_pass": true,
+    "rows": [
+      {
+        "M": 10.0,
+        "lambda_c": null,
+        "phi_beyond_boundary": 2.8439553485931164
+      },
+      {
+        "M": 100.0,
+        "lambda_c": 1.492926038586841,
+        "phi_beyond_boundary": 12.302539694611806
+      },
+      {
+        "M": 1000.0,
+        "lambda_c": 1.0639012779190646,
+        "phi_beyond_boundary": 76.24384417829948
+      },
+      {
+        "M": 10000.0,
+        "lambda_c": 1.0636930163830693,
+        "phi_beyond_boundary": 76.4803609810945
+      }
+    ]
+  },
+  "stratum_3b": {
+    "P1_pass": true,
+    "min_width_over_floor": 116.99999999999999,
+    "rows": [
+      {
+        "N": 20,
+        "floor": 0.001,
+        "peak_at": 0.0,
+        "peak_curvature": 4.999916668900197,
+        "ratio": 176.99999999999983,
+        "width": 0.17699999999999982
+      },
+      {
+        "N": 40,
+        "floor": 0.00075,
+        "peak_at": 0.0,
+        "peak_curvature": 9.999625022497238,
+        "ratio": 116.99999999999999,
+        "width": 0.08775
+      },
+      {
+        "N": 80,
+        "floor": 0.000375,
+        "peak_at": 0.0,
+        "peak_curvature": 19.999250044994476,
+        "ratio": 116.99999999999999,
+        "width": 0.043875
+      },
+      {
+        "N": 160,
+        "floor": 0.0001875,
+        "peak_at": 0.0,
+        "peak_curvature": 39.99850008998895,
+        "ratio": 116.99999999999999,
+        "width": 0.0219375
+      },
+      {
+        "N": 320,
+        "floor": 9.375e-05,
+        "peak_at": 0.0,
+        "peak_curvature": 79.9970001799779,
+        "ratio": 116.99999999999999,
+        "width": 0.01096875
+      },
+      {
+        "N": 640,
+        "floor": 4.6875e-05,
+        "peak_at": 0.0,
+        "peak_curvature": 159.9940003599558,
+        "ratio": 116.99999999999999,
+        "width": 0.005484375
+      },
+      {
+        "N": 1280,
+        "floor": 2.34375e-05,
+        "peak_at": 0.0,
+        "peak_curvature": 319.9880007199116,
+        "ratio": 116.99999999999999,
+        "width": 0.0027421875
+      },
+      {
+        "N": 2560,
+        "floor": 1.171875e-05,
+        "peak_at": 0.0,
+        "peak_curvature": 639.9760014398232,
+        "ratio": 116.99999999999999,
+        "width": 0.00137109375
+      },
+      {
+        "N": 5120,
+        "floor": 5.859375e-06,
+        "peak_at": 0.0,
+        "peak_curvature": 1279.9520028796464,
+        "ratio": 116.99999999999999,
+        "width": 0.000685546875
+      }
+    ],
+    "width_exponent": -1.0008185553185627
+  },
+  "stratum_3c": {
+    "P3_pass": false,
+    "instrument": {
+      "floor": 0.0005,
+      "peak_at": -0.09099999999999997,
+      "peak_curvature": 2.331475883466341,
+      "ratio": 3999.0,
+      "width": 1.9995
+    },
+    "max_eigen_ratio": 8.909295292671472e-16,
+    "posthoc": {
+      "all_within_10x_of_floor": true,
+      "diagnosis": "(1) a power law fitted to values at the machine noise floor; (2) I registered 'width at the resolution floor' (a SHARP kink) for an object that has no kink at all -- 3c is analytic and its degeneracy lives in the eigenvalues. The instrument returned the full window, which is 'no localised feature'.",
+      "eigen_ratios": [
+        4.4207028860343854e-17,
+        2.755822089732635e-16,
+        1.0396128911608534e-16,
+        8.909295292671472e-16
+      ],
+      "instrument_width": 1.9995,
+      "instrument_window": 2.0,
+      "noise_floor": 1e-16,
+      "trend_fitted_to_noise": true,
+      "width_over_window": 0.99975
+    },
+    "rows": [
+      {
+        "eigen_ratio": 4.4207028860343854e-17,
+        "n": 10
+      },
+      {
+        "eigen_ratio": 2.755822089732635e-16,
+        "n": 100
+      },
+      {
+        "eigen_ratio": 1.0396128911608534e-16,
+        "n": 1000
+      },
+      {
+        "eigen_ratio": 8.909295292671472e-16,
+        "n": 10000
+      }
+    ],
+    "trend_exponent": 0.3489676558554214
+  },
+  "verdict": {
+    "P1_3b_rounds_identity": true,
+    "P2_3a_boundary_stable": false,
+    "P3_3c_does_not_round": false,
+    "P4_S25_sharp_by_construction": true,
+    "P5_S25_sharp_numerically": true,
+    "P6_one_instrument_three_behaviours": false
+  }
+}

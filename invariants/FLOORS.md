@@ -133,6 +133,13 @@ cannot be collapsed into each other.
 > confusion: **a singular density is not a singular Φ** — a caustic (measured
 > density exponent −0.5003) leaves Φ entire (finite over |λ| ≤ 200).
 
+> **⟳ Sorted (2026-07-28): [`FLOOR3-STRATA.md`](./FLOOR3-STRATA.md)** carries the
+> second sort — every floor-3 entry placed in a stratum, with the eight assignments
+> that rest on no measurement marked as predictions. Its own test restated the
+> trichotomy: 3a's boundary is a **limit too**, so the classifier is *what diverges*
+> — Φ itself on a region (3a), a derivative at a point (3b), or nothing, with a
+> derivative exactly zero (3c).
+
 So the asymmetry, which the original "one object seen sideways" slogan could not
 express:
 

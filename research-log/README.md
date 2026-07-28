@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-28 — The second sort: floor 3 into its strata, and what it costs S25](./2026-07-28-floor3-strata.md)
 - [2026-07-28 — The base variable: one tower, and floor 3's stratification is forced](./2026-07-28-base-variable.md)
 - [2026-07-28 — P-K: P-D's kink is a phase transition, and P-C's account of it was wrong](./2026-07-28-PK-kink-taxonomy.md)
 - [2026-07-28 — P-C refuted: the two kinds are one decomposition, and there is a third readout](./2026-07-28-PC-variational-kinds.md)
