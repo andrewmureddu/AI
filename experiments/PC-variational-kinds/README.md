@@ -248,6 +248,21 @@ them apart, and it is measurable.
 
 ## 5. What this does to P-D's kink
 
+> **⟳ RETRACTED 2026-07-28 by [P-K](../PK-kink-taxonomy/).** The account below is
+> wrong, and the section is kept unedited because the way it is wrong is useful.
+> The instinct was right — a min of two branches — but the mechanism is not an
+> argmin crossing. Reading P-D's code, θ = min(1, ·) is the **tropical limit of a
+> `logsumexp`**: a dominance switch between the two ends of a geometric sum. The
+> two are distinguishable by **finite-size rounding**, which this section did not
+> think to check: a selector boundary is non-analytic *already*, with zero width at
+> every size, whereas P-D's θ is **analytic at every finite depth** and rounds as
+> N^−0.9731. So the kink is a floor-3 non-analyticity of the
+> **first-order-transition class**, not a selector cell boundary. The lesson for
+> this experiment: the shape of a formula does not identify the operation that
+> produced it, and I inferred the operation from the shape.
+
+*The original section follows, unedited.*
+
 [P-D](../PD-allometry-reduction/) measured θ = min(1, ln n/−ln β²γ), noted it is
 **non-analytic at nβ²γ = 1 with Murray's law sitting exactly on the kink**, and
 [FLOORS §4](../../invariants/FLOORS.md#4-what-refused-the-tower--and-the-shape-it-makes)

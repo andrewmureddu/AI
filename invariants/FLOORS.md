@@ -375,10 +375,23 @@ is a claim about the tower rather than a measurement.
 > codimension. Whether that kink is a floor-3 degeneracy read in a scheme
 > variable, or a fact about the description map with no floor-3 counterpart, is
 > untested — flagged here for whoever takes the next pass.
-> *(⟳ 2026-07-28: [P-C](../experiments/PC-variational-kinds/) took the pass and
-> supplies a third candidate the note did not list — a **selector cell boundary**,
-> i.e. a floor-3 non-analyticity of the optimal-value function rather than of the
-> system's Φ. Leading account, not a settlement; §4a names the measurement.)*
+> *(⟳ **CLOSED 2026-07-28** by [P-K](../experiments/PK-kink-taxonomy/), and on
+> none of the candidates listed. P-C proposed a **selector cell boundary**
+> (an argmin crossing) and called it the leading account; **that is retracted.**
+> Reading P-D's code, the level-j term of the volume sum is
+> π r_c² l_c n^N·(nβ²γ)^(−j), so θ = min(1, ·) is the **tropical limit of a
+> `logsumexp`** — a dominance switch between the two ends of a geometric sum. In
+> closed form θ_N = ln n/(ln n + g(u)/(N+1)) with g(u) = u/(1−e^{−u}) and
+> u = −(N+1)ln(nβ²γ): **analytic at every finite depth**, non-analytic only as
+> N → ∞. Rounding width ∝ N^**−0.9731**, curvature ∝ N^**+1.0155**, against an
+> argmin crossing whose width is **zero at every size**. So the kink is a
+> **floor-3 non-analyticity of the first-order-transition class** — same class as
+> the canonical rounded two-state control (N^−1.0008), different scaling function
+> (sup-norm 0.1403) — reached in the limit of network *depth* rather than of
+> system size. Bonus, and it removes a puzzle rather than solving one: **Murray's
+> law ⟺ nβ²γ = 1 is an algebraic identity** given γ = n^(−1/3), and what it means
+> is that blood volume is **equipartitioned across generations** (max/min level
+> volume 1.000000, against 14.6 off it).)*
 
 ---
 
@@ -416,16 +429,19 @@ Bertrand's ratios come out **1.000000000** and **2.000000000**, invariant to
 > **Discontinuous count + analytic value ⇒ floor 1.
 > Discontinuous readout + kinked value ⇒ selector.**
 
-**This bears on §4's remaining open item.** The reconciliation note below left
-P-D's kink unassigned — θ = min(1, ln n/−ln β²γ) is non-analytic at nβ²γ = 1, with
-Murray's law sitting on it, and nobody knew what floor that was. The generic
-selector cell boundary has *exactly* that signature, which makes "selector cell
-boundary" the leading account. **Not settled here**, and the settling measurement is
-concrete: is nβ²γ = 1 where two branches exchange dominance, and does the cost
-functional's optimal value kink there? If yes, the kink is a floor-3
-non-analyticity **of the optimal-value function** — the argmin of a Φ being itself
-a Φ with its own singular part — which is a small addition to the tower rather than
-a new floor.
+**This bore on §4's remaining open item, and got it wrong.** The reconciliation
+note below left P-D's kink unassigned, and this section proposed the selector cell
+boundary as the leading account, since the generic one has exactly that signature.
+*(⟳ **Retracted 2026-07-28** by [P-K](../experiments/PK-kink-taxonomy/).* The
+instinct — a min of two branches — was right; the mechanism was not. P-D's kink is
+a **dominance switch in a geometric sum**, not an argmin crossing, and the two are
+distinguishable by **finite-size rounding**: a selector boundary is non-analytic
+already, with zero width at every size, while P-D's θ is analytic at every finite
+depth and rounds as N^−0.9731. So the kink is floor 3 after all, of the
+first-order-transition class. See the closed item below. **A third kind of
+boundary was registered in that pass and withdrawn** — a square-root branch point —
+because the case it was invented for turned out to be a transversal real
+eigenvalue crossing, exponent 1.000, not a collision.*)
 
 **Two registered failures produced this section, and both are one slip.** P-C
 registered rank 6 for the D&C constant's Jacobian and measured **4**; post-hoc,
