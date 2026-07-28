@@ -267,11 +267,15 @@ exponent" premise had to fail.
   *p* generalized; floor 3's classifier is a ratio) and **D7** (the P0's successor —
   the residue's general form, and a count) and **D8** (the multi-parameter form —
   a Grassmannian point whose rank counts the relevant directions). **Unworked:**
-  D3, D4, D5 — of which
-  **D3 (the ladder as a chart-invariance count) is the cheapest**, and sharper again
-  now that D7 and D8 have given "count" a definite referent: n − 1, and
-  r(n − r) when the approach is multi-parameter.
-- **21 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
+  D4, D5. **D3 was run 2026-07-28 and is falsified** — the chart-free residue does
+  not separate the rungs that transfer from the one that does not (its distances are
+  seed-sized and their ordering scrambles across sampling settings), while the
+  **bare exponent** orders all four exactly as transfer does, 30× apart at L2/L3.
+  Not a paradox: aggregation composes additively, so that harness's chart is
+  **pinned** and its magnitudes are facts by D2's rule (i). Replacement: transfer
+  there is **basin membership**, which also explains paper 1's **ceiling** where a
+  quotient story predicted a step.
+- **22 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
   *(The count was stale on both sides of the 2026-07-27 merges — it predated
   M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
   carries a committed verdict. Checked against the tree: `S25-channel-independence`

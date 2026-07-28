@@ -330,16 +330,49 @@ survives being called gauge.
 
 **Engine:** negative space — no cross-domain relation in this repo has ever
 survived as a bare exponent.
-**Novelty: N2 claimed. Status: unworked — and now the cheapest thing in the
-register.**
+**Novelty: N2 claimed. Status: ⟳ RUN 2026-07-28 — FALSIFIED.
+[`experiments/D3-ladder-as-quotient/`](../experiments/D3-ladder-as-quotient/).**
 
-> **⟳ Sharpened 2026-07-27 by [D7](#d7--what-the-residue-is-eliminate-the-chart-and-the-count-is-n--1).** This stone's phrase "a count of how many
-> coordinate choices have been quotiented out" had no definite referent when it was
-> written. It has one now: **n − 1**, for n observables under one chart. So D3 is
-> no longer a metaphor looking for a measurement — it asks whether a
-> correspondence's transfer score is predicted by the *dimension of its chart-free
-> quotient*, which is a number one can compute per rung with the estimator D7
-> already validated across three classes.
+> **⟳ Restraint pass (2026-07-28): falsified on its own registered falsifier, and
+> the replacement is smaller but measured.** The chart is *n*, the number of
+> contributions, so D7/D8 apply directly to the
+> [ladder-vs-transfer harness](../experiments/ladder-vs-transfer/). **The chart-free
+> residue does not separate the domains that transfer from the one that does not.**
+> Its distances from the reference are 0.0081 / 0.0120 / 0.0327 for L4 / L3 / L2 —
+> all the size of the seed spread — and their **ordering scrambles across every
+> sampling setting tried**, with L2, the domain that fails, coming out *closest* at
+> the best-estimated one. Transfer skill over the same rungs is 0.033 / 0.484 /
+> 0.916 / 0.894: a factor of 28, stable to ±0.02 over 8 seeds. That is horn (i)
+> exactly — **an L2 correspondence that is chart-invariant and still fails to
+> transfer.** The *count* reading fails too: rank is 1 for every aggregating domain
+> and **0** for the non-aggregating one, so it takes two values across four rungs
+> and separates the boundary that matters least.
+> **What does place the boundary is the bare exponent 1/α**, which orders all four
+> rungs exactly as transfer does with a 30× gap at L2/L3. Not a paradox: aggregation
+> composes additively, so n ↦ n^a breaks it (defect **0** at a = 1;
+> **0.293 / 0.500 / 0.414** at 1.5 / 2 / 0.5 — [P-D](../experiments/PD-allometry-reduction/)'s
+> leg F with the count in place of the mass). **G_pow was never available, the chart
+> is pinned, and by [D2](../derivations/D2-gauge-of-the-tower.md)'s rule (i) the
+> magnitudes are facts.** So D3 assumed the ladder lives on the *across-domains*
+> half of D2's sentence; on this harness it lives on the *within-domain* half.
+> **The replacement:** transfer here is predicted by **basin membership**, which is
+> a claim about magnitudes being *equal*, not about ratios — and that fits what
+> [paper 1](../paper/transfer-cliff.md) found and D3 could not explain. A quotient
+> story predicts a step; a basin story predicts a **ceiling**; the ceiling is what
+> was measured, because more data cannot move an exponent into another basin.
+> **Honest:** one harness and one family, so this refutes D3 as stated and does not
+> show that no chart-invariance reading works — the real test is a family whose
+> chart is *not* pinned, and this experiment does not contain one. Four rungs cannot
+> support a coefficient, so the argument is the pattern of ties plus the
+> 30×-versus-scrambling-noise contrast. **No registered tolerance was missed, the
+> first time in this arc**; one unregistered separation constant in the code is
+> disclosed in the write-up.
+>
+> **Note on what this stone could still use.** D3's own statement leans on the
+> transfer *cliff* — "the jump exactly at L2/L3", "a quotient is not a matter of
+> degree". Paper 1 had already **retracted** that step reading (L1→L2 = +0.451 ≈
+> L2→L3 = +0.432), so the sharpness argument was dead before the run and the
+> registration recorded that it did not get to use it.
 
 If D1 is right, "does this correspondence transfer?" has a mechanical answer:
 **it transfers iff it is chart-invariant.** Which would mean the
