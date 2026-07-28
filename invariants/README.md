@@ -8,6 +8,14 @@ where the entry sits in the map's architecture (see
 derivation and [`FLOORS.md`](./FLOORS.md) for the full sort with reasons).
 Levels and statuses are provisional and change as entries are worked.
 
+**Three axes, all orthogonal.** *Level* (L0–L4) grades how well a correspondence
+is established; *floor* ([`FLOORS.md`](./FLOORS.md)) says where it sits in the
+tower; *chart* ([`CHARTS.md`](./CHARTS.md), added 2026-07-27) says whether its core
+object survives reparameterizing the measurement axis. [D3](../experiments/D3-chart-vs-ladder/)
+showed transfer needs a shared mechanism **and** a chart-free statement, and that
+the level grades only the first — so a high-level entry with a chart-dependent core
+is predicted *not* to travel.
+
 To add one: copy [`_TEMPLATE.md`](./_TEMPLATE.md), fill it in, add a row here and a
 column in [`../domains/README.md`](../domains/README.md). See
 [`../CONTRIBUTING.md`](../CONTRIBUTING.md).
