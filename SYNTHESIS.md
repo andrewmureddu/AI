@@ -267,7 +267,13 @@ exponent" premise had to fail.
   *p* generalized; floor 3's classifier is a ratio) and **D7** (the P0's successor —
   the residue's general form, and a count) and **D8** (the multi-parameter form —
   a Grassmannian point whose rank counts the relevant directions). **Unworked:**
-  D4, D5. **D3 was run 2026-07-28 and is falsified** — the chart-free residue does
+  D4, D5. **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
+  rungs around an *unpinned* chart, and the residue legs passed cleanly, but the
+  harness turned out to have almost no dynamic range in transfer (0.938–0.988
+  across the rungs that matter), because crossing p = 4 → p = 6 barely changes the
+  fluctuation law. **D3's open half stays open**, with the concrete fix registered.
+  By-product: **the degeneracy order is nearly invisible in the fluctuation shape**.
+  **D3 was run 2026-07-28 and is falsified** — the chart-free residue does
   not separate the rungs that transfer from the one that does not (its distances are
   seed-sized and their ordering scrambles across sampling settings), while the
   **bare exponent** orders all four exactly as transfer does, 30× apart at L2/L3.
@@ -275,7 +281,7 @@ exponent" premise had to fail.
   **pinned** and its magnitudes are facts by D2's rule (i). Replacement: transfer
   there is **basin membership**, which also explains paper 1's **ceiling** where a
   quotient story predicted a step.
-- **22 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
+- **23 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
   *(The count was stale on both sides of the 2026-07-27 merges — it predated
   M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
   carries a committed verdict. Checked against the tree: `S25-channel-independence`

@@ -717,6 +717,80 @@ merely kill it, and is the most informative way for this to be wrong.
 
 ---
 
+### D9 — Does chart-invariance predict transfer on an *unpinned* chart?
+
+**Engine:** gap prediction — the half [D3](#d3--the-ladder-is-a-chart-invariance-count) could not reach.
+**Novelty: N1–N2 at best; the parts are D3's and D7's and the composition is what
+would be new. Status: ⟳ RUN 2026-07-28 — **INCONCLUSIVE**,
+[`experiments/D9-unpinned-chart-transfer/`](../experiments/D9-unpinned-chart-transfer/).**
+
+> **⟳ Restraint pass (2026-07-28): the transfer leg fails on its registered
+> thresholds, and the fault is the design rather than the measurements.** D3
+> refuted the chart reading on a harness whose chart is a **count**, pinned by
+> additivity — so it said nothing about the regime the chart apparatus was built
+> for. D9 rebuilt the same four rungs around a distance-to-threshold, with **every
+> domain supplying its own coordinate**, which is the thing D3's harness could not
+> vary. **The residue legs pass cleanly:** same-class domains sit at **0.0009** and
+> **0.0020** from the reference despite coefficients differing up to 18× *and*
+> different charts, the different-class one at **0.2606**, stable to four decimals
+> across three windows and two resolutions; and the bare exponent behaves exactly
+> as predicted, spreading **3.33×** across same-class domains where
+> [D3](../experiments/D3-ladder-as-quotient/)'s spread was **1.013×**.
+> **But transfer spans 0.938 to 0.988 across the rungs that matter**, against a
+> registered < 0.40 for the failing rung. Diagnosed rather than asserted: crossing
+> this harness's class boundary (p = 4 → p = 6) moves the fluctuation shape by
+> **0.14** in excess kurtosis while the metric's reference sits **2.96** away, and a
+> far-tail readout separates the classes only 2:1 where the residue separates them
+> 130:1. **So the four rungs are not four rungs**, and "does the residue predict
+> transfer" cannot be tested where transfer does not vary. The registration checked
+> that transfer and residue were read from *different quantities*, which they are;
+> it did not check that the readout had any **range** across the rungs, which is the
+> failure that occurred. **D3's open half stays open.**
+> **The by-product is worth more than the intended result:** the degeneracy order
+> *p* — D1's, D7's and D8's classifier — is **nearly invisible in the shape of the
+> fluctuations**. It classifies the scaling structure and little else an observer
+> sees directly, which also explains why [D6](../experiments/D6-support-singularities/)'s
+> kurtosis estimator worked (it spanned q = 0.5…8) and warns that it is blunt
+> between adjacent degeneracies.
+> **Honest:** P2 failed, P4 missed its tolerance, P3 is uninformative given P2, and
+> only P1 carries weight — and P1 is a re-measurement of D7 in a new coordinate
+> arrangement, not a new result. The no-tuning guard held: **the models were not
+> changed after the numbers were seen.** The concrete fix is registered in the
+> write-up — rungs whose *laws* differ (D6's q₁ = 1 vs q₁ = 2 gives excess kurtosis
+> +3.0000 vs 0.0000, a separation 20× larger), with each domain still supplying its
+> own coordinate.
+
+**The gap.** D3 established that on a **pinned** chart the residue predicts nothing
+and the bare magnitude predicts everything. The pinning was measured — aggregation
+composes additively, so n ↦ n^a breaks it — and by
+[D2](../derivations/D2-gauge-of-the-tower.md)'s rule (i) magnitudes are facts
+wherever that holds. **That leaves the complementary regime untested**, and it is
+the regime [D1](../experiments/D1-chart-invariance/) and
+[D7](../experiments/D7-residue-projective/) were built in: a genuine
+distance-to-threshold, where G_pow *is* available and no coordinate is canonical.
+
+> **D9.** Where the chart is unpinned, a correspondence transfers iff its
+> chart-free content is shared — so the residue predicts transfer and the bare
+> exponent does not, exactly inverting D3. If both hold, then whether the ladder is
+> a chart-invariance count is **not a fact about the ladder** but about the chart:
+> the additivity test says in advance which regime a domain is in.
+
+**Prior-art note.** The models are classical (generalized Gaussians, A_{p−1} germs,
+overdamped gradient dynamics) and the chart machinery is D1's and D7's. **D9
+re-derives none of it and is not evidence for it.** What would be new is only the
+*contrast between two harnesses* with the pinning test predicting which way each
+falls — N1–N2 at best, and the register should say so rather than let a
+two-harness comparison read as a law.
+
+**Falsifier.** (i) The residue failing to order transfer on an unpinned chart —
+then the chart reading is dead in both regimes, not just D3's. (ii) The bare
+exponent working here too — then the pinned/unpinned distinction is not doing the
+work the conclusion needs. (iii) **The one that fired:** a harness in which
+transfer has no dynamic range across the rungs, which tests neither horn and is a
+design failure rather than a result.
+
+---
+
 ## 6. Working a D-stone
 
 Same rhythm as a speculative stone, with two additions, both aimed at the two
