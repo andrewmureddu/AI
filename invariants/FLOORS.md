@@ -105,6 +105,34 @@ cannot be collapsed into each other.
 > The unclassified remainder is now **essential singularities only** — Φ with no
 > leading power at all.
 
+> **⟳ CLOSED (2026-07-28, [`derivations/base-variable.md`](../derivations/base-variable.md)
+> + [BV](../experiments/BV-base-variable/)): the stratification is not open work
+> and not a taxonomy — it is forced, and there are exactly three strata.**
+> Write every prediction field as a log-Laplace transform Φ_Y(λ) = log E_P[e^{λ·Y}]
+> of an observable Y of a master measure. On a finite system Φ_Y is **real-analytic
+> in the interior of its domain** (the mgf is), so every floor-3 phenomenon must be
+> one of:
+>
+> ```
+>   3a  DOMAIN BOUNDARY   Phi = +inf beyond a boundary in lambda-space
+>                         -> divergent moments, heavy tails, support loss
+>   3b  LIMIT             analytic at every finite size, not in the limit
+>                         -> Lee-Yang, SSB, percolation, P-D's kink
+>   3c  DEGENERACY        Phi analytic; a DERIVATIVE degenerates
+>                         -> null Hessian directions, soft modes, D1's p, D6's q1/q2
+> ```
+>
+> There is no fourth option: analytic / undefined / defined-but-degenerate
+> exhausts the cases. **This makes four of the repo's own results one statement.**
+> D1's *p* and D6's ratio q1/q2 classify **3c**; D6's finding that support loss is
+> q1 = 1 rather than p = ∞ is the statement that it is **3a**, which is why D1's
+> formula was *undefined* there rather than wrong; and [P-K](../experiments/PK-kink-taxonomy/)
+> established P-D's kink as **3b** by measuring the property that defines it.
+> Guard run and passed: 3a, 3b and 3c each exhibited, and **0 of 6** interior
+> non-analyticities at finite size. Corollary worth stating because it is a common
+> confusion: **a singular density is not a singular Φ** — a caustic (measured
+> density exponent −0.5003) leaves Φ entire (finite over |λ| ≤ 200).
+
 So the asymmetry, which the original "one object seen sideways" slogan could not
 express:
 
@@ -264,6 +292,20 @@ with Φ regular elsewhere. The scheme layer's degeneracy is rank deficiency
 **everywhere in parameter space** — the signature of one index pushed through two
 observables, i.e. of the description map itself. That is a measurement (rank of
 ∇²log Z as a function of λ), not a preference.
+
+> **⟳ Sharpened (2026-07-28, [`base-variable.md`](../derivations/base-variable.md) §5).**
+> P-D's rank-1 result was recorded as *"is there a Φ at all? — no."* There is:
+> it is a Φ on a **rank-one base variable**. ∇²Φ_Y = Cov(Y), so rank deficiency
+> everywhere says the two statistics are functionally dependent — a one-parameter
+> family wearing two labels — and a rank-one Y has **no conjugate pair**, hence no
+> exchange rate, hence nothing Legendre downstream. Reproduced from the definition
+> rather than from P-D's code: rank **1** at all 81 grid points, smallest/largest
+> eigenvalue **4.36e-16**, rising to effective dimension **2** when one independent
+> statistic is added. So **rank(∇²Φ_Y) is the effective dimension of the base
+> variable**, and the boundary above is the difference between a degeneracy *of* a
+> base variable and a degeneracy *in* one. Same measurement, weaker claim, and it
+> meets [D2](../derivations/D2-gauge-of-the-tower.md)'s gauge reading from the
+> other side: a rank-one Y admits no Legendre dual, so the chain stops.
 
 What unites them conceptually is that each is a fact about **the map between
 descriptions** — the encoding, the coarse-graining, the recursion — rather than

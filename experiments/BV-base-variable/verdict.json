@@ -1,0 +1,164 @@
+{
+  "at_risk_passed": 4,
+  "at_risk_predictions": [
+    "P2_geometry_not_portable",
+    "P5_stationary_laws_identical",
+    "P6_mfpt_differs",
+    "P7_sufficiency_failure",
+    "P9_rank_restored",
+    "P10_trichotomy_guard"
+  ],
+  "at_risk_total": 6,
+  "declared_identities": [
+    "P1_form_portable_identity",
+    "P3_caustic_exponent_identity",
+    "P4_phi_entire_identity",
+    "P8_rank_one_identity"
+  ],
+  "identities_passed": 2,
+  "legA": {
+    "P1_pass": true,
+    "P2_pass": true,
+    "all_convex": true,
+    "max_identity_err": 3.741792653499942e-09,
+    "per_base_variable": {
+      "exit time": {
+        "convex": true,
+        "grad_err": 1.60317981112712e-10,
+        "hess_err": 3.741792653499942e-09,
+        "spectral_norm": 29.260231038672732
+      },
+      "occupancy (time average)": {
+        "convex": true,
+        "grad_err": 2.680078381445128e-13,
+        "hess_err": 2.4839957868394436e-10,
+        "spectral_norm": 0.07077510491181933
+      },
+      "state (final)": {
+        "convex": true,
+        "grad_err": 1.438849039914203e-13,
+        "hess_err": 4.78284689631181e-10,
+        "spectral_norm": 0.3770086067662886
+      }
+    },
+    "spectral_norm_ratio": 413.4254703702505
+  },
+  "legB": {
+    "P3_pass": true,
+    "P4_pass": false,
+    "density_exponent": -0.5003074953016035,
+    "phi_finite_over_pm200": true,
+    "posthoc": {
+      "diagnosis": "the registered Taylor check divided by h^20 = 1e-26; the estimator was noise long before the claim was tested. With exact cumulants the same claim holds to 1.6e-07. Audit item (iii), violated one pass after being written.",
+      "taylor_err_exact_cumulants": 1.626072352323149e-07,
+      "taylor_err_finite_difference": 29637751.865415175
+    },
+    "taylor_degree": 20,
+    "taylor_max_err": 29637751.865415175
+  },
+  "legC": {
+    "P5_pass": false,
+    "P6_pass": true,
+    "P7_pass": true,
+    "mfpt_cycle": 100.0,
+    "mfpt_cycle_predicted": 100.0,
+    "mfpt_ratio": 4.999999999999996,
+    "mfpt_uniform": 20.000000000000018,
+    "mfpt_uniform_predicted": 20.0,
+    "n": 20,
+    "posthoc": {
+      "column_sums_cycle": 0.0,
+      "column_sums_uniform": 2.220446049250313e-16,
+      "diagnosis": "both chains are doubly stochastic, so the stationary law is uniform by construction; 1.7e-15 is the 20x20 eigensolver's noise, not a difference. The registered 1e-15 was below the instrument's floor -- audit item (iii) again.",
+      "max_dev_from_exact_uniform_cycle": 3.469446951953614e-16,
+      "max_dev_from_exact_uniform_unifjump": 9.71445146547012e-17,
+      "tv_between_computed_eigenvectors": 1.7069679003611782e-15
+    },
+    "scgf_curvature_cycle": 19.931694389876366,
+    "scgf_curvature_uniform": 0.5000001961764088,
+    "scgf_ratio": 39.863373139245965,
+    "state_phi_max_gap": 4.6629367034256575e-15,
+    "stationary_mean_gap": 2.6311528726821788e-15,
+    "stationary_tv_distance": 1.7069679003611782e-15
+  },
+  "legD": {
+    "P8_pass": false,
+    "P9_pass": false,
+    "grid_points": 81,
+    "posthoc": {
+      "diagnosis": "hess5 nests two 5-point stencils, floor ~eps/h^2 ~ 1e-10, and leg A measured 3.7e-9; the registered 1e-12 rank threshold was below the instrument. grad^2 Phi is the tilted covariance and is exact -- audit item (iii), a third time in one pass.",
+      "exact_rank2": [
+        1
+      ],
+      "exact_rank3": [
+        2
+      ],
+      "exact_smallest_ratio_2": 4.361570762662579e-16,
+      "exact_smallest_ratio_3": 2.253460737411798e-17,
+      "hess5_floor_from_legA": 3.74e-09,
+      "stencil_rank2": [
+        2
+      ],
+      "stencil_smallest_ratio": 1.4211194076997764e-11
+    },
+    "rank2_max_smallest_ratio": 1.4211194076997764e-11,
+    "rank2_modes": [
+      2
+    ],
+    "rank3_min_smallest_ratio": 1.3641312989131001e-11,
+    "rank3_modes": [
+      3
+    ]
+  },
+  "legE": {
+    "P10_pass": true,
+    "battery": {
+      "3a_domain_boundary": {
+        "divergent_in_lambda": true,
+        "exhibited": true,
+        "finite_for_negative_lambda": true,
+        "phi_at_positive_lambda": [
+          1852.7836119452725,
+          3718.466443716635,
+          7449.83210725936,
+          14912.563434344811
+        ]
+      },
+      "3b_limit": {
+        "curvature_at_kink": [
+          4.999916668899096,
+          19.994668941118384,
+          79.66097887581381,
+          300.2786899258936
+        ],
+        "exhibited": true,
+        "finite_at_every_N": true,
+        "grows_without_bound": true
+      },
+      "3c_degeneracy": {
+        "eigen_ratio": 0.0,
+        "exhibited": true,
+        "phi_finite_wide": true
+      },
+      "forbidden_interior_nonanalyticity": {
+        "detail": [],
+        "trials": 6,
+        "violations": 0
+      }
+    }
+  },
+  "runtime_s": 5.7,
+  "seed": 20260728,
+  "verdict": {
+    "P10_trichotomy_guard": true,
+    "P1_form_portable_identity": true,
+    "P2_geometry_not_portable": true,
+    "P3_caustic_exponent_identity": true,
+    "P4_phi_entire_identity": false,
+    "P5_stationary_laws_identical": false,
+    "P6_mfpt_differs": true,
+    "P7_sufficiency_failure": true,
+    "P8_rank_one_identity": false,
+    "P9_rank_restored": false
+  }
+}

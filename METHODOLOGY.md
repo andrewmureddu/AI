@@ -102,10 +102,23 @@ To move a candidate *up* the ladder, an entry must supply the relevant evidence:
   > are about to vary are genuinely independent in the object? Count the distinct
   > functional dependences, not the named constants. (ii) *Identity* — can this
   > prediction come out any other way, given what you built? If not, label it.
-  > (iii) *Instrument* — is the estimator's own precision (stencil order, grid
-  > resolution, window width) better than the tolerance you are registering?
-  > (iv) *Algebra* — re-derive the "obvious" closed forms. Three of the six were
-  > wrong arithmetic, not wrong science.
+  > (iii) *Instrument* — **state the estimator's noise floor next to every
+  > registered tolerance. If you cannot state the floor, you may not register the
+  > number.** (iv) *Algebra* — re-derive the "obvious" closed forms. Three of the
+  > six were wrong arithmetic, not wrong science.
+
+  The wording of (iii) is deliberate and was bought expensively.
+  [BV](./experiments/BV-base-variable/) was the first pass run under this audit as
+  a four-question checklist, and it **violated (iii) three times in that same
+  run** — a degree-20 finite difference at h = 0.05 (floor ≈ 1e10, tolerance
+  1e-8), an eigensolver compared at 1e-15 (floor ≈ 1e-15), and a doubly-nested
+  stencil given a 1e-12 threshold when an earlier leg *on the same page* had
+  measured its floor at 3.7e-9. A checklist can be satisfied by nodding; writing
+  the floor beside the tolerance is mechanical and kills all three on sight. Every
+  one of those failures was the instrument rather than the claim, which is the
+  usual shape: **these mistakes cost credibility, not conclusions** — but only
+  because they were caught and reported, which is the whole reason the register
+  exists.
 
 ## Statuses
 
