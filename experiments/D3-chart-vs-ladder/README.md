@@ -57,7 +57,7 @@ Transfer skill (1 = A's law transfers, 0 = useless):
 
 ### P1 — the harness is faithful
 
-Raw statement, undistorted chart reproduces the original cliff exactly:
+Raw statement, undistorted chart reproduces the original result exactly:
 **0.03 / 0.48 / 0.92 / 0.89**.
 
 ### P2 — shared mechanism, transfer lost (kills the rung-label reading)
@@ -95,10 +95,39 @@ Two things this shows that the raw skills alone do not:
   chart** — and +0.80 is exactly the Spearman the
   [original experiment](../ladder-vs-transfer/) reported.
 - Under a **chart-dependent** claim the ordering is unstable in both directions.
-  At a = 0.85 it is nominally perfect (+1.00) but the **cliff has vanished** —
-  L2 = 0.756 against L3 = 0.769, a gap of 0.013 where the undistorted cliff is
-  0.43. So a mild chart distortion destroys the ladder's *discriminating power*
-  while preserving its order; a stronger one inverts the order outright.
+  At a = 0.85 it is nominally perfect (+1.00) but the **L2/L3 separation has
+  collapsed** — L2 = 0.756 against L3 = 0.769, a gap of 0.013 where the
+  undistorted gap is 0.43. So a mild chart distortion destroys the ladder's
+  *discriminating power* while preserving its order; a stronger one inverts the
+  order outright.
+
+> **Terminology, corrected after a concurrent retraction.** An earlier draft of
+> this README called the L2/L3 gap "the cliff." While this was being written,
+> [paper 1](../../paper/transfer-cliff.md) §3.3 **retracted** that reading of the
+> source experiment: the adjacent steps are L1→L2 = 0.451 and L2→L3 = 0.432, the
+> same size, so the L2/L3 step is not uniquely large. Nothing measured here
+> depends on it — the numbers above are gaps and orderings, not step
+> comparisons — but the word is wrong and has been removed.
+
+### The price of chart-freedom (added post-merge)
+
+Paper 1 also measured something this experiment needed and did not have: **the
+metric's own ceiling, 0.920 ± 0.023**, obtained by scoring a domain against an
+independent draw of itself. That makes the chart-free column readable in absolute
+terms for the first time:
+
+| | L3 | L4 | vs ceiling 0.920 |
+|---|---|---|---|
+| shared chart, chart-**dependent** claim | 0.916 | 0.894 | **complete transfer** |
+| any chart, chart-**free** claim | 0.833 | 0.816 | ~0.09 **short** |
+
+So chart-freedom is **not free**. Stating the correspondence invariantly buys
+immunity to the measurement convention — the whole point — but costs about 0.09
+of transfer skill against a ceiling that the chart-dependent statement *reaches*
+when the two domains happen to share a chart. The invariant statement discards
+real information (here, everything the sign and scale of Y carried). That is a
+genuine trade-off the stone did not anticipate, and it sharpens the replacement
+claim: chart-freedom is what makes transfer *robust*, not what makes it *maximal*.
 
 The pooled predictor comparison over all 48 cells (rung alone +0.481, claim
 chart-free alone −0.078, mechanism alone +0.492, registered conjunction +0.525) is
@@ -176,8 +205,8 @@ one factor of two, and the other factor is a quotient.
     0.7} was not forced.
   - **Genuinely at risk, and the decisive result:** P4. A chart-free statistic
     could have been so weak that it discriminated nothing, making the whole
-    framing vacuous. It is not: the chart-free claim preserves the full cliff
-    (0.037 / 0.373 / 0.833 / 0.816).
+    framing vacuous. It is not: the chart-free claim preserves the full L1→L4
+    separation (0.037 / 0.373 / 0.833 / 0.816).
 - **The chart is applied to the centred reading**, which is what makes it a clean
   power map. Real charts of this kind (log-returns, decibels, magnitude scales)
   are all defined relative to a reference level, so this is not a contrivance —

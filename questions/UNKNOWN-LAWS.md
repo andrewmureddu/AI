@@ -20,7 +20,7 @@ the architecture results — the tower, the floors — are a *sorting* of known
 invariants into a structure.
 
 That is **recognition**, and it has been productive: it produced the hub, the
-tower, the transfer cliff, and five arrivals at the singular set of ∇²Φ. But
+tower, the transfer result, and five arrivals at the singular set of ∇²Φ. But
 recognition can only ever return laws that someone already wrote down. Its
 ceiling is the union of the textbooks.
 
@@ -350,8 +350,11 @@ survived as a bare exponent.
 > **chart-freedom is the precondition under which the ladder is predictive at
 > all** — Spearman(rung, skill) is +0.80 in *every* chart under a chart-free claim,
 > and runs +1.00 → −0.80 under a chart-dependent one. Note a = 0.85, where the
-> ordering is nominally perfect while the **cliff vanishes** (0.756 vs 0.769
-> against an undistorted 0.43): rank correlation alone would have missed it.
+> ordering is nominally perfect while the **L2/L3 separation collapses** to 0.013
+> (0.756 vs 0.769, against 0.43 undistorted): rank correlation alone would have
+> missed it. Against [paper 1](../paper/transfer-cliff.md)'s measured ceiling
+> (0.920), chart-freedom also has a **price** — 0.833 where the shared-chart
+> claim reaches 0.916, i.e. invariance buys robustness, not maximal skill.
 > **Revises an existing result:** [ladder-vs-transfer](../experiments/ladder-vs-transfer/)
 > lives entirely in the shared-chart cell and never said so; its finding is
 > conditional on a shared measurement chart. Also mostly retires

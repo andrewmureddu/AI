@@ -26,22 +26,33 @@ form), that is a real and interesting finding, but it is a **separate claim** �
 label it "convergent (distinct mechanisms)" and do not silently promote it to
 L3/L4.
 
-**The L2/L3 line is the one that matters — and it is empirically the transfer
-cliff.** A controlled experiment
+**The L2/L3 line is the one that matters — and it is empirically where the
+transfer ceiling becomes attainable.** A controlled experiment
 ([`experiments/ladder-vs-transfer/`](./experiments/ladder-vs-transfer/)) held a
-surface phenomenon fixed and varied only correspondence depth: predictive transfer
-across domains stayed near-useless at L1–L2 (word / shared form) and jumped to high
-at L3–L4 (shared mechanism / theorem), with the *cliff exactly at the L2/L3
-boundary*. So the appearance→mechanism line isn't just a bookkeeping distinction —
-it is where a correspondence starts to *carry predictions across the boundary*.
-Notably L3 ≈ L4 in transfer skill (mechanism and theorem transfer equally well);
-they differ in the *strength of the guarantee*, not the transfer.
+surface phenomenon fixed and varied only correspondence depth. Transfer skill ran
+0.03 / 0.48 / 0.92 / 0.89 across L1 / L2 / L3 / L4 — level orders transfer. The
+operative difference is **asymptotic**: as evidence grows, L3 and L4 rise to the
+metric's measured ceiling (0.920 ± 0.023, i.e. *complete* transfer) while L2
+saturates at ~0.54 and stays there. **More evidence redeems a shared mechanism and
+never redeems a shared form.** So the appearance→mechanism line isn't just a
+bookkeeping distinction — it is where a correspondence starts to carry predictions
+across the boundary *without a ceiling*. Notably L3 ≈ L4 in transfer skill
+(mechanism and theorem transfer equally well); they differ in the *strength of the
+guarantee*, not the transfer.
+
+> **⟳ Correction (2026-07-26, [`paper/transfer-cliff.md`](./paper/transfer-cliff.md) §3.3).**
+> This paragraph previously said transfer was "near-useless at L1–L2" with "the
+> cliff exactly at the L2/L3 boundary." Decomposing the adjacent steps refutes
+> that: L1→L2 = +0.451 and L2→L3 = +0.432 are the same size, and L2 at 0.48 is
+> about half the attainable skill, not near-useless. The *step*-size reading is
+> **retracted**; the *ceiling* reading above replaces it and is what the `vary_n`
+> sweep actually supports.
 
 **But the ladder is only half of what transfer needs.**
 [D3](./experiments/D3-chart-vs-ladder/) crossed that experiment with a *chart*
-factor — the measurement convention domain B records on — and found the cliff is
-**conditional on the two domains sharing a chart**, which the original run never
-stated. With the mechanism untouched and the claim stated chart-dependently, an
+factor — the measurement convention domain B records on — and found that result
+is **conditional on the two domains sharing a chart**, which the original run
+never stated. With the mechanism untouched and the claim stated chart-dependently, an
 L3 correspondence transfers at 0.000, and a word-only L1 one can beat a
 theorem-backed L4 one. Restating the claim chart-freely restores the full ordering
 at Spearman +0.80 under *every* chart. The surviving statement is:

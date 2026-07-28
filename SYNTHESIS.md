@@ -63,8 +63,8 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; the best in-distribution feature is the worst-transferring | constructed SCM where invariance = causation by design |
-| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed + sharpened, then conditioned** — transfer has a *cliff at the L2/L3 boundary* (0.03/0.48/0.92/0.89); mechanism and theorem transfer equally. **[D3](./experiments/D3-chart-vs-ladder/) added the missing precondition: this holds only in a *shared measurement chart*** | controlled within the CLT family; synthetic; **conditional on a shared chart** — at a=0.7 the ordering inverts, at a=0.85 the cliff vanishes |
-| **D3** | [The ladder is one factor of two](./experiments/D3-chart-vs-ladder/) | experiment | **both readings falsified.** D3's own falsifier fires — stated chart-freely, L2/L1 still fail (0.373/0.037) so chart-invariance is **not sufficient**; and a chart-dependent claim collapses a shared mechanism (L3 0.916 → 0.000, with word-only L1 beating theorem-backed L4 at a=0.7). **Survivor: transfer = shared mechanism ∧ chart-free statement**, and chart-freedom is *the precondition under which the ladder is predictive at all* (Spearman +0.80 in every chart, vs +1.00 → −0.80) | one invariant family, synthetic, one chart group; **no pre-registration file** (process deviation on record); P3 is an identity |
+| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)), **then conditioned** ([D3](./experiments/D3-chart-vs-ladder/)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic; **and conditional on a shared measurement chart**, which the run never varied — under a chart distortion the ordering inverts |
+| **D3** | [The ladder is one factor of two](./experiments/D3-chart-vs-ladder/) | experiment | **both readings falsified.** D3's own falsifier fires — stated chart-freely, L2/L1 still fail (0.373/0.037), so chart-invariance is **not sufficient**; and a chart-dependent claim collapses a shared mechanism (L3 0.916 → 0.000, with word-only L1 beating theorem-backed L4 at a=0.7). **Survivor: transfer = shared mechanism ∧ chart-free statement**, and chart-freedom is *the precondition under which the ladder is predictive at all* (Spearman +0.80 in every chart, vs +1.00 → −0.80). Against paper 1's measured ceiling, chart-freedom also has a **price**: it buys immunity at 0.833 where the shared-chart claim reaches 0.916 ≈ complete transfer | one invariant family, synthetic, one chart group; **no pre-registration file** (process deviation on record); P3 is an identity |
 | **§6** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — invariance predicts transfer at ρ=0.983 on the diabetes dataset; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97), fails on controls (0.00) | Leg A has a signal-strength confound; multi-field study still open |
 | **S25** | [Channel-independence of the singularities](./experiments/S25-channel-independence/) | experiment | **🔴 tier tested, did not promote** — singularities are *invariant* under generic channels and *covariant* under structured ones: F_c(T)=F_eff(T′)(dT′/dT)² exact to 1e-14 | one pre-registration error on record (parity blind only at odd N) |
 
@@ -87,10 +87,11 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | **S26(K)** | [SGD's stationary law is charge-coordinatized](./experiments/S26-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26(J)** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
+| **P-D** | [Allometry is a log-ratio, not a Φ-derivative](./experiments/PD-allometry-reduction/) | experiment | **the sort's only *negative*, cashed** — θ = **min(1, ln n/−ln(β²γ))** to 7.1e-11, n cancelling to 4.0e-15. Blind to six decades of six magnitudes (1.1e-8), responsive to structural counts. Optimization is a **selector, not a source**: six cost functionals → six β, θ recovered from (β,γ) alone. **The variational route gives θ = 1, not 3/4.** ∇²log Z **rank 1 for every λ** (control swings 151%). Second route: θ = d/(d+1) | models of allometry, not organisms; P8 measures rank, doesn't prove no Φ exists; two registered items failed (MST construction, mean-field control) |
 | **D6** | [Support singularities: D1 was a special case](./experiments/D6-support-singularities/) | experiment | **floor 3's classifier is the ratio q1/q2 of Φ's two leading exponents.** A_c ~ D^{1−q1/q2}: **q1 = 2 is what smoothness forces** (D1's (p−2)/p), **support loss is q1 = 1**, a hard wall is q2 → ∞ (0.9979 vs 1). Support loss is not p = ∞ — that would be a q2 value; M/M/1 has an *empty* q2 slot and no crossover at all (kurtosis 6.0000 over four decades). Three at-risk legs pass and **none are physics** | P1/P2 are identities and **P2 was mis-registered as at-risk**; the ratio claim is untested on real models; remainder narrows to **essential singularities only** |
 | **D2** | [The scheme layer is the tower's gauge group](./derivations/D2-gauge-of-the-tower.md) | derivation + experiment | **the P0 is answered — there is no fourth floor.** The floors are defined up to G_diff, cross-domain comparison has only G_pow, and the scheme layer is the difference: RG eigenvalues are conjugation-invariant (5.3e-15) and G_pow-covariant as y → a·y (≤2.4e-12), exactly like D1's chart order. **The chart-free residue is the codimension p − 2** (β/k = 0.5000, 0.2503 vs 1/(p−2)). Also explains why floor 2 collapses and floor 3 stratifies | most of the experiment is a theorem check; both at-risk legs are physics; the **common-a** commitment is load-bearing; the G_diff half is Wegner's nonlinear scaling fields in other words |
 | **D1** | [The chart law — two integers classify floor 3](./experiments/D1-chart-invariance/) | experiment | **chart claim confirmed, formula deflated by its own prior-art note** — a floor-3 degeneracy carries a **chart order** *k* (gauge) and a **degeneracy order** *p* (invariant), λ_c ~ D^{(p−2)/p}. *k* removed by inference (two fields, λ-chart 0.33333 vs 0.33333 where bare exponents differ 2×) and by manipulation (ε′=ε^a moves the bare exponent by exactly a, the λ-chart exponent not at all). **S5's and S7's "domain-specific exponents" are largely a chart artifact** | 1-D gradient systems, additive noise; **support-type singularities have no *p*** and are excluded; both at-risk legs are physics; legs A/B are declared identities, not evidence |
-| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — only #6, #10, #21, #22 and #4's reduction rest on evidence |
+| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — #6, #9, #10, #19, #21, #22 and #4's reduction now rest on evidence; the rest do not |
 
 ### Where "one law" claims keep landing
 
@@ -261,7 +262,10 @@ exponent" premise had to fail.
   transfer needs mechanism **and** chart-freedom, and the ladder measures one of
   them). **Unworked:** D4, D5 — and D3 supplies D4's mechanism, since an amplitude
   can be stated chart-freely and a bare exponent cannot.
-- **15 experiments + 6 derivations** with teeth; **4 essays**.
+- **20 experiments + 6 derivations** with teeth; **1 paper**; **4 essays**. *(The
+  count was stale on both sides of the 2026-07-27 merge — it predated M3/M11/M15
+  and P-D on one side and D1/D2/D3/D6 on the other. Every one of the 20 carries a
+  committed verdict.)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -311,12 +315,42 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    chosen to be invariant under the noise, and "invariance chooses the
    coordinates" is exactly floor 1's job. Two-sided falsifier in
    [`FLOORS.md`](./invariants/FLOORS.md) §4.
-2. **Cash the rest of the sort's predictions (P1).** **P-A is done**
-   ([result](./experiments/PA-spectral-gap/)): #19's floor-3 assignment holds, in
-   the directional form, and it cost S7 a boundary condition. Remaining:
-   **P-D, allometry** — the sort's most falsifiable negative, that Kleiber's 3/4
-   should *not* be derivable from a partition function; **P-C**, that variational
-   principles come in exactly two kinds; and **P-B**'s untested half.
+   **First evidence, from [P-D](./experiments/PD-allometry-reduction/).** The bin
+   now has a *second measured* member, and this one was a prediction rather than a
+   retrofit: allometry's θ = min(1, ln n/−ln(β²γ)) is the same log-ratio form,
+   blind to magnitudes (1.1e-8 over six decades of six quantities) and responsive
+   only to structural counts. It also touches the live horn directly. Allometry's
+   ratios really *are* selected by floor-1-flavoured conditions — impedance
+   matching is flux-matching, space-filling is a geometric constraint — so the
+   scheme layer **takes input from** floor 1, exactly as the second horn predicted.
+   But the log-ratio is terminal: there is no Φ downstream, and the exponential
+   family's ∇²log Z is rank 1 for every parameter value, so no conjugate pair
+   exists for the exponent to be an exchange rate between. *Takes input from*, not
+   *is* — one instance, not a settlement. Two side benefits: the floor-3/floor-4
+   boundary is now a measurement (floor 3's supports are singular *on a set*; the
+   scheme layer's covariance is rank-deficient **everywhere**), and a scheme
+   exponent can be non-analytic in a scheme parameter with no Φ non-analytic in a
+   thermodynamic one — θ = min(1,·) has a kink, and Murray's law sits on it.
+   **⟳ How to read this under 0.** P-D and D2 ran on parallel branches and neither
+   saw the other; they **agree on the negative** and differ only on the label. P-D
+   killed the second horn from the measurement side, D2 retired the floor itself
+   from the structural side, and P-D's three negatives — magnitude-blindness, a
+   cost functional that only *selects*, and ∇²log Z rank 1 for every λ so no
+   conjugate pair exists — are the signature D2's reading predicts. Read
+   "separateness" above as **separate from floors 1–3**, not "is a fourth floor."
+   Full reconciliation in [`FLOORS.md`](./invariants/FLOORS.md) §4.
+2. **Cash the rest of the sort's predictions (P1).** **P-A and P-D are both done.**
+   [P-A](./experiments/PA-spectral-gap/): #19's floor-3 assignment holds in the
+   directional form, and it cost S7 a boundary condition.
+   [P-D](./experiments/PD-allometry-reduction/): the sort's only negative,
+   confirmed on every registered leg — and the variational route that *would* have
+   reduced allometry to floor 2 gives θ = 1, not 3/4. So the sort has now been
+   graded on a positive and on a negative, both about `seed` entries, and survived
+   both. Remaining: **P-C**, that variational principles come in exactly two
+   kinds — now the most interesting of the three, because P-D showed an
+   optimization can be real and still not put its exponent on floor 2, which is a
+   third possibility P-C's binary does not have a slot for; and **P-B**'s untested
+   half.
 3. **Grokking / Lee–Yang (P1, S13).** Does a genuine grokking transition show a
    non-analyticity of the appropriate Φ? Closes the gap S3 left open, and
    [S26(J)](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the

@@ -43,7 +43,7 @@ it deletes, what it predicts, and what refused.
 | 21 | [noise thresholds](./noise-thresholds.md) | **3 + 4?** | **Splits, tested** ([S5](../experiments/S5-noise-thresholds/)): type M (metric merge) and type S (support loss) are floor 3; **type R (decoder RG fixed point) is not a Φ fact at all** — see §4. |
 | 19 | [spectral gap](./spectral-gap.md) | **3** ✓tested | The sort's prediction, [run and confirmed](../experiments/PA-spectral-gap/) — but in the *directional* form: gap-closure is a **null direction** of the trajectory free energy's Hessian, not a scalar divergence. See P-A below. |
 | 13 | [emergence & renormalization](./emergence-renormalization.md) | **none — an operation** | RG is not a fact *inside* Φ; it is a map that carries Φ at one scale to Φ at another. [S25's channel law](../experiments/S25-channel-independence/) measured exactly this: F_c(T) = F_eff(T′)·(dT′/dT)². See §4. |
-| 9 | [scaling & allometry](./scaling-allometry.md) | **refuses** | The WBE exponent comes from space-filling branching geometry, not from a partition function. See P-D. |
+| 9 | [scaling & allometry](./scaling-allometry.md) | **refuses** ✓tested | The exponent is θ = min(1, ln n/−ln(β²γ)) — a log-ratio of the branching data, blind to every energy scale. [Run and confirmed](../experiments/PD-allometry-reduction/); see P-D below. |
 | 11 | [fractals & self-similarity](./self-similarity-fractals.md) | **3 + 4?** | **Splits.** Statistical self-affinity at a critical point is floor 3. *Deterministic* self-similarity of a constructed hierarchy is scheme structure — and its dimension has the same form as the type-R exponent, §4. |
 
 **Legend.** ▸facet = not an independent invariant; a derivative-face of #23.
@@ -169,10 +169,32 @@ behave.
 genuine variational law — one that predicts, rather than re-describes — whose
 functional is over neither.
 
-**P-D — allometry does not reduce (#9).** Kleiber's 3/4 should *not* be derivable
-from a partition function; it should come out of branching geometry, making it
-scheme structure. **Falsifier:** derive the 3/4 exponent from a Φ, which would put
-it on floor 2 and refute this line.
+**P-D — allometry does not reduce (#9) — ✓ RUN, [`experiments/PD-allometry-reduction/`](../experiments/PD-allometry-reduction/).**
+*Predicted:* Kleiber's 3/4 should *not* be derivable from a partition function; it
+should come out of branching geometry, making it scheme structure. *Falsifier
+registered:* derive the 3/4 exponent from a Φ.
+*Found:* **confirmed on every registered leg, and the exponent is now a law rather
+than a slogan** —
+
+    theta  =  min( 1,  ln n / ( -ln(beta^2 gamma) ) )
+
+to 7.1e-11 over 22 (scheme, n) pairs, with n cancelling identically (spread
+4.0e-15 across n = 2…10). Six decades on every dimensionful quantity move θ by
+**1.1e-8**; the flow law's *structural* exponent moves it a lot. The strawman was
+avoided by registering the claim in factoring form, since WBE's derivation does
+contain an optimization: six cost functionals select six different β, and θ is
+recovered from (β, γ) alone with the functional absent (≤1.5e-14 in five of six).
+**The variational route gives the wrong number** — dissipation minimization yields
+θ = 1 for Poiseuille and for every steeper flow law, reaching 3/4 only at
+R ∝ l/r², which no viscous flow obeys. The Φ attempt fails in the registered way:
+∇²log Z is **rank 1 for every λ** and the conjugate ratio is constant to 1.1e-13,
+against a control that swings 151%. Independent second route: efficient supply
+networks in d dimensions give θ = d/(d+1) (0.663/0.749/0.805 vs 0.667/0.750/0.800)
+— a ratio of dimension counts. Two registered items failed and are on record: the
+MST construction in leg D (its exponent barely depends on d; it minimizes wire
+length, not transport cost) and the mean-field-Ising control in leg E, which is
+itself degenerate for exactly the reason under study. Bonus: θ = min(1, ·) is
+**non-analytic** at nβ²γ = 1, and Murray's law sits exactly on that kink.
 
 **P-E — the fourth floor has a signature (§4).** See below.
 
@@ -180,7 +202,7 @@ it on floor 2 and refute this line.
 
 ## 4. What refused the tower — and the shape it makes
 
-Four things refused floors 1–3, and they refuse it *the same way*:
+Five things refused floors 1–3, and they refuse it *the same way*:
 
 | What | Where it came from | Its exponent |
 |------|--------------------|--------------|
@@ -188,13 +210,31 @@ Four things refused floors 1–3, and they refuse it *the same way*:
 | Deterministic fractals (#11) | catalog | D = **ln N / ln b** |
 | RG / coarse-graining (#13) | catalog + [S25 channel law](../experiments/S25-channel-independence/) | eigenvalues of the flow map |
 | Bookkeeping identities (#2's second half) | catalog | — (conserved by construction) |
-| *(candidate)* allometry (#9) | catalog | b from branching ratio |
+| Allometry (#9) | [P-D](../experiments/PD-allometry-reduction/), measured | θ = **min(1, ln n / −ln(β²γ))**; independently **d/(d+1)** |
 
 **They share a signature: their invariant is a log-ratio — log(multiplicity) over
 log(rescaling) — not a derivative of Φ.** The concatenated code's α = ln n₀/ln(t+1)
 is *literally of the same form* as a fractal dimension ln N/ln b: multiplicity per
 level over rescaling per level. This was not designed; S5 measured that exponent
 before the sort noticed what it was.
+
+**Two of the five are now measured rather than asserted, and the second was a
+prediction.** S5's α was measured before the bin existed; [P-D](../experiments/PD-allometry-reduction/)
+was run *because* the bin predicted allometry would land in it, and allometry's
+θ = ln n/−ln(β²γ) is the same form again. Three things separate that from a
+Φ-derivative, all of them now measurements rather than intuitions: the exponent
+is **blind to magnitudes** (1.1e-8 over six decades of six quantities) while
+responding to structural counts; a cost functional enters it only by *selecting*
+the scheme, never directly (six functionals, ≤1.5e-14 residual); and the honest
+exponential family's ∇²log Z is **rank 1 for every parameter value**, so there is
+no conjugate pair for the exponent to be an exchange rate between.
+
+That last point also sharpens the **floor-3 / floor-4 boundary**, which had been
+a matter of taste. Floor 3's support facts are singularities *located on a set*,
+with Φ regular elsewhere. The scheme layer's degeneracy is rank deficiency
+**everywhere in parameter space** — the signature of one index pushed through two
+observables, i.e. of the description map itself. That is a measurement (rank of
+∇²log Z as a function of λ), not a preference.
 
 What unites them conceptually is that each is a fact about **the map between
 descriptions** — the encoding, the coarse-graining, the recursion — rather than
@@ -209,6 +249,8 @@ land in the same bin.
 signature is a log-ratio exponent rather than a Φ-derivative. This is a
 **proposal, not a result.** It is exactly the tower's falsifier #4 (an invariant
 reducible to none of the three floors), so if it stands the tower gains a floor.
+*(⟳ Retired 2026-07-26 by [D2](../derivations/D2-gauge-of-the-tower.md) — kept as
+written because the reason it fails is the result. Read the resolution below.)*
 
 **P-E, its falsifier, two-sided:** (kills the floor) reduce a log-ratio exponent to
 a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
@@ -216,7 +258,20 @@ a Φ-derivative, or exhibit a scheme-layer invariant whose signature is a
 disguise — a code *is* a redundancy chosen to be invariant under the noise, and
 "invariance selects the coordinates" is precisely floor 1's job. **The second
 horn is the live one**, and deciding it is now the map's sharpest architectural
-question.
+question. *(⟳ Both horns are now answered — the second by
+[P-D](../experiments/PD-allometry-reduction/), the floor itself by a third horn
+neither anticipated. Below.)*
+
+**First evidence on the live horn, from P-D — and it points to *takes input from*
+rather than *is*.** Allometry's two ratios are selected by conditions that are
+plainly floor-1-flavoured: impedance matching is a reflectionless (flux-matching)
+condition, and space-filling is a geometric constraint. So the scheme layer does
+draw its parameters from invariance arguments, which is what the second horn
+predicted. But floor 1's job is to choose *Φ's coordinates*, and here there is no
+Φ downstream at all — the log-ratio is terminal, and the run showed no conjugate
+pair exists for it to be an exchange rate between. Evidence for separateness, not
+a settlement: one instance, and the argument that floor 1 must terminate in a Φ
+is a claim about the tower rather than a measurement.
 
 > **⟳ RESOLVED 2026-07-26 — the third horn is the right one.** Worked in
 > [`derivations/D2-gauge-of-the-tower.md`](../derivations/D2-gauge-of-the-tower.md)
@@ -229,7 +284,7 @@ question.
 > as y → a·y (≤2.4e-12): identical behaviour to D1's chart order, so all five
 > rows of the table above are one object, the transformation datum of G_pow
 > modulo G_diff. A transformation parameter is not a fact on any floor, which is
-> why they refused, and why four unrelated things shared one signature.
+> why they refused, and why five unrelated things shared one signature.
 > **The chart-free residue is the codimension p − 2** — signs, counts and ratios
 > being three faces of it — measured as β/k = 0.5000 (p = 4) and 0.2503 (p = 6)
 > against 1/(p−2). So the refusers dissolve into gauge plus floor 3, and what was
@@ -269,6 +324,29 @@ question.
 > floor, only a coordinate freedom the first three were always defined up to.
 > Unworked; now the map's most valuable question.
 
+> **⟳ Reconciliation (2026-07-27) — how P-D and D2 fit.** They were run on
+> parallel branches and neither pass saw the other, so this note states the
+> relation rather than adding a result.
+> **They agree on the negative and differ only on what to call the remainder.**
+> P-D killed the *second* horn from the measurement side (the scheme layer takes
+> input from floor 1 without being it); D2 retired the *fourth floor* from the
+> structural side. So "evidence for separateness" above should be read as
+> **separate from floors 1–3** — which both passes support — and not as "is a
+> fourth floor", which D2 retires. The "Proposed floor 4" paragraph and P-E's
+> two-sided falsifier are superseded in that order.
+> **The fit is closer than bare compatibility:** P-D's three negatives are the
+> signature D2's reading predicts. An exponent **blind to magnitudes** (1.1e-8
+> over six decades), reached through a cost functional that only *selects* the
+> scheme, with **∇²log Z rank 1 for every λ** so that no conjugate pair exists,
+> is what a transformation parameter looks like — a quantity with no conjugate is
+> not an exchange rate on any floor. What P-D measured as *terminal*, D2 derived
+> as *gauge*.
+> **Left open, and not claimed by either pass:** P-D's θ = min(1, ln n/−ln(β²γ))
+> is non-analytic at nβ²γ = 1, while D2's chart-free residue is a discrete
+> codimension. Whether that kink is a floor-3 degeneracy read in a scheme
+> variable, or a fact about the description map with no floor-3 counterpart, is
+> untested — flagged here for whoever takes the next pass.
+
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a
 log-ratio object either, so it fits neither the three floors nor the proposed
@@ -282,8 +360,16 @@ second, unrelated exhibit against monism. Unresolved, and recorded as such.
 - The tower is derived for **equilibrium / long-time (stationary)** prediction
   fields. Every floor-1 assignment inherits that restriction.
 - Assignments for `seed`-status entries are *predictions*, not findings. Only
-  #6, #10, #21, #22 and the #4 reduction rest on a derivation or an experiment;
-  the rest are the sort's claims and can be wrong.
+  #6, #9, #10, #19, #21, #22 and the #4 reduction rest on a derivation or an
+  experiment; the rest are the sort's claims and can be wrong. Two of those —
+  #19 ([P-A](../experiments/PA-spectral-gap/)) and #9
+  ([P-D](../experiments/PD-allometry-reduction/)) — were `seed` entries the sort
+  made claims about and have since been run, so the sort has now been graded
+  twice: once on a positive (confirmed, in a corrected form) and once on its only
+  negative (confirmed).
+- P-D tests **models** of allometry, not organisms. It establishes what kind of
+  object the exponent is in the theories that produce it, and says nothing about
+  whether real metabolic rates scale as M^(3/4).
 - "Refuses the tower" is a statement about the reductions **attempted here**. A
   successful reduction of allometry or OT would move them, and that is a cheaper
   result than a new floor.

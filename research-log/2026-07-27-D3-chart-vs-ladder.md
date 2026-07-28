@@ -1,4 +1,4 @@
-# 2026-07-27 — D3: the ladder is one factor of two, and the transfer cliff needs a shared chart
+# 2026-07-27 — D3: the ladder is one factor of two, and transfer needs a shared chart
 
 **Worked on:** [D3](../questions/UNKNOWN-LAWS.md) — is the ladder a chart-invariance
 count?
@@ -51,10 +51,10 @@ chart-dependent claim it runs +0.80 / +1.00 / −0.60 / −0.80 / +0.80 / +0.80.
 **chart-freedom is the precondition under which the ladder is predictive at all.**
 
 Note the a = 0.85 column especially: Spearman is nominally *perfect* (+1.00) while
-the **cliff has vanished** — L2 = 0.756 against L3 = 0.769, a gap of 0.013 where
-the undistorted cliff is 0.43. A mild chart distortion destroys the ladder's
-discriminating power while preserving its order; a stronger one inverts the order.
-Rank correlation alone would have missed this.
+the **L2/L3 separation has collapsed** — L2 = 0.756 against L3 = 0.769, a gap of
+0.013 where the undistorted gap is 0.43. A mild chart distortion destroys the
+ladder's discriminating power while preserving its order; a stronger one inverts
+the order. Rank correlation alone would have missed this.
 
 ## Decisions / level changes (with reasons)
 
@@ -92,7 +92,7 @@ Rank correlation alone would have missed this.
   by construction); P2's collapse is **forced in direction** but not in magnitude,
   and the inversion was not forced; **P4 is the genuinely at-risk result** — a
   chart-free statistic could have discriminated nothing, making the framing
-  vacuous, and instead it preserves the full cliff.
+  vacuous, and instead it preserves the full L1→L4 separation.
 - **Skill is floored at 0** and every raw cell clips at a ≥ 1.5, so the per-column
   Spearman is computed on unclipped skill. Ranking the clipped values ranks a
   column of ties and the tie-break manufactures a spurious +1.00 — caught and
