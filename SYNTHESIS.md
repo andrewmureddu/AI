@@ -63,7 +63,8 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; the best in-distribution feature is the worst-transferring | constructed SCM where invariance = causation by design |
-| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed + sharpened** — transfer has a *cliff at the L2/L3 boundary* (0.03/0.48/0.92/0.89); mechanism and theorem transfer equally | controlled within the CLT family; synthetic |
+| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed + sharpened, then conditioned** — transfer has a *cliff at the L2/L3 boundary* (0.03/0.48/0.92/0.89); mechanism and theorem transfer equally. **[D3](./experiments/D3-chart-vs-ladder/) added the missing precondition: this holds only in a *shared measurement chart*** | controlled within the CLT family; synthetic; **conditional on a shared chart** — at a=0.7 the ordering inverts, at a=0.85 the cliff vanishes |
+| **D3** | [The ladder is one factor of two](./experiments/D3-chart-vs-ladder/) | experiment | **both readings falsified.** D3's own falsifier fires — stated chart-freely, L2/L1 still fail (0.373/0.037) so chart-invariance is **not sufficient**; and a chart-dependent claim collapses a shared mechanism (L3 0.916 → 0.000, with word-only L1 beating theorem-backed L4 at a=0.7). **Survivor: transfer = shared mechanism ∧ chart-free statement**, and chart-freedom is *the precondition under which the ladder is predictive at all* (Spearman +0.80 in every chart, vs +1.00 → −0.80) | one invariant family, synthetic, one chart group; **no pre-registration file** (process deviation on record); P3 is an identity |
 | **§6** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — invariance predicts transfer at ρ=0.983 on the diabetes dataset; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97), fails on controls (0.00) | Leg A has a signal-strength confound; multi-field study still open |
 | **S25** | [Channel-independence of the singularities](./experiments/S25-channel-independence/) | experiment | **🔴 tier tested, did not promote** — singularities are *invariant* under generic channels and *covariant* under structured ones: F_c(T)=F_eff(T′)(dT′/dT)² exact to 1e-14 | one pre-registration error on record (parity blind only at odd N) |
 
@@ -255,11 +256,12 @@ exponent" premise had to fail.
   S19–S22, S24.
 - **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
-  own prior-art note), **D2** (the P0 answered — no fourth floor) and **D6** (D1's
-  *p* generalized; floor 3's classifier is a ratio). **Unworked:** D3, D4, D5 —
-  of which **D3 (the ladder as a chart-invariance count) is the cheapest**, and
-  sharper now that D2 and D6 independently say the invariant content is a ratio.
-- **14 experiments + 6 derivations** with teeth; **4 essays**.
+  own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
+  *p* generalized; floor 3's classifier is a ratio) and **D3** (falsified as filed;
+  transfer needs mechanism **and** chart-freedom, and the ladder measures one of
+  them). **Unworked:** D4, D5 — and D3 supplies D4's mechanism, since an amplitude
+  can be stated chart-freely and a bare exponent cannot.
+- **15 experiments + 6 derivations** with teeth; **4 essays**.
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).

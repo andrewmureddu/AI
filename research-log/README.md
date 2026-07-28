@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-27 — D3: the ladder is one factor of two, and the transfer cliff needs a shared chart](./2026-07-27-D3-chart-vs-ladder.md)
 - [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)
 - [2026-07-26 — D2: the P0 is answered, and there is no fourth floor](./2026-07-26-D2-gauge-of-the-tower.md)
 - [2026-07-26 — Turning to discovery: the chart law (D1), and what it does to floor 3](./2026-07-26-D1-chart-invariance.md)

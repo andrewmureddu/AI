@@ -63,6 +63,20 @@ peel away in the tails (where the heavy-tailed universality class lives).
 
 ## Honest hedging
 
+> **⟳ Boundary condition added 2026-07-27 by [D3](../D3-chart-vs-ladder/), and it
+> was invisible here.** This experiment compares A and B **in a shared measurement
+> chart** — it never varies the convention on which B's aggregate is recorded, and
+> never says that it doesn't. D3 crossed this harness with a chart factor
+> (B records y ↦ sgn(y)|y|^a) and found the result is **conditional on that shared
+> chart**: with the same generators and the same metric, a distortion of a = 0.7
+> **inverts** the ordering (L1 0.723 and L2 0.773 beat L3 0.559 and L4 0.565), and
+> a distortion of a = 0.85 leaves the ordering intact while **destroying the cliff**
+> (L2 0.756 vs L3 0.769 — a gap of 0.013 against the 0.43 reported below).
+> Restating the claim chart-freely restores everything, at Spearman +0.80 in every
+> chart. So "ladder level predicts transfer" holds **given a shared chart**, and
+> transfer needs two factors — a shared mechanism *and* a chart-free statement of
+> it. The cliff below is real; it is not unconditional.
+
 - **Controlled within one invariant family** (the CLT/Gaussian limit). It shows
   *depth of correspondence* controls transfer when the surface phenomenon is held
   fixed — the cleanest possible isolation — but it is not yet the cross-*invariant*,

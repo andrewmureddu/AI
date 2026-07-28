@@ -330,7 +330,35 @@ survives being called gauge.
 
 **Engine:** negative space — no cross-domain relation in this repo has ever
 survived as a bare exponent.
-**Novelty: N2 claimed. Status: unworked.**
+**Novelty: N2 claimed. Status: ⟳ RUN 2026-07-27, FALSIFIED as filed —
+[`experiments/D3-chart-vs-ladder/`](../experiments/D3-chart-vs-ladder/).**
+
+> **⟳ Restraint pass (2026-07-27): the biconditional dies, and so does the reading
+> it was attacking.** Built both off-diagonal cells the falsifier below names, by
+> crossing the [ladder-vs-transfer](../experiments/ladder-vs-transfer/) harness
+> with a chart factor (B records on y ↦ sgn(y)|y|^a, D1/D2's G_pow on the
+> measurement axis) and a statement factor (shape of Y, chart-dependent, vs shape
+> of ln|Y|, chart-free).
+> **The registered falsifier fired**: with the claim stated chart-freely the low
+> rungs still fail — L2 = **0.373**, L1 = **0.037** against L3/L4 at 0.833/0.816 —
+> so chart-invariance is **necessary but not sufficient**. **The rung-label reading
+> fails too**: with the mechanism untouched but the claim chart-dependent, L3
+> collapses 0.916 → 0.000 and at a = 0.7 the word-only L1 (0.723) **beats** the
+> theorem-backed L4 (0.565).
+> **Survivor — a two-factor claim:** transfer needs a shared mechanism **and** a
+> chart-free statement of it; the ladder measures the first only. Sharper form:
+> **chart-freedom is the precondition under which the ladder is predictive at
+> all** — Spearman(rung, skill) is +0.80 in *every* chart under a chart-free claim,
+> and runs +1.00 → −0.80 under a chart-dependent one. Note a = 0.85, where the
+> ordering is nominally perfect while the **cliff vanishes** (0.756 vs 0.769
+> against an undistorted 0.43): rank correlation alone would have missed it.
+> **Revises an existing result:** [ladder-vs-transfer](../experiments/ladder-vs-transfer/)
+> lives entirely in the shared-chart cell and never said so; its finding is
+> conditional on a shared measurement chart. Also mostly retires
+> [S22](./SPECULATIVE.md). Process deviation on record: **no PREREGISTRATION.md**
+> — the design and opposing predictions were fixed before the run, but only the
+> stone's own falsifier was formally registered, and backdating a file would be a
+> fabrication.
 
 If D1 is right, "does this correspondence transfer?" has a mechanical answer:
 **it transfers iff it is chart-invariant.** Which would mean the

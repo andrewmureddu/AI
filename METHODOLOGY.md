@@ -37,6 +37,27 @@ it is where a correspondence starts to *carry predictions across the boundary*.
 Notably L3 ≈ L4 in transfer skill (mechanism and theorem transfer equally well);
 they differ in the *strength of the guarantee*, not the transfer.
 
+**But the ladder is only half of what transfer needs.**
+[D3](./experiments/D3-chart-vs-ladder/) crossed that experiment with a *chart*
+factor — the measurement convention domain B records on — and found the cliff is
+**conditional on the two domains sharing a chart**, which the original run never
+stated. With the mechanism untouched and the claim stated chart-dependently, an
+L3 correspondence transfers at 0.000, and a word-only L1 one can beat a
+theorem-backed L4 one. Restating the claim chart-freely restores the full ordering
+at Spearman +0.80 under *every* chart. The surviving statement is:
+
+> **transfer ⟸ (mechanism is shared) ∧ (the claim is stated chart-freely)**
+
+Two independent requirements, and the ladder grades only the first. So an entry is
+not finished when it has a level: it also needs a **chart tag** — is the claim
+stated in terms that survive reparameterizing the measurement axis (a ratio, a
+dimensionless product, a shape) rather than in terms that don't (a bare exponent,
+a magnitude in domain-specific units)? A high-rung entry with a chart-dependent
+statement is *predicted not to transfer*, and that is the cheapest available
+falsifier for much of the catalog. This is the methodological form of what
+[D1](./experiments/D1-chart-invariance/) found inside floor 3 and
+[D2](./derivations/D2-gauge-of-the-tower.md) derived as the tower's gauge group.
+
 ## Evidence standards
 
 To move a candidate *up* the ladder, an entry must supply the relevant evidence:
