@@ -99,6 +99,58 @@ tighter band would be false precision.
 - **D_×·c₆²/c₄³ drifting by more than 2×** — there is a further dependence the
   derivation does not contain.
 
+---
+
+## Outcome (written after the run — everything above is unedited)
+
+**The debt is half paid. The δa³ law is now prospectively confirmed; the stronger
+two-variable law it was upgraded into is *not testable* in the accessible window,
+and is neither confirmed nor refuted.**
+
+| | registered | measured | |
+|---|---|---|---|
+| **P8R-1a** α on c₄ | 3.00 ± 0.30 | **3.111** (raw 3.144) | ✅ |
+| **P8R-1b** β on c₆ | −2.00 ± 0.40 | **not evaluable** | — |
+| **P8R-2** D_×c₆²/c₄³ spread | < 2.0× | **1.41×** | ✅ *(weak — 3 points)* |
+| **P8R-3** δa exponent | 3.0 ± 0.4 | **3.128** | ✅ |
+
+P8R-3 reproduces D1's post-hoc 3.211 prospectively, which was the actual debt.
+Note that δa and c₄ are near-proportional this close to the tricritical point
+(c₄ ≈ 0.9·δa), so P8R-1a and P8R-3 are nearly the same measurement, not two.
+
+**Why β could not be evaluated, and why that is a finding rather than a
+shortfall.** Only 3 of the 8 registered *a*-values yielded a usable crossing.
+Diagnosing rather than re-tuning: for a ≥ 0.339 the local slope **rises from
+0.500, peaks at 0.5723 near D ≈ 3×10⁻⁴, and turns back down** — it never reaches
+the asymptotic 2/3, so no upward crossing of the midpoint exists to locate.
+
+The turnover sits close to the predicted D_× ≈ 1.7×10⁻⁴, so **the crossover is
+happening where the theory says**; what fails is that the sextic regime never gets
+room to establish itself before the m⁸ and higher terms take over and drag the
+slope down. So the two-regime picture is only *measurable* in a window where D_×
+is small enough to leave the sextic plateau space — and that window closes at
+a ≈ 0.339, before c₆ has moved enough to matter. Over the three usable points c₄
+spans **1.20 decades** and c₆ only **0.021 decades (5%)**: the two-variable fit is
+degenerate, and reporting a β from it would be fitting noise.
+
+**The honest status:** the registered β prediction stands untested. Claiming the
+two-variable law is confirmed on this evidence would be exactly the error this
+whole re-registration exists to correct.
+
+**A third direction error, on record.** The first implementation of this script
+searched for the slope crossing the midpoint *downward* when it rises with D. It
+found spurious crossings in gradient noise and returned D_× that **fell** as c₄
+rose — the exact inverse of the prediction, and the same class of error the
+original P8 made. Caught because the numbers moved the wrong way. A separate
+numerical fix (the scan's harmonic end at `eps_hi = 1` silently dropped every
+D above ~10⁻³) is documented in the code.
+
+**Next, and not attempted here to avoid compounding a post-hoc problem with
+another one:** defining D_× as the **location of the slope maximum** instead of a
+midpoint crossing would be well-defined for every *a* and would open the c₆
+leverage. That is an estimator change made after seeing the data, so it must be
+registered before it is run — it is not applied above.
+
 ## 5. Scope
 
 Inherits D1's scope entirely: 1-D gradient system, additive noise,

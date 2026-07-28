@@ -147,6 +147,32 @@ def main():
     ok = [r for r in rows if r["D_crossover"] is not None]
     res = {"rows": rows, "n_usable": len(ok), "threshold": DELTA}
 
+    # One-variable fallback.  The registered two-variable fit needs >= 4 points
+    # AND real c6 leverage; the accessible window supplies neither (see the
+    # Outcome section of P8-REREGISTRATION.md).  This reports what the data can
+    # actually support -- alpha on c4, with the small c6 drift removed using the
+    # PREDICTED beta = -2 rather than a fitted one, so it is not a disguised
+    # two-variable fit.
+    if len(ok) >= 3:
+        c4 = np.array([r["c4"] for r in ok])
+        c6 = np.array([r["c6"] for r in ok])
+        dx = np.array([r["D_crossover"] for r in ok])
+        res["one_variable_fit"] = {
+            "alpha_raw": float(np.polyfit(np.log(c4), np.log(dx), 1)[0]),
+            "alpha_c6_corrected": float(
+                np.polyfit(np.log(c4), np.log(dx) + 2.0 * np.log(c6), 1)[0]),
+            "predicted_alpha": 3.0,
+            "c4_leverage_decades": float(np.log10(c4.max() / c4.min())),
+            "c6_leverage_decades": float(np.log10(c6.max() / c6.min())),
+            "n": len(ok),
+            "beta_evaluable": bool(np.log10(c6.max() / c6.min()) > 0.3),
+        }
+        comp = dx * c6**2 / c4**3
+        res["compensated"] = {"values": comp.tolist(),
+                              "ratio_max_over_min": float(comp.max() / comp.min())}
+        da = np.array([r["delta_a"] for r in ok])
+        res["delta_a_exponent"] = float(np.polyfit(np.log(da), np.log(dx), 1)[0])
+
     if len(ok) >= 4:
         lc4 = np.log([r["c4"] for r in ok])
         lc6 = np.log([r["c6"] for r in ok])
@@ -176,6 +202,17 @@ def main():
         json.dump(res, f, indent=2)
 
     print("\n" + "=" * 66)
+    if "one_variable_fit" in res:
+        o = res["one_variable_fit"]
+        print(f"P8R-1a alpha on c4 = {o['alpha_c6_corrected']:.3f} "
+              f"(raw {o['alpha_raw']:.3f}); registered 3.00 +- 0.30, n = {o['n']}")
+        print(f"P8R-1b beta on c6: NOT EVALUABLE -- c6 leverage is only "
+              f"{o['c6_leverage_decades']:.4f} decades against c4's "
+              f"{o['c4_leverage_decades']:.2f}")
+        print(f"P8R-2  D_x c6^2/c4^3 spans "
+              f"{res['compensated']['ratio_max_over_min']:.2f}x (registered < 2.0)")
+        print(f"P8R-3  delta_a exponent = {res['delta_a_exponent']:.3f} "
+              f"(registered 3.0 +- 0.4; D1's post-hoc value was 3.211)")
     if "two_variable_fit" in res:
         t = res["two_variable_fit"]
         print(f"P8R-1  alpha on c4 = {t['alpha_on_c4']:+.3f}  (registered 3.00 +- 0.30)")
