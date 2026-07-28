@@ -75,7 +75,12 @@ def rounding_ratio(phi, lam, D):
     return (m2 - m1 * m1) * lam / D
 
 
-def crossover_lambda(a, D, eps_hi=1.0, eps_lo=1e-11, n_scan=90):
+def crossover_lambda(a, D, eps_hi=60.0, eps_lo=1e-11, n_scan=110):
+    # eps_hi must put the scan's start deep in the HARMONIC regime, or the very
+    # first grid point already deviates by DELTA and the bracket is refused.  At
+    # eps_hi = 1 that happened for every D above ~1e-3, which silently dropped the
+    # large-D end and killed the crossing for a >= 0.339.  Numerical adequacy
+    # only: it extends the scan, it does not change what is measured.
     """lambda at which |R-1| first reaches DELTA, scanning in from the harmonic end."""
     def dev(eps):
         phi, lam = bc_leg(a + eps, a)
