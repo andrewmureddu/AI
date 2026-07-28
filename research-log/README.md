@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-28 — D5 confirms arithmetic nobody doubted, and closes the discovery register](./2026-07-28-D5-and-register-close.md)
 - [2026-07-27 — P8's debt, half paid: the δa³ law confirmed, the law it grew into not testable](./2026-07-27-P8-debt.md)
 - [2026-07-27 — The catalog tagged by chart: a third axis, and four predictions](./2026-07-27-charts-audit.md)
 - [2026-07-27 — D4 falsified: the amplitude/exponent axis was a confound](./2026-07-27-D4-amplitude-vs-exponent.md)

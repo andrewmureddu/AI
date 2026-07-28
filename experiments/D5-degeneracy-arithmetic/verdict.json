@@ -1,0 +1,248 @@
+{
+  "seed": 20260727,
+  "P5_coalescence": {
+    "merged_leading_order": 4,
+    "p_composite_predicted": 4,
+    "p1_plus_p2_minus_2": 4,
+    "codim_predicted": 2,
+    "note": "textbook (Thom/Arnold); N0, estimator check"
+  },
+  "staircases": [
+    {
+      "case": "q1=2; 4,6",
+      "q1": 2.0,
+      "terms": [
+        [
+          4.0,
+          1.0
+        ],
+        [
+          6.0,
+          100.0
+        ]
+      ],
+      "predicted": [
+        0.5,
+        0.6666666666666666
+      ],
+      "plateaus": [
+        {
+          "predicted": 0.5,
+          "decades_within_tol": 3.75,
+          "closest_slope": 0.5007054468178845
+        },
+        {
+          "predicted": 0.6666666666666666,
+          "decades_within_tol": 5.75,
+          "closest_slope": 0.6661735198515387
+        }
+      ],
+      "slope_min": 0.5007054468178845,
+      "slope_max": 0.6661735198515387,
+      "ratio_rule": [
+        {
+          "measured": 1.495670903518697,
+          "predicted": 1.5
+        }
+      ]
+    },
+    {
+      "case": "q1=2; 4,8",
+      "q1": 2.0,
+      "terms": [
+        [
+          4.0,
+          1.0
+        ],
+        [
+          8.0,
+          10000.0
+        ]
+      ],
+      "predicted": [
+        0.5,
+        0.75
+      ],
+      "plateaus": [
+        {
+          "predicted": 0.5,
+          "decades_within_tol": 4.25,
+          "closest_slope": 0.5000027843075112
+        },
+        {
+          "predicted": 0.75,
+          "decades_within_tol": 5.75,
+          "closest_slope": 0.7499656229420376
+        }
+      ],
+      "slope_min": 0.5000027843075112,
+      "slope_max": 0.7499656229420376,
+      "ratio_rule": [
+        {
+          "measured": 1.9997138856493346,
+          "predicted": 2.0
+        }
+      ]
+    },
+    {
+      "case": "q1=2; 3,6",
+      "q1": 2.0,
+      "terms": [
+        [
+          3.0,
+          1.0
+        ],
+        [
+          6.0,
+          10000.0
+        ]
+      ],
+      "predicted": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "plateaus": [
+        {
+          "predicted": 0.3333333333333333,
+          "decades_within_tol": 3.75,
+          "closest_slope": 0.3333397065217165
+        },
+        {
+          "predicted": 0.6666666666666666,
+          "decades_within_tol": 6.0,
+          "closest_slope": 0.6666476280210419
+        }
+      ],
+      "slope_min": 0.3333397065217165,
+      "slope_max": 0.6666476280210419,
+      "ratio_rule": [
+        {
+          "measured": 1.9998666561771594,
+          "predicted": 2.0
+        }
+      ]
+    },
+    {
+      "case": "q1=1; 2,4",
+      "q1": 1.0,
+      "terms": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          4.0,
+          10000.0
+        ]
+      ],
+      "predicted": [
+        0.5,
+        0.75
+      ],
+      "plateaus": [
+        {
+          "predicted": 0.5,
+          "decades_within_tol": 4.25,
+          "closest_slope": 0.5000036778693387
+        },
+        {
+          "predicted": 0.75,
+          "decades_within_tol": 6.0,
+          "closest_slope": 0.7499690887303375
+        }
+      ],
+      "slope_min": 0.5000036778693387,
+      "slope_max": 0.7499690887303375,
+      "ratio_rule": [
+        {
+          "measured": 1.9997380307565529,
+          "predicted": 2.0
+        }
+      ]
+    },
+    {
+      "case": "q1=2; 4,6,8",
+      "q1": 2.0,
+      "terms": [
+        [
+          4.0,
+          1.0
+        ],
+        [
+          6.0,
+          1000.0
+        ],
+        [
+          8.0,
+          50000.0
+        ]
+      ],
+      "predicted": [
+        0.5,
+        0.6666666666666666,
+        0.75
+      ],
+      "plateaus": [
+        {
+          "predicted": 0.5,
+          "decades_within_tol": 1.75,
+          "closest_slope": 0.5067619230018732
+        },
+        {
+          "predicted": 0.6666666666666666,
+          "decades_within_tol": 3.25,
+          "closest_slope": 0.6645433879389224
+        },
+        {
+          "predicted": 0.75,
+          "decades_within_tol": 4.25,
+          "closest_slope": 0.7452288002498157
+        }
+      ],
+      "slope_min": 0.5067619230018732,
+      "slope_max": 0.7452288002498157,
+      "ratio_rule": [
+        {
+          "measured": 1.470348352854412,
+          "predicted": 1.5
+        },
+        {
+          "measured": 1.3166975403421162,
+          "predicted": 1.3333333333333333
+        }
+      ]
+    }
+  ],
+  "P4_squeeze": [
+    {
+      "B3": 100000000.0,
+      "middle_plateau_decades": 0.0,
+      "upper_plateau_decades": 12.0,
+      "slope_max": 0.6666666174405844
+    },
+    {
+      "B3": 1000000.0,
+      "middle_plateau_decades": 0.0,
+      "upper_plateau_decades": 12.0,
+      "slope_max": 0.6666656061183946
+    },
+    {
+      "B3": 10000.0,
+      "middle_plateau_decades": 0.0,
+      "upper_plateau_decades": 9.75,
+      "slope_max": 0.6666438159971169
+    },
+    {
+      "B3": 100.0,
+      "middle_plateau_decades": 3.75,
+      "upper_plateau_decades": 5.75,
+      "slope_max": 0.6661735198515387
+    },
+    {
+      "B3": 1.0,
+      "middle_plateau_decades": 7.75,
+      "upper_plateau_decades": 1.75,
+      "slope_max": 0.6557747357454597
+    }
+  ]
+}

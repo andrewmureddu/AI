@@ -450,7 +450,34 @@ should be tested prospectively before being believed at all.
 ### D5 — Does *p* obey a sum rule?
 
 **Engine:** gap prediction — if *p* classifies, it should have arithmetic.
-**Novelty: N3 if it holds. Status: unworked, speculative.**
+**Novelty: N3 claimed; N0–N1 delivered. Status: ⟳ RUN 2026-07-28 —
+[`experiments/D5-degeneracy-arithmetic/`](../experiments/D5-degeneracy-arithmetic/).**
+
+> **⟳ Restraint pass (2026-07-28): confirmed, and it confirms what was never in
+> doubt — as the registration predicted.** The literal reading (coalescence) is
+> answered by singularity theory: **codimension adds**, two folds give a cusp,
+> p_composite = p₁+p₂−2. Thom and Arnold; **N0**, exactly as this stone's own
+> prior-art warning said. The live reading exists only because
+> [D6](../experiments/D6-support-singularities/) showed *p* was the q₁ = 2 slice
+> of a pair: with Φ carrying more than two terms the prediction is a
+> **staircase**, each higher term contributing a plateau at 1 − q₁/q_j.
+> **The arithmetic is enumeration — terms queue, they do not combine.** Eleven
+> plateaus across five systems land within **0.0068** of prediction, including a
+> genuine three-step staircase (0.5068 / 0.6645 / 0.7452), and the ratio rule
+> (1−θ_j)/(1−θ_{j+1}) = q_{j+1}/q_j holds in all six comparisons. All of that is
+> D6 applied repeatedly and was **declared an identity before the run**.
+> **The one measured thing is the squeeze:** a regime must exceed its visible
+> plateau by **≈ 2.25 decades**, consistently (6 → 3.75, 10 → 7.75). Registered as
+> "squeezed out below ~1 decade" — the threshold was optimistic by ~2×, which is
+> the registration being wrong rather than the claim. It earns its keep by
+> converting [P8](../experiments/D1-chart-invariance/P8-REREGISTRATION.md)'s
+> failure into a condition: the Blume–Capel sextic plateau never established
+> because its regime did not span 2.25 decades.
+> **D5 closes the register without adding a law**, which for a stone that
+> predicted exactly this is a legitimate outcome. Process failure on record: a
+> `pkill` killed the shell not the process, and a superseded run overwrote the
+> verdict with stale coefficients — caught because two computations of the same
+> system disagreed.
 
 If floor 3 is classified by the degeneracy order *p*, the natural next question is
 whether *p* is conserved, additive, or bounded along a sequence of transitions.
