@@ -64,6 +64,7 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 |---|--------|-----|---------|-----------|
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; the best in-distribution feature is the worst-transferring | constructed SCM where invariance = causation by design |
 | **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)), **then conditioned** ([D3](./experiments/D3-chart-vs-ladder/)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic; **and conditional on a shared measurement chart**, which the run never varied — under a chart distortion the ordering inverts |
+| **D4** | [Amplitudes vs exponents — a confound](./experiments/D4-amplitude-vs-exponent/) | experiment | **falsified; leaves no replacement.** A prospective battery separates by **chart** (0.0–0.8% vs 66.7–70.1%) and not at all by **kind** (amplitudes 0.8–70.1%, exponents 0.0–66.7%) — an amplitude fails at exactly the registered 2.0801× while two exponents transfer exactly. The audit found the sample confounded *and* found counterexamples already in the record, one of them cited in D4's own supporting row. **Collapses into D2/D3** | survivor is **N0** — physics holds the opposite contrast, and only amplitude *ratios* are universal; four systems, two sharing a normal form |
 | **D3** | [The ladder is one factor of two](./experiments/D3-chart-vs-ladder/) | experiment | **both readings falsified.** D3's own falsifier fires — stated chart-freely, L2/L1 still fail (0.373/0.037), so chart-invariance is **not sufficient**; and a chart-dependent claim collapses a shared mechanism (L3 0.916 → 0.000, with word-only L1 beating theorem-backed L4 at a=0.7). **Survivor: transfer = shared mechanism ∧ chart-free statement**, and chart-freedom is *the precondition under which the ladder is predictive at all* (Spearman +0.80 in every chart, vs +1.00 → −0.80). Against paper 1's measured ceiling, chart-freedom also has a **price**: it buys immunity at 0.833 where the shared-chart claim reaches 0.916 ≈ complete transfer | one invariant family, synthetic, one chart group; **no pre-registration file** (process deviation on record); P3 is an identity |
 | **§6** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — invariance predicts transfer at ρ=0.983 on the diabetes dataset; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97), fails on controls (0.00) | Leg A has a signal-strength confound; multi-field study still open |
 | **S25** | [Channel-independence of the singularities](./experiments/S25-channel-independence/) | experiment | **🔴 tier tested, did not promote** — singularities are *invariant* under generic channels and *covariant* under structured ones: F_c(T)=F_eff(T′)(dT′/dT)² exact to 1e-14 | one pre-registration error on record (parity blind only at odd N) |
@@ -260,9 +261,11 @@ exponent" premise had to fail.
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
   *p* generalized; floor 3's classifier is a ratio) and **D3** (falsified as filed;
   transfer needs mechanism **and** chart-freedom, and the ladder measures one of
-  them). **Unworked:** D4, D5 — and D3 supplies D4's mechanism, since an amplitude
-  can be stated chart-freely and a bare exponent cannot.
-- **20 experiments + 6 derivations** with teeth; **1 paper**; **4 essays**. *(The
+  them) and **D4** (falsified — the amplitude/exponent axis is a confound; collapses
+  into D2/D3). **Unworked: D5 only**, whose own prior-art warning stands.
+  **Two of the six were killed by their own registered falsifiers**, which is the
+  register working as designed.
+- **21 experiments + 6 derivations** with teeth; **1 paper**; **4 essays**. *(The
   count was stale on both sides of the 2026-07-27 merge — it predated M3/M11/M15
   and P-D on one side and D1/D2/D3/D6 on the other. Every one of the 20 carries a
   committed verdict.)*

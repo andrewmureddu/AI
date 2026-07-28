@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-27 — D4 falsified: the amplitude/exponent axis was a confound](./2026-07-27-D4-amplitude-vs-exponent.md)
 - [2026-07-27 — D3: the ladder is one factor of two, and transfer needs a shared chart](./2026-07-27-D3-chart-vs-ladder.md)
 - [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)
 - [2026-07-27 — P-D run: the exponent that has no conjugate variable (allometry is a log-ratio)](./2026-07-27-PD-allometry.md)

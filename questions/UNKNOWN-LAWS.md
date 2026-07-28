@@ -388,7 +388,37 @@ score better than the rung label does.
 ### D4 — Amplitudes transfer, exponents don't, and the asymmetry is one-directional
 
 **Engine:** residue mining across every experiment in the repo.
-**Novelty: N1–N2. Status: unworked; cheap.**
+**Novelty: N1–N2 claimed; N0 for what survived. Status: ⟳ RUN 2026-07-27,
+FALSIFIED — [`experiments/D4-amplitude-vs-exponent/`](../experiments/D4-amplitude-vs-exponent/).**
+
+> **⟳ Restraint pass (2026-07-27): the axis is a confound, and the stone cites its
+> own counterexample below.** A prospective battery — four systems, seven
+> quantities, all fixed before measuring and all reported, each labelled *kind*
+> (amplitude/exponent) and *chart* (free/dependent) in advance — separates cleanly
+> by **chart** and not at all by **kind**: on the fold/SIS pair, chart-free
+> quantities spread 0.0–0.8% and chart-dependent ones 66.7–70.1%, while amplitudes
+> span 0.8–70.1% and exponents 0.0–66.7%. An **amplitude fails at 70.1%** and two
+> **exponents transfer exactly**; the failing amplitude's ratio was registered in
+> advance as 3^{2/3} = 2.0801 and measured **2.0801**.
+> **The audit is worse for the stone than the battery.** Every amplitude cited in
+> the table above is a dimensionless product of *conjugate* quantities — the
+> chart-free construction — and every exponent is a *bare* one: the sample was
+> confounded on a property nobody was tracking. And the confound is not even
+> perfect. **[P-A](../experiments/PA-spectral-gap/)'s Kuramoto constant
+> K_c·λ₂ = 0.410–0.632 is a dimensionless amplitude that does not transfer, and it
+> appears in the table above in the row supporting "amplitudes transfer."**
+> Meanwhile [P-D](../experiments/PD-allometry-reduction/), which landed after this
+> stone was filed, reports an *exponent* transferring with spread **4.0e-15** and
+> summarises itself as *"magnitudes invisible, counts not"* — this claim with the
+> sign reversed.
+> **D4 does not leave a replacement; it collapses into
+> [D2](../derivations/D2-gauge-of-the-tower.md) and
+> [D3](../experiments/D3-chart-vs-ladder/).** Transfer needs the object to be the
+> same *and* the claim stated chart-freely. Novelty of the survivor: **N0** — the
+> prior-art note warned that physics holds the *opposite* contrast (exponents
+> universal in a class, only amplitude *ratios* universal), and once the confound
+> is removed the surviving statement is that same shape. The value was in killing
+> a stone that would otherwise have propagated as an independent law.
 
 Tabulate everything this repo has measured across ≥2 domains:
 
