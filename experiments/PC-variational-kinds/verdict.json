@@ -1,0 +1,401 @@
+{
+  "at_risk_passed": 8,
+  "at_risk_predictions": [
+    "P2_potential_free_but_predictive",
+    "P2b_not_weighted_potential",
+    "P3_plane_average_mechanism",
+    "P3b_condition_count_halves",
+    "P5_nonlinear_game_predicts",
+    "P7_selector_cells_nontrivial",
+    "P8_one_rank_instrument",
+    "P10_floor1_magnitude_blind",
+    "P11_floor1_analytic_value"
+  ],
+  "at_risk_total": 9,
+  "declared_identities": [
+    "P1_two_poles_identity",
+    "P4_n2_threshold_identity",
+    "P6_exponent_blind_identity",
+    "P9_bertrand_identity",
+    "P11_selector_kink"
+  ],
+  "identities_passed": 4,
+  "legA": {
+    "P1": {
+      "P1_pass": true,
+      "circulation_rotation_min": 0.36986455946508057,
+      "convergence_iff_posdef_rate": 1.0,
+      "draws": 200,
+      "energy_drift_max": 1.2656542480726781e-14,
+      "n": 6,
+      "path_dependence_potential_max": 6.800116025829084e-16,
+      "pi_pure_potential": 1.0,
+      "pi_pure_rotation": 0.0
+    }
+  },
+  "legB": {
+    "results": {
+      "P2_fraction_n6": 0.12195,
+      "P2_pass": true,
+      "P2b": {
+        "frac_above_0p1": 1.0,
+        "residual_median": 1.841286553723045,
+        "residual_min": 1.4238919827007006,
+        "sampled": 200
+      },
+      "P2b_pass": true,
+      "P3_agreements": {
+        "2": 1.0,
+        "4": 0.9985,
+        "6": 0.9985,
+        "8": 0.9995
+      },
+      "P3_min_agreement": 0.9985,
+      "P3_n2_stable_fraction": 0.508375,
+      "P3_pass": true,
+      "P3b_pass": true,
+      "P3b_ratio_n6": 2440.0,
+      "P4": {
+        "cases": 73,
+        "rel_err_max": 3.148180232608537e-15,
+        "rel_err_median": 1.4141972484883878e-16
+      },
+      "P4_pass": true,
+      "P5": {
+        "J_eig_real": [
+          0.25000000000000006,
+          0.25000000000000006
+        ],
+        "S_eigs": [
+          -0.5,
+          1.0
+        ],
+        "circulation": 5.137954648042598,
+        "converged": 100,
+        "exact_gradient_field": false,
+        "max_final_norm": 6.255093950383434e-44,
+        "runs": 100
+      },
+      "P5_pass": true,
+      "per_n": {
+        "2": {
+          "draws": 8000,
+          "frac_posdef": 0.14575,
+          "frac_potential_free_but_predictive": 0.362625,
+          "frac_stable_large_a": 0.508375,
+          "plane_criterion_agreement": 1.0,
+          "plane_criterion_draws": 4000,
+          "ratio_stable_over_posdef": 3.4879931389365355
+        },
+        "4": {
+          "draws": 8000,
+          "frac_posdef": 0.003375,
+          "frac_potential_free_but_predictive": 0.244875,
+          "frac_stable_large_a": 0.24825,
+          "plane_criterion_agreement": 0.9985,
+          "plane_criterion_draws": 4000,
+          "ratio_stable_over_posdef": 73.55555555555556
+        },
+        "6": {
+          "draws": 20000,
+          "frac_posdef": 5e-05,
+          "frac_potential_free_but_predictive": 0.12195,
+          "frac_stable_large_a": 0.122,
+          "plane_criterion_agreement": 0.9985,
+          "plane_criterion_draws": 4000,
+          "ratio_stable_over_posdef": 2440.0
+        },
+        "8": {
+          "draws": 8000,
+          "frac_posdef": 0.0,
+          "frac_potential_free_but_predictive": 0.059125,
+          "frac_stable_large_a": 0.059125,
+          "plane_criterion_agreement": 0.9995,
+          "plane_criterion_draws": 4000,
+          "ratio_stable_over_posdef": Infinity
+        }
+      }
+    }
+  },
+  "legC": {
+    "results": {
+      "P11_selector": {
+        "crossings": 11,
+        "detail": [
+          {
+            "crossing": 0.33279332297676983,
+            "magnitude": "c_mul",
+            "slope_gap_rel": 0.6082173842194745,
+            "slope_left": 0.6708276194551388,
+            "slope_right": 0.26281859948795727,
+            "value_jump_rel": 0.0
+          },
+          {
+            "crossing": 0.9167282305415959,
+            "magnitude": "c_mul",
+            "slope_gap_rel": 0.4545016824285082,
+            "slope_left": 0.4952300092746498,
+            "slope_right": 0.2701471368702357,
+            "value_jump_rel": 0.0
+          },
+          {
+            "crossing": 0.5893245500031096,
+            "magnitude": "c_add",
+            "slope_gap_rel": 0.2039003459921234,
+            "slope_left": 0.1811335347419174,
+            "slope_right": 0.14420034433726414,
+            "value_jump_rel": 0.0
+          },
+          {
+            "crossing": 2.1954279171523066,
+            "magnitude": "c_eval",
+            "slope_gap_rel": 0.3782298551878425,
+            "slope_left": 0.5629475372863624,
+            "slope_right": 0.35002397178018896,
+            "value_jump_rel": 0.0
+          },
+          {
+            "crossing": 5.25863876449018,
+            "magnitude": "c_eval",
+            "slope_gap_rel": 1.0,
+            "slope_left": 0.5630528798192813,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.0
+          },
+          {
+            "crossing": 2.4971803078798964,
+            "magnitude": "n_base",
+            "slope_gap_rel": 0.0,
+            "slope_left": 0.0,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.02788075685162526
+          },
+          {
+            "crossing": 3.9999999999999996,
+            "magnitude": "n_base",
+            "slope_gap_rel": 0.0,
+            "slope_left": 0.0,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.019212352008318195
+          },
+          {
+            "crossing": 7.491540923639689,
+            "magnitude": "n_base",
+            "slope_gap_rel": 0.0,
+            "slope_left": 0.0,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.014060875859150248
+          },
+          {
+            "crossing": 15.999999999999998,
+            "magnitude": "n_base",
+            "slope_gap_rel": 0.0,
+            "slope_left": 0.0,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.011707512295544776
+          },
+          {
+            "crossing": 63.99999999999999,
+            "magnitude": "n_base",
+            "slope_gap_rel": 0.0,
+            "slope_left": 0.0,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.001197190332364599
+          },
+          {
+            "crossing": 67.42386831275718,
+            "magnitude": "n_base",
+            "slope_gap_rel": 0.0,
+            "slope_left": 0.0,
+            "slope_right": 0.0,
+            "value_jump_rel": 0.000826469633470537
+          }
+        ],
+        "max_value_jump_rel": 0.02788075685162526,
+        "min_slope_gap_rel": 0.0
+      },
+      "P11_selector_pass": false,
+      "P6": {
+        "checked": 400,
+        "exactly_blind": 400,
+        "interior": 400
+      },
+      "P6_pass": true,
+      "P7": {
+        "N": 16384,
+        "distinct_exponents": [
+          1.403677,
+          1.464974,
+          1.584963
+        ],
+        "samples": 4000,
+        "schemes_above_2pct": 3,
+        "winner_counts": {
+          "karatsuba": 1077,
+          "schoolbook": 0,
+          "toom3": 856,
+          "toom4": 2067
+        },
+        "winner_freqs": {
+          "karatsuba": 0.26925,
+          "schoolbook": 0.0,
+          "toom3": 0.214,
+          "toom4": 0.51675
+        }
+      },
+      "P7_pass": true,
+      "P8": {
+        "base_points": 120,
+        "constant_sv_ratio_median": 0.0,
+        "gibbs_sv_ratio": 0.1553150742611996,
+        "rank_constant_full_frac": 0.0,
+        "rank_constant_mode": 4,
+        "rank_exponent_all_zero": true,
+        "rank_exponent_mode": 0,
+        "rank_gibbs": 5,
+        "tolerance": 1e-08
+      },
+      "P8_pass": false,
+      "posthoc": {
+        "P11_split": {
+          "count_crossings": 6,
+          "count_max_slope_gap": 0.0,
+          "count_min_value_jump": 0.000826469633470537,
+          "magnitude_crossings": 5,
+          "magnitude_max_value_jump": 0.0,
+          "magnitude_min_slope_gap": 0.2039003459921234,
+          "reading": "three regularity classes, separated without being told apart: a magnitude gives a smooth value; a selector cell boundary gives a continuous value with a kinked slope; a structural count gives a discontinuous value with no slope on either side."
+        },
+        "diagnosis": "n_base is a structural count with identically zero derivative, and the three per-word magnitudes enter only through one linear functional per scheme; the registered rank 6 was unattainable in the cost model I wrote.",
+        "n_base_derivative_max": 0.0,
+        "rank_of_three_per_word_columns": {
+          "mode": 2,
+          "values": [
+            1,
+            2,
+            3
+          ]
+        },
+        "rank_on_identifiable_coordinates": {
+          "dim": 3,
+          "full_frac": 1.0,
+          "mode": 3
+        }
+      }
+    }
+  },
+  "legD": {
+    "results": {
+      "P10": {
+        "bertrand": {
+          "harmonic": {
+            "constants_of_motion": 3,
+            "max_err": 3.7100185146243803e-09,
+            "mean": 2.0000000000949836,
+            "n": 45,
+            "spread": 4.0078327323556096e-09,
+            "target": 2.0
+          },
+          "kepler": {
+            "constants_of_motion": 3,
+            "max_err": 4.801050668135076e-10,
+            "mean": 1.0000000000516704,
+            "n": 45,
+            "spread": 5.510540912467832e-10,
+            "target": 1.0
+          }
+        },
+        "power_law": {
+          "alpha=-0.5": {
+            "eccentricity_spread": 0.037344530887453375,
+            "k_invariance_spread": 3.1020808144432976e-10,
+            "near_circular_ratio": 1.2269290277172464,
+            "predicted_near_circular": 1.224744871391589,
+            "rational_p_over_q": false
+          },
+          "alpha=1.0": {
+            "eccentricity_spread": 0.04197108935073568,
+            "k_invariance_spread": 3.108433510590203e-10,
+            "near_circular_ratio": 1.7345212224137279,
+            "predicted_near_circular": 1.7320508075688772,
+            "rational_p_over_q": false
+          },
+          "alpha=3.0": {
+            "eccentricity_spread": 0.06127749348367262,
+            "k_invariance_spread": 1.964055584835478e-10,
+            "near_circular_ratio": 2.232250012811949,
+            "predicted_near_circular": 2.23606797749979,
+            "rational_p_over_q": false
+          }
+        }
+      },
+      "P10_pass": true,
+      "P11_floor1": {
+        "E_circ_slope_gap_rel": 6.249846161157237e-06,
+        "E_circ_slope_left": 2.4414138792838713,
+        "E_circ_slope_right": 2.44139862082271,
+        "count_at_delta_0": 3,
+        "count_at_delta_1e_2": 2,
+        "precession_exponent": 0.975963624658988,
+        "precession_points": [
+          [
+            0.0001,
+            0.0009815176287641947
+          ],
+          [
+            0.0003,
+            0.002943173842281155
+          ],
+          [
+            0.001,
+            0.00979452703085748
+          ],
+          [
+            0.003,
+            0.029246948401581818
+          ],
+          [
+            0.01,
+            0.09593212680586483
+          ],
+          [
+            0.03,
+            0.27531103749979646
+          ],
+          [
+            0.1,
+            0.798771540365447
+          ]
+        ],
+        "ratio_at_delta_0": 0.9999999999881867,
+        "ratio_at_delta_1e_2": 1.0155048005971643
+      },
+      "P11_floor1_pass": true,
+      "P9": {
+        "harmonic_err": 3.764322187294056e-12,
+        "harmonic_ratio": 1.9999999999962357,
+        "kepler_err": 1.1813328093523978e-11,
+        "kepler_ratio": 0.9999999999881867
+      },
+      "P9_pass": true
+    }
+  },
+  "runtime_s": 24.1,
+  "seed": 20260727,
+  "verdict": {
+    "P10_floor1_magnitude_blind": true,
+    "P11_floor1_analytic_value": true,
+    "P11_selector_kink": false,
+    "P1_two_poles_identity": true,
+    "P2_potential_free_but_predictive": true,
+    "P2b_not_weighted_potential": true,
+    "P3_plane_average_mechanism": true,
+    "P3b_condition_count_halves": true,
+    "P4_n2_threshold_identity": true,
+    "P5_nonlinear_game_predicts": true,
+    "P6_exponent_blind_identity": true,
+    "P7_selector_cells_nontrivial": true,
+    "P8_one_rank_instrument": false,
+    "P9_bertrand_identity": true
+  }
+}

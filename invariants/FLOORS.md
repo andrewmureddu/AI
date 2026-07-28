@@ -34,7 +34,7 @@ it deletes, what it predicts, and what refused.
 | 4 | [diffusion & random walks](./diffusion-random-walks.md) | **2** (→3 in the tails) | Reduction demonstrated: CLT forces the Gaussian, the Gaussian is the max-entropy exponential family, and by JKO diffusion is gradient flow of that free energy. **Heavy-tailed/Lévy instances move to floor 3** — see prediction P-B. |
 | 18 | [optimal transport](./optimal-transport.md) | **2** (+ open) | The *flow* is Φ-driven (JKO). But the Wasserstein *metric* is not ∇²Φ — a second geometry on the same space, not derived from Φ. Flagged, §4. |
 | 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S25(K)](../derivations/S25-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
-| 7 | [optimization & variational](./optimization-variational.md) | **2 + 1** | **Splits by what the functional is over.** Objective = a free energy ⇒ floor 2. Objective = an *action* (least action) ⇒ floor 1, since that is the bracket structure Noether consumes. "As-if" optimization (adaptationism, utility) is neither — L1. |
+| 7 | [optimization & variational](./optimization-variational.md) | **2 ⇄ 1** ✓tested | **Not a split — a decomposition.** The sort said "splits by what the functional is over"; [P-C](../experiments/PC-variational-kinds/) refuted that. J = S + A at the equilibrium: the symmetric part is the free-energy (floor 2) content, the antisymmetric part is the bracket (floor 1) content, and π = ‖S‖²/(‖S‖²+‖A‖²) runs continuously between them. The *readout's* floor is a separate question with three answers — §4a. "As-if" optimization is still neither — L1. |
 | 5 | [criticality & universality](./criticality-phase-transitions.md) | **3** | Lee–Yang: transition ⇔ non-analyticity of Φ. The floor's L4 core. |
 | 10 | [symmetry breaking](./symmetry-breaking.md) | **3** | Derived, and the sort's best non-trivial case: an entry *named* for symmetry lands on floor 3, because SSB requires a non-analyticity of Φ and Goldstone modes are null directions of ∇²Φ. |
 | 1 | [power laws](./power-laws.md) | **3** | Heavy tails are where Z or its moments diverge — the complement of the well-behaved exponential-family world. |
@@ -164,10 +164,39 @@ measured before the tower existed. **Falsifier:** a finite-variance diffusion wh
 Φ is non-analytic in the relevant variable, or a heavy-tailed one whose moments
 behave.
 
-**P-C — variational principles come in exactly two kinds (#7).** Over a measure
-(free energy) ⇒ floor 2; over an action (bracket) ⇒ floor 1. **Falsifier:** a
-genuine variational law — one that predicts, rather than re-describes — whose
-functional is over neither.
+**P-C — variational principles come in exactly two kinds (#7) — ✗ RUN AND REFUTED,
+[`experiments/PC-variational-kinds/`](../experiments/PC-variational-kinds/).**
+*Predicted:* over a measure (free energy) ⇒ floor 2; over an action (bracket) ⇒
+floor 1. *Falsifier registered:* a genuine variational law — one that predicts,
+rather than re-describes — whose functional is over neither.
+*Found:* **the falsifier fires, and not narrowly.** Write the pseudo-gradient
+Jacobian at an equilibrium as J = S + aA. A potential with its minimum there
+requires S ≻ 0; convergence requires only Re λ(J) > 0. The region where the second
+holds and the first fails — no potential at all, and the dynamics still arrive — is
+**12.2%** of the ensemble at n = 6 against the **0.000** P-C requires, and at n = 8
+**not one draw in 8000 had a potential** while 5.9% converge. The escape routes are
+closed: 200/200 draws from that region are not weighted potential games either
+(min residual **1.42**), and a nonlinear two-player game with symmetric part
+diag(+1.000, −0.500) converges from **100/100** starts with circulation **5.14**.
+**The reason is a count.** At large a each conjugate eigenvalue pair of A picks up
+the average of S's quadratic form over A's invariant 2-plane, so rotation does not
+evade the stability conditions, it *pairs them up*: *n* conditions become
+**⌈n/2⌉**. Agreement with measured convergence **1.0000 / 0.9985 / 0.9985 /
+0.9995** at n = 2, 4, 6, 8; at n = 2 the criterion collapses to tr S > 0, predicted
+0.500 and measured **0.5084**; at n = 6 the convergent fraction is **2440×**
+P(S ≻ 0).
+**So P-C's error is grammatical.** "Over a measure" and "over an action" are not
+two boxes but the two poles of one **decomposition** — the antisymmetric part is
+the bracket content of the same principle — with the potential fraction
+π = ‖S‖²/(‖S‖² + ‖A‖²) running continuously between them. *This does not cost the
+tower a floor:* the potential-free region's predictive content lives in the
+bracket, which is floor 1, so the falsifier fires against P-C's grammar and not
+against the architecture. **And the floor is a property of the readout, not of the
+functional** (P-D's case, now measured outside physics): choosing among four real
+integer-multiplication schemes under a six-magnitude cost model, one optimization
+emits a magnitude-blind exponent (Jacobian exactly zero at **400/400** interior
+points) and a magnitude-sensitive constant at the same time. See §4a for what
+replaces the binary, and the two registered failures that produced it.
 
 **P-D — allometry does not reduce (#9) — ✓ RUN, [`experiments/PD-allometry-reduction/`](../experiments/PD-allometry-reduction/).**
 *Predicted:* Kleiber's 3/4 should *not* be derivable from a partition function; it
@@ -346,6 +375,71 @@ is a claim about the tower rather than a measurement.
 > codimension. Whether that kink is a floor-3 degeneracy read in a scheme
 > variable, or a fact about the description map with no floor-3 counterpart, is
 > untested — flagged here for whoever takes the next pass.
+> *(⟳ 2026-07-28: [P-C](../experiments/PC-variational-kinds/) took the pass and
+> supplies a third candidate the note did not list — a **selector cell boundary**,
+> i.e. a floor-3 non-analyticity of the optimal-value function rather than of the
+> system's Φ. Leading account, not a settlement; §4a names the measurement.)*
+
+---
+
+## 4a. What replaces P-C's binary — three readouts, one instrument
+
+*(2026-07-28, [P-C](../experiments/PC-variational-kinds/).)*
+
+§3's P-C classified **functionals**. Its refutation and
+[P-D](../experiments/PD-allometry-reduction/) agree that this was the wrong object:
+the same optimization can emit readouts on different floors, so what needs
+classifying is the **readout**. Three types, and the discriminator is mechanical —
+the regularity of the *optimal value* as a function of the functional's parameters:
+
+```
+   value smooth                        ->  FLOOR 2   a source; an exchange rate
+   value continuous, slope kinked      ->  SELECTOR  argmin branches crossing
+   value discontinuous, no slope       ->  a COUNT   floor 1's response type
+```
+
+Measured with one instrument at one tolerance. **Floor 2**: a Gibbs exchange rate
+⟨x⟩ = ∇log Z has full-rank Jacobian (5/5). **Selector**: the divide-and-conquer
+exponent has Jacobian exactly zero at 400/400 interior points and jumps at cell
+boundaries where the value is continuous to **0.0** and the one-sided slopes differ
+by **0.204–1.000**. **Count**: `n_base`, a recursion cutoff, has derivative
+identically **0.0** on both sides and a value that jumps by **8.3e-4 – 2.8e-2**.
+
+**Floor 1 and the selector both produce magnitude-blind integers, and this is what
+tells them apart.** On planar central-force motion the constant count drops from 3
+to 2 the instant V = −k/r gains a δ/r² term — the hidden symmetry breaks — while
+the circular orbit's energy is **analytic through δ = 0** (one-sided derivatives
+agreeing to **6.2e-6**) and the precession is linear in δ (measured δ^**0.9760**).
+Bertrand's ratios come out **1.000000000** and **2.000000000**, invariant to
+**5.5e-10** over four decades of coupling.
+
+> **Discontinuous count + analytic value ⇒ floor 1.
+> Discontinuous readout + kinked value ⇒ selector.**
+
+**This bears on §4's remaining open item.** The reconciliation note below left
+P-D's kink unassigned — θ = min(1, ln n/−ln β²γ) is non-analytic at nβ²γ = 1, with
+Murray's law sitting on it, and nobody knew what floor that was. The generic
+selector cell boundary has *exactly* that signature, which makes "selector cell
+boundary" the leading account. **Not settled here**, and the settling measurement is
+concrete: is nβ²γ = 1 where two branches exchange dominance, and does the cost
+functional's optimal value kink there? If yes, the kink is a floor-3
+non-analyticity **of the optimal-value function** — the argmin of a Φ being itself
+a Φ with its own singular part — which is a small addition to the tower rather than
+a new floor.
+
+**Two registered failures produced this section, and both are one slip.** P-C
+registered rank 6 for the D&C constant's Jacobian and measured **4**; post-hoc,
+`n_base` contributes nothing (it is a count, not a magnitude) and three per-word
+magnitudes collapse into one functional per scheme, so on the identifiable
+coordinates the rank is **3/3, full at 60/60 points** — the instrument was right and
+the registered number was unattainable in the model I wrote. The kink prediction
+failed for the same reason and holds **exactly** once the count is separated from
+the magnitudes. So the third class above was found *unplanted*, inside my own
+parameter list, by an instrument that was not told to look for it — which is the
+best evidence in the run that the classification is doing work rather than
+recording a taxonomy.
+
+---
 
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a
@@ -360,13 +454,15 @@ second, unrelated exhibit against monism. Unresolved, and recorded as such.
 - The tower is derived for **equilibrium / long-time (stationary)** prediction
   fields. Every floor-1 assignment inherits that restriction.
 - Assignments for `seed`-status entries are *predictions*, not findings. Only
-  #6, #9, #10, #19, #21, #22 and the #4 reduction rest on a derivation or an
-  experiment; the rest are the sort's claims and can be wrong. Two of those —
-  #19 ([P-A](../experiments/PA-spectral-gap/)) and #9
-  ([P-D](../experiments/PD-allometry-reduction/)) — were `seed` entries the sort
-  made claims about and have since been run, so the sort has now been graded
-  twice: once on a positive (confirmed, in a corrected form) and once on its only
-  negative (confirmed).
+  #6, #7, #9, #10, #19, #21, #22 and the #4 reduction rest on a derivation or an
+  experiment; the rest are the sort's claims and can be wrong. Three of those —
+  #19 ([P-A](../experiments/PA-spectral-gap/)), #9
+  ([P-D](../experiments/PD-allometry-reduction/)) and #7
+  ([P-C](../experiments/PC-variational-kinds/)) — were `seed` entries the sort made
+  claims about and have since been run, so **the sort has now been graded three
+  times: a positive confirmed in a corrected form, its only negative confirmed, and
+  one refuted.** P-C is the miss, and it was wrong about the *grammar* (functionals
+  come in two kinds) rather than about the floors — see §4a.
 - P-D tests **models** of allometry, not organisms. It establishes what kind of
   object the exponent is in the theories that produce it, and says nothing about
   whether real metabolic rates scale as M^(3/4).
