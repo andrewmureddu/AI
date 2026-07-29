@@ -89,6 +89,33 @@ transform. Used only to validate the code: predicted agreement to grid resolutio
 Can come out wrong in both directions: the short-range chain could show growth
 (logarithmic or otherwise), and the long-range defect could be sub-extensive.
 
+**B3b — at-risk, added before the run (see git history), because B3 as first
+written cannot separate two hypotheses.** "Long-range ⇒ extensive defect" is not
+the only reading; the other is "*first-order* transition ⇒ extensive defect", and
+the mean-field 3-state Potts has both properties. So a **second long-range
+control** goes in: mean-field **2-state** Potts (Curie–Weiss), which is equally
+long-range but transitions continuously.
+
+```
+        mean-field q=3 (long-range, 1st order)  :  defect ~ N^1
+        mean-field q=2 (long-range, 2nd order)  :  defect ~ N^0     <- the new one
+        1-D q=3 chain  (short-range, no trans.) :  defect ~ N^0
+```
+
+If q = 2 also gives N^1, "long-range" is the discriminator and the claim is the
+simpler one. If it gives N^0, then long-range interaction only **opens the
+possibility** of non-additivity and a first-order transition is what realizes it —
+a weaker and more accurate claim than B3 states, and the one I would then have to
+report.
+
+**B3c — noted in advance, not tested.** The 1-D control's entropy is
+log-binomial and therefore *exactly* concave, so its half of B3 is close to an
+identity and should not be cited as though it were a measurement. The forceful
+version of the control is an interacting short-range model in d ≥ 2 with a
+first-order transition, where the defect should scale as the **surface**,
+N^{(d−1)/d} — neither 0 nor 1. That needs a density of states this run does not
+compute. Recorded as a gap.
+
 **B4 — at-risk.** The microcanonical specific heat
 c(e) = −(ds/de)² / (d²s/de²) is **negative on a nonempty subinterval** of the
 long-range model and **nowhere negative** for the short-range control.
