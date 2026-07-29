@@ -462,7 +462,64 @@ follow (p−2)/p for some finite effective p, collapsing the distinction.
 **Engine:** gap prediction — the tower's base floor takes an input nobody has
 named. **Novelty: N1 claimed** (every ingredient is old; the composition into a
 layer of this map is what is new), **with one N2 candidate flagged in §3 below.**
-**Status: opened 2026-07-29.**
+**Status: ⟳ RUN 2026-07-29 —
+[`experiments/D7-composition-lens/`](../experiments/D7-composition-lens/),
+[`derivations/D7-composition-lens.md`](../derivations/D7-composition-lens.md).**
+
+> **⟳ Restraint pass (2026-07-29): floor 0 stands, N1 confirmed as the honest
+> level, and one pre-registered hypothesis was killed by its own control.**
+>
+> **C2 holds and establishes the priority.** Six statistics of one charge, tilted
+> to equal informativeness: the ensemble family closes for **exactly** the additive
+> ones (≤**3.2e-14**) and none of the others (≥**8.8e-4**). Linearity is refuted by
+> 3Q−7 (not linear, closes anyway — so the rule is *affine in an additive charge*),
+> monotonicity by three rows that have it and fail, convexity by Q² and √Q failing
+> identically at opposite curvature. The leg contains **no dynamics and no group**,
+> so the criterion cannot be a consequence of floor 1 — that, and not the
+> arithmetic, is what makes this a layer underneath.
+>
+> **C4, the only at-risk claim, survives on its sharpest number.** Curie–Weiss,
+> exact: δ₂ = **0.00240 / 0.29364 / 0.50010** against 0 / 1−2^{−½} = 0.29289 / 0.5,
+> with Var ~ N^1.022 / N^**1.504** / N^2.002. The middle value is neither 0 nor ½
+> and is inherited from a critical exponent, so **criticality is an order-2
+> extensivity failure**; SSB reaches the same order by a different mechanism
+> (mixture, not anomalous scaling), which the bare statement "χ diverges" cannot
+> tell apart. Order 0 fails for mean-field q=3 with defect ~N^**1.0252** and c<0
+> over **68.6%** of the energy range, so Φ\* is the concave hull and **floor 2's
+> Legendre face breaks where composition does**. Heavy tails have no order at all.
+> P-B is retrodicted as this condition's order-2 clause.
+>
+> **C3 answers [`FLOORS.md`](../invariants/FLOORS.md) §4's live question** — the
+> residue is the invariant content of the largest group ⊎ fails to pin — but only
+> after the audit **forced a correction** to the rule as first written (a chart is
+> pinned when its variable is additive *or dual to one*; reduced temperature is
+> intensive and its exponents are facts because energy is additive). One row the
+> audit was not designed for passed anyway: the RLCT is read off ln n, samples are
+> additive, so λ should be a fact — and independently is one.
+>
+> **What died.** "Long-range ⇒ non-additive" is **false**: mean-field q=2 is
+> equally long-range and its defect is *exactly zero*. The control was added before
+> the run precisely because q=3 confounds long-range with first-order, and the
+> confound was real. Surviving statement: **long range opens the possibility, a
+> first-order transition realizes it.**
+>
+> **Honest.** Two registered items failed — leg C's growth exponent (+1.00
+> registered, −0.87/−1.51/−1.82 measured; killed by the tilt normalization I
+> introduced to remove a free knob) and leg D3's discriminator (mis-stated: the
+> Gaussian control's spread is set by sample count, not N). Legs A and E1 were
+> **declared identities before the run** and carry no weight. The forceful
+> short-range control — an interacting model in d ≥ 2 where the defect should scale
+> as the surface, N^{(d−1)/d} — is **not run** and is the cheapest next test. The
+> mereology half of the claim (that the decomposition into parts is selected by the
+> dynamics) is argued and **measured nowhere**. Three code bugs were found before
+> the numbers were trusted; the first two made the *short-range control* the
+> steepest riser in the table, which is what exposed them.
+>
+> **Novelty verdict: N1, as the prior-art note defaulted.** C1 is Cauchy, C2 is
+> Koopman–Pitman–Darmois, the order-0 physics is Ispolatov–Cohen and Touchette.
+> The N2 candidate — floor 3's members indexed by the failing order — is
+> *supported* but not established as unstated elsewhere; the large-deviation
+> literature is close enough that the nearest-miss warning stands.
 
 #### 1. The gap
 
