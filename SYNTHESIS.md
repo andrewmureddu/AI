@@ -1,9 +1,12 @@
 # State of the map — synthesis
 
-*Snapshot: 2026-07-26. Supersedes the 2026-07-19 snapshot, whose through-line
-("much of the map is one object seen sideways") has since been corrected twice —
-three sectors → two layers → one tower. Updated 2026-07-26 with floor 3's partial
-classification and the opening of the [discovery register](./questions/UNKNOWN-LAWS.md).*
+*Snapshot: 2026-07-29. Supersedes the 2026-07-19 snapshot, whose through-line
+("much of the map is one object seen sideways") has since been corrected three
+times — three sectors → two layers → one tower → **one tower standing on a
+composition law**. Updated 2026-07-26 with floor 3's partial classification and the
+opening of the [discovery register](./questions/UNKNOWN-LAWS.md); updated 2026-07-29
+with [floor 0](./derivations/D7-composition-lens.md), which is the first correction
+to arrive from *below* the architecture rather than inside it.*
 
 This document makes the whole structure legible in one read: what we're doing,
 what has actually been established, what is still a speculative stone, and the
