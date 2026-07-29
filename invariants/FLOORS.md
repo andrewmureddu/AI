@@ -11,6 +11,26 @@ map's architecture: not sectors side by side but **one tower, three floors**.
   FLOOR 3  Φ, singular part         →  boundaries (non-analyticity, degeneracy, supports)
 ```
 
+> **⟳ 2026-07-29 — the tower gained a floor at the *bottom*, and it reorganizes
+> this document twice.** [D7](../derivations/D7-composition-lens.md) found that
+> floor 1 takes an input it never names — the symmetry group is *given*, and there
+> is no outside to give it. Under it sits a **composition law** ⊎:
+>
+> ```
+>   FLOOR 0  composition (the lens)  →  fixes what counts as two systems, hence Φ's
+>                                        form, the charge list, and which charts pin
+> ```
+>
+> Two consequences land in this file specifically. **(a) §4's live question is
+> answered** — the general residue is the invariant content of the largest group ⊎
+> fails to pin (see the note at the end of §4). **(b) §2's asymmetry gets a second
+> reading**: since Φ is a cumulant generating function, "Φ is additive under ⊎" is
+> one condition *per order*, and the orders at which it fails are the floors —
+> order 0 → floor 2's Legendre face (Φ\* = concave hull ≠ s), order 2 → criticality
+> and SSB, no order at all → heavy tails. Floor 3 stratifies because there is more
+> than one way for a composition law to lapse. This does **not** replace D2's group
+> argument or D6's q1/q2 classifier; whether the two indices are related is open.
+
 Sorting the catalog against that architecture is a **test**, not bookkeeping: the
 rule makes claims about entries nobody has examined, and an entry that refuses all
 three floors is the tower's own falsifier #4. This document records the sort, what
@@ -163,6 +183,13 @@ variance. **This retrodicts a result already in the repo**: the
 measured before the tower existed. **Falsifier:** a finite-variance diffusion whose
 Φ is non-analytic in the relevant variable, or a heavy-tailed one whose moments
 behave.
+*(⟳ 2026-07-29: P-B is no longer a separate prediction. Under
+[D7](../derivations/D7-composition-lens.md)'s reading it is the **order-2 clause**
+of one condition — finite variance is "the second cumulant is extensive," and
+infinite variance is "there is no order-2 statement to make." Measured: an
+α = 1.5 stable sum has δ₂ wandering over −0.39…−2.93 with across-seed spread
+1.8…7.4, against a Gaussian control at 0.00 ± 0.03. The untested half of P-B — a
+finite-variance diffusion with non-analytic Φ — stays untested.)*
 
 **P-C — variational principles come in exactly two kinds (#7).** Over a measure
 (free energy) ⇒ floor 2; over an action (bracket) ⇒ floor 1. **Falsifier:** a
@@ -384,6 +411,29 @@ is a claim about the tower rather than a measurement.
 > derived its residue for floor-3 germs; allometry has no singularity and no Φ at
 > all, so "the residue is the codimension" does not cover it. That gap is now the
 > live question in this section.
+>
+> **⟳ ANSWERED 2026-07-29 by [D7](../derivations/D7-composition-lens.md) — and the
+> answer is not in Φ, which is why staring at Φ never produced it.** What decides
+> the group is a fact about **composition**, not about the singularity:
+>
+> > **A chart is pinned to G_diff when its variable is additive under system
+> > composition, or dual to one. It keeps G_pow when neither holds. The residue is
+> > the invariant content of the largest group the composition law fails to pin.**
+>
+> On that rule the two members stop being a list: where composition pins the chart
+> the exponents *themselves* are facts (allometry's θ — mass is additive, leg F's
+> defect 0 at a=1 and 29–50% otherwise); where it does not, only ratios, signs and
+> counts survive (p − 2, and D6's q1/q2). **Two branches of one rule, and which
+> branch you are on is a floor-0 question.**
+> The audit that established this
+> ([D7 §6](../experiments/D7-composition-lens/)) **forced a correction to the rule
+> as first written** — reduced temperature is intensive, so by additivity alone its
+> exponents should be gauge, and inside physics they are facts; the "or dual to
+> one" clause is D2 §7's own reason ("enters the Hamiltonian linearly") restated,
+> since energy is additive and β is its conjugate. It also passed a row it was not
+> designed for: the RLCT is read off the coefficient of ln n, **samples are
+> additive**, so λ should be a fact — and it independently is one (a birational
+> invariant).
 
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a
