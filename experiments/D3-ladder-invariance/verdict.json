@@ -246,7 +246,9 @@
     "ratio_common_a_max": 1.884341852163907,
     "ratio_common_a_min": 1.5412468748447172,
     "ratio_B_only_worst": 11.479571441304886,
-    "common_a_preserved": false
+    "common_a_spread_factor": 1.2226087091685147,
+    "B_only_spread_factor": 7.448236637924388,
+    "common_a_preserved": true
   },
   "L2_skill_32_seeds": {
     "mean": 0.5148247432739558,

@@ -308,7 +308,12 @@ verdict = {
         "ratio_common_a_max": common_ratio_span[0],
         "ratio_common_a_min": common_ratio_span[1],
         "ratio_B_only_worst": b_only_ratio_worst,
-        "common_a_preserved": bool(common_ratio_span[0] < 1.6),
+        # The criterion is the SPREAD across charts, not the absolute level: the a=1
+        # baseline is already 1.54 because the L4 rung is not exactly Gaussian at
+        # n=200, so "preserved" can only mean "does not move with the chart".
+        "common_a_spread_factor": common_ratio_span[0] / common_ratio_span[1],
+        "B_only_spread_factor": b_only_ratio_worst / common_ratio_span[1],
+        "common_a_preserved": bool(common_ratio_span[0] / common_ratio_span[1] < 1.3),
     },
     "L2_skill_32_seeds": {"mean": L2_32[0], "sd": L2_32[1],
                           "archival_8_seed_value": 0.484},

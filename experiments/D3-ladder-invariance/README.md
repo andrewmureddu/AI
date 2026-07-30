@@ -197,6 +197,15 @@ sampling floor (A against an independent draw of A, re-charted identically):
 3.4–11.5× when only one domain is re-charted. So D2's common-a commitment holds
 outside physics, and P5's registered failure was measuring the metric.
 
+The criterion here is the **spread across charts, not the absolute level**, and that
+choice needs stating because it was made after seeing the numbers: the a = 1 baseline
+is already 1.54 rather than 1.00, because the L4 rung is genuinely not Gaussian at
+n = 200 (finite-n skew), so "preserved" can only mean *does not move with the chart*.
+A first version of this leg tested the absolute level against 1.6 and reported a
+failure for a quantity that is flat to 22% — recorded because the mistake is the same
+species as P2's mis-set threshold, and it was caught only because the boolean
+disagreed with the table above it.
+
 **But the metric fact is itself worth keeping**, because it is a caveat on every
 transfer number in this repo: *the same preserved correspondence reads skill 0.34,
 0.89, 0.92, 0.95 or 0.98 depending only on the chart the reference law is read in.*

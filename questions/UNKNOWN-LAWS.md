@@ -330,7 +330,52 @@ survives being called gauge.
 
 **Engine:** negative space — no cross-domain relation in this repo has ever
 survived as a bare exponent.
-**Novelty: N2 claimed. Status: unworked.**
+**Novelty: N2 claimed; N0–N1 delivered on the surviving half, as its prior-art note
+required in advance. Status: ⟳ RUN 2026-07-30 —
+[`experiments/D3-ladder-invariance/`](../experiments/D3-ladder-invariance/).**
+
+> **⟳ Restraint pass (2026-07-30): D3's own test passes and the biconditional is
+> still false.** The per-rung invariance measurement is the **aggregation chart
+> order** H = d ln s(n)/d ln n (s = IQR of the n-aggregate), computed inside one
+> domain with no reference to the other's samples; the cross-domain quantity is
+> the ratio r = H_B/H_A, mismatch m = |r − 1|. Measured: H = **0.5006** (A),
+> 0.5037 (L4), 0.4974 (L3), **0.6985** (L2), −0.0011 (L1). m predicts the archival
+> transfer skills at **R² = 0.998** against **0.869** for the ordinal rung label,
+> and it **ties L3/L4** (0.006 vs 0.007) where the label predicts L4 > L3 and the
+> measurement says −0.008. Forcing a mismatch is interventional and works:
+> re-charting only B by φ_a(x) = sign(x)|x|^a collapses skill from 0.894 to
+> **0.239 / 0.091 / 0.000** at a = 0.5 / 1.5 / 2. **Then the registered attack
+> fires.** Increments X_i = U·z_i with a shared lognormal factor U of coefficient
+> of variation c are finite-variance, exchangeable-not-independent, and hold
+> **m = 0.012 at every c** — while transfer sweeps **0.935 → 0.875 → 0.640 →
+> 0.003 → 0.000**, below the L1 rung by c = 1. Each c is a *bona fide fixed point*
+> of the aggregation map, not slow convergence: shape distance between n = 64 and
+> n = 1024 is 0.006–0.025 (the sampling floor) while distance to A's Gaussian is
+> unchanged in n. **So the aggregation map has a one-parameter continuum of fixed
+> points all sharing the eigenvalue H = ½: the exponent labels the eigenvalue, not
+> the fixed point.** Chart-invariance in a ratio is **necessary, not sufficient**,
+> and D3's explanation of the cliff's *sharpness* ("a quotient is not a matter of
+> degree") is directly contradicted — the quotient is fixed and transfer is
+> continuous. What survives is the forward direction, which the prior-art note
+> registered in advance as **N0–N1** (it is IRM's thesis in this repo's
+> vocabulary). **The by-product is the valuable part:** this is the first measured
+> case where the residue's ratio is matched and the objects still differ, which
+> sharpens [`FLOORS.md`](../invariants/FLOORS.md) §4's live question —
+> *the residue is the fixed point of the description map, and the ratio is only its
+> eigenvalue*; where the fixed-point set is a discrete list (a floor-3 germ, where
+> normal-form theory supplies one) the eigenvalue suffices and the residue looks
+> like an integer, and where it is a continuum no finite set of ratios can
+> classify. **Vindicates the ladder against its own reduction:** B★ shares the
+> surface form *and* the exponent and still fails, and the only criterion in the
+> repo that catches it is the L2/L3 mechanism question, because what B★ breaks is
+> independence — part of A's mechanism, and not a coordinate choice. Honest limits:
+> one invariant family, synthetic, the probability content is textbook (normal
+> variance mixtures, noted in the prior-art note before the run), **P2's 1e-6
+> threshold was mis-registered** (measured 3.6e-4 while the bare H spans 6×, so the
+> verdict file records a failure the substance does not have), and P5's common-a
+> half missed its registered threshold because **transfer skill's own normalizer is
+> chart-dependent** — re-normalized by the in-chart sampling floor it is preserved
+> at 1.54–1.88× against 3.4–11.5× for a one-sided re-chart.
 
 If D1 is right, "does this correspondence transfer?" has a mechanical answer:
 **it transfers iff it is chart-invariant.** Which would mean the

@@ -135,8 +135,33 @@ Run `python3 vary_n.py` then `python3 plot_vary_n.py` → [`vary_n.png`](./vary_
 *generous* to L2 (the untrimmed heavy tails would push it lower). The robust,
 metric-independent claim is *bounded away from the ceiling*, not the exact 0.5.
 
+## Follow-up: [D3](../D3-ladder-invariance/) (2026-07-30) — two corrections and a caveat
+
+D3 added a per-domain chart-invariance measurement to each rung of this harness, and
+in the process re-measured two of its numbers.
+
+1. **L2's skill is 0.515 ± 0.050 at 32 seeds, not 0.484.** The archival value is a
+   low-side 8-seed estimate (an independent-stream 8-seed run read 0.537). The
+   quoted **"L2 max 0.538 across 8 seeds"** is likewise seed-limited — at 32 seeds
+   the per-seed maximum is 0.629. The separation from L3 (min 0.886) survives
+   comfortably; the *cap* claim is unaffected and if anything cleaner at 0.515.
+2. **Transfer skill is not a chart-invariant number.** Skill = 1 − d/d_ref, and
+   d_ref is read in whatever chart the observable is in. Re-charting *both* domains
+   by φ_a(x) = sign(x)|x|^a — which cannot change whether the law transfers — moves
+   this harness's L4 skill across **0.34 / 0.89 / 0.92 / 0.95 / 0.98**. Every number
+   on this page is therefore chart-relative (the a = 1 chart). Normalizing by the
+   in-chart sampling floor instead makes it stable (1.54–1.88× across a 6× span
+   of a).
+3. **What did not move:** the ordering, the L3≈L4 tie, and the ceiling (0.931
+   recomputed here vs 0.920 ± 0.023). D3 also found that a domain sharing this
+   harness's surface form *and* its scaling exponent can still fail to transfer
+   completely — so the L2/L3 **mechanism** criterion is doing work no invariance
+   measurement on this page replaces.
+
 ## Next
 
 - The real one: 3–4 *different* catalog invariants, real data, A→B transfer.
 - Repeat the plateau with less tail-trimming to show L2's ceiling drop (metric
   sensitivity check).
+- Re-run the `vary_n` sweep with the chart-internal normalizer, since the ~0.5
+  plateau is quoted in chart-relative units.

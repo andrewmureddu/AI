@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-30 — D3: the ladder is not a chart-invariance count, and the residue is a fixed point](./2026-07-30-D3-ladder-invariance.md)
 - [2026-07-27 — Reconciling P-D with D2: the residue is a ratio, twice over](./2026-07-27-PD-D2-reconciliation.md)
 - [2026-07-27 — P-D run: the exponent that has no conjugate variable (allometry is a log-ratio)](./2026-07-27-PD-allometry.md)
 - [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)

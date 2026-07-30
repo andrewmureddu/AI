@@ -48,6 +48,24 @@ guarantee*, not the transfer.
 > **retracted**; the *ceiling* reading above replaces it and is what the `vary_n`
 > sweep actually supports.
 
+> **⟳ Attempted reduction, and it failed (2026-07-30,
+> [`experiments/D3-ladder-invariance/`](./experiments/D3-ladder-invariance/)).**
+> [D3](./questions/UNKNOWN-LAWS.md) proposed that this ladder is not a scale of
+> epistemic quality at all but a **count of quotiented coordinate choices** — that
+> a correspondence transfers *iff* it is chart-invariant. A per-domain invariance
+> measurement does beat the rung label at predicting transfer (R² 0.998 vs 0.869,
+> and it gets the L3≈L4 tie the ordinal label gets wrong), and forcing a chart
+> mismatch destroys transfer. **But the biconditional is false:** a domain sharing
+> the reference domain's surface form *and* its scaling exponent — exchangeable
+> increments with a shared random scale — holds the invariance mismatch at 0.012
+> while transfer sweeps 0.935 → 0.000. What it breaks is **independence**, which is
+> part of the mechanism and is not a coordinate choice. So the **L3 mechanism
+> criterion below is not reducible to an invariance count**, and the "same numbers"
+> tests of L2 cannot substitute for it. Read the ladder's levels as advertised.
+> One caveat that follows: since transfer skill is measured against a
+> chart-dependent reference, every transfer number in this repo is chart-relative
+> unless its normalizer is chart-internal.
+
 ## Evidence standards
 
 To move a candidate *up* the ladder, an entry must supply the relevant evidence:

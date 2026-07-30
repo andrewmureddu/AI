@@ -3,7 +3,10 @@
 *Snapshot: 2026-07-26. Supersedes the 2026-07-19 snapshot, whose through-line
 ("much of the map is one object seen sideways") has since been corrected twice —
 three sectors → two layers → one tower. Updated 2026-07-26 with floor 3's partial
-classification and the opening of the [discovery register](./questions/UNKNOWN-LAWS.md).*
+classification and the opening of the [discovery register](./questions/UNKNOWN-LAWS.md).
+Amended 2026-07-30 (§6 ledger, §7.0) with [D3](./experiments/D3-ladder-invariance/):
+the ladder is **not** reducible to a chart-invariance count, and the residue's
+general form is a **fixed point** of the description map rather than a ratio.*
 
 This document makes the whole structure legible in one read: what we're doing,
 what has actually been established, what is still a speculative stone, and the
@@ -63,7 +66,8 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; the best in-distribution feature is the worst-transferring | constructed SCM where invariance = causation by design |
-| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic |
+| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic; L2's headline 0.484 is an 8-seed low estimate — **0.515 ± 0.050 at 32 seeds** ([D3](./experiments/D3-ladder-invariance/) §6) |
+| **D3** | [The ladder is *not* a chart-invariance count](./experiments/D3-ladder-invariance/) | experiment | **biconditional falsified; the residue is a fixed point.** A per-domain invariance measurement (aggregation chart order H, ratio invariant to 3.6e-4 while bare H spans 6×) predicts the rungs' transfer at **R² = 0.998** vs **0.869** for the ordinal label, and ties L3/L4 where the label is wrong. But exchangeable increments sharing one lognormal factor hold the mismatch at **0.012** while transfer sweeps **0.935 → 0.000** — a continuum of fixed points with one eigenvalue. Chart-invariance is **necessary, not sufficient**; the surviving forward direction is N0–N1 (IRM's thesis), and the ladder's **mechanism** criterion is what no exponent replaces | one invariant family, synthetic; **transfer skill itself is chart-dependent** (0.34–0.98 for one preserved correspondence) until the normalizer is made chart-internal; P2's threshold mis-registered |
 | **§6** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — invariance predicts transfer at ρ=0.983 on the diabetes dataset; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97), fails on controls (0.00) | Leg A has a signal-strength confound; multi-field study still open |
 | **S25** | [Channel-independence of the singularities](./experiments/S25-channel-independence/) | experiment | **🔴 tier tested, did not promote** — singularities are *invariant* under generic channels and *covariant* under structured ones: F_c(T)=F_eff(T′)(dT′/dT)² exact to 1e-14 | one pre-registration error on record (parity blind only at odd N) |
 
@@ -256,11 +260,11 @@ exponent" premise had to fail.
   S19–S22, S24.
 - **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
-  own prior-art note), **D2** (the P0 answered — no fourth floor) and **D6** (D1's
-  *p* generalized; floor 3's classifier is a ratio). **Unworked:** D3, D4, D5 —
-  of which **D3 (the ladder as a chart-invariance count) is the cheapest**, and
-  sharper now that D2 and D6 independently say the invariant content is a ratio.
-- **19 experiments + 6 derivations** with teeth; **4 essays**; **1 paper**.
+  own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
+  *p* generalized; floor 3's classifier is a ratio) and **D3** (the ladder is *not*
+  a chart-invariance count — biconditional falsified, forward direction N0–N1, and
+  the residue is a fixed point rather than a ratio). **Unworked:** D4, D5.
+- **20 experiments + 6 derivations** with teeth; **4 essays**; **1 paper**.
   *(The count was stale on both sides of the 2026-07-27 merges — it predated
   M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
   carries a committed verdict. Checked against the tree: `S25-channel-independence`
@@ -311,7 +315,25 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    leaves:* the residue now has two members derived by different routes, and no
    general statement. D2 derived p − 2 for floor-3 germs; allometry has no
    singularity and no Φ at all, so "the residue is the codimension" does not cover
-   it. **What the residue is in general is the live question in this section.**
+   it. ~~**What the residue is in general is the live question in this section.**~~
+   *Worked 2026-07-30 by [D3](./experiments/D3-ladder-invariance/), which went
+   looking for something else.* D3 measured a **fourth** ratio of the same shape —
+   the aggregation chart order, invariant to **3.6e-4** while its bare exponent
+   spans 6× — in a system with **no singularity and no Φ**, and then produced the
+   first case where **the ratio is matched and the objects still differ**:
+   exchangeable increments sharing one lognormal factor hold the mismatch at
+   **0.012** while transfer sweeps **0.935 → 0.000**, each setting a genuine fixed
+   point of the aggregation map. **So the map has a continuum of fixed points
+   sharing one eigenvalue, and "the residue is the ratio structure that survives
+   the group" is not the general statement.** The general object is **the fixed
+   point of the description map**; a ratio is only its **eigenvalue**. Where the
+   fixed-point set is a discrete list — a floor-3 germ, where normal-form theory
+   supplies one — the eigenvalue labels it and the residue *looks* like an integer,
+   which is what D2 and D6 were reading; where it is a continuum, no finite set of
+   ratios classifies and the residue is a **shape**. **The successor question:** a
+   floor-3 object whose fixed-point set is a continuum should have a non-integer
+   residue and should break the codimension count. Logged, untested — D3's system
+   has no floor-3 singularity to try it on.
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
