@@ -128,3 +128,12 @@ precondition for this construction rather than a competing account of it.
   (SR spread 208%), but the claim that *every* fixed-point set with tangent
   directions behaves this way is a generalization from one explicit, if
   representative, example.
+- **P1/P2's two observables (IQR, 10–90 range) are both quantile spreads —
+  the same scaling *type*, hence trivially the same eigenvalue (1/2) even
+  before any measurement.** This experiment does not test a genuinely
+  *nontrivial* eigenvalue ratio the way D2's β/k, D6's q1/q2 or P-D's θ did;
+  it tests whether the estimator recovers a *known, exact* value once Monte
+  Carlo noise is removed, and whether a scale-invariant (hence zero-exponent)
+  direction is correctly invisible. C1's identification of the ray with
+  eigenvalue *ratios* in general rests on the already-tested nontrivial cases
+  (D2, D6, P-D, D7, D8), not on anything newly measured here.

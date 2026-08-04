@@ -259,7 +259,12 @@ not available in closed form and the C1 identification would need to be
 approximate rather than exact; whether *every* floor-3 germ's residue
 construction (D2, D6's) admits a literal description-map reading, or only
 admits the weaker "homogeneous by direct Taylor structure" reading D8's
-support-type leg already showed suffices without one. Graded honestly, per §0
+support-type leg already showed suffices without one. **The experiment's two
+observables are both quantile spreads — the same scaling type, hence
+trivially the same eigenvalue — so C3 tests estimator fidelity against a
+*known* value, not a nontrivial eigenvalue ratio; C1's ratio-of-eigenvalues
+reading rests on the already-tested nontrivial cases (D2's β/k, D6's q1/q2,
+P-D's θ), not on anything newly measured here.** Graded honestly, per §0
 of the pre-registration: **N1** — a recombination of already-known results,
 correctly composed, with one derived (not previously stated in this repo or,
 so far as the prior-art search found, in the literature) consequence: the
