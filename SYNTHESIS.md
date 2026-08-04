@@ -350,17 +350,21 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **10 discovery stones** (D1–D10, D7 reused once — see the register's numbering
+- **11 discovery stones** (D1–D11, D7 reused once — see the register's numbering
   note) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) register, **all
-  ten now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
+  eleven now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
   *p* generalized; floor 3's classifier is a ratio), **D7** (the P0's successor —
   the residue's general form, and a count), **D8** (the multi-parameter form —
   a Grassmannian point whose rank counts the relevant directions), **D10**
   (floor 0 — a composition law under floor 1, and a second general account of the
-  residue), **D4** (falsified — the amplitude/exponent axis is a confound;
-  collapses into D2/D3) and **D5** (confirmed but N0–N1; arithmetic nobody
-  doubted). **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
+  residue), **D11** (the three residue accounts reconciled — D7/D8's ray is the
+  projectivized eigenvalue vector of a description map's linearization, D10 says
+  which variables carry that structure, D3's "fixed point" language is the
+  literature's own frame for it, and the residue is provably blind to whatever
+  is tangent to the fixed-point set), **D4** (falsified — the amplitude/exponent
+  axis is a confound; collapses into D2/D3) and **D5** (confirmed but N0–N1;
+  arithmetic nobody doubted). **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
   rungs around an *unpinned* chart, and the residue legs passed cleanly, but the
   harness turned out to have almost no dynamic range in transfer (0.938–0.988
   across the rungs that matter), because crossing p = 4 → p = 6 barely changes the
@@ -394,14 +398,12 @@ exponent" premise had to fail.
   composition-pinning account; **reconciling the three is not attempted here** and
   is left as the register's next question. All three replacements agree with
   paper 1's **ceiling** reading over the retracted step/cliff reading.
-- **32 experiments + 9 derivations** with teeth; **4 essays**; **1 paper**.
-  *(Recounted directly against the tree after reconciling five branches that
-  had diverged since 2026-07-27: every experiment directory with a committed
-  `verdict.json` has a row in [`experiments/README.md`](./experiments/README.md)
-  (32/32), and every top-level file in [`derivations/`](./derivations/) has a
-  row in its index (9/9) — `S25-one-parameterness.md` was missing one and was
-  added. Earlier counts here were stale on multiple sides of the
-  2026-07-27/28/30 merges.)*
+- **33 experiments + 10 derivations** with teeth; **4 essays**; **1 paper**.
+  *(Recounted directly against the tree, most recently for D11. Every
+  experiment directory with a committed `verdict.json` has a row in
+  [`experiments/README.md`](./experiments/README.md) (33/33), and every
+  top-level file in [`derivations/`](./derivations/) has a row in its index
+  (10/10).)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -530,33 +532,42 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    tolerance set below what its own estimator can express), a vacuous control, and
    marginal directions untested — all in the experiment's §5. **Essential
    singularities remain the unclassified remainder; it still does not narrow.**
-   **THREE FURTHER ACCOUNTS, NOT YET RECONCILED WITH EACH OTHER OR WITH THE
-   ABOVE — the register's next question, flagged rather than forced.**
-   **(i) [D10](./derivations/D10-composition-lens.md), 2026-07-29:** the residue
-   is the invariant content of the largest group the system's own **composition
-   law** fails to pin (a chart is pinned to G_diff when its variable is additive
-   under ⊎ or dual to one) — an account of *why* a chart gets pinned, orthogonal
-   to D7/D8's count of *what survives* once it isn't.
-   **(ii) [D3](./experiments/D3-ladder-invariance/), 2026-07-30, worked while
-   looking for something else:** a fourth ratio of the same shape — an
-   aggregation chart order, invariant to **3.6e-4** while its bare exponent spans
-   6× — measured in a system with **no singularity and no Φ**, and the first case
-   where **the ratio is matched and the objects still differ**: exchangeable
-   increments sharing one lognormal factor hold the mismatch at **0.012** while
-   transfer sweeps **0.935 → 0.000**, each setting a genuine fixed point of the
-   aggregation map. Proposed general object: **the fixed point of the description
-   map**, of which a ratio is only the **eigenvalue** — matching D7/D8 exactly
-   where the fixed-point set is a discrete list (a floor-3 germ, where normal-form
-   theory supplies one) and diverging where it is a continuum, where no finite set
-   of ratios classifies and the residue is a **shape** instead. Successor question
-   logged, untested: does a floor-3 object with a continuum fixed-point set break
-   the codimension count?
-   **(iii) Status.** D7/D8 (count/Grassmannian), D10 (composition-pinning) and
-   this D3 (fixed point) were produced independently, on three branches, none
-   aware of the others, and **no pass has yet checked whether they agree.** All
-   four accounts correctly retrodict D2's p − 2 and P-D's θ, which is not enough
-   to distinguish them — an honest state to record rather than paper over with a
-   forced synthesis.
+   **RECONCILED 2026-08-04 by [D11](./derivations/D11-residue-reconciliation.md)
+   — three independently-produced accounts, checked against each other for the
+   first time, turn out to be one structure.** [D10](./derivations/D10-composition-lens.md)'s
+   composition-pinning criterion ("the residue is the invariant content of the
+   largest group ⊎ fails to pin") and
+   [D3-ladder-invariance](./experiments/D3-ladder-invariance/)'s "fixed point of
+   the description map, ratio as eigenvalue" were never competing with D7/D8's
+   projective/Grassmannian construction — they were answering different
+   questions about the same textbook object. **D7/D8's ray is the projectivized
+   eigenvalue vector of a description map's linearization at a fixed point**
+   (identity, given D7's own hypotheses); **D10 determines which variables carry
+   that structure at all** (checked here on a variable — an aggregate count —
+   the register hadn't used it on: additive under concatenation, hence pinned,
+   matching [D3-ladder-as-quotient](./experiments/D3-ladder-as-quotient/)'s
+   independent finding on the same harness); **D3's "fixed point" language is
+   the literature's own frame** (Jona-Lasinio's renormalization-group treatment
+   of the CLT) **for exactly what D7/D8 compute eigenvalues of.**
+   D11 proves, rather than merely observes, why D3's counterexample exists: for
+   the dyadic renormalized-sum map, *any* law of U makes the scale mixture
+   X = U·Z an exact fixed point, giving an explicit infinite-dimensional
+   continuum sharing one eigenvalue (H = 1/2, confirmed to the machine-epsilon
+   floor — every deviation ≤ 1.7e-16 across 5 configurations and 2 observables,
+   registered tolerance 1e-6) while a scale-invariant shape statistic — provably
+   the direction tangent to the fixed-point set, hence provably invisible to the
+   residue — spans **208%** across the same 5 configurations (registered bar
+   15%) while staying exactly n-invariant (≤ 1.1e-14). **The residue is
+   necessary but never sufficient to determine a fixed point wherever the
+   fixed-point set has tangent directions**, and no enlargement of the
+   log-slope construction (more same-kind observables) can close that gap.
+   **Honest scope:** checked in one setting (single control, linear/exactly
+   solvable description map) — D8's m > 1 case and a genuinely nonlinear
+   description map are both untested. Graded **N1**: every load-bearing piece
+   (RG-eigenvalue exponents; CLT-as-RG-fixed-point) is textbook, named in the
+   prior-art note before any code; what is not previously stated is the
+   cross-connection of these four in-repo results and the closed-form proof of
+   the residue's blindness.
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
