@@ -7,6 +7,16 @@
 > economic/probabilistic analogues, sharply demarcated below.
 > **Status:** developing
 > **Floor:** **1** (symmetry-constituted) — charges are the natural parameters of long-time ensembles. *Bookkeeping identities are not floor 1* — see [FLOORS §4](./FLOORS.md)
+> **⟳ Corrected 2026-07-29 ([D10](../derivations/D10-composition-lens.md)):** the rule
+> is conservation **and additivity**, not conservation alone. A conserved but
+> non-additive quantity cannot occupy a natural-parameter slot, because the
+> ensemble family would not be closed under composition — L² is exactly as
+> conserved as L_z and never carries a chemical potential. In statistics this is
+> Koopman–Pitman–Darmois; measured in
+> [D10 leg C](../experiments/D10-composition-lens/) at ≤3.2e-14 for additive
+> statistics against ≥8.8e-4 for every non-additive one. The additivity half comes
+> from **floor 0**, so this entry's floor sits on top of a composition law rather
+> than at the bottom of the tower.
 
 ## Statement
 

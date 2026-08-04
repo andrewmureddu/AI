@@ -48,6 +48,45 @@ guarantee*, not the transfer.
 > **retracted**; the *ceiling* reading above replaces it and is what the `vary_n`
 > sweep actually supports.
 
+**But the ladder is only half of what transfer needs.**
+[D3](./experiments/D3-chart-vs-ladder/) crossed that experiment with a *chart*
+factor — the measurement convention domain B records on — and found that result
+is **conditional on the two domains sharing a chart**, which the original run
+never stated. With the mechanism untouched and the claim stated chart-dependently, an
+L3 correspondence transfers at 0.000, and a word-only L1 one can beat a
+theorem-backed L4 one. Restating the claim chart-freely restores the full ordering
+at Spearman +0.80 under *every* chart. The surviving statement is:
+
+> **transfer ⟸ (mechanism is shared) ∧ (the claim is stated chart-freely)**
+
+Two independent requirements, and the ladder grades only the first. So an entry is
+not finished when it has a level: it also needs a **chart tag** — is the claim
+stated in terms that survive reparameterizing the measurement axis (a ratio, a
+dimensionless product, a shape) rather than in terms that don't (a bare exponent,
+a magnitude in domain-specific units)? A high-rung entry with a chart-dependent
+statement is *predicted not to transfer*, and that is the cheapest available
+falsifier for much of the catalog. This is the methodological form of what
+[D1](./experiments/D1-chart-invariance/) found inside floor 3 and
+[D2](./derivations/D2-gauge-of-the-tower.md) derived as the tower's gauge group.
+
+> **⟳ Attempted reduction, and it failed (2026-07-30,
+> [`experiments/D3-ladder-invariance/`](./experiments/D3-ladder-invariance/)).**
+> [D3](./questions/UNKNOWN-LAWS.md) proposed that this ladder is not a scale of
+> epistemic quality at all but a **count of quotiented coordinate choices** — that
+> a correspondence transfers *iff* it is chart-invariant. A per-domain invariance
+> measurement does beat the rung label at predicting transfer (R² 0.998 vs 0.869,
+> and it gets the L3≈L4 tie the ordinal label gets wrong), and forcing a chart
+> mismatch destroys transfer. **But the biconditional is false:** a domain sharing
+> the reference domain's surface form *and* its scaling exponent — exchangeable
+> increments with a shared random scale — holds the invariance mismatch at 0.012
+> while transfer sweeps 0.935 → 0.000. What it breaks is **independence**, which is
+> part of the mechanism and is not a coordinate choice. So the **L3 mechanism
+> criterion below is not reducible to an invariance count**, and the "same numbers"
+> tests of L2 cannot substitute for it. Read the ladder's levels as advertised.
+> One caveat that follows: since transfer skill is measured against a
+> chart-dependent reference, every transfer number in this repo is chart-relative
+> unless its normalizer is chart-internal.
+
 ## Evidence standards
 
 To move a candidate *up* the ladder, an entry must supply the relevant evidence:
@@ -82,6 +121,43 @@ To move a candidate *up* the ladder, an entry must supply the relevant evidence:
 - **Dimensional sleight of hand.** "Conservation of X" claims that don't specify
   the conserved quantity's units or the symmetry it follows from.
 - **Curve-fitting freedom.** Enough free parameters fit anything. Count them.
+- **Registering a number without auditing the construction.** *The house
+  speciality.* You build a model, then register a prediction about it — and the
+  number is unreachable, or forced, or measured by a checker cruder than the
+  tolerance you asked for. Six instances on record and counting:
+  [P-A](./experiments/PA-spectral-gap/)'s spread threshold,
+  [P-D](./experiments/PD-allometry-reduction/)'s MST construction and its
+  mean-field control (degenerate for the exact reason under study),
+  [D6](./experiments/D6-support-singularities/)'s P2 (an identity registered as
+  at-risk), [P-C](./experiments/PC-variational-kinds/)'s P8 (a rank its own cost
+  model forbade) and P4 (a normalization slip), and
+  [P-K](./experiments/PK-kink-taxonomy/)'s P1, P5 and P6a (a stencil cruder than
+  its tolerance, the wrong statistic, and one piece of wrong algebra labelled an
+  identity). **Pre-registration has caught every one of these and prevented none
+  of them**, which is exactly what you would expect — it is a detector, not a
+  brake. So before writing any number down, audit the construction itself:
+
+  > **The pre-registration audit.** (i) *Rank* — how many of the parameters you
+  > are about to vary are genuinely independent in the object? Count the distinct
+  > functional dependences, not the named constants. (ii) *Identity* — can this
+  > prediction come out any other way, given what you built? If not, label it.
+  > (iii) *Instrument* — **state the estimator's noise floor next to every
+  > registered tolerance. If you cannot state the floor, you may not register the
+  > number.** (iv) *Algebra* — re-derive the "obvious" closed forms. Three of the
+  > six were wrong arithmetic, not wrong science.
+
+  The wording of (iii) is deliberate and was bought expensively.
+  [BV](./experiments/BV-base-variable/) was the first pass run under this audit as
+  a four-question checklist, and it **violated (iii) three times in that same
+  run** — a degree-20 finite difference at h = 0.05 (floor ≈ 1e10, tolerance
+  1e-8), an eigensolver compared at 1e-15 (floor ≈ 1e-15), and a doubly-nested
+  stencil given a 1e-12 threshold when an earlier leg *on the same page* had
+  measured its floor at 3.7e-9. A checklist can be satisfied by nodding; writing
+  the floor beside the tolerance is mechanical and kills all three on sight. Every
+  one of those failures was the instrument rather than the claim, which is the
+  usual shape: **these mistakes cost credibility, not conclusions** — but only
+  because they were caught and reported, which is the whole reason the register
+  exists.
 
 ## Statuses
 

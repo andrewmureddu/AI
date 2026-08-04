@@ -8,6 +8,14 @@ where the entry sits in the map's architecture (see
 derivation and [`FLOORS.md`](./FLOORS.md) for the full sort with reasons).
 Levels and statuses are provisional and change as entries are worked.
 
+**Three axes, all orthogonal.** *Level* (L0–L4) grades how well a correspondence
+is established; *floor* ([`FLOORS.md`](./FLOORS.md)) says where it sits in the
+tower; *chart* ([`CHARTS.md`](./CHARTS.md), added 2026-07-27) says whether its core
+object survives reparameterizing the measurement axis. [D3](../experiments/D3-chart-vs-ladder/)
+showed transfer needs a shared mechanism **and** a chart-free statement, and that
+the level grades only the first — so a high-level entry with a chart-dependent core
+is predicted *not* to travel.
+
 To add one: copy [`_TEMPLATE.md`](./_TEMPLATE.md), fill it in, add a row here and a
 column in [`../domains/README.md`](../domains/README.md). See
 [`../CONTRIBUTING.md`](../CONTRIBUTING.md).
@@ -35,7 +43,7 @@ derivative-faces of [#23](./free-energy-hub.md).
 | 4 | [Diffusion & random walks](./diffusion-random-walks.md) | ∂u/∂t = D∇²u ; CLT | L3–L4 | **2** → 3 | developing | Splits at finite vs. infinite variance |
 | 5 | [Criticality & universality](./criticality-phase-transitions.md) | RG fixed point; critical exponents | L4 (core) / L1–L2 (loose) | **3** | developing | Lee–Yang; the floor's L4 core |
 | 6 | [Feedback & control](./feedback-control.md) | feedback loop; stability criterion | L2–L3 | **2 + 3** | seed | Splits, derived (S27) |
-| 7 | [Optimization & variational](./optimization-variational.md) | argmin of functional; EL/KKT | L1–L2 | **2 + 1** | seed | Measure ⇒ 2, action ⇒ 1 |
+| 7 | [Optimization & variational](./optimization-variational.md) | argmin of functional; EL/KKT | L1–L2 | **2 ⇄ 1** | developing ✓tested | Not a split — a decomposition (J = S + A, π between the poles); the readout's floor is separate, and there are three ([P-C](../experiments/PC-variational-kinds/)) |
 | 8 | [Networks & percolation](./networks-percolation.md) | giant-component transition | L3 / L2 | **3** | seed | Connectivity = Φ-boundary |
 | 9 | [Scaling & allometry](./scaling-allometry.md) | Y ∝ M^b | L2 (L3 contested) | **refuses** ✓tested | developing | θ = min(1, ln n/−ln(β²γ)) — not a Φ-derivative; the structure group's **invariant residue** ([P-D](../experiments/PD-allometry-reduction/) + [D2](../derivations/D2-gauge-of-the-tower.md)) |
 | 10 | [Symmetry breaking](./symmetry-breaking.md) | G → H, order parameter | L4 (phys) / L2–L3 | **3** | seed | *Not* floor 1 — the sort's best case |

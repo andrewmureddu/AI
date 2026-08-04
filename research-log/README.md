@@ -9,11 +9,22 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-30 — D3: the ladder is not a chart-invariance count, and the residue is a fixed point](./2026-07-30-D3-ladder-invariance.md)
+- [2026-07-29 — D10: the lens under floor 1, and what maintains it](./2026-07-29-D10-composition-lens.md)
 - [2026-07-28 — D9: an inconclusive experiment, and why the design failed](./2026-07-28-D9-unpinned-chart-transfer.md)
 - [2026-07-28 — D3: the ladder is not a chart-invariance count](./2026-07-28-D3-ladder-as-quotient.md)
 - [2026-07-28 — D8: the multi-parameter residue is a Grassmannian point, and its rank counts](./2026-07-28-D8-grassmannian-residue.md)
+- [2026-07-28 — D5 confirms arithmetic nobody doubted, and closes the discovery register](./2026-07-28-D5-and-register-close.md)
+- [2026-07-28 — The second sort: floor 3 into its strata, and what it costs S25](./2026-07-28-floor3-strata.md)
+- [2026-07-28 — The base variable: one tower, and floor 3's stratification is forced](./2026-07-28-base-variable.md)
+- [2026-07-28 — P-K: P-D's kink is a phase transition, and P-C's account of it was wrong](./2026-07-28-PK-kink-taxonomy.md)
+- [2026-07-28 — P-C refuted: the two kinds are one decomposition, and there is a third readout](./2026-07-28-PC-variational-kinds.md)
 - [2026-07-27 — D7: the residue is the log-slope vector modulo the diagonal, and it has a count](./2026-07-27-D7-the-residue.md)
 - [2026-07-27 — Reconciling P-D with D2: the residue is a ratio, twice over](./2026-07-27-PD-D2-reconciliation.md)
+- [2026-07-27 — P8's debt, half paid: the δa³ law confirmed, the law it grew into not testable](./2026-07-27-P8-debt.md)
+- [2026-07-27 — The catalog tagged by chart: a third axis, and four predictions](./2026-07-27-charts-audit.md)
+- [2026-07-27 — D4 falsified: the amplitude/exponent axis was a confound](./2026-07-27-D4-amplitude-vs-exponent.md)
+- [2026-07-27 — D3: the ladder is one factor of two, and transfer needs a shared chart](./2026-07-27-D3-chart-vs-ladder.md)
 - [2026-07-27 — P-D run: the exponent that has no conjugate variable (allometry is a log-ratio)](./2026-07-27-PD-allometry.md)
 - [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)
 - [2026-07-26 — D2: the P0 is answered, and there is no fourth floor](./2026-07-26-D2-gauge-of-the-tower.md)

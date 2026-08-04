@@ -1,0 +1,215 @@
+{
+  "seed": 20260727,
+  "labels": {
+    "Q1_k": {
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q2_beta": {
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q3_beta_over_k": {
+      "kind": "exponent",
+      "chart": "free"
+    },
+    "Q4_bare_cross": {
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q5_lam_cross": {
+      "kind": "exponent",
+      "chart": "free"
+    },
+    "Q6_prefactor": {
+      "kind": "amplitude",
+      "chart": "dependent"
+    },
+    "Q7_tau_lambda": {
+      "kind": "amplitude",
+      "chart": "free"
+    }
+  },
+  "systems": [
+    {
+      "system": "fold",
+      "field": "ecology / dyn. sys.",
+      "p": 3,
+      "Q1_k": 0.5000000000000002,
+      "Q2_beta": 0.5000000000000001,
+      "Q3_beta_over_k": 0.9999999999999998,
+      "Q4_bare_cross": 0.6666666666666664,
+      "Q5_lam_cross": 0.33333333333333326,
+      "Q6_prefactor": 3.819035683187307,
+      "Q7_tau_lambda": 1.0184489738081275
+    },
+    {
+      "system": "sis",
+      "field": "epidemiology",
+      "p": 3,
+      "Q1_k": 1.0000000000000002,
+      "Q2_beta": 1.0000000000000002,
+      "Q3_beta_over_k": 1.0,
+      "Q4_bare_cross": 0.3333333333333331,
+      "Q5_lam_cross": 0.33333333333333354,
+      "Q6_prefactor": 7.943914344255901,
+      "Q7_tau_lambda": 1.027085174484444
+    },
+    {
+      "system": "ising",
+      "field": "physics",
+      "p": 4,
+      "Q1_k": 0.9999998757000763,
+      "Q2_beta": 0.49999972892279043,
+      "Q3_beta_over_k": 0.4999997910727263,
+      "Q4_bare_cross": 0.4985203479166215,
+      "Q5_lam_cross": 0.49606456866696413,
+      "Q6_prefactor": 2.5911803744944244,
+      "Q7_tau_lambda": 0.95259620747953
+    },
+    {
+      "system": "blume_capel",
+      "field": "physics",
+      "p": 6,
+      "Q1_k": 0.9996144481503111,
+      "Q2_beta": 0.2501914073083704,
+      "Q3_beta_over_k": 0.250287906273589,
+      "Q4_bare_cross": 0.6641386070871769,
+      "Q5_lam_cross": 0.6635432634379026,
+      "Q6_prefactor": 3.172044285940903,
+      "Q7_tau_lambda": 0.9630808858835606
+    }
+  ],
+  "comparison_fold_vs_sis": {
+    "Q1_k": {
+      "a": 0.5000000000000002,
+      "b": 1.0000000000000002,
+      "rel_spread": 0.6666666666666665,
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q2_beta": {
+      "a": 0.5000000000000001,
+      "b": 1.0000000000000002,
+      "rel_spread": 0.6666666666666666,
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q3_beta_over_k": {
+      "a": 0.9999999999999998,
+      "b": 1.0,
+      "rel_spread": 2.2204460492503136e-16,
+      "kind": "exponent",
+      "chart": "free"
+    },
+    "Q4_bare_cross": {
+      "a": 0.6666666666666664,
+      "b": 0.3333333333333331,
+      "rel_spread": 0.666666666666667,
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q5_lam_cross": {
+      "a": 0.33333333333333326,
+      "b": 0.33333333333333354,
+      "rel_spread": 8.326672684688673e-16,
+      "kind": "exponent",
+      "chart": "free"
+    },
+    "Q6_prefactor": {
+      "a": 3.819035683187307,
+      "b": 7.943914344255901,
+      "rel_spread": 0.7013340448518723,
+      "kind": "amplitude",
+      "chart": "dependent"
+    },
+    "Q7_tau_lambda": {
+      "a": 1.0184489738081275,
+      "b": 1.027085174484444,
+      "rel_spread": 0.00844395649275791,
+      "kind": "amplitude",
+      "chart": "free"
+    }
+  },
+  "control_ising_vs_blume_capel": {
+    "Q1_k": {
+      "a": 0.9999998757000763,
+      "b": 0.9996144481503111,
+      "rel_spread": 0.00038550188920737603,
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q2_beta": {
+      "a": 0.49999972892279043,
+      "b": 0.2501914073083704,
+      "rel_spread": 0.6659857989509625,
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q3_beta_over_k": {
+      "a": 0.4999997910727263,
+      "b": 0.250287906273589,
+      "rel_spread": 0.6656430211566594,
+      "kind": "exponent",
+      "chart": "free"
+    },
+    "Q4_bare_cross": {
+      "a": 0.4985203479166215,
+      "b": 0.6641386070871769,
+      "rel_spread": 0.28489568408306687,
+      "kind": "exponent",
+      "chart": "dependent"
+    },
+    "Q5_lam_cross": {
+      "a": 0.49606456866696413,
+      "b": 0.6635432634379026,
+      "rel_spread": 0.288854024842069,
+      "kind": "exponent",
+      "chart": "free"
+    },
+    "Q6_prefactor": {
+      "a": 2.5911803744944244,
+      "b": 3.172044285940903,
+      "rel_spread": 0.20157600845725243,
+      "kind": "amplitude",
+      "chart": "dependent"
+    },
+    "Q7_tau_lambda": {
+      "a": 0.95259620747953,
+      "b": 0.9630808858835606,
+      "rel_spread": 0.010946185492696004,
+      "kind": "amplitude",
+      "chart": "free"
+    }
+  },
+  "separation": {
+    "kind": {
+      "exponent": {
+        "n": 5,
+        "min": 2.2204460492503136e-16,
+        "max": 0.666666666666667
+      },
+      "amplitude": {
+        "n": 2,
+        "min": 0.00844395649275791,
+        "max": 0.7013340448518723
+      },
+      "separates": false,
+      "gap": -0.6582227101739091
+    },
+    "chart": {
+      "dependent": {
+        "n": 4,
+        "min": 0.6666666666666665,
+        "max": 0.7013340448518723
+      },
+      "free": {
+        "n": 3,
+        "min": 2.2204460492503136e-16,
+        "max": 0.00844395649275791
+      },
+      "separates": true,
+      "gap": 0.6582227101739087
+    }
+  }
+}

@@ -11,6 +11,26 @@ map's architecture: not sectors side by side but **one tower, three floors**.
   FLOOR 3  Φ, singular part         →  boundaries (non-analyticity, degeneracy, supports)
 ```
 
+> **⟳ 2026-07-29 — the tower gained a floor at the *bottom*, and it reorganizes
+> this document twice.** [D10](../derivations/D10-composition-lens.md) found that
+> floor 1 takes an input it never names — the symmetry group is *given*, and there
+> is no outside to give it. Under it sits a **composition law** ⊎:
+>
+> ```
+>   FLOOR 0  composition (the lens)  →  fixes what counts as two systems, hence Φ's
+>                                        form, the charge list, and which charts pin
+> ```
+>
+> Two consequences land in this file specifically. **(a) §4's live question is
+> answered** — the general residue is the invariant content of the largest group ⊎
+> fails to pin (see the note at the end of §4). **(b) §2's asymmetry gets a second
+> reading**: since Φ is a cumulant generating function, "Φ is additive under ⊎" is
+> one condition *per order*, and the orders at which it fails are the floors —
+> order 0 → floor 2's Legendre face (Φ\* = concave hull ≠ s), order 2 → criticality
+> and SSB, no order at all → heavy tails. Floor 3 stratifies because there is more
+> than one way for a composition law to lapse. This does **not** replace D2's group
+> argument or D6's q1/q2 classifier; whether the two indices are related is open.
+
 Sorting the catalog against that architecture is a **test**, not bookkeeping: the
 rule makes claims about entries nobody has examined, and an entry that refuses all
 three floors is the tower's own falsifier #4. This document records the sort, what
@@ -34,7 +54,7 @@ it deletes, what it predicts, and what refused.
 | 4 | [diffusion & random walks](./diffusion-random-walks.md) | **2** (→3 in the tails) | Reduction demonstrated: CLT forces the Gaussian, the Gaussian is the max-entropy exponential family, and by JKO diffusion is gradient flow of that free energy. **Heavy-tailed/Lévy instances move to floor 3** — see prediction P-B. |
 | 18 | [optimal transport](./optimal-transport.md) | **2** (+ open) | The *flow* is Φ-driven (JKO). But the Wasserstein *metric* is not ∇²Φ — a second geometry on the same space, not derived from Φ. Flagged, §4. |
 | 6 | [feedback & control](./feedback-control.md) | **2 + 3** | **Splits, derived** ([S27](../derivations/S27-control-split.md)): inference half (LQG↔Kalman, KL-control, min control energy = Φ*) is floor 2; binary reachability is floor 3 (supports, null Fisher). |
-| 7 | [optimization & variational](./optimization-variational.md) | **2 + 1** | **Splits by what the functional is over.** Objective = a free energy ⇒ floor 2. Objective = an *action* (least action) ⇒ floor 1, since that is the bracket structure Noether consumes. "As-if" optimization (adaptationism, utility) is neither — L1. |
+| 7 | [optimization & variational](./optimization-variational.md) | **2 ⇄ 1** ✓tested | **Not a split — a decomposition.** The sort said "splits by what the functional is over"; [P-C](../experiments/PC-variational-kinds/) refuted that. J = S + A at the equilibrium: the symmetric part is the free-energy (floor 2) content, the antisymmetric part is the bracket (floor 1) content, and π = ‖S‖²/(‖S‖²+‖A‖²) runs continuously between them. The *readout's* floor is a separate question with three answers — §4a. "As-if" optimization is still neither — L1. |
 | 5 | [criticality & universality](./criticality-phase-transitions.md) | **3** | Lee–Yang: transition ⇔ non-analyticity of Φ. The floor's L4 core. |
 | 10 | [symmetry breaking](./symmetry-breaking.md) | **3** | Derived, and the sort's best non-trivial case: an entry *named* for symmetry lands on floor 3, because SSB requires a non-analyticity of Φ and Goldstone modes are null directions of ∇²Φ. |
 | 1 | [power laws](./power-laws.md) | **3** | Heavy tails are where Z or its moments diverge — the complement of the well-behaved exponential-family world. |
@@ -105,6 +125,41 @@ cannot be collapsed into each other.
 > The unclassified remainder is now **essential singularities only** — Φ with no
 > leading power at all.
 
+> **⟳ CLOSED (2026-07-28, [`derivations/base-variable.md`](../derivations/base-variable.md)
+> + [BV](../experiments/BV-base-variable/)): the stratification is not open work
+> and not a taxonomy — it is forced, and there are exactly three strata.**
+> Write every prediction field as a log-Laplace transform Φ_Y(λ) = log E_P[e^{λ·Y}]
+> of an observable Y of a master measure. On a finite system Φ_Y is **real-analytic
+> in the interior of its domain** (the mgf is), so every floor-3 phenomenon must be
+> one of:
+>
+> ```
+>   3a  DOMAIN BOUNDARY   Phi = +inf beyond a boundary in lambda-space
+>                         -> divergent moments, heavy tails, support loss
+>   3b  LIMIT             analytic at every finite size, not in the limit
+>                         -> Lee-Yang, SSB, percolation, P-D's kink
+>   3c  DEGENERACY        Phi analytic; a DERIVATIVE degenerates
+>                         -> null Hessian directions, soft modes, D1's p, D6's q1/q2
+> ```
+>
+> There is no fourth option: analytic / undefined / defined-but-degenerate
+> exhausts the cases. **This makes four of the repo's own results one statement.**
+> D1's *p* and D6's ratio q1/q2 classify **3c**; D6's finding that support loss is
+> q1 = 1 rather than p = ∞ is the statement that it is **3a**, which is why D1's
+> formula was *undefined* there rather than wrong; and [P-K](../experiments/PK-kink-taxonomy/)
+> established P-D's kink as **3b** by measuring the property that defines it.
+> Guard run and passed: 3a, 3b and 3c each exhibited, and **0 of 6** interior
+> non-analyticities at finite size. Corollary worth stating because it is a common
+> confusion: **a singular density is not a singular Φ** — a caustic (measured
+> density exponent −0.5003) leaves Φ entire (finite over |λ| ≤ 200).
+
+> **⟳ Sorted (2026-07-28): [`FLOOR3-STRATA.md`](./FLOOR3-STRATA.md)** carries the
+> second sort — every floor-3 entry placed in a stratum, with the eight assignments
+> that rest on no measurement marked as predictions. Its own test restated the
+> trichotomy: 3a's boundary is a **limit too**, so the classifier is *what diverges*
+> — Φ itself on a region (3a), a derivative at a point (3b), or nothing, with a
+> derivative exactly zero (3c).
+
 So the asymmetry, which the original "one object seen sideways" slogan could not
 express:
 
@@ -163,11 +218,47 @@ variance. **This retrodicts a result already in the repo**: the
 measured before the tower existed. **Falsifier:** a finite-variance diffusion whose
 Φ is non-analytic in the relevant variable, or a heavy-tailed one whose moments
 behave.
+*(⟳ 2026-07-29: P-B is no longer a separate prediction. Under
+[D10](../derivations/D10-composition-lens.md)'s reading it is the **order-2 clause**
+of one condition — finite variance is "the second cumulant is extensive," and
+infinite variance is "there is no order-2 statement to make." Measured: an
+α = 1.5 stable sum has δ₂ wandering over −0.39…−2.93 with across-seed spread
+1.8…7.4, against a Gaussian control at 0.00 ± 0.03. The untested half of P-B — a
+finite-variance diffusion with non-analytic Φ — stays untested.)*
 
-**P-C — variational principles come in exactly two kinds (#7).** Over a measure
-(free energy) ⇒ floor 2; over an action (bracket) ⇒ floor 1. **Falsifier:** a
-genuine variational law — one that predicts, rather than re-describes — whose
-functional is over neither.
+**P-C — variational principles come in exactly two kinds (#7) — ✗ RUN AND REFUTED,
+[`experiments/PC-variational-kinds/`](../experiments/PC-variational-kinds/).**
+*Predicted:* over a measure (free energy) ⇒ floor 2; over an action (bracket) ⇒
+floor 1. *Falsifier registered:* a genuine variational law — one that predicts,
+rather than re-describes — whose functional is over neither.
+*Found:* **the falsifier fires, and not narrowly.** Write the pseudo-gradient
+Jacobian at an equilibrium as J = S + aA. A potential with its minimum there
+requires S ≻ 0; convergence requires only Re λ(J) > 0. The region where the second
+holds and the first fails — no potential at all, and the dynamics still arrive — is
+**12.2%** of the ensemble at n = 6 against the **0.000** P-C requires, and at n = 8
+**not one draw in 8000 had a potential** while 5.9% converge. The escape routes are
+closed: 200/200 draws from that region are not weighted potential games either
+(min residual **1.42**), and a nonlinear two-player game with symmetric part
+diag(+1.000, −0.500) converges from **100/100** starts with circulation **5.14**.
+**The reason is a count.** At large a each conjugate eigenvalue pair of A picks up
+the average of S's quadratic form over A's invariant 2-plane, so rotation does not
+evade the stability conditions, it *pairs them up*: *n* conditions become
+**⌈n/2⌉**. Agreement with measured convergence **1.0000 / 0.9985 / 0.9985 /
+0.9995** at n = 2, 4, 6, 8; at n = 2 the criterion collapses to tr S > 0, predicted
+0.500 and measured **0.5084**; at n = 6 the convergent fraction is **2440×**
+P(S ≻ 0).
+**So P-C's error is grammatical.** "Over a measure" and "over an action" are not
+two boxes but the two poles of one **decomposition** — the antisymmetric part is
+the bracket content of the same principle — with the potential fraction
+π = ‖S‖²/(‖S‖² + ‖A‖²) running continuously between them. *This does not cost the
+tower a floor:* the potential-free region's predictive content lives in the
+bracket, which is floor 1, so the falsifier fires against P-C's grammar and not
+against the architecture. **And the floor is a property of the readout, not of the
+functional** (P-D's case, now measured outside physics): choosing among four real
+integer-multiplication schemes under a six-magnitude cost model, one optimization
+emits a magnitude-blind exponent (Jacobian exactly zero at **400/400** interior
+points) and a magnitude-sensitive constant at the same time. See §4a for what
+replaces the binary, and the two registered failures that produced it.
 
 **P-D — allometry does not reduce (#9) — ✓ RUN, [`experiments/PD-allometry-reduction/`](../experiments/PD-allometry-reduction/).**
 *Predicted:* Kleiber's 3/4 should *not* be derivable from a partition function; it
@@ -235,6 +326,20 @@ with Φ regular elsewhere. The scheme layer's degeneracy is rank deficiency
 **everywhere in parameter space** — the signature of one index pushed through two
 observables, i.e. of the description map itself. That is a measurement (rank of
 ∇²log Z as a function of λ), not a preference.
+
+> **⟳ Sharpened (2026-07-28, [`base-variable.md`](../derivations/base-variable.md) §5).**
+> P-D's rank-1 result was recorded as *"is there a Φ at all? — no."* There is:
+> it is a Φ on a **rank-one base variable**. ∇²Φ_Y = Cov(Y), so rank deficiency
+> everywhere says the two statistics are functionally dependent — a one-parameter
+> family wearing two labels — and a rank-one Y has **no conjugate pair**, hence no
+> exchange rate, hence nothing Legendre downstream. Reproduced from the definition
+> rather than from P-D's code: rank **1** at all 81 grid points, smallest/largest
+> eigenvalue **4.36e-16**, rising to effective dimension **2** when one independent
+> statistic is added. So **rank(∇²Φ_Y) is the effective dimension of the base
+> variable**, and the boundary above is the difference between a degeneracy *of* a
+> base variable and a degeneracy *in* one. Same measurement, weaker claim, and it
+> meets [D2](../derivations/D2-gauge-of-the-tower.md)'s gauge reading from the
+> other side: a rank-one Y admits no Legendre dual, so the chain stops.
 
 What unites them conceptually is that each is a fact about **the map between
 descriptions** — the encoding, the coarse-graining, the recursion — rather than
@@ -384,6 +489,29 @@ is a claim about the tower rather than a measurement.
 > derived its residue for floor-3 germs; allometry has no singularity and no Φ at
 > all, so "the residue is the codimension" does not cover it. That gap is now the
 > live question in this section.
+>
+> **⟳ ANSWERED 2026-07-29 by [D10](../derivations/D10-composition-lens.md) — and the
+> answer is not in Φ, which is why staring at Φ never produced it.** What decides
+> the group is a fact about **composition**, not about the singularity:
+>
+> > **A chart is pinned to G_diff when its variable is additive under system
+> > composition, or dual to one. It keeps G_pow when neither holds. The residue is
+> > the invariant content of the largest group the composition law fails to pin.**
+>
+> On that rule the two members stop being a list: where composition pins the chart
+> the exponents *themselves* are facts (allometry's θ — mass is additive, leg F's
+> defect 0 at a=1 and 29–50% otherwise); where it does not, only ratios, signs and
+> counts survive (p − 2, and D6's q1/q2). **Two branches of one rule, and which
+> branch you are on is a floor-0 question.**
+> The audit that established this
+> ([D10 §6](../experiments/D10-composition-lens/)) **forced a correction to the rule
+> as first written** — reduced temperature is intensive, so by additivity alone its
+> exponents should be gauge, and inside physics they are facts; the "or dual to
+> one" clause is D2 §7's own reason ("enters the Hamiltonian linearly") restated,
+> since energy is additive and β is its conjugate. It also passed a row it was not
+> designed for: the RLCT is read off the coefficient of ln n, **samples are
+> additive**, so λ should be a fact — and it independently is one (a birational
+> invariant).
 
 > **⟳ CLOSED 2026-07-27 by [D7](../questions/UNKNOWN-LAWS.md) — and it corrects
 > one sentence above.** Derivation:
@@ -434,6 +562,149 @@ is a claim about the tower rather than a measurement.
 > or separable, and three registered tolerances were missed to the finite-window
 > error budget — all logged in the experiment's §4.
 
+> **⟳ The gap, worked (2026-07-30, [D3](../experiments/D3-ladder-invariance/)) — the
+> residue is a fixed point, and the ratio is its eigenvalue.**
+> D3 set out to test whether the ladder is a chart-invariance count. It measured a
+> **fourth** ratio of the same shape as the other three — the aggregation chart
+> order H = d ln s(n)/d ln n, with the invariant content in r = H_B/H_A (bare H
+> spans 6× under φ_a(x) = sign(x)|x|^a, the ratio is constant to **3.6e-4**) — in a
+> system with **no singularity and no Φ**, which is the class D2's codimension
+> argument cannot reach and P-D's θ only sampled once. Then it broke the pattern
+> the first three suggested.
+> **The counterexample.** Increments X_i = U·z_i sharing one lognormal factor U of
+> coefficient of variation c are finite-variance and exchangeable-not-independent.
+> They pin the ratio — **m = |r − 1| = 0.012 at every c** — while transfer of the
+> reference domain's law sweeps **0.935 → 0.875 → 0.640 → 0.003 → 0.000**. Each c
+> is a genuine fixed point of the aggregation map (shape distance n = 64 vs
+> n = 1024 is 0.006–0.025, at the sampling floor, while distance to the Gaussian is
+> unchanged in n), so **the map has a one-parameter continuum of fixed points all
+> carrying the eigenvalue H = ½.**
+> **What that settles.** "The residue is the ratio structure that survives the
+> group" is *not* the general statement — here the ratio survives and classifies
+> nothing. The general object is **the fixed point of the description map**; a
+> ratio is its **eigenvalue**. Where the fixed-point set is a discrete list the
+> eigenvalue labels it and the residue *looks* like an integer or a ratio — which
+> is exactly the situation at a floor-3 germ, where normal-form theory supplies the
+> list (the A_k series) that D2 and D6 were in fact reading. Where the fixed-point
+> set is a continuum, no finite collection of ratios can classify and the residue
+> is a **shape**, a function rather than a number. That explains why three
+> independent routes all found ratios without licensing "ratios are the answer."
+> **The successor question, logged and not claimed:** a floor-3 object whose
+> fixed-point set is a *continuum* should have a non-integer residue, and the
+> codimension count should fail there. D3 does not test this — its system has no
+> floor-3 singularity at all — and it is now the cheapest next probe of this
+> section.
+> **One caveat D3 found that applies to this whole section's use of ratios:**
+> transfer skill, the quantity all of it is validated against, has a gauge freedom
+> of its own. Skill = 1 − d/d_ref with d_ref read in the same chart, so the *same*
+> preserved correspondence reads 0.34, 0.89, 0.92, 0.95 or 0.98 depending only on
+> the chart. Re-normalizing by the in-chart sampling floor restores D2's common-a
+> commitment (1.54–1.88× across a 6× span of a, against 3.4–11.5× when only one
+> domain is re-charted), so common-a holds **outside physics** — but only once the
+> normalizer is made chart-internal.
+>
+> **⟳ A second, independent account of the same kink (2026-07-28,
+> [P-K](../experiments/PK-kink-taxonomy/)), not yet checked against the one
+> above.** D7 (above) locates the kink algebraically, as the point [1 : 1] of
+> ℝP¹ where two log-slopes coincide. Working from P-D's code directly, P-K finds
+> the level-*j* term of the volume sum is π r_c² l_c n^N·(nβ²γ)^(−j), so
+> θ = min(1, ·) is the **tropical limit of a `logsumexp`** — a dominance switch
+> between the two ends of a geometric sum — giving the closed form
+> θ_N = ln n/(ln n + g(u)/(N+1)), analytic at every finite depth and
+> non-analytic only as N → ∞, with rounding width ∝ N^**−0.9731** and curvature
+> ∝ N^**+1.0155**, the same universality class as a canonical rounded
+> first-order transition (N^−1.0008) but a different scaling function
+> (sup-norm 0.1403). This also retracts an intermediate guess ([P-C
+> §4a](#4a-what-replaces-p-cs-binary--three-readouts-one-instrument), below)
+> that the kink was a selector cell boundary (an argmin crossing): measured
+> against the same instrument, a genuine selector boundary has **zero width at
+> every size**, where P-D's kink rounds. **Neither account has been checked
+> against the other**; D7's is a statement about *where* in residue-space the
+> kink sits, P-K's is about *what kind* of non-analyticity it is and how it
+> rounds at finite size, and whether the two are one fact or two is open.
+>
+> *(⟳ **CLOSED 2026-07-28** by [P-K](../experiments/PK-kink-taxonomy/), and on
+> none of the candidates listed. P-C proposed a **selector cell boundary**
+> (an argmin crossing) and called it the leading account; **that is retracted.**
+> Reading P-D's code, the level-j term of the volume sum is
+> π r_c² l_c n^N·(nβ²γ)^(−j), so θ = min(1, ·) is the **tropical limit of a
+> `logsumexp`** — a dominance switch between the two ends of a geometric sum. In
+> closed form θ_N = ln n/(ln n + g(u)/(N+1)) with g(u) = u/(1−e^{−u}) and
+> u = −(N+1)ln(nβ²γ): **analytic at every finite depth**, non-analytic only as
+> N → ∞. Rounding width ∝ N^**−0.9731**, curvature ∝ N^**+1.0155**, against an
+> argmin crossing whose width is **zero at every size**. So the kink is a
+> **floor-3 non-analyticity of the first-order-transition class** — same class as
+> the canonical rounded two-state control (N^−1.0008), different scaling function
+> (sup-norm 0.1403) — reached in the limit of network *depth* rather than of
+> system size. Bonus, and it removes a puzzle rather than solving one: **Murray's
+> law ⟺ nβ²γ = 1 is an algebraic identity** given γ = n^(−1/3), and what it means
+> is that blood volume is **equipartitioned across generations** (max/min level
+> volume 1.000000, against 14.6 off it).)*
+
+---
+
+## 4a. What replaces P-C's binary — three readouts, one instrument
+
+*(2026-07-28, [P-C](../experiments/PC-variational-kinds/).)*
+
+§3's P-C classified **functionals**. Its refutation and
+[P-D](../experiments/PD-allometry-reduction/) agree that this was the wrong object:
+the same optimization can emit readouts on different floors, so what needs
+classifying is the **readout**. Three types, and the discriminator is mechanical —
+the regularity of the *optimal value* as a function of the functional's parameters:
+
+```
+   value smooth                        ->  FLOOR 2   a source; an exchange rate
+   value continuous, slope kinked      ->  SELECTOR  argmin branches crossing
+   value discontinuous, no slope       ->  a COUNT   floor 1's response type
+```
+
+Measured with one instrument at one tolerance. **Floor 2**: a Gibbs exchange rate
+⟨x⟩ = ∇log Z has full-rank Jacobian (5/5). **Selector**: the divide-and-conquer
+exponent has Jacobian exactly zero at 400/400 interior points and jumps at cell
+boundaries where the value is continuous to **0.0** and the one-sided slopes differ
+by **0.204–1.000**. **Count**: `n_base`, a recursion cutoff, has derivative
+identically **0.0** on both sides and a value that jumps by **8.3e-4 – 2.8e-2**.
+
+**Floor 1 and the selector both produce magnitude-blind integers, and this is what
+tells them apart.** On planar central-force motion the constant count drops from 3
+to 2 the instant V = −k/r gains a δ/r² term — the hidden symmetry breaks — while
+the circular orbit's energy is **analytic through δ = 0** (one-sided derivatives
+agreeing to **6.2e-6**) and the precession is linear in δ (measured δ^**0.9760**).
+Bertrand's ratios come out **1.000000000** and **2.000000000**, invariant to
+**5.5e-10** over four decades of coupling.
+
+> **Discontinuous count + analytic value ⇒ floor 1.
+> Discontinuous readout + kinked value ⇒ selector.**
+
+**This bore on §4's remaining open item, and got it wrong.** The reconciliation
+note below left P-D's kink unassigned, and this section proposed the selector cell
+boundary as the leading account, since the generic one has exactly that signature.
+*(⟳ **Retracted 2026-07-28** by [P-K](../experiments/PK-kink-taxonomy/).* The
+instinct — a min of two branches — was right; the mechanism was not. P-D's kink is
+a **dominance switch in a geometric sum**, not an argmin crossing, and the two are
+distinguishable by **finite-size rounding**: a selector boundary is non-analytic
+already, with zero width at every size, while P-D's θ is analytic at every finite
+depth and rounds as N^−0.9731. So the kink is floor 3 after all, of the
+first-order-transition class. See the closed item below. **A third kind of
+boundary was registered in that pass and withdrawn** — a square-root branch point —
+because the case it was invented for turned out to be a transversal real
+eigenvalue crossing, exponent 1.000, not a collision.*)
+
+**Two registered failures produced this section, and both are one slip.** P-C
+registered rank 6 for the D&C constant's Jacobian and measured **4**; post-hoc,
+`n_base` contributes nothing (it is a count, not a magnitude) and three per-word
+magnitudes collapse into one functional per scheme, so on the identifiable
+coordinates the rank is **3/3, full at 60/60 points** — the instrument was right and
+the registered number was unattainable in the model I wrote. The kink prediction
+failed for the same reason and holds **exactly** once the count is separated from
+the magnitudes. So the third class above was found *unplanted*, inside my own
+parameter list, by an instrument that was not told to look for it — which is the
+best evidence in the run that the classification is doing work rather than
+recording a taxonomy.
+
+---
+
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a
 log-ratio object either, so it fits neither the three floors nor the proposed
@@ -447,13 +718,15 @@ second, unrelated exhibit against monism. Unresolved, and recorded as such.
 - The tower is derived for **equilibrium / long-time (stationary)** prediction
   fields. Every floor-1 assignment inherits that restriction.
 - Assignments for `seed`-status entries are *predictions*, not findings. Only
-  #6, #9, #10, #19, #21, #22 and the #4 reduction rest on a derivation or an
-  experiment; the rest are the sort's claims and can be wrong. Two of those —
-  #19 ([P-A](../experiments/PA-spectral-gap/)) and #9
-  ([P-D](../experiments/PD-allometry-reduction/)) — were `seed` entries the sort
-  made claims about and have since been run, so the sort has now been graded
-  twice: once on a positive (confirmed, in a corrected form) and once on its only
-  negative (confirmed).
+  #6, #7, #9, #10, #19, #21, #22 and the #4 reduction rest on a derivation or an
+  experiment; the rest are the sort's claims and can be wrong. Three of those —
+  #19 ([P-A](../experiments/PA-spectral-gap/)), #9
+  ([P-D](../experiments/PD-allometry-reduction/)) and #7
+  ([P-C](../experiments/PC-variational-kinds/)) — were `seed` entries the sort made
+  claims about and have since been run, so **the sort has now been graded three
+  times: a positive confirmed in a corrected form, its only negative confirmed, and
+  one refuted.** P-C is the miss, and it was wrong about the *grammar* (functionals
+  come in two kinds) rather than about the floors — see §4a.
 - P-D tests **models** of allometry, not organisms. It establishes what kind of
   object the exponent is in the theories that produce it, and says nothing about
   whether real metabolic rates scale as M^(3/4).

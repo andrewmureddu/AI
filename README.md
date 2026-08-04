@@ -50,7 +50,7 @@ ladder is defined in [`METHODOLOGY.md`](./METHODOLOGY.md).
 | [`METHODOLOGY.md`](./METHODOLOGY.md) | The correspondence ladder, evidence standards, anti-patterns, and the expansion⇄restraint rhythm. Read this first. |
 | [`PREDICTION-FIELD.md`](./PREDICTION-FIELD.md) | The organizing frame: the environment we map *is* a prediction field; invariants are its measurement-invariant structure. |
 | [`CONTRIBUTING.md`](./CONTRIBUTING.md) | Conventions for adding or revising an invariant or a domain. How "we" work. |
-| [`invariants/`](./invariants/) | One file per candidate invariant. [`invariants/README.md`](./invariants/README.md) is the master catalog. |
+| [`invariants/`](./invariants/) | One file per candidate invariant. [`invariants/README.md`](./invariants/README.md) is the master catalog; [`FLOORS.md`](./invariants/FLOORS.md) sorts it by floor and [`CHARTS.md`](./invariants/CHARTS.md) tags it by chart. |
 | [`domains/`](./domains/) | The invariant × domain cross-reference matrix — the actual "map." |
 | [`questions/`](./questions/) | The agenda in four registers: [`OPEN-QUESTIONS.md`](./questions/OPEN-QUESTIONS.md) (rigorous), [`SPECULATIVE.md`](./questions/SPECULATIVE.md) (AI-native leaps, tagged & falsifiable), [`L3-MECHANISMS.md`](./questions/L3-MECHANISMS.md) (candidate shared *mechanisms*, each with a convergence discriminator), and [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) (**discovery** — candidate laws nobody has stated, on a separate novelty ladder). |
 | [`experiments/`](./experiments/) | Runnable (numerical) tests of specific questions. First: [`S3-fisher-geometry`](./experiments/S3-fisher-geometry/). |

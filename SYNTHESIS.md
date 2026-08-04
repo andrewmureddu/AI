@@ -1,9 +1,17 @@
 # State of the map — synthesis
 
-*Snapshot: 2026-07-26. Supersedes the 2026-07-19 snapshot, whose through-line
-("much of the map is one object seen sideways") has since been corrected twice —
-three sectors → two layers → one tower. Updated 2026-07-26 with floor 3's partial
-classification and the opening of the [discovery register](./questions/UNKNOWN-LAWS.md).*
+*Snapshot: 2026-07-30. Supersedes the 2026-07-19 snapshot, whose through-line
+("much of the map is one object seen sideways") has since been corrected three
+times — three sectors → two layers → one tower → **one tower standing on a
+composition law**. Updated 2026-07-26 with floor 3's partial classification and the
+opening of the [discovery register](./questions/UNKNOWN-LAWS.md); updated 2026-07-29
+with [floor 0](./derivations/D10-composition-lens.md), which is the first correction
+to arrive from *below* the architecture rather than inside it. Amended 2026-07-30
+(§6 ledger, §7.0) with a third, independent [D3](./experiments/D3-ladder-invariance/)
+pass: the ladder is **not** reducible to a chart-invariance count (agreeing with the
+other two D3 runs), and this pass's account of the residue's general form is a
+**fixed point** of the description map, a third characterization alongside D7/D8's
+projective/Grassmannian point and D10's composition-pinning account.*
 
 This document makes the whole structure legible in one read: what we're doing,
 what has actually been established, what is still a speculative stone, and the
@@ -26,7 +34,13 @@ and that frame is now *empirically load-bearing*, not merely self-consistent;
 **tower with three floors**: symmetry chooses Φ's coordinates, Φ's regular part
 predicts, Φ's singular part is where prediction ends. The slogan:
 **one object, three floors — chosen by symmetry, read by prediction, ended by
-breakdown.**
+breakdown.** *(⟳ 2026-07-29: the tower gained a floor at the **bottom**.
+[D10](./derivations/D10-composition-lens.md) found that floor 1 takes the symmetry
+group as *given*, and there is no outside to give it; under it sits a **composition
+law**, which forces Φ's form, supplies floor 1's missing selection rule, and — since
+Φ is a cumulant generating function — must be maintained one order at a time. The
+corrected slogan: **built by composition, chosen by symmetry, read by prediction,
+ended when composition lapses.**)*
 
 ---
 
@@ -63,7 +77,11 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; the best in-distribution feature is the worst-transferring | constructed SCM where invariance = causation by design |
-| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic |
+| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)), **then conditioned** ([D3](./experiments/D3-chart-vs-ladder/)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic; **and conditional on a shared measurement chart**, which the run never varied — under a chart distortion the ordering inverts; L2's headline 0.484 is also an 8-seed low estimate — **0.515 ± 0.050 at 32 seeds** ([D3](./experiments/D3-ladder-invariance/) §6) |
+| **D5** | [Degeneracy arithmetic is enumeration](./experiments/D5-degeneracy-arithmetic/) | experiment | **confirmed, and confirms the undoubted.** Coalescence is codimension additivity (Thom/Arnold, **N0**). The live reading — Φ with >2 terms — gives a **staircase**, plateaus at 1−q₁/q_j: eleven within **0.0068** of prediction, three-step staircase included, ratio rule exact. All declared identities in advance. Only measured content: a regime must exceed its visible plateau by **≈2.25 decades**, which explains why [P8](./experiments/D1-chart-invariance/P8-REREGISTRATION.md)'s sextic plateau never established | **N0–N1**; synthetic multi-term potentials by construction; registered squeeze threshold was optimistic ~2× |
+| **D4** | [Amplitudes vs exponents — a confound](./experiments/D4-amplitude-vs-exponent/) | experiment | **falsified; leaves no replacement.** A prospective battery separates by **chart** (0.0–0.8% vs 66.7–70.1%) and not at all by **kind** (amplitudes 0.8–70.1%, exponents 0.0–66.7%) — an amplitude fails at exactly the registered 2.0801× while two exponents transfer exactly. The audit found the sample confounded *and* found counterexamples already in the record, one of them cited in D4's own supporting row. **Collapses into D2/D3** | survivor is **N0** — physics holds the opposite contrast, and only amplitude *ratios* are universal; four systems, two sharing a normal form |
+| **D3** | [The ladder is one factor of two](./experiments/D3-chart-vs-ladder/) | experiment | **both readings falsified.** D3's own falsifier fires — stated chart-freely, L2/L1 still fail (0.373/0.037), so chart-invariance is **not sufficient**; and a chart-dependent claim collapses a shared mechanism (L3 0.916 → 0.000, with word-only L1 beating theorem-backed L4 at a=0.7). **Survivor: transfer = shared mechanism ∧ chart-free statement**, and chart-freedom is *the precondition under which the ladder is predictive at all* (Spearman +0.80 in every chart, vs +1.00 → −0.80). Against paper 1's measured ceiling, chart-freedom also has a **price**: it buys immunity at 0.833 where the shared-chart claim reaches 0.916 ≈ complete transfer | one invariant family, synthetic, one chart group; **no pre-registration file** (process deviation on record); P3 is an identity |
+| **D3** | [The ladder is *not* a chart-invariance count](./experiments/D3-ladder-invariance/) | experiment | **third, independent pass; biconditional falsified again; the residue is a fixed point.** A per-domain invariance measurement (aggregation chart order H, ratio invariant to 3.6e-4 while bare H spans 6×) predicts the rungs' transfer at **R² = 0.998** vs **0.869** for the ordinal label, and ties L3/L4 where the label is wrong. But exchangeable increments sharing one lognormal factor hold the mismatch at **0.012** while transfer sweeps **0.935 → 0.000** — a continuum of fixed points with one eigenvalue. Chart-invariance is **necessary, not sufficient**; the surviving forward direction is N0–N1 (IRM's thesis), and the ladder's **mechanism** criterion is what no exponent replaces | one invariant family, synthetic; **transfer skill itself is chart-dependent** (0.34–0.98 for one preserved correspondence) until the normalizer is made chart-internal; P2's threshold mis-registered |
 | **§6** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — invariance predicts transfer at ρ=0.983 on the diabetes dataset; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97), fails on controls (0.00) | Leg A has a signal-strength confound; multi-field study still open |
 | **S25** | [Channel-independence of the singularities](./experiments/S25-channel-independence/) | experiment | **🔴 tier tested, did not promote** — singularities are *invariant* under generic channels and *covariant* under structured ones: F_c(T)=F_eff(T′)(dT′/dT)² exact to 1e-14 | one pre-registration error on record (parity blind only at odd N) |
 
@@ -82,15 +100,20 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
 | **S27** | [Control splits — and the "irreducible" half reduces](./derivations/S27-control-split.md) | derivation | **falsifier fired, conjecture upgraded** — Gramian ≡ ∇²Φ of the noise-driven ensemble; min control energy = Legendre dual of Φ. But binary reachability lands in Φ's *singular* set. **Connectivity facts are Φ-boundary facts** | exact linear-Gaussian; Freidlin–Wentzell beyond |
-| — | [The symmetry sector](./derivations/symmetry-sector.md) | derivation | **monism fails, "second sector" also fails** — SSB reduces to Φ-singular; Noether does *not* reduce but **constitutes**: conserved charges are the natural parameters of long-time ensembles. Architecture: **one tower, three floors** | equilibrium/long-time only; GGE exhaustiveness heuristic away from integrability |
+| — | [The symmetry sector](./derivations/symmetry-sector.md) | derivation | **monism fails, "second sector" also fails** — SSB reduces to Φ-singular; Noether does *not* reduce but **constitutes**: conserved charges are the natural parameters of long-time ensembles. Architecture: **one tower, three floors** | equilibrium/long-time only; GGE exhaustiveness heuristic away from integrability; **§2's rule corrected by D10** — conservation is necessary, additivity is the other half |
+| **D10** | [Floor 0 is a composition law](./derivations/D10-composition-lens.md) | derivation + experiment | **the tower gained a floor at the bottom, and floors 2–3 are its failure orders.** The natural-parameter slot takes **additive** statistics, not merely conserved ones — the family closes for exactly the additive rows (**≤3.2e-14**) and no others (**≥8.8e-4**), with linearity, monotonicity and convexity each refuted by a row, in a leg containing **no dynamics and no group**. Since Φ is a CGF, additivity is one condition per order: order 0 fails ⇒ Φ\* is the concave hull, not s (defect ~N^**1.0252**, c<0 on **68.6%** of e) ⇒ **floor 2's Legendre face breaks**; order 2 fails ⇒ δ₂ = **0.29364** vs 1−2^{−½} at T_c and **0.50010** below it ⇒ **criticality and SSB, same order, two mechanisms**; no order ⇒ heavy tails, retrodicting **P-B**. Also answers [`FLOORS.md`](./invariants/FLOORS.md) §4: the residue is the invariant content of the largest group composition fails to pin | **N1 — C1 is Cauchy, C2 is Koopman–Pitman–Darmois**; "long-range ⇒ non-additive" **killed by its own control** (mean-field q=2 gives exactly zero) leaving the weaker "first-order realizes it"; two registered items failed (leg C's growth exponent, leg D3's discriminator); the d ≥ 2 surface-scaling control is **not run**; the mereology half is argued, measured nowhere |
 | **S28** | [SGD's stationary law is charge-coordinatized](./experiments/S28-sgd-charges/) | experiment | **falsifier did not fire; sharper than the claim** — weight-decay breaking obeys dQ/dt = −4λQ to 1e-5; stationary norm from the charge alone to 3e-4; a **prethermalization plateau** with a ~1.8M-step window | minimal scale-symmetric model; claim is now timescale-indexed |
 | **S26** | [Is degeneracy an attractor?](./experiments/S26-llc-trajectory/) | experiment | **attractor claim falsified** — endpoint deeply singular (λ̂=1.38 vs d/2=8) but λ̂ drifts *up* post-convergence and noiseless GD lands identically. Survivor: **the low-loss set is generically singular** — degeneracy is where you end up, not what pulls you | λ̂ meaningless at non-critical points; grokking is the escalation |
 | **P-A** | [The spectral gap is a null direction](./experiments/PA-spectral-gap/) | experiment | **the sort's first prediction, cashed** — #19's floor-3 assignment confirmed with Φ fixed in advance (Λ''·gap = 2⟨f,v₂⟩² = 2.0000), but *directional*: orthogonal to the slow mode Λ'' is unchanged while the gap falls 31×. "One number" demoted to one mechanism with constants spanning 1.54× | 3 of #19's 4 readouts are one number by construction; reversible chains only; one registered threshold failed as written |
+| **P-D** | [Allometry is a log-ratio, not a Φ-derivative](./experiments/PD-allometry-reduction/) | experiment | **the sort's only *negative*, cashed** — θ = **min(1, ln n/−ln(β²γ))** to 7.1e-11, n cancelling to 4.0e-15. Blind to six decades of six magnitudes (1.1e-8), responsive to structural counts. Optimization is a **selector, not a source**: six cost functionals → six β, θ recovered from (β,γ) alone. **The variational route gives θ = 1, not 3/4.** ∇²log Z **rank 1 for every λ** (control swings 151%). Second route: θ = d/(d+1). **Reframed by D2** (leg F): θ is invariant under scheme coarse-graining to 2.6e-15 and mass is extensive, so it is the structure group's **invariant residue**, not a floor-4 exhibit | models of allometry, not organisms; P8 measures rank, doesn't prove no Φ exists; two registered items failed (MST construction, mean-field control); leg F is post-hoc |
+| — | [Floor 3, sorted by stratum](./invariants/FLOOR3-STRATA.md) | sort + experiment | **The second sort — and its own sharpest prediction was wrong in a way that improved it.** Registered *only 3b rounds*; measured that **3a's boundary is a limit too** (at finite support Φ is entire), so the classifier is **what diverges**: Φ itself on a region (3a — Φ(0.9)→2.302585093 with increments 0 while Φ(1.1) grows as M^0.981), a derivative at a point (3b — localised width **117×** floor, shrinking as **N^−1.001**), or nothing, with a derivative exactly zero (3c — **no localised feature**, width = full window; eigenvalue at the 8.9e-16 noise floor). A **fourth** output, P-K's selector boundary at the resolution floor, is not a stratum — and the instrument separates all four untold. **The one prediction about an entry the sort had no hand in shaping passed:** S25's λ(P) = min(P,D)/2 kink is **3c, not 3b** (gap ≤ **3.11e-17** at D = 4…32), so **S25's finite-size blurring is its estimator, not the object**. Also: **P-B is subsumed** into 3a as an instance, and critical slowing down is the **3c shadow** of a 3b transition — which retrodicts the single-basin boundary P-A paid for | eight of twelve assignments are predictions, not measurements; exemplars are synthetic; **1/4 at risk and all three failures were criteria I mis-specified** — a claim not well posed, a power law fitted to the 1e-16 noise floor, and a kink-finder pointed at an object with no kink |
+| — | [The base variable: one tower, seen through observables](./derivations/base-variable.md) | derivation + experiment | **The map's oldest debt paid, and floor 3's stratification stops being open work.** Write Φ_Y(λ) = log E_P[e^(λ·Y)]. The **form** is portable to every base variable (two lines of Hölder — so the hub's cross-field recurrence is a property of the transform, not of the world); the **geometry** is not (∇²Φ_Y = Cov(Y), measured spread **413×**); base variables are pushforwards ordered by refinement, so **M11's "family of towers" is answered deflationarily: one tower.** The variable is picked by **sufficiency**, which predicts M3's exact failure ladder and is exhibited exactly — two chains with stationary laws identical by construction, MFPT **100.0 vs 20.0**, trajectory curvature **19.93 vs 0.50**, state-Φ identical to 4.66e-15. Payoff nobody asked for: **floor 3 has exactly three strata** (3a boundary / 3b limit / 3c degeneracy) *because* Φ_Y is analytic inside its domain — making D1's *p*, D6's q1/q2 and P-K's kink one statement. **P-D's "no Φ at all" downgrades** to a rank-one base variable (rank 1 to 4.36e-16) | a stitching job on old machinery (sufficiency, mgf analyticity, caustics), declared as such; **the rule has never been used prospectively** — every arrival it explains was measured first; synthetic finite state spaces throughout; **4/6 at risk and all four failures were the instrument**, three of them the same audit item written one pass earlier |
+| **P-K** | [P-D's kink is a phase transition](./experiments/PK-kink-taxonomy/) | experiment | **FLOORS §4's twice-flagged open item closes — on none of the listed candidates, and P-C's account is retracted.** θ = min(1,·) is the **tropical limit of a `logsumexp`** — a dominance switch between the two ends of a geometric sum, not an argmin crossing. Closed form θ_N = ln n/(ln n + g(u)/(N+1)) is **analytic at every finite depth**; width ∝ N^**−0.9731** against a two-state first-order control's N^**−1.0008**, with a different scaling function (sup-norm 0.1403), while a selector boundary has **zero width at every size**. So: **floor 3, first-order-transition class**, reached in the depth limit. Murray's law ⟺ nβ²γ = 1 is an identity, meaning volume **equipartitioned across generations** (1.000000 vs 14.6). *Not yet checked against D7's independent account of the same kink as the residue-space point [1:1] of ℝP¹ — see [`FLOORS.md`](./invariants/FLOORS.md) §4.* | **worst scorecard in the project — 2/6 at risk, 2/4 identities** — and three of four failures are registration errors, not the claim's (crude checker, wrong statistic, **wrong algebra labelled an identity**); the registered **type X is withdrawn**; the headline is *analytic*, not experimental — P1 is the answer and P1 is an identity |
+| **P-C** | [Variational principles do *not* come in two kinds](./experiments/PC-variational-kinds/) | experiment | **the sort's first miss, refuted in exactly the registered way** — the falsifier asked for a variational law that *predicts* with a functional over neither a measure nor an action; that region is **12.2%** of the ensemble at n = 6 against the required 0.000, and at n = 8 **not one draw in 8000 had a potential** while 5.9% converge. Not weighted-potential games either (200/200, min residual 1.42); survives nonlinearity (100/100, circulation 5.14). **The reason is a count: rotation pairs the *n* stability conditions into ⌈n/2⌉** (agreement 1.0000/0.9985/0.9985/0.9995; at n = 2 it collapses to tr S > 0, predicted 0.500, measured 0.5084). The error is **grammatical, not architectural** — measure and action are the two poles of a decomposition J = S + A, and the potential-free content *is* the bracket. Replacement: three **readout** types, one instrument — **smooth ⇒ floor 2, kinked ⇒ selector, jumping ⇒ a count** | Leg B is linear-quadratic apart from one nonlinear case; ⌈n/2⌉ verified at large rotation, exact only at n = 2; **two registered predictions failed as one slip** — I listed a structural count among my *magnitudes*, so a registered rank 6 measured 4 (full 3/3 on identifiable coordinates) and the kink claim held only after the count was separated; the classification may be **N0** (parametric programming) |
 | **D6** | [Support singularities: D1 was a special case](./experiments/D6-support-singularities/) | experiment | **floor 3's classifier is the ratio q1/q2 of Φ's two leading exponents.** A_c ~ D^{1−q1/q2}: **q1 = 2 is what smoothness forces** (D1's (p−2)/p), **support loss is q1 = 1**, a hard wall is q2 → ∞ (0.9979 vs 1). Support loss is not p = ∞ — that would be a q2 value; M/M/1 has an *empty* q2 slot and no crossover at all (kurtosis 6.0000 over four decades). Three at-risk legs pass and **none are physics** | P1/P2 are identities and **P2 was mis-registered as at-risk**; the ratio claim is untested on real models; remainder narrows to **essential singularities only** |
 | **D2** | [The scheme layer is the tower's gauge group](./derivations/D2-gauge-of-the-tower.md) | derivation + experiment | **the P0 is answered — there is no fourth floor.** The floors are defined up to G_diff, cross-domain comparison has only G_pow, and the scheme layer is the difference: RG eigenvalues are conjugation-invariant (5.3e-15) and G_pow-covariant as y → a·y (≤2.4e-12), exactly like D1's chart order. **The chart-free residue is the codimension p − 2** (β/k = 0.5000, 0.2503 vs 1/(p−2)). Also explains why floor 2 collapses and floor 3 stratifies | most of the experiment is a theorem check; both at-risk legs are physics; the **common-a** commitment is load-bearing; the G_diff half is Wegner's nonlinear scaling fields in other words |
 | **D1** | [The chart law — two integers classify floor 3](./experiments/D1-chart-invariance/) | experiment | **chart claim confirmed, formula deflated by its own prior-art note** — a floor-3 degeneracy carries a **chart order** *k* (gauge) and a **degeneracy order** *p* (invariant), λ_c ~ D^{(p−2)/p}. *k* removed by inference (two fields, λ-chart 0.33333 vs 0.33333 where bare exponents differ 2×) and by manipulation (ε′=ε^a moves the bare exponent by exactly a, the λ-chart exponent not at all). **S5's and S7's "domain-specific exponents" are largely a chart artifact** | 1-D gradient systems, additive noise; **support-type singularities have no *p*** and are excluded; both at-risk legs are physics; legs A/B are declared identities, not evidence |
-| **P-D** | [Allometry is a log-ratio, not a Φ-derivative](./experiments/PD-allometry-reduction/) | experiment | **the sort's only *negative*, cashed** — θ = **min(1, ln n/−ln(β²γ))** to 7.1e-11, n cancelling to 4.0e-15. Blind to six decades of six magnitudes (1.1e-8), responsive to structural counts. Optimization is a **selector, not a source**: six cost functionals → six β, θ recovered from (β,γ) alone. **The variational route gives θ = 1, not 3/4.** ∇²log Z **rank 1 for every λ** (control swings 151%). Second route: θ = d/(d+1). **Reframed by D2** (leg F): θ is invariant under scheme coarse-graining to 2.6e-15 and mass is extensive, so it is the structure group's **invariant residue**, not a floor-4 exhibit | models of allometry, not organisms; P8 measures rank, doesn't prove no Φ exists; two registered items failed (MST construction, mean-field control); leg F is post-hoc |
-| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — #6, #9, #10, #19, #21, #22 and #4's reduction now rest on evidence; the rest do not |
+| — | [The catalog, sorted by floor](./invariants/FLOORS.md) | audit against the derivation | **sorted, and it deletes** — seven facet-faces are one convex function differentiated seven ways (▸facet); effective independent count 23 → ~16. Asymmetry found: **floor 2 collapses, floor 3 stratifies**. **Two entries refused the tower outright** (plus the type-R half of a third), all with the same signature: a log-ratio exponent | assignments for `seed` entries are *predictions*, not findings — #6, #7, #9, #10, #19, #21, #22 and #4's reduction now rest on evidence; the rest do not. The sort is graded 3× (P-A, P-D survived; **P-C refuted**) |
 
 ### Where "one law" claims keep landing
 
@@ -102,20 +125,65 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 
 ---
 
-## 4. The through-line: one object, three floors
+## 4. The through-line: one object, four floors
 
-The 2026-07-19 synthesis said the map was "one object seen sideways." Two
-derivations corrected that. The reduction *is* real and it went further than
+The 2026-07-19 synthesis said the map was "one object seen sideways." Three
+derivations have corrected that. The reduction *is* real and it went further than
 expected — feedback/control, reachability, percolation and symmetry-breaking all
-collapsed inward — but the thing they collapsed into is layered, and one piece
-refused to collapse at all and turned out to sit *underneath*:
+collapsed inward — but the thing they collapsed into is layered, one piece refused
+to collapse and turned out to sit *underneath*, and then that piece turned out to
+take an input of its own:
 
 ```
+  composition (the lens)    →  fixes what counts as two systems  (added 2026-07-29)
   symmetry / conservation   →  chooses Φ's coordinates   (which quantities exist)
   Φ, regular part           →  prediction                (moments, Fisher, updates)
   Φ, singular part          →  boundaries                (transitions, power laws,
                                                           reachability, percolation, SSB)
 ```
+
+**The floor at the bottom, and why it was invisible.**
+[D10](./derivations/D10-composition-lens.md) started from a gap rather than a
+result: floor 1 says symmetry chooses Φ's coordinates, the derivation takes the
+group as *given*, and **there is no outside to give it**. Three of the repo's own
+results had already reached past floor 1 for the missing thing without naming it —
+[P-D leg F](./experiments/PD-allometry-reduction/) killed G_pow because *mass is
+extensive*, [D2 §7](./derivations/D2-gauge-of-the-tower.md) reconciled universality
+because *energy is additive*, and symmetry-sector's charges were, without comment,
+*exactly the additive ones*.
+
+What sits there is a **composition law** ⊎ — a rule for putting two instances of a
+system side by side. It needs no observer, no group and no dynamics; only that the
+system can be next to a copy of itself. And it does four things:
+
+- **Forces Φ's form.** Independent parts multiply, so the unique continuous
+  *additive* summary is c·ln Z (Cauchy). Every place the map was surprised to
+  arrive at a logarithm is arriving at the one function that turns ⊎ into +.
+- **Supplies floor 1's missing rule.** The natural-parameter slot takes **additive**
+  conserved quantities, not merely conserved ones — measured with no dynamics
+  anywhere in the test, which is what makes it a layer underneath rather than a
+  restatement of floor 1.
+- **Decides which charts are pinned**, and therefore what the tower's invariant
+  residue *is* in general — [`FLOORS.md`](./invariants/FLOORS.md) §4's live
+  question, now answered.
+- **Must be maintained**, one order at a time. Which is the next paragraph.
+
+**Floors 2 and 3 are its failure orders.** Φ is a cumulant generating function, so
+"Φ is additive under ⊎" is not one condition but one per order:
+
+```
+   order 0 fails            ->  Phi* = concave hull != s   ->  FLOOR 2's Legendre face
+   order 2 fails, anomalous ->  Var/N -> infinity          ->  FLOOR 3, criticality
+   order 2 fails, mixture   ->  delta_2 = 1/2              ->  FLOOR 3, symmetry breaking
+   no order exists          ->  cumulants absent           ->  FLOOR 3, heavy tails
+```
+
+Measured, exactly: δ₂ = 0.00240 / **0.29364** / 0.50010 against 0 / 1−2^{−½} / ½,
+the middle value anomalous and inherited from a critical exponent. So the tower's
+base and its top are **one condition read at different orders** — the lens is prior
+to the tower, and the tower's top floor is the lens breaking. That also gives §5's
+five arrivals at the singular set of ∇²Φ a second description: they are five
+arrivals at a broken composition law, read at order 2.
 
 The direction of explanation runs bottom-up, which is exactly why every attempt to
 express Noether *inside* Φ-machinery failed while the converse kept succeeding:
@@ -126,17 +194,22 @@ stationary prediction field is what is conserved — Jaynes read in reverse.
 graph TB
     FRAME["PREDICTION FIELD (frame)<br/>measurement-invariant predictive structure<br/>empirically load-bearing: S18 · ladder · real-transfer"]
 
+    COMP["FLOOR 0 — COMPOSITION&nbsp; (the lens)<br/>a rule for putting two instances side by side<br/>forces Φ = c·ln Z (Cauchy) · selects the ADDITIVE charges<br/>pins the charts, hence the tower's invariant residue"]
     SYM["FLOOR 1 — SYMMETRY / CONSERVATION<br/>charges = natural parameters = sufficient statistics<br/>(Gibbs / GGE; Noether does not reduce, it constitutes)"]
     REG["FLOOR 2 — Φ REGULAR&nbsp; (the hub)<br/>∇Φ observables · ∇²Φ Fisher metric<br/>Φ* rate function · −Φ Lyapunov"]
     SING["FLOOR 3 — Φ SINGULAR&nbsp; (the boundary)<br/>transitions · power laws · reachability<br/>percolation · symmetry breaking"]
 
-    FRAME -. organizes .-> SYM
+    FRAME -. organizes .-> COMP
+    COMP -->|"conserved AND additive"| SYM
     SYM -->|"fixes the coordinates"| REG
     REG -->|"non-analyticity ends prediction"| SING
 
+    COMP -. tested .-> T0["D10 ✓ additive statistics close the family (≤3.2e-14)"]
     SYM -. tested .-> T1["S28 ✓ SGD charges — prethermalization plateau"]
     REG -. tested .-> T2["S1 ✓ one update · S23 ✓ attention · S25 ✓ RLCT"]
     SING -. tested .-> T3["S3 ✓ · S7 ✓ · S5 ✓ · S27 ✓ · Goldstone"]
+
+    SING -. "the lens breaking, order 2 (D10)" .-> COMP
 
     OUT["NOT A FLOOR — THE STRUCTURE GROUP<br/>log-ratio exponents (RG eigenvalues, fractal dims,<br/>S5 type R) are G_pow/G_diff transformation data.<br/>Chart-free residue = codimension p−2 → floor 3"]
     SING -. "resolved 2026-07-26 (D2)" .-> OUT
@@ -221,6 +294,17 @@ people (well, passes) looking for different things:
 | 4 | [S7](./experiments/S7-critical-slowing/), sharpened by [P-A](./experiments/PA-spectral-gap/) | **the slow mode** — τ = 1/λ_min; critical slowing is the Hessian going soft. P-A found *which* Hessian: in a double well the gap falls 3540× while the local curvature **rises** 6×, so S7's law is a **single-basin** law and the general object is the trajectory free energy's Hessian |
 | 5 | [S5](./experiments/S5-noise-thresholds/) | **the order of the degeneracy** — the redundancy exponent counts how fast the induced Fisher information vanishes (2 = metric merge, 1 = support loss) |
 
+**⟳ A second description of all five (2026-07-29,
+[D10](./derivations/D10-composition-lens.md)).** ∇²Φ is the second cumulant, and the
+second cumulant of an additive system is extensive. So every arrival above is an
+arrival at **the second cumulant ceasing to be extensive** — a composition law
+failing at order 2. Measured: δ₂ = 1 − 2·Var(N)/Var(2N) reads **0.00240** above
+T_c, **0.29364** at it (against the anomalous 1 − 2^{−1/2} = 0.29289, inherited
+from Var ~ N^1.504) and **0.50010** below. This does not add a sixth arrival; it
+says what the place is. And it separates two things "χ diverges" cannot: the
+critical value is anomalous, the broken-symmetry value is a mixture, and they are
+different numbers at the same order.
+
 [The RLCT result](./experiments/S25-rlct-singularity/) is best read not as a sixth
 arrival but as the *quantification* of the same object: λ is the chart of the
 region where the metric degenerates, and it — not parameter count — prices
@@ -239,7 +323,12 @@ exponent" premise had to fail.
 - **1 frame:** the prediction field (🟢 core empirically load-bearing; 🔴 metaphysical
   reading tested once and explicitly *not* promoted).
 - **1 hub:** Φ = ln Z (L3; L4 via Lee–Yang).
-- **3 floors:** symmetry-constituted · Φ-regular · Φ-singular — and **no fourth.**
+- **4 floors, numbered 0–3:** composition · symmetry-constituted · Φ-regular ·
+  Φ-singular — and **no fourth *above***. Floor 0 was added 2026-07-29 by
+  [D10](./derivations/D10-composition-lens.md) at the *bottom*, which is a different
+  question from the one D2 answered: D2 asked whether the refusers were a new layer
+  of facts on top (no, they are the structure group), D10 asked what floor 1
+  consumes (a composition law). Floors 2 and 3 are floor 0's failure orders.
   The proposed scheme layer resolved (2026-07-26,
   [D2](./derivations/D2-gauge-of-the-tower.md)) into the tower's **structure
   group**: the floors are defined up to G_diff, cross-domain comparison has only
@@ -261,31 +350,58 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **8 discovery stones** (D1–D8) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
-  register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
+- **10 discovery stones** (D1–D10, D7 reused once — see the register's numbering
+  note) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) register, **all
+  ten now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
-  *p* generalized; floor 3's classifier is a ratio) and **D7** (the P0's successor —
-  the residue's general form, and a count) and **D8** (the multi-parameter form —
-  a Grassmannian point whose rank counts the relevant directions). **Unworked:**
-  D4, D5. **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
+  *p* generalized; floor 3's classifier is a ratio), **D7** (the P0's successor —
+  the residue's general form, and a count), **D8** (the multi-parameter form —
+  a Grassmannian point whose rank counts the relevant directions), **D10**
+  (floor 0 — a composition law under floor 1, and a second general account of the
+  residue), **D4** (falsified — the amplitude/exponent axis is a confound;
+  collapses into D2/D3) and **D5** (confirmed but N0–N1; arithmetic nobody
+  doubted). **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
   rungs around an *unpinned* chart, and the residue legs passed cleanly, but the
   harness turned out to have almost no dynamic range in transfer (0.938–0.988
   across the rungs that matter), because crossing p = 4 → p = 6 barely changes the
   fluctuation law. **D3's open half stays open**, with the concrete fix registered.
-  By-product: **the degeneracy order is nearly invisible in the fluctuation shape**.
-  **D3 was run 2026-07-28 and is falsified** — the chart-free residue does
-  not separate the rungs that transfer from the one that does not (its distances are
-  seed-sized and their ordering scrambles across sampling settings), while the
-  **bare exponent** orders all four exactly as transfer does, 30× apart at L2/L3.
-  Not a paradox: aggregation composes additively, so that harness's chart is
-  **pinned** and its magnitudes are facts by D2's rule (i). Replacement: transfer
-  there is **basin membership**, which also explains paper 1's **ceiling** where a
-  quotient story predicted a step.
-- **23 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
-  *(The count was stale on both sides of the 2026-07-27 merges — it predated
-  M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
-  carries a committed verdict. Checked against the tree: `S25-channel-independence`
-  had a verdict but no row in the experiments index, and was added.)*
+  By-product: **the degeneracy order is nearly invisible in the fluctuation
+  shape**. **D3 was worked independently three times**, on three branches unaware
+  of each other, and all three falsify the naive biconditional: [one
+  run](./experiments/D3-ladder-as-quotient/) finds the chart-free residue does not
+  separate the rungs that transfer from the one that does not (distances
+  seed-sized, ordering scrambling across sampling settings) while the **bare
+  exponent** orders all four exactly as transfer does — not a paradox, since that
+  harness's chart is **pinned** by additive aggregation and its magnitudes are
+  facts by D2's rule (i), with the replacement that transfer there is **basin
+  membership**. [A second run](./experiments/D3-chart-vs-ladder/) crosses the
+  same harness with an explicit chart-distortion factor and finds chart-invariance
+  is **necessary but not sufficient**: a chart-dependent statement of a true
+  mechanism can still fail (and even invert the ladder's ranking), while a
+  chart-free statement of a *different*-mechanism correspondence still fails to
+  transfer — and revises [ladder-vs-transfer](./experiments/ladder-vs-transfer/)
+  itself with a boundary condition (its original result assumed, without stating,
+  that the two domains shared a chart). [A third run](./experiments/D3-ladder-invariance/)
+  measures the invariance directly (an aggregation chart order H) and finds it
+  predicts transfer far better than the rung label (R² 0.998 vs 0.869) **until** a
+  constructed counterexample — domains sharing a scaling exponent but not
+  independence — holds the invariant mismatch flat while transfer collapses to
+  zero, so chart-invariance is necessary but not sufficient there too, and what it
+  misses is specifically the **mechanism** (independence) the ladder was already
+  built to grade. Its account of the residue's general form — **the fixed point of
+  the description map, with a ratio only its eigenvalue** — is a third
+  characterization alongside D7/D8's projective/Grassmannian point and D10's
+  composition-pinning account; **reconciling the three is not attempted here** and
+  is left as the register's next question. All three replacements agree with
+  paper 1's **ceiling** reading over the retracted step/cliff reading.
+- **32 experiments + 9 derivations** with teeth; **4 essays**; **1 paper**.
+  *(Recounted directly against the tree after reconciling five branches that
+  had diverged since 2026-07-27: every experiment directory with a committed
+  `verdict.json` has a row in [`experiments/README.md`](./experiments/README.md)
+  (32/32), and every top-level file in [`derivations/`](./derivations/) has a
+  row in its index (9/9) — `S25-one-parameterness.md` was missing one and was
+  added. Earlier counts here were stale on multiple sides of the
+  2026-07-27/28/30 merges.)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -294,7 +410,34 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
 
 ## 7. The open frontier (reprioritized)
 
+0'. **~~What is the invariant residue in general?~~ — ANSWERED 2026-07-29, and the
+   answer opened a floor.** ([D10](./derivations/D10-composition-lens.md) ·
+   [experiment](./experiments/D10-composition-lens/).) The residue is **the
+   invariant content of the largest group the system's composition law fails to
+   pin**: a chart is pinned to G_diff when its variable is additive under
+   composition *or dual to one*, and keeps G_pow when neither. p − 2 and allometry's
+   θ are the two branches of that one rule. Getting there required naming what
+   floor 1 consumes — a **composition law** — which is now floor 0, and floors 2
+   and 3 are the orders at which it lapses.
+   ***What this leaves open, in priority order:***
+   **(a) the d ≥ 2 surface test (P0, cheap-ish).** D10's order-0 control is a 1-D
+   chain whose entropy is exactly log-binomial, so its zero is nearly an identity.
+   The version with teeth is an interacting short-range model in d ≥ 2 with a
+   first-order transition, where the defect should scale as the **surface**,
+   N^{(d−1)/d} — neither the 0 nor the 1 D10 measured. Needs a density of states
+   (Wang–Landau). A third value would make the order-0 clause a real classifier;
+   an exponent of 1 would break it.
+   **(b) two indices on floor 3 and no relation between them (P1).**
+   [D6](./experiments/D6-support-singularities/)'s q1/q2 classifies the *shape* of
+   a singularity; D10's failing order says what *kind of failure* being at one is.
+   Whether q1/q2 is computable from the order is untouched, and it is the natural
+   next unification.
+   **(c) the mereology half (P2, and the only 🔴-flavoured item).** D10 argues that
+   the decomposition into parts is selected by the dynamics — the cut across which
+   interaction is weakest — and measures none of it. That is the part of "the
+   system builds its own lens" that is currently borrowed from the literature.
 0. **~~Is there a fourth floor?~~ — ANSWERED 2026-07-26. There is not.**
+   *(Above the tower. D10's floor 0 is below it and does not disturb this.)*
    ([D2](./derivations/D2-gauge-of-the-tower.md) ·
    [experiment](./experiments/D2-gauge-group/).) The scheme layer is the tower's
    **structure group**, not a layer of facts. Write **G_diff** for
@@ -387,6 +530,33 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    tolerance set below what its own estimator can express), a vacuous control, and
    marginal directions untested — all in the experiment's §5. **Essential
    singularities remain the unclassified remainder; it still does not narrow.**
+   **THREE FURTHER ACCOUNTS, NOT YET RECONCILED WITH EACH OTHER OR WITH THE
+   ABOVE — the register's next question, flagged rather than forced.**
+   **(i) [D10](./derivations/D10-composition-lens.md), 2026-07-29:** the residue
+   is the invariant content of the largest group the system's own **composition
+   law** fails to pin (a chart is pinned to G_diff when its variable is additive
+   under ⊎ or dual to one) — an account of *why* a chart gets pinned, orthogonal
+   to D7/D8's count of *what survives* once it isn't.
+   **(ii) [D3](./experiments/D3-ladder-invariance/), 2026-07-30, worked while
+   looking for something else:** a fourth ratio of the same shape — an
+   aggregation chart order, invariant to **3.6e-4** while its bare exponent spans
+   6× — measured in a system with **no singularity and no Φ**, and the first case
+   where **the ratio is matched and the objects still differ**: exchangeable
+   increments sharing one lognormal factor hold the mismatch at **0.012** while
+   transfer sweeps **0.935 → 0.000**, each setting a genuine fixed point of the
+   aggregation map. Proposed general object: **the fixed point of the description
+   map**, of which a ratio is only the **eigenvalue** — matching D7/D8 exactly
+   where the fixed-point set is a discrete list (a floor-3 germ, where normal-form
+   theory supplies one) and diverging where it is a continuum, where no finite set
+   of ratios classifies and the residue is a **shape** instead. Successor question
+   logged, untested: does a floor-3 object with a continuum fixed-point set break
+   the codimension count?
+   **(iii) Status.** D7/D8 (count/Grassmannian), D10 (composition-pinning) and
+   this D3 (fixed point) were produced independently, on three branches, none
+   aware of the others, and **no pass has yet checked whether they agree.** All
+   four accounts correctly retrodict D2's p − 2 and P-D's θ, which is not enough
+   to distinguish them — an honest state to record rather than paper over with a
+   forced synthesis.
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
@@ -433,13 +603,21 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    directional form, and it cost S7 a boundary condition.
    [P-D](./experiments/PD-allometry-reduction/): the sort's only negative,
    confirmed on every registered leg — and the variational route that *would* have
-   reduced allometry to floor 2 gives θ = 1, not 3/4. So the sort has now been
-   graded on a positive and on a negative, both about `seed` entries, and survived
-   both. Remaining: **P-C**, that variational principles come in exactly two
-   kinds — now the most interesting of the three, because P-D showed an
-   optimization can be real and still not put its exponent on floor 2, which is a
-   third possibility P-C's binary does not have a slot for; and **P-B**'s untested
-   half.
+   reduced allometry to floor 2 gives θ = 1, not 3/4.
+   **[P-C](./experiments/PC-variational-kinds/) is now done too, and it is the
+   sort's first miss.** Its falsifier asked for a variational law that *predicts*
+   with a functional over neither a measure nor an action; that region is **12.2%**
+   of a natural ensemble at n = 6 against the required 0.000, and at n = 8 not one
+   draw in 8000 had a potential while 5.9% converge — because rotation pairs the
+   *n* stability conditions into **⌈n/2⌉** (agreement 0.9985+). The error is
+   grammatical rather than architectural: measure and action are the two **poles of
+   a decomposition** (J = S + A), not two boxes, and the potential-free content is
+   the bracket, so the tower keeps its floors. What replaces the binary is a
+   three-way classification of **readouts** — smooth ⇒ floor 2, kinked ⇒ selector,
+   jumping ⇒ a count — decided by the regularity of the optimal value, which also
+   supplies the leading account of P-D's unexplained kink
+   ([`FLOORS.md`](./invariants/FLOORS.md) §4a). **So the sort is graded 3 times:
+   two survived, one refuted.** Remaining: **P-B**'s untested half.
 3. **Grokking / Lee–Yang (P1, S13).** Does a genuine grokking transition show a
    non-analyticity of the appropriate Φ? Closes the gap S3 left open, and
    [S26](./experiments/S26-llc-trajectory/) named plateau-rich tasks as the

@@ -37,6 +37,17 @@ Then, exactly:
    Φ non-analytic (N→∞)           → phase transition (Lee–Yang zeros pinch the axis)
 ```
 
+**⟳ Why a *logarithm* (2026-07-29, [D10](../derivations/D10-composition-lens.md)).**
+The table below has puzzled every pass that read it: five fields, five reasons, one
+log. The reason is composition. Independent systems' partition functions multiply,
+Z(A ⊎ B) = Z(A)·Z(B), so a continuous scalar summary that **adds** when systems are
+put side by side must satisfy f(xy) = f(x) + f(y) — Cauchy's equation, whose unique
+continuous solution is c·ln Z. **Φ is not a convenient choice of scalar; it is the
+only additive coordinate on a multiplicative composition**, which is why every
+field that needs an additive bookkeeping quantity arrives at it independently.
+(Textbook — Shannon–Khinchin–Rényi axiomatics; recorded here for the direction of
+explanation, which runs from composition to the hub and not the reverse.)
+
 ## One object, many names
 
 | Domain | Z is… | Φ = ln Z is… |
