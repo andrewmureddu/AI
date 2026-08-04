@@ -1,0 +1,793 @@
+{
+  "n_cells": 48,
+  "cells": [
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 1.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 1,
+      "conjunction": 1,
+      "skill": 0.8936602475663382,
+      "skill_unclipped": 0.8936602475663382,
+      "sd": 0.03031942436412607
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 0.85,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.7751933880060966,
+      "skill_unclipped": 0.7751933880060966,
+      "sd": 0.056178085933901736
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 0.7,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.5650783440258552,
+      "skill_unclipped": 0.5650783440258552,
+      "sd": 0.058321166195243766
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 0.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.2860066885712055,
+      "skill_unclipped": 0.2860066885712055,
+      "sd": 0.06162674297609705
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 1.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0904511555947943,
+      "skill_unclipped": 0.08933683187380365,
+      "sd": 0.07221563060522623
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 2.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0,
+      "skill_unclipped": -1.1508826553939495,
+      "sd": 0.0
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 1.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 1,
+      "conjunction": 1,
+      "skill": 0.9156110954795411,
+      "skill_unclipped": 0.9156110954795411,
+      "sd": 0.02073880338645825
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 0.85,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.7692478117574579,
+      "skill_unclipped": 0.7692478117574579,
+      "sd": 0.03947287592490391
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 0.7,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.558543611009608,
+      "skill_unclipped": 0.558543611009608,
+      "sd": 0.04521778286592388
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 0.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.2819329116759498,
+      "skill_unclipped": 0.2819329116759498,
+      "sd": 0.053369987455891305
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 1.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.12866642425347746,
+      "skill_unclipped": 0.12866642425347746,
+      "sd": 0.05219276833443674
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 2.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0,
+      "skill_unclipped": -1.0723359042344853,
+      "sd": 0.0
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 1.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 1,
+      "conjunction": 0,
+      "skill": 0.48396259232865924,
+      "skill_unclipped": 0.48396259232865924,
+      "sd": 0.035747141024827955
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 0.85,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.7562961591284463,
+      "skill_unclipped": 0.7562961591284463,
+      "sd": 0.019499127809230684
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 0.7,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.77314255715599,
+      "skill_unclipped": 0.77314255715599,
+      "sd": 0.02466190509064083
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 0.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.43768559395739326,
+      "skill_unclipped": 0.43768559395739326,
+      "sd": 0.04514663900623416
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 1.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0,
+      "skill_unclipped": -1.1747894022313587,
+      "sd": 0.0
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 2.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0,
+      "skill_unclipped": -4.1970876451684695,
+      "sd": 0.0
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 1.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 1,
+      "conjunction": 0,
+      "skill": 0.03285994848933997,
+      "skill_unclipped": 0.024112297705592436,
+      "sd": 0.033575759547131524
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 0.85,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.46662487184328355,
+      "skill_unclipped": 0.46662487184328355,
+      "sd": 0.032132277821384905
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 0.7,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.7227964920798896,
+      "skill_unclipped": 0.7227964920798896,
+      "sd": 0.019610148110535484
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 0.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.5623113493754073,
+      "skill_unclipped": 0.5623113493754073,
+      "sd": 0.048548179611497676
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 1.5,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0,
+      "skill_unclipped": -2.5917984790182693,
+      "sd": 0.0
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 2.0,
+      "statement": "raw",
+      "claim_chart_free": 0,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.0,
+      "skill_unclipped": -8.226755310914777,
+      "sd": 0.0
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 1.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 1,
+      "conjunction": 1,
+      "skill": 0.8159417176189039,
+      "skill_unclipped": 0.8159417176189039,
+      "sd": 0.04812957365193446
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 0.85,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8159417176191395,
+      "skill_unclipped": 0.8159417176191395,
+      "sd": 0.04812957365174724
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 0.7,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8159417176194754,
+      "skill_unclipped": 0.8159417176194754,
+      "sd": 0.048129573651481176
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 0.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8159417176202383,
+      "skill_unclipped": 0.8159417176202383,
+      "sd": 0.04812957365087556
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 1.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8159417176184589,
+      "skill_unclipped": 0.8159417176184589,
+      "sd": 0.04812957365228723
+    },
+    {
+      "rung_name": "L4",
+      "rung": 4,
+      "mechanism_shared": 1,
+      "chart_a": 2.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8159417176182363,
+      "skill_unclipped": 0.8159417176182363,
+      "sd": 0.048129573652463696
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 1.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 1,
+      "conjunction": 1,
+      "skill": 0.8326120401153265,
+      "skill_unclipped": 0.8326120401153265,
+      "sd": 0.04776622747105953
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 0.85,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8326120401153954,
+      "skill_unclipped": 0.8326120401153954,
+      "sd": 0.047766227471006194
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 0.7,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.832612040115494,
+      "skill_unclipped": 0.832612040115494,
+      "sd": 0.04776622747093133
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 0.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.8326120401157169,
+      "skill_unclipped": 0.8326120401157169,
+      "sd": 0.047766227470760515
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 1.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.832612040115196,
+      "skill_unclipped": 0.832612040115196,
+      "sd": 0.04776622747115884
+    },
+    {
+      "rung_name": "L3",
+      "rung": 3,
+      "mechanism_shared": 1,
+      "chart_a": 2.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 1,
+      "skill": 0.832612040115131,
+      "skill_unclipped": 0.832612040115131,
+      "sd": 0.047766227471208955
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 1.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 1,
+      "conjunction": 0,
+      "skill": 0.37290832132638363,
+      "skill_unclipped": 0.37290832132638363,
+      "sd": 0.0809743614850507
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 0.85,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.3729083213262879,
+      "skill_unclipped": 0.3729083213262879,
+      "sd": 0.0809743614850425
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 0.7,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.3729083213261487,
+      "skill_unclipped": 0.3729083213261487,
+      "sd": 0.08097436148502983
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 0.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.37290832132583385,
+      "skill_unclipped": 0.37290832132583385,
+      "sd": 0.0809743614850024
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 1.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.3729083213265668,
+      "skill_unclipped": 0.3729083213265668,
+      "sd": 0.08097436148506654
+    },
+    {
+      "rung_name": "L2",
+      "rung": 2,
+      "mechanism_shared": 0,
+      "chart_a": 2.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.37290832132665863,
+      "skill_unclipped": 0.37290832132665863,
+      "sd": 0.08097436148507518
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 1.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 1,
+      "conjunction": 0,
+      "skill": 0.03725673833245059,
+      "skill_unclipped": 0.012870203680801481,
+      "sd": 0.0547578600484337
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 0.85,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.037256738332431094,
+      "skill_unclipped": 0.012870203680746067,
+      "sd": 0.054757860048405375
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 0.7,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.03725673833240324,
+      "skill_unclipped": 0.012870203680666895,
+      "sd": 0.05475786004836491
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 0.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.037256738332340195,
+      "skill_unclipped": 0.01287020368048758,
+      "sd": 0.05475786004827335
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 1.5,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.037256738332487466,
+      "skill_unclipped": 0.01287020368090605,
+      "sd": 0.05475786004848731
+    },
+    {
+      "rung_name": "L1",
+      "rung": 1,
+      "mechanism_shared": 0,
+      "chart_a": 2.0,
+      "statement": "log",
+      "claim_chart_free": 1,
+      "chart_undistorted": 0,
+      "conjunction": 0,
+      "skill": 0.03725673833250588,
+      "skill_unclipped": 0.012870203680958467,
+      "sd": 0.05475786004851407
+    }
+  ],
+  "predictors": {
+    "rung_alone": 0.48111159357359967,
+    "claim_chart_free_alone": -0.07772470690403821,
+    "mechanism_alone": 0.49185844550586194,
+    "conjunction": 0.5247503256621797
+  },
+  "spearman_rung_vs_skill_per_column": {
+    "raw_a=1": 0.7999999999998398,
+    "raw_a=0.85": 0.9999999999997998,
+    "raw_a=0.7": -0.5999999999998799,
+    "raw_a=0.5": -0.7999999999998398,
+    "raw_a=1.5": 0.7999999999998398,
+    "raw_a=2": 0.7999999999998398,
+    "log_a=1": 0.7999999999998398,
+    "log_a=0.85": 0.7999999999998398,
+    "log_a=0.7": 0.7999999999998398,
+    "log_a=0.5": 0.7999999999998398,
+    "log_a=1.5": 0.7999999999998398,
+    "log_a=2": 0.7999999999998398
+  },
+  "unclipped_table": {
+    "raw": {
+      "a=1": {
+        "L1": 0.024,
+        "L2": 0.484,
+        "L3": 0.916,
+        "L4": 0.894
+      },
+      "a=0.85": {
+        "L1": 0.467,
+        "L2": 0.756,
+        "L3": 0.769,
+        "L4": 0.775
+      },
+      "a=0.7": {
+        "L1": 0.723,
+        "L2": 0.773,
+        "L3": 0.559,
+        "L4": 0.565
+      },
+      "a=0.5": {
+        "L1": 0.562,
+        "L2": 0.438,
+        "L3": 0.282,
+        "L4": 0.286
+      },
+      "a=1.5": {
+        "L1": -2.592,
+        "L2": -1.175,
+        "L3": 0.129,
+        "L4": 0.089
+      },
+      "a=2": {
+        "L1": -8.227,
+        "L2": -4.197,
+        "L3": -1.072,
+        "L4": -1.151
+      }
+    },
+    "log": {
+      "a=1": {
+        "L1": 0.013,
+        "L2": 0.373,
+        "L3": 0.833,
+        "L4": 0.816
+      },
+      "a=0.85": {
+        "L1": 0.013,
+        "L2": 0.373,
+        "L3": 0.833,
+        "L4": 0.816
+      },
+      "a=0.7": {
+        "L1": 0.013,
+        "L2": 0.373,
+        "L3": 0.833,
+        "L4": 0.816
+      },
+      "a=0.5": {
+        "L1": 0.013,
+        "L2": 0.373,
+        "L3": 0.833,
+        "L4": 0.816
+      },
+      "a=1.5": {
+        "L1": 0.013,
+        "L2": 0.373,
+        "L3": 0.833,
+        "L4": 0.816
+      },
+      "a=2": {
+        "L1": 0.013,
+        "L2": 0.373,
+        "L3": 0.833,
+        "L4": 0.816
+      }
+    }
+  },
+  "P1_raw_identity": {
+    "L1": 0.03285994848933997,
+    "L2": 0.48396259232865924,
+    "L3": 0.9156110954795411,
+    "L4": 0.8936602475663382
+  },
+  "P2_raw_distorted": {
+    "L3": {
+      "a=1": 0.9156110954795411,
+      "worst_distorted": 0.0,
+      "drop": 0.9156110954795411
+    },
+    "L4": {
+      "a=1": 0.8936602475663382,
+      "worst_distorted": 0.0,
+      "drop": 0.8936602475663382
+    }
+  },
+  "P3_log_any_chart": {
+    "L3": {
+      "by_a": {
+        "1.0": 0.8326120401153265,
+        "0.85": 0.8326120401153954,
+        "0.7": 0.832612040115494,
+        "0.5": 0.8326120401157169,
+        "1.5": 0.832612040115196,
+        "2.0": 0.832612040115131
+      },
+      "spread": 5.858646900946951e-13
+    },
+    "L4": {
+      "by_a": {
+        "1.0": 0.8159417176189039,
+        "0.85": 0.8159417176191395,
+        "0.7": 0.8159417176194754,
+        "0.5": 0.8159417176202383,
+        "1.5": 0.8159417176184589,
+        "2.0": 0.8159417176182363
+      },
+      "spread": 2.0019541580040823e-12
+    }
+  },
+  "P4_chart_free_low_rungs": {
+    "L1": {
+      "by_a": {
+        "1.0": 0.03725673833245059,
+        "0.85": 0.037256738332431094,
+        "0.7": 0.03725673833240324,
+        "0.5": 0.037256738332340195,
+        "1.5": 0.037256738332487466,
+        "2.0": 0.03725673833250588
+      },
+      "max": 0.03725673833250588
+    },
+    "L2": {
+      "by_a": {
+        "1.0": 0.37290832132638363,
+        "0.85": 0.3729083213262879,
+        "0.7": 0.3729083213261487,
+        "0.5": 0.37290832132583385,
+        "1.5": 0.3729083213265668,
+        "2.0": 0.37290832132665863
+      },
+      "max": 0.37290832132665863
+    }
+  }
+}

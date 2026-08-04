@@ -20,7 +20,7 @@ the architecture results — the tower, the floors — are a *sorting* of known
 invariants into a structure.
 
 That is **recognition**, and it has been productive: it produced the hub, the
-tower, the transfer cliff, and five arrivals at the singular set of ∇²Φ. But
+tower, the transfer result, and five arrivals at the singular set of ∇²Φ. But
 recognition can only ever return laws that someone already wrote down. Its
 ceiling is the union of the textbooks.
 
@@ -330,8 +330,14 @@ survives being called gauge.
 
 **Engine:** negative space — no cross-domain relation in this repo has ever
 survived as a bare exponent.
-**Novelty: N2 claimed. Status: ⟳ RUN 2026-07-28 — FALSIFIED.
-[`experiments/D3-ladder-as-quotient/`](../experiments/D3-ladder-as-quotient/).**
+**Novelty: N2 claimed. Status: ⟳ WORKED TWICE, INDEPENDENTLY — FALSIFIED both
+times, by different experiments neither session knew the other was running.
+[`experiments/D3-chart-vs-ladder/`](../experiments/D3-chart-vs-ladder/) (2026-07-27)
+and [`experiments/D3-ladder-as-quotient/`](../experiments/D3-ladder-as-quotient/)
+(2026-07-28). A third, independent pass —
+[`experiments/D3-ladder-invariance/`](../experiments/D3-ladder-invariance/)
+(2026-07-30) — is recorded further below; all three agree the biconditional is
+false and disagree only on what to say instead.**
 
 > **⟳ Restraint pass (2026-07-28): falsified on its own registered falsifier, and
 > the replacement is smaller but measured.** The chart is *n*, the number of
@@ -374,6 +380,37 @@ survived as a bare exponent.
 > L2→L3 = +0.432), so the sharpness argument was dead before the run and the
 > registration recorded that it did not get to use it.
 
+> **⟳ Restraint pass (2026-07-27, on a separate branch, before the run above and
+> unaware of it): the biconditional dies, and so does the reading
+> it was attacking.** Built both off-diagonal cells the falsifier below names, by
+> crossing the [ladder-vs-transfer](../experiments/ladder-vs-transfer/) harness
+> with a chart factor (B records on y ↦ sgn(y)|y|^a, D1/D2's G_pow on the
+> measurement axis) and a statement factor (shape of Y, chart-dependent, vs shape
+> of ln|Y|, chart-free).
+> **The registered falsifier fired**: with the claim stated chart-freely the low
+> rungs still fail — L2 = **0.373**, L1 = **0.037** against L3/L4 at 0.833/0.816 —
+> so chart-invariance is **necessary but not sufficient**. **The rung-label reading
+> fails too**: with the mechanism untouched but the claim chart-dependent, L3
+> collapses 0.916 → 0.000 and at a = 0.7 the word-only L1 (0.723) **beats** the
+> theorem-backed L4 (0.565).
+> **Survivor — a two-factor claim:** transfer needs a shared mechanism **and** a
+> chart-free statement of it; the ladder measures the first only. Sharper form:
+> **chart-freedom is the precondition under which the ladder is predictive at
+> all** — Spearman(rung, skill) is +0.80 in *every* chart under a chart-free claim,
+> and runs +1.00 → −0.80 under a chart-dependent one. Note a = 0.85, where the
+> ordering is nominally perfect while the **L2/L3 separation collapses** to 0.013
+> (0.756 vs 0.769, against 0.43 undistorted): rank correlation alone would have
+> missed it. Against [paper 1](../paper/transfer-cliff.md)'s measured ceiling
+> (0.920), chart-freedom also has a **price** — 0.833 where the shared-chart
+> claim reaches 0.916, i.e. invariance buys robustness, not maximal skill.
+> **Revises an existing result:** [ladder-vs-transfer](../experiments/ladder-vs-transfer/)
+> lives entirely in the shared-chart cell and never said so; its finding is
+> conditional on a shared measurement chart. Also mostly retires
+> [S22](./SPECULATIVE.md). Process deviation on record: **no PREREGISTRATION.md**
+> — the design and opposing predictions were fixed before the run, but only the
+> stone's own falsifier was formally registered, and backdating a file would be a
+> fabrication.
+
 If D1 is right, "does this correspondence transfer?" has a mechanical answer:
 **it transfers iff it is chart-invariant.** Which would mean the
 [ladder](../METHODOLOGY.md) is not a scale of epistemic quality but a count of how
@@ -399,7 +436,37 @@ score better than the rung label does.
 ### D4 — Amplitudes transfer, exponents don't, and the asymmetry is one-directional
 
 **Engine:** residue mining across every experiment in the repo.
-**Novelty: N1–N2. Status: unworked; cheap.**
+**Novelty: N1–N2 claimed; N0 for what survived. Status: ⟳ RUN 2026-07-27,
+FALSIFIED — [`experiments/D4-amplitude-vs-exponent/`](../experiments/D4-amplitude-vs-exponent/).**
+
+> **⟳ Restraint pass (2026-07-27): the axis is a confound, and the stone cites its
+> own counterexample below.** A prospective battery — four systems, seven
+> quantities, all fixed before measuring and all reported, each labelled *kind*
+> (amplitude/exponent) and *chart* (free/dependent) in advance — separates cleanly
+> by **chart** and not at all by **kind**: on the fold/SIS pair, chart-free
+> quantities spread 0.0–0.8% and chart-dependent ones 66.7–70.1%, while amplitudes
+> span 0.8–70.1% and exponents 0.0–66.7%. An **amplitude fails at 70.1%** and two
+> **exponents transfer exactly**; the failing amplitude's ratio was registered in
+> advance as 3^{2/3} = 2.0801 and measured **2.0801**.
+> **The audit is worse for the stone than the battery.** Every amplitude cited in
+> the table above is a dimensionless product of *conjugate* quantities — the
+> chart-free construction — and every exponent is a *bare* one: the sample was
+> confounded on a property nobody was tracking. And the confound is not even
+> perfect. **[P-A](../experiments/PA-spectral-gap/)'s Kuramoto constant
+> K_c·λ₂ = 0.410–0.632 is a dimensionless amplitude that does not transfer, and it
+> appears in the table above in the row supporting "amplitudes transfer."**
+> Meanwhile [P-D](../experiments/PD-allometry-reduction/), which landed after this
+> stone was filed, reports an *exponent* transferring with spread **4.0e-15** and
+> summarises itself as *"magnitudes invisible, counts not"* — this claim with the
+> sign reversed.
+> **D4 does not leave a replacement; it collapses into
+> [D2](../derivations/D2-gauge-of-the-tower.md) and
+> [D3](../experiments/D3-chart-vs-ladder/).** Transfer needs the object to be the
+> same *and* the claim stated chart-freely. Novelty of the survivor: **N0** — the
+> prior-art note warned that physics holds the *opposite* contrast (exponents
+> universal in a class, only amplitude *ratios* universal), and once the confound
+> is removed the surviving statement is that same shape. The value was in killing
+> a stone that would otherwise have propagated as an independent law.
 
 Tabulate everything this repo has measured across ≥2 domains:
 
@@ -431,7 +498,39 @@ should be tested prospectively before being believed at all.
 ### D5 — Does *p* obey a sum rule?
 
 **Engine:** gap prediction — if *p* classifies, it should have arithmetic.
-**Novelty: N3 if it holds. Status: unworked, speculative.**
+**Novelty: N3 claimed; N0–N1 delivered. Status: ⟳ RUN 2026-07-28 —
+[`experiments/D5-degeneracy-arithmetic/`](../experiments/D5-degeneracy-arithmetic/).**
+
+> **⟳ Restraint pass (2026-07-28): confirmed, and it confirms what was never in
+> doubt — as the registration predicted.** The literal reading (coalescence) is
+> answered by singularity theory: **codimension adds**, two folds give a cusp,
+> p_composite = p₁+p₂−2. Thom and Arnold; **N0**, exactly as this stone's own
+> prior-art warning said. The live reading exists only because
+> [D6](../experiments/D6-support-singularities/) showed *p* was the q₁ = 2 slice
+> of a pair: with Φ carrying more than two terms the prediction is a
+> **staircase**, each higher term contributing a plateau at 1 − q₁/q_j.
+> **The arithmetic is enumeration — terms queue, they do not combine.** Eleven
+> plateaus across five systems land within **0.0068** of prediction, including a
+> genuine three-step staircase (0.5068 / 0.6645 / 0.7452), and the ratio rule
+> (1−θ_j)/(1−θ_{j+1}) = q_{j+1}/q_j holds in all six comparisons. All of that is
+> D6 applied repeatedly and was **declared an identity before the run**.
+> **The one measured thing is the squeeze:** a regime must exceed its visible
+> plateau by **≈ 2.25 decades**, consistently (6 → 3.75, 10 → 7.75). Registered as
+> "squeezed out below ~1 decade" — the threshold was optimistic by ~2×, which is
+> the registration being wrong rather than the claim. It earns its keep by
+> converting [P8](../experiments/D1-chart-invariance/P8-REREGISTRATION.md)'s
+> failure into a condition: the Blume–Capel sextic plateau never established
+> because its regime did not span 2.25 decades.
+> **D5 closes this session's line of work without adding a law**, which for a
+> stone that predicted exactly this is a legitimate outcome. *(Reconciliation
+> note: this was written believing D5 was the register's last unworked stone.
+> It was not — D7, D8, D9 and D10 were opened and worked on other branches
+> around the same time, unseen by this one, and the register stays open. The
+> "closes the register" framing is kept as written, since it records what was
+> believed at the time; it is corrected here rather than silently dropped.)*
+> Process failure on record: a `pkill` killed the shell not the process, and a
+> superseded run overwrote the verdict with stale coefficients — caught because
+> two computations of the same system disagreed.
 
 If floor 3 is classified by the degeneracy order *p*, the natural next question is
 whether *p* is conserved, additive, or bounded along a sequence of transitions.

@@ -214,5 +214,15 @@ experiment supplies the removability half only.
   does not show anything about learning.
 - **MP-edge k = 2.091** passes its registered tolerance by 0.009. Treat as
   consistent with 2, not as a precise measurement.
-- **P8's δa³ law is post-hoc.** It has not been pre-registered and must be
-  re-run against a registered prediction before it counts as anything.
+- **P8's δa³ law was post-hoc.** ⟳ **Debt paid in part, 2026-07-27** — see
+  [`P8-REREGISTRATION.md`](./P8-REREGISTRATION.md) and `p8_verdict.json`.
+  Registered prospectively as the stronger two-variable law D_× = c₄³/(u*·c₆²)
+  on the Blume–Capel free energy, where the model rather than the experimenter
+  fixes both coefficients. **The δa exponent is confirmed prospectively at 3.128
+  (registered 3.0 ± 0.4), reproducing the post-hoc 3.211**, and α on c₄ is 3.111
+  (registered 3.00 ± 0.30). **The c₆ exponent is *not evaluable*** and stands
+  untested: only 3 of 8 sweep points yield a usable crossing, because for
+  a ≥ 0.339 the local slope peaks at 0.5723 and turns over before reaching 2/3 —
+  the sextic regime never gets room before m⁸ and higher take over. Over the
+  usable window c₄ spans 1.20 decades and c₆ only 0.021, so the two-variable fit
+  is degenerate. A third direction error is on record there too.
