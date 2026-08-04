@@ -791,6 +791,188 @@ design failure rather than a result.
 
 ---
 
+### D10 — Is there a floor 0, and is it a composition law?
+
+*Numbering note: worked 2026-07-29 on a branch that opened it as "D7", unaware
+that [D7](#d7--what-the-residue-is-eliminate-the-chart-and-the-count-is-n--1)
+(the residue's general form) had already been claimed the same week on a
+different branch. D7 reached main first; this stone is renumbered D10 — the
+next free integer once D8 and D9 had landed — on reconciliation, following the
+[S25/S26 precedent](../SYNTHESIS.md). No claim below changed, only the label
+and the file paths it is worked under.*
+
+**Engine:** gap prediction — the tower's base floor takes an input nobody has
+named. **Novelty: N1 claimed** (every ingredient is old; the composition into a
+layer of this map is what is new), **with one N2 candidate flagged in §3 below.**
+**Status: ⟳ RUN 2026-07-29 —
+[`experiments/D10-composition-lens/`](../experiments/D10-composition-lens/),
+[`derivations/D10-composition-lens.md`](../derivations/D10-composition-lens.md).**
+
+> **⟳ Restraint pass (2026-07-29): floor 0 stands, N1 confirmed as the honest
+> level, and one pre-registered hypothesis was killed by its own control.**
+>
+> **C2 holds and establishes the priority.** Six statistics of one charge, tilted
+> to equal informativeness: the ensemble family closes for **exactly** the additive
+> ones (≤**3.2e-14**) and none of the others (≥**8.8e-4**). Linearity is refuted by
+> 3Q−7 (not linear, closes anyway — so the rule is *affine in an additive charge*),
+> monotonicity by three rows that have it and fail, convexity by Q² and √Q failing
+> identically at opposite curvature. The leg contains **no dynamics and no group**,
+> so the criterion cannot be a consequence of floor 1 — that, and not the
+> arithmetic, is what makes this a layer underneath.
+>
+> **C4, the only at-risk claim, survives on its sharpest number.** Curie–Weiss,
+> exact: δ₂ = **0.00240 / 0.29364 / 0.50010** against 0 / 1−2^{−½} = 0.29289 / 0.5,
+> with Var ~ N^1.022 / N^**1.504** / N^2.002. The middle value is neither 0 nor ½
+> and is inherited from a critical exponent, so **criticality is an order-2
+> extensivity failure**; SSB reaches the same order by a different mechanism
+> (mixture, not anomalous scaling), which the bare statement "χ diverges" cannot
+> tell apart. Order 0 fails for mean-field q=3 with defect ~N^**1.0252** and c<0
+> over **68.6%** of the energy range, so Φ\* is the concave hull and **floor 2's
+> Legendre face breaks where composition does**. Heavy tails have no order at all.
+> P-B is retrodicted as this condition's order-2 clause.
+>
+> **C3 answers [`FLOORS.md`](../invariants/FLOORS.md) §4's live question** — the
+> residue is the invariant content of the largest group ⊎ fails to pin — but only
+> after the audit **forced a correction** to the rule as first written (a chart is
+> pinned when its variable is additive *or dual to one*; reduced temperature is
+> intensive and its exponents are facts because energy is additive). One row the
+> audit was not designed for passed anyway: the RLCT is read off ln n, samples are
+> additive, so λ should be a fact — and independently is one.
+>
+> **What died.** "Long-range ⇒ non-additive" is **false**: mean-field q=2 is
+> equally long-range and its defect is *exactly zero*. The control was added before
+> the run precisely because q=3 confounds long-range with first-order, and the
+> confound was real. Surviving statement: **long range opens the possibility, a
+> first-order transition realizes it.**
+>
+> **Honest.** Two registered items failed — leg C's growth exponent (+1.00
+> registered, −0.87/−1.51/−1.82 measured; killed by the tilt normalization I
+> introduced to remove a free knob) and leg D3's discriminator (mis-stated: the
+> Gaussian control's spread is set by sample count, not N). Legs A and E1 were
+> **declared identities before the run** and carry no weight. The forceful
+> short-range control — an interacting model in d ≥ 2 where the defect should scale
+> as the surface, N^{(d−1)/d} — is **not run** and is the cheapest next test. The
+> mereology half of the claim (that the decomposition into parts is selected by the
+> dynamics) is argued and **measured nowhere**. Three code bugs were found before
+> the numbers were trusted; the first two made the *short-range control* the
+> steepest riser in the table, which is what exposed them.
+>
+> **Novelty verdict: N1, as the prior-art note defaulted.** C1 is Cauchy, C2 is
+> Koopman–Pitman–Darmois, the order-0 physics is Ispolatov–Cohen and Touchette.
+> The N2 candidate — floor 3's members indexed by the failing order — is
+> *supported* but not established as unstated elsewhere; the large-deviation
+> literature is close enough that the nearest-miss warning stands.
+
+#### 1. The gap
+
+[`symmetry-sector.md`](../derivations/symmetry-sector.md) derived floor 1: the
+conserved charges are the natural parameters of long-time ensembles — symmetry
+fixes *which quantities exist* before Φ predicts with them. The derivation takes
+the group G as given. **Nothing in this repo says where G comes from**, and there
+is no outside to hand it over: a cross-domain map has no privileged observer, and
+neither does any of the systems it maps. So either the base floor is a brute
+input, or something is under it.
+
+The suspicion that something is: three separate results already reach past floor 1
+for a *composition* fact and none of them names it as one.
+
+- [P-D leg F](../experiments/PD-allometry-reduction/) killed `G_pow` for allometry
+  because **mass is extensive** — under M → M^a masses stop adding.
+- [D2 §7](../derivations/D2-gauge-of-the-tower.md) reconciles universality with
+  chart-gauge because reduced temperature "enters the Hamiltonian linearly", i.e.
+  because **energy is additive**.
+- [`symmetry-sector.md`](../derivations/symmetry-sector.md) §2's charges — energy,
+  particle number, momentum — are, without comment, **exactly the additive ones.**
+
+Three arrivals, one unnamed object. That is the same shape as the five arrivals at
+the singular set of ∇²Φ, which turned out to be the tower's top.
+
+#### 2. The claim
+
+> **Floor 0 is a composition law: a rule ⊎ for putting two instances of a system
+> side by side, together with the decomposition into parts that ⊎ recombines.
+> It is prior to floor 1, it is constructed from the inside, and it must be
+> maintained. The tower's three floors are its consequences and its failure
+> orders.**
+
+Four consequences, each separately checkable:
+
+- **C1 — the hub's form is forced.** Independent parts multiply, Z(A ⊎ B) =
+  Z(A)Z(B). Demand a continuous scalar summary that *adds* under ⊎ and you get
+  Φ = c·ln Z uniquely (Cauchy). Φ is not a convenient choice; it is the only
+  additive coordinate on a multiplicative composition.
+- **C2 — floor 1's selection rule is conservation ∧ additivity, not
+  conservation.** For the ensemble family to be closed under ⊎ the statistic in
+  the exponent must be additive. Conserved-but-non-additive quantities exist
+  (Casimirs — L², any nonlinear function of an additive charge) and they never
+  appear as natural parameters. This **corrects** `symmetry-sector.md` §2, which
+  states the rule as conservation alone.
+- **C3 — the composition law pins the chart, and that is what the residue is.**
+  A control variable that is additive under ⊎ cannot be re-charted by x → x^a
+  without breaking additivity, so `G_pow` is unavailable and its exponents are
+  facts; a variable with no composition law (a bare distance-to-threshold) keeps
+  `G_pow` and only ratios, signs and counts survive. This is a candidate general
+  answer to [`FLOORS.md`](../invariants/FLOORS.md) §4's live question, of which
+  p − 2 and allometry's θ are the two branches.
+- **C4 — maintenance, and the failure orders.** Φ is a cumulant generating
+  function, so "Φ is additive under ⊎" is not one condition but one per order.
+  Order 0/1 fails for long-range interactions ⇒ ensemble inequivalence ⇒ **floor
+  2's Legendre face breaks**. Order 2 fails when the parts stop being independent
+  ⇒ Var(M)/N → ∞ ⇒ **that is criticality**, floor 3's most-arrived-at member. No
+  order exists ⇒ **heavy tails**, floor 3's other member. On this reading floor 3
+  is not a list of singularities but an index of *which order of extensivity
+  went*.
+
+#### 3. Prior-art note (written before the work)
+
+**Old, and thoroughly so.** Every ingredient is somebody's textbook.
+
+| Ingredient | Where it already lives |
+|---|---|
+| Additivity + continuity ⇒ logarithm | Cauchy's functional equation; Shannon 1948 / Khinchin / Rényi entropy axiomatics; Aczél |
+| Extensivity as the precondition for a thermodynamic limit | Ruelle 1969; Fisher; Lieb–Lebowitz (stability + tempering) |
+| Long-range ⇒ non-additive ⇒ ensemble inequivalence, non-concave S(E), negative specific heat | Ispolatov & Cohen 2001; Ellis–Haven–Turkington 2000; Touchette 2009; Campa–Dauxois–Ruffo 2009 |
+| Legendre transform recovers only the concave hull | standard convex analysis; Touchette 2009 |
+| Sufficient statistics of fixed dimension ⇒ exponential family with an **additive** statistic | **Koopman–Pitman–Darmois** — this is C2, already a theorem in statistics |
+| GGE is built from **local** charges, and local means additive | Rigol et al. 2007; Vidmar & Rigol 2016 |
+| χ = Var(M)/N diverging at T_c | every stat-mech course |
+| The decomposition into subsystems is selected by the dynamics, not given | quantum mereology: Zanardi 2001; Tegmark 2015; Cotler–Penington–Ranard 2019; Carroll & Singh 2021 |
+
+**So the honest default is N1**: known laws from statistics, statistical mechanics
+and quantum foundations, correctly composed. C1 and C2 in particular are N0 —
+Koopman–Pitman–Darmois *is* C2, and anyone who calls C2 new has not read it.
+
+**The one N2 candidate.** C4's indexing claim — that floor 3's members are
+distinguished by the *order* at which extensivity fails, and that this is the same
+list the tower arrived at by five independent routes — is a relation between this
+repo's measured architecture and a standard condition, and it is not a statement
+either field owns. It is also the only part that could be wrong.
+
+**Nearest miss, recorded so it cannot be relabelled.** If someone has written
+"non-extensivity classified by the order of the failing cumulant" — plausible, the
+large-deviation literature is close — then C4 is N0 too and D10 is a bookkeeping
+result: a layer correctly named, nothing discovered.
+
+#### 4. Falsifiers
+
+1. **A natural parameter with a non-additive conjugate.** A genuine long-time
+   ensemble parameterized by a conserved quantity that is *not* additive (and not
+   affine in one). Kills C2 and with it the claim that floor 1 takes an input.
+2. **A chart-invariant exponent in a variable with no composition law**, or a
+   gauge exponent in an additive one. Kills C3.
+3. **Criticality without order-2 non-extensivity** — a divergence of ∇²Φ where
+   Var(M)/N stays bounded, or an extensivity failure at order 2 with no floor-3
+   object at it. Kills C4, the only at-risk part.
+4. **A system with no composition law that still has a Φ.** Kills the priority
+   claim outright: floor 0 would be optional rather than prior.
+
+#### 5. Where it is worked
+
+Derivation: [`derivations/D10-composition-lens.md`](../derivations/D10-composition-lens.md).
+Experiment: [`experiments/D10-composition-lens/`](../experiments/D10-composition-lens/).
+
+---
+
 ## 6. Working a D-stone
 
 Same rhythm as a speculative stone, with two additions, both aimed at the two

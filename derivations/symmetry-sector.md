@@ -38,6 +38,15 @@ layer*, not a parallel sector — the direction of explanation between symmetry
 and prediction runs bottom-up, which is why every attempt to express Noether
 *inside* Φ-machinery kept failing while the converse kept succeeding.
 
+> **⟳ Extended 2026-07-29 by [D10](./D10-composition-lens.md): this floor is not
+> the bottom.** The derivation takes the group G as given, and there is no
+> outside to give it. Under it sits a **composition law** ⊎ — a rule for putting
+> two instances of a system side by side — which forces Φ's *form* (Cauchy:
+> additive-under-⊎ + continuous ⇒ c·ln Z), supplies the additivity half of §2's
+> selection rule, and decides which charts are pinned. The count is now
+> **0–3**, and the base layer's own scope note follows: ⊎ must be *maintained*,
+> and the orders at which maintenance fails are floors 2 and 3.
+
 ---
 
 ## 1. First reduction attempt: symmetry-breaking (succeeds)
@@ -90,6 +99,25 @@ Answer, and it is exact:
   exponent as e^{−βH−μQ} with a chemical potential μ — iff it is conserved.
   A non-conserved Q in the exponent defines a measure the dynamics
   immediately leaves; the family is not invariant, the "parameter" is not one.
+
+  > **⟳ Corrected 2026-07-29 by [D10](./D10-composition-lens.md): "iff it is
+  > conserved" is wrong in the *if* direction. Conservation is necessary and
+  > not sufficient; the rule is conservation **and additivity**.** For the
+  > family to be closed under composition the exponent must split,
+  > e^{−μT(A⊎B)} = e^{−μT(A)}e^{−μT(B)}, so T must be additive (affine in an
+  > additive charge). Casimirs are the standing witnesses: L² is exactly as
+  > conserved as L_z and never appears with a chemical potential; rotating
+  > equilibria are written e^{−β(H−ω·L)} with the additive **L**. In
+  > statistics this is Koopman–Pitman–Darmois. Measured in
+  > [D10 leg C](../experiments/D10-composition-lens/): additive statistics close
+  > the family to ≤3.2e-14, non-additive ones never do (≥8.8e-4), and
+  > linearity, monotonicity and convexity are each refuted by a specific row.
+  > **This section's examples were right and its rule was not** — energy,
+  > particle number and momentum are all additive, which is why nothing broke.
+  > The correction matters because the missing half is not a symmetry fact at
+  > all: D10's test contains no dynamics and no group, so the criterion cannot
+  > be a consequence of this floor. Floor 1 consumes it, which is the argument
+  > for a layer underneath.
 - At long times this becomes exhaustive: thermalizing systems relax to
   ensembles parameterized by *nothing but* their conserved charges (energy,
   particle number, momentum — the Gibbs ensemble's whole argument list), and

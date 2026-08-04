@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-29 — D10: the lens under floor 1, and what maintains it](./2026-07-29-D10-composition-lens.md)
 - [2026-07-28 — D9: an inconclusive experiment, and why the design failed](./2026-07-28-D9-unpinned-chart-transfer.md)
 - [2026-07-28 — D3: the ladder is not a chart-invariance count](./2026-07-28-D3-ladder-as-quotient.md)
 - [2026-07-28 — D8: the multi-parameter residue is a Grassmannian point, and its rank counts](./2026-07-28-D8-grassmannian-residue.md)
