@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-30 — D3: the ladder is not a chart-invariance count, and the residue is a fixed point](./2026-07-30-D3-ladder-invariance.md)
 - [2026-07-29 — D10: the lens under floor 1, and what maintains it](./2026-07-29-D10-composition-lens.md)
 - [2026-07-28 — D9: an inconclusive experiment, and why the design failed](./2026-07-28-D9-unpinned-chart-transfer.md)
 - [2026-07-28 — D3: the ladder is not a chart-invariance count](./2026-07-28-D3-ladder-as-quotient.md)

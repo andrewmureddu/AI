@@ -1,12 +1,17 @@
 # State of the map — synthesis
 
-*Snapshot: 2026-07-29. Supersedes the 2026-07-19 snapshot, whose through-line
+*Snapshot: 2026-07-30. Supersedes the 2026-07-19 snapshot, whose through-line
 ("much of the map is one object seen sideways") has since been corrected three
 times — three sectors → two layers → one tower → **one tower standing on a
 composition law**. Updated 2026-07-26 with floor 3's partial classification and the
 opening of the [discovery register](./questions/UNKNOWN-LAWS.md); updated 2026-07-29
 with [floor 0](./derivations/D10-composition-lens.md), which is the first correction
-to arrive from *below* the architecture rather than inside it.*
+to arrive from *below* the architecture rather than inside it. Amended 2026-07-30
+(§6 ledger, §7.0) with a third, independent [D3](./experiments/D3-ladder-invariance/)
+pass: the ladder is **not** reducible to a chart-invariance count (agreeing with the
+other two D3 runs), and this pass's account of the residue's general form is a
+**fixed point** of the description map, a third characterization alongside D7/D8's
+projective/Grassmannian point and D10's composition-pinning account.*
 
 This document makes the whole structure legible in one read: what we're doing,
 what has actually been established, what is still a speculative stone, and the
@@ -72,10 +77,11 @@ Every result that survived a restraint pass, with the limit we wrote down for it
 | # | Result | How | Verdict | The limit |
 |---|--------|-----|---------|-----------|
 | **S18** | [Invariance predicts transfer](./experiments/S18-invariance-transfer/) | experiment | **frame's falsifier survived** — train-invariance ranks held-out transfer at ρ=0.985; the best in-distribution feature is the worst-transferring | constructed SCM where invariance = causation by design |
-| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)), **then conditioned** ([D3](./experiments/D3-chart-vs-ladder/)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic; **and conditional on a shared measurement chart**, which the run never varied — under a chart distortion the ordering inverts |
+| **§6** | [Ladder level predicts transfer](./experiments/ladder-vs-transfer/) | experiment | **confirmed, then corrected** ([paper 1](./paper/transfer-cliff.md)), **then conditioned** ([D3](./experiments/D3-chart-vs-ladder/)) — level orders transfer (0.03/0.48/0.92/0.89) and mechanism and theorem transfer equally. The "cliff at L2/L3" *step* reading is **retracted** (L1→L2 = 0.451 ≈ L2→L3 = 0.432); what is real is a **ceiling** — L3/L4 reach complete transfer (measured ceiling 0.920±0.023), L2 saturates at ~0.54 forever | controlled within the CLT family; synthetic; **and conditional on a shared measurement chart**, which the run never varied — under a chart distortion the ordering inverts; L2's headline 0.484 is also an 8-seed low estimate — **0.515 ± 0.050 at 32 seeds** ([D3](./experiments/D3-ladder-invariance/) §6) |
 | **D5** | [Degeneracy arithmetic is enumeration](./experiments/D5-degeneracy-arithmetic/) | experiment | **confirmed, and confirms the undoubted.** Coalescence is codimension additivity (Thom/Arnold, **N0**). The live reading — Φ with >2 terms — gives a **staircase**, plateaus at 1−q₁/q_j: eleven within **0.0068** of prediction, three-step staircase included, ratio rule exact. All declared identities in advance. Only measured content: a regime must exceed its visible plateau by **≈2.25 decades**, which explains why [P8](./experiments/D1-chart-invariance/P8-REREGISTRATION.md)'s sextic plateau never established | **N0–N1**; synthetic multi-term potentials by construction; registered squeeze threshold was optimistic ~2× |
 | **D4** | [Amplitudes vs exponents — a confound](./experiments/D4-amplitude-vs-exponent/) | experiment | **falsified; leaves no replacement.** A prospective battery separates by **chart** (0.0–0.8% vs 66.7–70.1%) and not at all by **kind** (amplitudes 0.8–70.1%, exponents 0.0–66.7%) — an amplitude fails at exactly the registered 2.0801× while two exponents transfer exactly. The audit found the sample confounded *and* found counterexamples already in the record, one of them cited in D4's own supporting row. **Collapses into D2/D3** | survivor is **N0** — physics holds the opposite contrast, and only amplitude *ratios* are universal; four systems, two sharing a normal form |
 | **D3** | [The ladder is one factor of two](./experiments/D3-chart-vs-ladder/) | experiment | **both readings falsified.** D3's own falsifier fires — stated chart-freely, L2/L1 still fail (0.373/0.037), so chart-invariance is **not sufficient**; and a chart-dependent claim collapses a shared mechanism (L3 0.916 → 0.000, with word-only L1 beating theorem-backed L4 at a=0.7). **Survivor: transfer = shared mechanism ∧ chart-free statement**, and chart-freedom is *the precondition under which the ladder is predictive at all* (Spearman +0.80 in every chart, vs +1.00 → −0.80). Against paper 1's measured ceiling, chart-freedom also has a **price**: it buys immunity at 0.833 where the shared-chart claim reaches 0.916 ≈ complete transfer | one invariant family, synthetic, one chart group; **no pre-registration file** (process deviation on record); P3 is an identity |
+| **D3** | [The ladder is *not* a chart-invariance count](./experiments/D3-ladder-invariance/) | experiment | **third, independent pass; biconditional falsified again; the residue is a fixed point.** A per-domain invariance measurement (aggregation chart order H, ratio invariant to 3.6e-4 while bare H spans 6×) predicts the rungs' transfer at **R² = 0.998** vs **0.869** for the ordinal label, and ties L3/L4 where the label is wrong. But exchangeable increments sharing one lognormal factor hold the mismatch at **0.012** while transfer sweeps **0.935 → 0.000** — a continuum of fixed points with one eigenvalue. Chart-invariance is **necessary, not sufficient**; the surviving forward direction is N0–N1 (IRM's thesis), and the ladder's **mechanism** criterion is what no exponent replaces | one invariant family, synthetic; **transfer skill itself is chart-dependent** (0.34–0.98 for one preserved correspondence) until the normalizer is made chart-internal; P2's threshold mis-registered |
 | **§6** | [The frame on real data](./experiments/real-transfer/) | experiment | **passed** — invariance predicts transfer at ρ=0.983 on the diabetes dataset; Benford transfers across 2ⁿ/3ⁿ/n!/Fibonacci (0.97), fails on controls (0.00) | Leg A has a signal-strength confound; multi-field study still open |
 | **S25** | [Channel-independence of the singularities](./experiments/S25-channel-independence/) | experiment | **🔴 tier tested, did not promote** — singularities are *invariant* under generic channels and *covariant* under structured ones: F_c(T)=F_eff(T′)(dT′/dT)² exact to 1e-14 | one pre-registration error on record (parity blind only at odd N) |
 
@@ -356,25 +362,36 @@ exponent" premise had to fail.
   across the rungs that matter), because crossing p = 4 → p = 6 barely changes the
   fluctuation law. **D3's open half stays open**, with the concrete fix registered.
   By-product: **the degeneracy order is nearly invisible in the fluctuation
-  shape**. **D3 was worked independently twice**, on two branches unaware of each
-  other, and both falsify the naive biconditional: [one
+  shape**. **D3 was worked independently three times**, on three branches unaware
+  of each other, and all three falsify the naive biconditional: [one
   run](./experiments/D3-ladder-as-quotient/) finds the chart-free residue does not
   separate the rungs that transfer from the one that does not (distances
   seed-sized, ordering scrambling across sampling settings) while the **bare
   exponent** orders all four exactly as transfer does — not a paradox, since that
   harness's chart is **pinned** by additive aggregation and its magnitudes are
   facts by D2's rule (i), with the replacement that transfer there is **basin
-  membership**. [The other run](./experiments/D3-chart-vs-ladder/) crosses the
+  membership**. [A second run](./experiments/D3-chart-vs-ladder/) crosses the
   same harness with an explicit chart-distortion factor and finds chart-invariance
   is **necessary but not sufficient**: a chart-dependent statement of a true
   mechanism can still fail (and even invert the ladder's ranking), while a
   chart-free statement of a *different*-mechanism correspondence still fails to
   transfer — and revises [ladder-vs-transfer](./experiments/ladder-vs-transfer/)
   itself with a boundary condition (its original result assumed, without stating,
-  that the two domains shared a chart). Both replacements agree with paper 1's
-  **ceiling** reading over the retracted step/cliff reading.
-- **27 experiments + 8 derivations** with teeth; **4 essays**; **1 paper**.
-  *(The count was stale on multiple sides of the 2026-07-27/28 merges — it
+  that the two domains shared a chart). [A third run](./experiments/D3-ladder-invariance/)
+  measures the invariance directly (an aggregation chart order H) and finds it
+  predicts transfer far better than the rung label (R² 0.998 vs 0.869) **until** a
+  constructed counterexample — domains sharing a scaling exponent but not
+  independence — holds the invariant mismatch flat while transfer collapses to
+  zero, so chart-invariance is necessary but not sufficient there too, and what it
+  misses is specifically the **mechanism** (independence) the ladder was already
+  built to grade. Its account of the residue's general form — **the fixed point of
+  the description map, with a ratio only its eigenvalue** — is a third
+  characterization alongside D7/D8's projective/Grassmannian point and D10's
+  composition-pinning account; **reconciling the three is not attempted here** and
+  is left as the register's next question. All three replacements agree with
+  paper 1's **ceiling** reading over the retracted step/cliff reading.
+- **28 experiments + 8 derivations** with teeth; **4 essays**; **1 paper**.
+  *(The count was stale on multiple sides of the 2026-07-27/28/30 merges — it
   predated M3/M11/M15 and P-D on one side and D1/D2/D6/D7/D8/D9/D10 on others.
   Every experiment carries a committed verdict. Checked against the tree:
   `S25-channel-independence` had a verdict but no row in the experiments index,
@@ -507,6 +524,33 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    tolerance set below what its own estimator can express), a vacuous control, and
    marginal directions untested — all in the experiment's §5. **Essential
    singularities remain the unclassified remainder; it still does not narrow.**
+   **THREE FURTHER ACCOUNTS, NOT YET RECONCILED WITH EACH OTHER OR WITH THE
+   ABOVE — the register's next question, flagged rather than forced.**
+   **(i) [D10](./derivations/D10-composition-lens.md), 2026-07-29:** the residue
+   is the invariant content of the largest group the system's own **composition
+   law** fails to pin (a chart is pinned to G_diff when its variable is additive
+   under ⊎ or dual to one) — an account of *why* a chart gets pinned, orthogonal
+   to D7/D8's count of *what survives* once it isn't.
+   **(ii) [D3](./experiments/D3-ladder-invariance/), 2026-07-30, worked while
+   looking for something else:** a fourth ratio of the same shape — an
+   aggregation chart order, invariant to **3.6e-4** while its bare exponent spans
+   6× — measured in a system with **no singularity and no Φ**, and the first case
+   where **the ratio is matched and the objects still differ**: exchangeable
+   increments sharing one lognormal factor hold the mismatch at **0.012** while
+   transfer sweeps **0.935 → 0.000**, each setting a genuine fixed point of the
+   aggregation map. Proposed general object: **the fixed point of the description
+   map**, of which a ratio is only the **eigenvalue** — matching D7/D8 exactly
+   where the fixed-point set is a discrete list (a floor-3 germ, where normal-form
+   theory supplies one) and diverging where it is a continuum, where no finite set
+   of ratios classifies and the residue is a **shape** instead. Successor question
+   logged, untested: does a floor-3 object with a continuum fixed-point set break
+   the codimension count?
+   **(iii) Status.** D7/D8 (count/Grassmannian), D10 (composition-pinning) and
+   this D3 (fixed point) were produced independently, on three branches, none
+   aware of the others, and **no pass has yet checked whether they agree.** All
+   four accounts correctly retrodict D2's p − 2 and P-D's θ, which is not enough
+   to distinguish them — an honest state to record rather than paper over with a
+   forced synthesis.
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.

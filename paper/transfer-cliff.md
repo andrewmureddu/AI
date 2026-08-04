@@ -231,6 +231,24 @@ Spearman(level, skill) = 0.80. Seed-wise, the L2 and L3 distributions do not
 overlap at all (L2 max 0.538 < L3 min 0.886), and L3 − L2 > 0 in every seed
 (mean 0.432, sd 0.051, min 0.347).
 
+> **⟳ Correction (2026-07-30, [D3](../experiments/D3-ladder-invariance/) §6), two
+> items in this table.** **(1) L2's mean is 0.515 ± 0.050 at 32 seeds, not 0.484.**
+> The tabled value is a low-side 8-seed estimate; an independent-stream 8-seed run
+> read 0.537, and the two conventions converge at 32 seeds (0.506 and 0.515). The
+> difference is sampling noise in a heavy-tailed metric, not a bug. **(2) "L2 max
+> 0.538" is seed-limited and should not be quoted as a bound** — at 32 seeds the
+> per-seed maximum is **0.629**. The zero-overlap claim against L3 (min 0.886)
+> survives comfortably, and §3.3's load-bearing point is unaffected: 0.515 is still
+> roughly half the attainable skill, against a ceiling of 0.92.
+> **A caveat on the units, from the same source.** Skill = 1 − d/d_ref with d_ref
+> read in whatever chart the macro observable is in, so skill is **not a
+> chart-invariant number**: re-charting *both* domains by φ_a(x) = sign(x)|x|^a — an
+> operation that cannot change whether the law transfers — moves the L4 rung across
+> 0.34 / 0.89 / 0.92 / 0.95 / 0.98. Every skill in this paper is therefore
+> chart-relative (the a = 1 chart). Under a chart-internal normalizer (the in-chart
+> sampling floor) the same correspondence is stable at 1.54–1.88× across a 6× span
+> of a. The ordering, the L3≈L4 tie and the ceiling are unaffected.
+
 Figure: [`ladder_transfer.png`](../experiments/ladder-vs-transfer/ladder_transfer.png).
 The left panel shows it directly — the L3 and L4 quantile curves hug A's
 Gaussian, while L2 and L1 peel away in the tails, which is where the heavy-tailed

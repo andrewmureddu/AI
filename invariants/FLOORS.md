@@ -484,6 +484,47 @@ is a claim about the tower rather than a measurement.
 > or separable, and three registered tolerances were missed to the finite-window
 > error budget — all logged in the experiment's §4.
 
+> **⟳ The gap, worked (2026-07-30, [D3](../experiments/D3-ladder-invariance/)) — the
+> residue is a fixed point, and the ratio is its eigenvalue.**
+> D3 set out to test whether the ladder is a chart-invariance count. It measured a
+> **fourth** ratio of the same shape as the other three — the aggregation chart
+> order H = d ln s(n)/d ln n, with the invariant content in r = H_B/H_A (bare H
+> spans 6× under φ_a(x) = sign(x)|x|^a, the ratio is constant to **3.6e-4**) — in a
+> system with **no singularity and no Φ**, which is the class D2's codimension
+> argument cannot reach and P-D's θ only sampled once. Then it broke the pattern
+> the first three suggested.
+> **The counterexample.** Increments X_i = U·z_i sharing one lognormal factor U of
+> coefficient of variation c are finite-variance and exchangeable-not-independent.
+> They pin the ratio — **m = |r − 1| = 0.012 at every c** — while transfer of the
+> reference domain's law sweeps **0.935 → 0.875 → 0.640 → 0.003 → 0.000**. Each c
+> is a genuine fixed point of the aggregation map (shape distance n = 64 vs
+> n = 1024 is 0.006–0.025, at the sampling floor, while distance to the Gaussian is
+> unchanged in n), so **the map has a one-parameter continuum of fixed points all
+> carrying the eigenvalue H = ½.**
+> **What that settles.** "The residue is the ratio structure that survives the
+> group" is *not* the general statement — here the ratio survives and classifies
+> nothing. The general object is **the fixed point of the description map**; a
+> ratio is its **eigenvalue**. Where the fixed-point set is a discrete list the
+> eigenvalue labels it and the residue *looks* like an integer or a ratio — which
+> is exactly the situation at a floor-3 germ, where normal-form theory supplies the
+> list (the A_k series) that D2 and D6 were in fact reading. Where the fixed-point
+> set is a continuum, no finite collection of ratios can classify and the residue
+> is a **shape**, a function rather than a number. That explains why three
+> independent routes all found ratios without licensing "ratios are the answer."
+> **The successor question, logged and not claimed:** a floor-3 object whose
+> fixed-point set is a *continuum* should have a non-integer residue, and the
+> codimension count should fail there. D3 does not test this — its system has no
+> floor-3 singularity at all — and it is now the cheapest next probe of this
+> section.
+> **One caveat D3 found that applies to this whole section's use of ratios:**
+> transfer skill, the quantity all of it is validated against, has a gauge freedom
+> of its own. Skill = 1 − d/d_ref with d_ref read in the same chart, so the *same*
+> preserved correspondence reads 0.34, 0.89, 0.92, 0.95 or 0.98 depending only on
+> the chart. Re-normalizing by the in-chart sampling floor restores D2's common-a
+> commitment (1.54–1.88× across a 6× span of a, against 3.4–11.5× when only one
+> domain is re-charted), so common-a holds **outside physics** — but only once the
+> normalizer is made chart-internal.
+
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a
 log-ratio object either, so it fits neither the three floors nor the proposed
