@@ -1,0 +1,440 @@
+{
+  "at_risk_passed": 2,
+  "at_risk_predictions": [
+    "P2_PD_estimator_collapses",
+    "P4b_scaling_functions_differ",
+    "P5_selector_boundary_is_sharp",
+    "P6b_branch_point_n6",
+    "P7_null_control_no_kink",
+    "P8_rank_test_repaired"
+  ],
+  "at_risk_total": 6,
+  "declared_identities": [
+    "P1_closed_form_identity",
+    "P3_allometry_width_identity",
+    "P4a_control_width_identity",
+    "P6a_branch_point_n2_identity"
+  ],
+  "identities_passed": 2,
+  "legA": {
+    "P1": {
+      "cases": 10,
+      "max_abs_err": 1.7628399080482637e-06
+    },
+    "P1_pass": false,
+    "P2": {
+      "Nbar": 250.0,
+      "max_dev": 0.00961988843470718,
+      "median_dev": 1.5141012479347182e-05,
+      "points": [
+        {
+          "g": 26.445489430200936,
+          "lhs": 26.445489431107696,
+          "u": 26.445489430114396,
+          "x": 0.9
+        },
+        {
+          "g": 23.901939336693527,
+          "lhs": 23.901939343605864,
+          "u": 23.90193933569823,
+          "x": 0.9091666666666667
+        },
+        {
+          "g": 21.383906372916424,
+          "lhs": 21.383906423807865,
+          "u": 21.3839063618712,
+          "x": 0.9183333333333333
+        },
+        {
+          "g": 18.89088372768176,
+          "lhs": 18.890884087132275,
+          "u": 18.89088360963726,
+          "x": 0.9275
+        },
+        {
+          "g": 16.42238034733597,
+          "lhs": 16.42238275890785,
+          "u": 16.422379135936254,
+          "x": 0.9366666666666668
+        },
+        {
+          "g": 13.977927253601813,
+          "lhs": 13.977942394614292,
+          "u": 13.977915371007724,
+          "x": 0.9458333333333334
+        },
+        {
+          "g": 11.557139148951757,
+          "lhs": 11.557226043714108,
+          "u": 11.55702856385309,
+          "x": 0.9550000000000001
+        },
+        {
+          "g": 9.16023227591996,
+          "lhs": 9.160670444862832,
+          "u": 9.159268254186175,
+          "x": 0.9641666666666667
+        },
+        {
+          "g": 6.7918818938078465,
+          "lhs": 6.793688375665396,
+          "u": 6.7841967693677345,
+          "x": 0.9733333333333334
+        },
+        {
+          "g": 4.484748075572487,
+          "lhs": 4.490059041455103,
+          "u": 4.431388744918898,
+          "x": 0.9825
+        },
+        {
+          "g": 2.3933905272810456,
+          "lhs": 2.4024589463785553,
+          "u": 2.1004306672996615,
+          "x": 0.9916666666666667
+        },
+        {
+          "g": 0.8991004228221858,
+          "lhs": 0.908720311256893,
+          "u": -0.20907956227689023,
+          "x": 1.0008333333333335
+        },
+        {
+          "g": 0.22394423867843435,
+          "lhs": 0.23259630559631472,
+          "u": -2.4975330441451913,
+          "x": 1.01
+        },
+        {
+          "g": 0.04095051560255912,
+          "lhs": 0.045635876317872734,
+          "u": -4.765310277681277,
+          "x": 1.0191666666666668
+        },
+        {
+          "g": 0.0063193026562333695,
+          "lhs": 0.007913498102099232,
+          "u": -7.0127815409996,
+          "x": 1.0283333333333333
+        },
+        {
+          "g": 0.0008968382247246134,
+          "lhs": 0.0013127330837846092,
+          "u": -9.240307253801817,
+          "x": 1.0375
+        },
+        {
+          "g": 0.00012213399504085954,
+          "lhs": 0.0002159135783878684,
+          "u": -11.448238324265175,
+          "x": 1.0466666666666669
+        },
+        {
+          "g": 1.630343521664122e-05,
+          "lhs": 3.5768300250651904e-05,
+          "u": -13.636916480806908,
+          "x": 1.0558333333333334
+        },
+        {
+          "g": 2.1581867427530736e-06,
+          "lhs": 6.009041248235764e-06,
+          "u": -15.806674589508537,
+          "x": 1.0650000000000002
+        },
+        {
+          "g": 2.85275538187482e-07,
+          "lhs": 1.0266834000481462e-06,
+          "u": -17.957836957937033,
+          "x": 1.0741666666666667
+        },
+        {
+          "g": 3.781871973292272e-08,
+          "lhs": 1.7857507348705424e-07,
+          "u": -20.090719626057677,
+          "x": 1.0833333333333335
+        },
+        {
+          "g": 5.04289883117724e-09,
+          "lhs": 3.162374289175506e-08,
+          "u": -22.205630644889656,
+          "x": 1.0925
+        },
+        {
+          "g": 6.777274642114833e-10,
+          "lhs": 5.700281217946418e-09,
+          "u": -24.30287034352055,
+          "x": 1.1016666666666668
+        },
+        {
+          "g": 9.19274078407452e-11,
+          "lhs": 1.0453631825044732e-09,
+          "u": -26.382731585056867,
+          "x": 1.1108333333333333
+        },
+        {
+          "g": 1.2597659971027715e-11,
+          "lhs": 1.952426283953292e-10,
+          "u": -28.44550001205782,
+          "x": 1.12
+        }
+      ]
+    },
+    "P2_pass": false,
+    "P3": {
+      "N": [
+        20,
+        40,
+        80,
+        160,
+        320,
+        640,
+        1280,
+        2560,
+        5120
+      ],
+      "curvature_exponent": 1.0154638144353052,
+      "peak_curvatures": [
+        2.1713306247455386,
+        4.541379111581171,
+        9.32920103322259,
+        18.93511768318662,
+        38.16444959485947,
+        76.63114451537517,
+        153.57234486953172,
+        307.4572159675648,
+        615.2273951253077
+      ],
+      "width_exponent": -0.9730837036244372,
+      "widths": [
+        0.22799999999999976,
+        0.123,
+        0.06412499999999999,
+        0.032999999999999974,
+        0.016781249999999998,
+        0.0084375,
+        0.00421875,
+        0.0021210937500000006,
+        0.0010605468750000003
+      ]
+    },
+    "P3_pass": true,
+    "murray_equipartition": {
+      "Murray (n b^2 g = 1)": {
+        "rel_spread": 1.0000000000000036
+      },
+      "off-Murray (0.8)": {
+        "rel_spread": 14.551915228366896
+      },
+      "off-Murray (1.25)": {
+        "rel_spread": 14.551915228366793
+      }
+    },
+    "posthoc": {
+      "P1_diagnosis": "the gap is the checker's finite-difference truncation error, not the closed form: a 5-point stencil shrinks it by the order the truncation predicts",
+      "P1_err_2point": 1.7628399080482637e-06,
+      "P1_err_5point": 1.6864913909842016e-09,
+      "P2_diagnosis": "P-D's estimator fits a slope over a window of depths, and u depends on N, so the window smears the collapse; the deviation tracks the window half-width",
+      "P2_window_sweep": [
+        {
+          "half_width": 5,
+          "max_dev": 9.428457489080166e-05
+        },
+        {
+          "half_width": 10,
+          "max_dev": 0.0003773645862625852
+        },
+        {
+          "half_width": 25,
+          "max_dev": 0.002368490862152073
+        },
+        {
+          "half_width": 50,
+          "max_dev": 0.00961988843470718
+        }
+      ]
+    }
+  },
+  "legB": {
+    "P4": {
+      "N": [
+        20,
+        40,
+        80,
+        160,
+        320,
+        640,
+        1280,
+        2560,
+        5120
+      ],
+      "scaling_sup_diff": 0.1403477893245425,
+      "width_exponent": -1.0008185553185627,
+      "widths": [
+        0.17699999999999982,
+        0.08775,
+        0.043875,
+        0.0219375,
+        0.01096875,
+        0.005484375,
+        0.0027421875,
+        0.00137109375,
+        0.000685546875
+      ]
+    },
+    "P4a_pass": true,
+    "P4b_pass": true
+  },
+  "legC": {
+    "P5": {
+      "sizes": 6,
+      "slope_gap_exponent": 0.3283404092907067,
+      "slope_gap_min": 0.07560794082289123,
+      "value_jump_max": 0.0
+    },
+    "P5_pass": false,
+    "per_size": [
+      {
+        "N": 1024,
+        "crossing": 1.0705643780732355,
+        "instrument_width": 0.0005000000000000004,
+        "slope_gap_rel": 0.0756131026643272,
+        "value_jump": 0.0
+      },
+      {
+        "N": 2048,
+        "crossing": 1.4210619092095662,
+        "instrument_width": 0.0005000000000000004,
+        "slope_gap_rel": 0.07560794082289123,
+        "value_jump": 0.0
+      },
+      {
+        "N": 4096,
+        "crossing": 1.048974827638228,
+        "instrument_width": 0.0005000000000000004,
+        "slope_gap_rel": 0.15069215756603702,
+        "value_jump": 0.0
+      },
+      {
+        "N": 8192,
+        "crossing": -1.4381245325092165,
+        "instrument_width": 0.000500000000000167,
+        "slope_gap_rel": 0.31651145737264624,
+        "value_jump": 0.0
+      },
+      {
+        "N": 16384,
+        "crossing": 1.2450103851685839,
+        "instrument_width": 0.0005000000000000004,
+        "slope_gap_rel": 0.20454345479426228,
+        "value_jump": 0.0
+      },
+      {
+        "N": 32768,
+        "crossing": null
+      },
+      {
+        "N": 65536,
+        "crossing": 1.4692289820157804,
+        "instrument_width": 0.0005000000000000004,
+        "slope_gap_rel": 0.24848975510208376,
+        "value_jump": 0.0
+      },
+      {
+        "N": 131072,
+        "crossing": null
+      },
+      {
+        "N": 262144,
+        "crossing": null
+      }
+    ],
+    "posthoc": {
+      "diagnosis": "the registered statistic was the slope gap, but type L vs type C is a claim about the width: the width is pinned at the instrument's own resolution floor at every operating size, while legs A and B sit far above it and shrink",
+      "instrument_widths": [
+        0.0005000000000000004,
+        0.0005000000000000004,
+        0.0005000000000000004,
+        0.000500000000000167,
+        0.0005000000000000004,
+        0.0005000000000000004
+      ],
+      "resolution_floor": 0.0005,
+      "width_ratio_max_over_min": 1.000000000000333,
+      "widths_at_floor": true
+    }
+  },
+  "legD": {
+    "P6a_pass": false,
+    "P6b_pass": false,
+    "n=2": {
+      "cases": 40,
+      "exponent_iqr": 0.0006392416449312321,
+      "exponent_median": 1.0003448396815195
+    },
+    "n=6": {
+      "cases": 40,
+      "exponent_iqr": 0.0004804991070559428,
+      "exponent_median": 0.9999517849549131
+    },
+    "posthoc": {
+      "det_at_boundary_max": 2.1136805989189083e-15,
+      "diagnosis": "P6a was a wrong identity, not a failed measurement: the stability boundary is det J = 0 (a real eigenvalue crossing zero, exponent 1) and not the discriminant (a collision, exponent 1/2). min Re lambda is analytic through it, so the P-C boundary is not a kink of any kind and type X is NOT exhibited by this family.",
+      "eigenvalues_real_at_boundary": 0.0,
+      "minre_slope_gap_max": 0.011271695012496247
+    }
+  },
+  "legE": {
+    "P7_pass": true,
+    "instrument_detail": null,
+    "instrument_found_locus": false,
+    "kurtosis_max": 6.934963422824163,
+    "kurtosis_min": 6.000000002061245,
+    "kurtosis_spread": 0.9349634207629176
+  },
+  "legF": {
+    "P8_pass": false,
+    "interior_points": 150,
+    "magnitudes": [
+      "c_lin",
+      "c_call",
+      "c_fix",
+      "c_log",
+      "c_mul"
+    ],
+    "posthoc": {
+      "audited_full_frac": 0.8866666666666667,
+      "audited_model_magnitudes": [
+        "c_lin (n)",
+        "c_call (const)",
+        "c_sqrt (sqrt n)",
+        "c_log (log n)",
+        "c_mul (base case)"
+      ],
+      "audited_points": 150,
+      "audited_rank_mode": 5,
+      "collinear_pair": "c_call*a_s and c_fix are both per-level constants",
+      "registered_model_rank_mode": 4,
+      "rule": "the identifiable magnitude count is the number of distinct n-dependences in the recurrence, not the number of named constants"
+    },
+    "rank_constant_full_frac": 0.4,
+    "rank_constant_mode": 4,
+    "rank_exponent_all_zero": true,
+    "rank_gibbs": 5,
+    "structural_count_excluded": "n_base",
+    "tolerance": 1e-08
+  },
+  "runtime_s": 6.4,
+  "seed": 20260728,
+  "verdict": {
+    "P1_closed_form_identity": false,
+    "P2_PD_estimator_collapses": false,
+    "P3_allometry_width_identity": true,
+    "P4a_control_width_identity": true,
+    "P4b_scaling_functions_differ": true,
+    "P5_selector_boundary_is_sharp": false,
+    "P6a_branch_point_n2_identity": false,
+    "P6b_branch_point_n6": false,
+    "P7_null_control_no_kink": true,
+    "P8_rank_test_repaired": false
+  }
+}

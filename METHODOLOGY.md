@@ -121,6 +121,43 @@ To move a candidate *up* the ladder, an entry must supply the relevant evidence:
 - **Dimensional sleight of hand.** "Conservation of X" claims that don't specify
   the conserved quantity's units or the symmetry it follows from.
 - **Curve-fitting freedom.** Enough free parameters fit anything. Count them.
+- **Registering a number without auditing the construction.** *The house
+  speciality.* You build a model, then register a prediction about it — and the
+  number is unreachable, or forced, or measured by a checker cruder than the
+  tolerance you asked for. Six instances on record and counting:
+  [P-A](./experiments/PA-spectral-gap/)'s spread threshold,
+  [P-D](./experiments/PD-allometry-reduction/)'s MST construction and its
+  mean-field control (degenerate for the exact reason under study),
+  [D6](./experiments/D6-support-singularities/)'s P2 (an identity registered as
+  at-risk), [P-C](./experiments/PC-variational-kinds/)'s P8 (a rank its own cost
+  model forbade) and P4 (a normalization slip), and
+  [P-K](./experiments/PK-kink-taxonomy/)'s P1, P5 and P6a (a stencil cruder than
+  its tolerance, the wrong statistic, and one piece of wrong algebra labelled an
+  identity). **Pre-registration has caught every one of these and prevented none
+  of them**, which is exactly what you would expect — it is a detector, not a
+  brake. So before writing any number down, audit the construction itself:
+
+  > **The pre-registration audit.** (i) *Rank* — how many of the parameters you
+  > are about to vary are genuinely independent in the object? Count the distinct
+  > functional dependences, not the named constants. (ii) *Identity* — can this
+  > prediction come out any other way, given what you built? If not, label it.
+  > (iii) *Instrument* — **state the estimator's noise floor next to every
+  > registered tolerance. If you cannot state the floor, you may not register the
+  > number.** (iv) *Algebra* — re-derive the "obvious" closed forms. Three of the
+  > six were wrong arithmetic, not wrong science.
+
+  The wording of (iii) is deliberate and was bought expensively.
+  [BV](./experiments/BV-base-variable/) was the first pass run under this audit as
+  a four-question checklist, and it **violated (iii) three times in that same
+  run** — a degree-20 finite difference at h = 0.05 (floor ≈ 1e10, tolerance
+  1e-8), an eigensolver compared at 1e-15 (floor ≈ 1e-15), and a doubly-nested
+  stencil given a 1e-12 threshold when an earlier leg *on the same page* had
+  measured its floor at 3.7e-9. A checklist can be satisfied by nodding; writing
+  the floor beside the tolerance is mechanical and kills all three on sight. Every
+  one of those failures was the instrument rather than the claim, which is the
+  usual shape: **these mistakes cost credibility, not conclusions** — but only
+  because they were caught and reported, which is the whole reason the register
+  exists.
 
 ## Statuses
 
