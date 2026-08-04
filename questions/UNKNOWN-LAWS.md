@@ -330,7 +330,49 @@ survives being called gauge.
 
 **Engine:** negative space — no cross-domain relation in this repo has ever
 survived as a bare exponent.
-**Novelty: N2 claimed. Status: unworked.**
+**Novelty: N2 claimed. Status: ⟳ RUN 2026-07-28 — FALSIFIED.
+[`experiments/D3-ladder-as-quotient/`](../experiments/D3-ladder-as-quotient/).**
+
+> **⟳ Restraint pass (2026-07-28): falsified on its own registered falsifier, and
+> the replacement is smaller but measured.** The chart is *n*, the number of
+> contributions, so D7/D8 apply directly to the
+> [ladder-vs-transfer harness](../experiments/ladder-vs-transfer/). **The chart-free
+> residue does not separate the domains that transfer from the one that does not.**
+> Its distances from the reference are 0.0081 / 0.0120 / 0.0327 for L4 / L3 / L2 —
+> all the size of the seed spread — and their **ordering scrambles across every
+> sampling setting tried**, with L2, the domain that fails, coming out *closest* at
+> the best-estimated one. Transfer skill over the same rungs is 0.033 / 0.484 /
+> 0.916 / 0.894: a factor of 28, stable to ±0.02 over 8 seeds. That is horn (i)
+> exactly — **an L2 correspondence that is chart-invariant and still fails to
+> transfer.** The *count* reading fails too: rank is 1 for every aggregating domain
+> and **0** for the non-aggregating one, so it takes two values across four rungs
+> and separates the boundary that matters least.
+> **What does place the boundary is the bare exponent 1/α**, which orders all four
+> rungs exactly as transfer does with a 30× gap at L2/L3. Not a paradox: aggregation
+> composes additively, so n ↦ n^a breaks it (defect **0** at a = 1;
+> **0.293 / 0.500 / 0.414** at 1.5 / 2 / 0.5 — [P-D](../experiments/PD-allometry-reduction/)'s
+> leg F with the count in place of the mass). **G_pow was never available, the chart
+> is pinned, and by [D2](../derivations/D2-gauge-of-the-tower.md)'s rule (i) the
+> magnitudes are facts.** So D3 assumed the ladder lives on the *across-domains*
+> half of D2's sentence; on this harness it lives on the *within-domain* half.
+> **The replacement:** transfer here is predicted by **basin membership**, which is
+> a claim about magnitudes being *equal*, not about ratios — and that fits what
+> [paper 1](../paper/transfer-cliff.md) found and D3 could not explain. A quotient
+> story predicts a step; a basin story predicts a **ceiling**; the ceiling is what
+> was measured, because more data cannot move an exponent into another basin.
+> **Honest:** one harness and one family, so this refutes D3 as stated and does not
+> show that no chart-invariance reading works — the real test is a family whose
+> chart is *not* pinned, and this experiment does not contain one. Four rungs cannot
+> support a coefficient, so the argument is the pattern of ties plus the
+> 30×-versus-scrambling-noise contrast. **No registered tolerance was missed, the
+> first time in this arc**; one unregistered separation constant in the code is
+> disclosed in the write-up.
+>
+> **Note on what this stone could still use.** D3's own statement leans on the
+> transfer *cliff* — "the jump exactly at L2/L3", "a quotient is not a matter of
+> degree". Paper 1 had already **retracted** that step reading (L1→L2 = +0.451 ≈
+> L2→L3 = +0.432), so the sharpness argument was dead before the run and the
+> registration recorded that it did not get to use it.
 
 If D1 is right, "does this correspondence transfer?" has a mechanical answer:
 **it transfers iff it is chart-invariant.** Which would mean the
@@ -454,6 +496,298 @@ its "potential" is linear, and its relaxation rate vanishes quadratically in the
 load gap — a floor-3 singularity from operations research with no anharmonic term
 to expand. **Falsifier:** exhibit a boundary-type singularity whose observables
 follow (p−2)/p for some finite effective p, collapsing the distinction.
+
+---
+
+### D7 — What the residue *is*: eliminate the chart, and the count is n − 1
+
+**Engine:** gap prediction — the successor to the P0, named as the live question in
+[`SYNTHESIS.md`](../SYNTHESIS.md) §7.0 and [`FLOORS.md`](../invariants/FLOORS.md) §4.
+**Novelty: N1–N2 claimed, and the split is declared up front — N0 for
+projectivization, N1 for the Π-theorem reading, N2 only for the cross-domain
+identification and the count. Status: ⟳ RUN 2026-07-27 —
+[`derivations/D7-the-residue.md`](../derivations/D7-the-residue.md) +
+[`experiments/D7-residue-projective/`](../experiments/D7-residue-projective/).**
+
+> **⟳ Restraint pass (2026-07-27): the residue has a general form, and one of the
+> map's standing statements is wrong.** The residue is the log-slope vector modulo
+> the **diagonal** ℝ⁺ — equivalently the slopes of observables against other
+> observables, in which no chart appears. All five at-risk legs pass on substance.
+> **The leg that carries the claim** is one estimator, `d ln O_a/d ln O_b`, handed
+> three different pairs of measured quantities without modification: it returns
+> **0.4996 / 0.2483** against D2's 1/(p−2) on a smooth germ, **0.5000 / 0.5000 /
+> 0.6667 / 0.6667** reproducing D6's table on support-type potentials, and
+> **0.7495–0.7500** against P-D's 3/4 on a branching scheme with no singularity, no
+> Φ and a discrete chart. **The count is measured at n > 2 for the first time**:
+> five slope vectors of a full all-orders germ span a *line* (σ₂/σ₁ = 2.96e-3 and
+> 3.45e-3), so the quotient is ℝP⁴ and the invariants number n − 1 = 4 — every
+> previously known member has n = 2, which is why each looked like *the* residue
+> rather than one coordinate among several. **What it corrects:** "the chart-free
+> residue is one integer, the codimension p − 2" is the smooth case's arithmetic,
+> not the residue's — Φ = A|y|² + |y|^{2π} gives **0.68169** against 1 − 1/π and a
+> germ with p = 2 + √2 gives **0.70698** against 1/√2, and a projective space has
+> no distinguished rational points. **D2's common-*a* caveat is derived rather than
+> stipulated** and exhibited: the same observables and the same estimator give
+> σ₂/σ₁ = 2.19e-3 under the diagonal and 0.227 under the product group, where only
+> the signs survive. **The scope condition the derivation had to state holds
+> sharply** — a chart-derivative is not an observable, transforms affinely, and its
+> slope *changes sign* at a = 1/(1 − k) (predicted 3.010, measured −0.0000 at
+> a = 3), which a weight-1 quantity cannot do. **And P-D's kink is settled**: the
+> min emerges from the exact sum rather than being imposed, the wall sits at
+> x = 1.00012, and it is the point [1 : 1] of ℝP¹ — a wall in the residue's own
+> space, chart-invariant, with no Φ in its statement.
+> **Honest: three registered tolerances were missed** (P2's ratio at p = 6, 6.73%
+> vs 5%; P5c's coarse-graining, 1.96e-6 vs 1e-10; P7's kink spread, 4.7e-6 vs
+> 1e-6), all three to the finite-window budget §5 of the registration had named one
+> section earlier — **a fourth registration slip, and a new kind**: not
+> tautology-by-construction but tolerances set from expectation instead of from the
+> scope section. A code bug in the kink locator is also on record, caught by a
+> diagnostic that got *worse* under refinement. P1/P6 are identities, P4 is a
+> control, P5b reuses D6's estimator so it checks the unification rather than the
+> ratio, every model is 1-D or separable, and **essential singularities remain
+> outside** — the remainder does not narrow.
+
+**The residue.** Three passes reached the invariant residue by three routes and
+none of them can state the other two:
+
+| Route | The residue it found | The object it lives on |
+|---|---|---|
+| [D2](../derivations/D2-gauge-of-the-tower.md) | codimension **p − 2**, measured as β/k | a smooth floor-3 germ |
+| [D6](../experiments/D6-support-singularities/) | **q1/q2**, the two leading exponents of Φ | a support-type singularity |
+| [P-D](../experiments/PD-allometry-reduction/) | **θ = ln n / −ln(β²γ)** | a branching scheme with *no singularity and no Φ at all* |
+
+"The residue is the codimension" does not cover the third; "the residue is a ratio"
+covers all three and says nothing. The register's own §4 warns that stating a known
+special case with the constants removed is N0 with extra steps, so a general
+statement has to earn its keep by predicting something the three members do not.
+
+**The claim.** Let a singularity — or a description scheme — supply observables
+O₁,…,O_n that vary along one control family carried by a chart ε, and write
+y_i = d ln O_i / d ln ε for their log-slopes. G_pow acts by ε ↦ ε^a, and it acts on
+the whole slope vector by **one common scalar**:
+
+```
+        y  ↦  a · y          (every component, the same a)
+```
+
+> **D7.** The chart-free content of a floor-3 singularity or a description scheme
+> is exactly the image of its log-slope vector in projective space — the ratios
+> y_i/y_j and nothing else. Equivalently and more usefully: **the residue is the
+> set of log-slopes of observables taken against other observables**,
+> d ln O_i / d ln O_j, in which no chart appears. Four consequences, and the last
+> three are the content:
+>
+> 1. **Ratios are the only invariants** (this is the part that is not new).
+> 2. **Counting: exactly n − 1 functionally independent invariants**, for any n.
+>    This is the Π-theorem with the chart as the single "dimension" — r = 1, so
+>    n − r. No member of the residue has ever been measured at n > 2, so the count
+>    has never been tested.
+> 3. **The residue is not intrinsically discrete.** D2's integer is inherited from
+>    Taylor orders being integers in the smooth case, not from the residue. A
+>    singularity with incommensurable leading exponents has an irrational residue,
+>    which "the residue is the codimension" forbids.
+> 4. **The common-*a* commitment is the group, not a caveat.** D2 flagged it as
+>    load-bearing and left it as a stipulation. It is the statement that the action
+>    is the *diagonal* ℝ⁺; under independent per-direction re-charting the group is
+>    (ℝ⁺)ⁿ, every ratio moves, and the residue collapses from n − 1 invariants to
+>    the sign vector — which is exactly what D2 observed and could not derive.
+
+The reason the three members look heterogeneous is that each was read in the chart
+its own domain supplies. β/k is d ln y\* / d ln λ; q1/q2 is fixed by
+d ln A_c / d ln D; θ is d ln B / d ln M. All three are one observable differentiated
+against another, and that is what "eliminating the chart" means.
+
+**Prior-art note (written first).** *Old, and squarely so.* That a set of exponents
+defined against an arbitrary scale is meaningful only up to overall rescaling is
+elementary; quasi-homogeneous singularities have weight vectors normalized by
+convention exactly because they live in weighted projective space (Arnold), the
+slope of a Newton-polygon edge is q1/q2 by construction, scaling relations
+(Rushbrooke, Widom, Fisher) are the statement that certain exponent combinations
+are chart-free, and "two independent exponents" is the standard count in critical
+phenomena. The Π-theorem is 1914. **Nothing in the mathematics here is new, and
+claiming otherwise would be the register's §4 anti-pattern in its purest form.**
+*The nearest miss, recorded so it cannot be relabelled later:* dimensional analysis
+already gives n − r invariants from n quantities and r dimensions; D7's counting law
+is that arithmetic with r = 1, and if anyone has written "the chart is a dimension
+and exponents are its Π-groups", D7 is **N0** and only the cross-domain audit
+survives.
+*What is claimed at N2, and it is narrow:* that D2's codimension, D6's ratio and
+P-D's allometric exponent are **the same invariant computed on different slope
+vectors** — including in a system with no potential, no singularity and a discrete
+chart, where none of the classical statements apply — plus consequences 2–4, which
+the three members individually do not imply.
+
+**Falsifier — four-sided, one per consequence.** (i) An observable at a floor-3
+singularity whose log-slope transforms with weight ≠ 1 under ε ↦ ε^a — then the
+action is not by a common scalar, the residue is *weighted* projective, and the
+ratios are not the invariants. (ii) A singularity with n independent measured
+slopes carrying more or fewer than n − 1 independent chart-free combinations.
+(iii) A demonstration that the residue must be discrete after all — which would
+make consequence 3 false and D2's codimension the general statement. (iv) Ratios
+surviving independent per-direction re-charting, which would mean the invariance
+is an artifact of the estimator rather than of the group.
+
+---
+
+### D8 — The multi-parameter residue is a Grassmannian point, and its rank counts
+
+**Engine:** gap prediction — the question [D7](#d7--what-the-residue-is-eliminate-the-chart-and-the-count-is-n--1) left live.
+**Novelty: N1–N2, and the prior-art note is the most deflationary in the register.
+Status: ⟳ RUN 2026-07-28 —
+[`experiments/D8-grassmannian-residue/`](../experiments/D8-grassmannian-residue/).**
+
+> **⟳ Restraint pass (2026-07-28): the question's premise was about the wrong
+> space, and the answer generalizes D7 rather than qualifying it.** *State-space*
+> coupling changes nothing — D7's lemma never mentioned the state space. What
+> matters is how many **controls** carry the approach. With m of them the slope
+> **matrix** Y_{ij} = ∂ ln O_i/∂ ln ε_j transforms as **Y ↦ Y·A^{-1}** under the
+> monomial group ln ε ↦ A ln ε, so the residue is the **column space** of Y — a
+> point of **Gr(r, n)** carrying **r(n − r)** invariants — and D7's ℝP^{n−1} is the
+> **r = 1 slice**. All four at-risk legs pass. **The rank counts the *relevant*
+> directions, at a predicted rate**: a cusp with an added sixth-order coupling has
+> m = 3 controls and rank **2**, with the discarded singular value vanishing as
+> **t^1.988** against the 2.00 its scaling dimension forces — and on the
+> support-type class as **D^1.000** against 1.00. *Small is cheap; the rate is the
+> claim.* **Orbit dimension = r·m exactly** (4 / 6 / 2 / 9 measured), so the counts
+> 5 / 8 / 9 are measured rather than assumed. **Individual exponents span
+> 106×–450×** under the group while the column space is fixed — so at m > 1 even
+> the *ratios* move and only a subspace survives, which is the m > 1 form of a
+> statement [D2](../derivations/D2-gauge-of-the-tower.md) could make only at m = 1.
+> The leg that carries the grade is the **support-type** one: relevant/irrelevant
+> classification is textbook wherever there is a fixed point to linearize about,
+> and there is none there.
+> **Honest, and it is a fifth registration slip in a third category.** P1's
+> tolerance was set below what its own estimator can express — `arccos` of a
+> principal cosine floors at √(machine eps) ≈ 1.5e-8 — so it was unreachable
+> whatever the model did; in the sine form the same models give 1e-13 to 1e-16.
+> D7 logged setting tolerances from expectation instead of the modelling budget and
+> D8 announced a fix; the fix covered the modelling budget and not the
+> **estimator's numerical resolution**. Separately the P2 control is not merely
+> forced but **vacuous** — an n × 1 matrix's rank is fixed by its shape — and
+> "declared forced" is not the same as "has no content". One thing the registration
+> failed to anticipate and P4 implies: **the Grassmannian point is exact when every
+> direction is relevant and only asymptotic when one is not**, the tilt vanishing at
+> the irrelevant direction's own rate (measured t^1.988, matching). Marginal
+> directions (weight 0, hence logarithms) untested; **essential singularities remain
+> outside** and the remainder does not narrow.
+
+**The residue's third form.** D7 established that with one control the chart-free
+content is the log-slope *vector* modulo the diagonal ℝ⁺. But a floor-3 singularity
+of codimension c has c control directions, so the one-parameter case is the
+exception rather than the rule, and D7's own scope section admitted every germ it
+measured was 1-D or a direct sum.
+
+Write Y for the n × m matrix of log-slopes. The multi-parameter form of G_pow is
+the monomial group — ε′_k = Π_j ε_j^{A_{kj}}, i.e. ln ε ↦ A ln ε — under which
+Y ↦ Y·A^{-1}. Right multiplication by an invertible matrix preserves the column
+space and the rank, and nothing else.
+
+> **D8.** The residue of an m-parameter approach is **col(Y) ∈ Gr(r, n)** with
+> r = rank Y, carrying **r(n − r)** invariants. Three consequences:
+>
+> 1. **D7 is the r = 1 slice**, since Gr(1, n) = ℝP^{n−1} and n − 1 = 1·(n−1).
+> 2. **r counts the relevant directions.** An irrelevant control's column vanishes
+>    as the singularity is approached, at the rate its scaling dimension sets, so it
+>    contributes nothing to the rank.
+> 3. **Individual exponents are not invariants once m > 1.** Only the subspace is.
+>    At m = 1 this reads "the ratios survive"; at m > 1 the ratios move too.
+
+**Prior-art note (written first, and it is the most deflationary here).** Relevant,
+marginal and irrelevant perturbations classified by scaling dimension is textbook
+renormalization group — Wegner, Fisher, every book on critical phenomena — and that
+an irrelevant coupling drops out of the leading asymptotics is the *content* of the
+word. Quasi-homogeneous weight vectors, Newton polyhedra and the A_k unfoldings used
+here are all classical. **The nearest miss, recorded so it cannot be relabelled:**
+if anyone has written "the exponent data of an m-parameter approach is a point of
+the Grassmannian and its rank counts the relevant directions," D8's geometry is
+**N0** and only the cross-class audit survives. The honest prior is that a
+specialist would call the smooth half a restatement. What is claimed: the *count*
+r(n−r); that r is measurable from observables alone without knowing the fixed point;
+and that both hold on the support-type class, where there is no fixed point, no flow
+and no scaling field for the textbook argument to use.
+
+**Falsifier — four-sided.** (i) The slope matrix failing full rank when every
+control is relevant. (ii) The irrelevant column vanishing at a rate that is *not*
+its scaling dimension — then r counts numerical negligibility, not relevance.
+(iii) Orbit dimension ≠ r·m, which breaks the quotient and the count together.
+(iv) Individual exponents surviving the group — then the group is smaller than
+GL_m, the singularity supplies a canonical basis of control directions, and the
+residue is richer than a subspace. Horn (iv) would replace the count rather than
+merely kill it, and is the most informative way for this to be wrong.
+
+---
+
+### D9 — Does chart-invariance predict transfer on an *unpinned* chart?
+
+**Engine:** gap prediction — the half [D3](#d3--the-ladder-is-a-chart-invariance-count) could not reach.
+**Novelty: N1–N2 at best; the parts are D3's and D7's and the composition is what
+would be new. Status: ⟳ RUN 2026-07-28 — **INCONCLUSIVE**,
+[`experiments/D9-unpinned-chart-transfer/`](../experiments/D9-unpinned-chart-transfer/).**
+
+> **⟳ Restraint pass (2026-07-28): the transfer leg fails on its registered
+> thresholds, and the fault is the design rather than the measurements.** D3
+> refuted the chart reading on a harness whose chart is a **count**, pinned by
+> additivity — so it said nothing about the regime the chart apparatus was built
+> for. D9 rebuilt the same four rungs around a distance-to-threshold, with **every
+> domain supplying its own coordinate**, which is the thing D3's harness could not
+> vary. **The residue legs pass cleanly:** same-class domains sit at **0.0009** and
+> **0.0020** from the reference despite coefficients differing up to 18× *and*
+> different charts, the different-class one at **0.2606**, stable to four decimals
+> across three windows and two resolutions; and the bare exponent behaves exactly
+> as predicted, spreading **3.33×** across same-class domains where
+> [D3](../experiments/D3-ladder-as-quotient/)'s spread was **1.013×**.
+> **But transfer spans 0.938 to 0.988 across the rungs that matter**, against a
+> registered < 0.40 for the failing rung. Diagnosed rather than asserted: crossing
+> this harness's class boundary (p = 4 → p = 6) moves the fluctuation shape by
+> **0.14** in excess kurtosis while the metric's reference sits **2.96** away, and a
+> far-tail readout separates the classes only 2:1 where the residue separates them
+> 130:1. **So the four rungs are not four rungs**, and "does the residue predict
+> transfer" cannot be tested where transfer does not vary. The registration checked
+> that transfer and residue were read from *different quantities*, which they are;
+> it did not check that the readout had any **range** across the rungs, which is the
+> failure that occurred. **D3's open half stays open.**
+> **The by-product is worth more than the intended result:** the degeneracy order
+> *p* — D1's, D7's and D8's classifier — is **nearly invisible in the shape of the
+> fluctuations**. It classifies the scaling structure and little else an observer
+> sees directly, which also explains why [D6](../experiments/D6-support-singularities/)'s
+> kurtosis estimator worked (it spanned q = 0.5…8) and warns that it is blunt
+> between adjacent degeneracies.
+> **Honest:** P2 failed, P4 missed its tolerance, P3 is uninformative given P2, and
+> only P1 carries weight — and P1 is a re-measurement of D7 in a new coordinate
+> arrangement, not a new result. The no-tuning guard held: **the models were not
+> changed after the numbers were seen.** The concrete fix is registered in the
+> write-up — rungs whose *laws* differ (D6's q₁ = 1 vs q₁ = 2 gives excess kurtosis
+> +3.0000 vs 0.0000, a separation 20× larger), with each domain still supplying its
+> own coordinate.
+
+**The gap.** D3 established that on a **pinned** chart the residue predicts nothing
+and the bare magnitude predicts everything. The pinning was measured — aggregation
+composes additively, so n ↦ n^a breaks it — and by
+[D2](../derivations/D2-gauge-of-the-tower.md)'s rule (i) magnitudes are facts
+wherever that holds. **That leaves the complementary regime untested**, and it is
+the regime [D1](../experiments/D1-chart-invariance/) and
+[D7](../experiments/D7-residue-projective/) were built in: a genuine
+distance-to-threshold, where G_pow *is* available and no coordinate is canonical.
+
+> **D9.** Where the chart is unpinned, a correspondence transfers iff its
+> chart-free content is shared — so the residue predicts transfer and the bare
+> exponent does not, exactly inverting D3. If both hold, then whether the ladder is
+> a chart-invariance count is **not a fact about the ladder** but about the chart:
+> the additivity test says in advance which regime a domain is in.
+
+**Prior-art note.** The models are classical (generalized Gaussians, A_{p−1} germs,
+overdamped gradient dynamics) and the chart machinery is D1's and D7's. **D9
+re-derives none of it and is not evidence for it.** What would be new is only the
+*contrast between two harnesses* with the pinning test predicting which way each
+falls — N1–N2 at best, and the register should say so rather than let a
+two-harness comparison read as a law.
+
+**Falsifier.** (i) The residue failing to order transfer on an unpinned chart —
+then the chart reading is dead in both regimes, not just D3's. (ii) The bare
+exponent working here too — then the pinned/unpinned distinction is not doing the
+work the conclusion needs. (iii) **The one that fired:** a harness in which
+transfer has no dynamic range across the rungs, which tests neither horn and is a
+design failure rather than a result.
 
 ---
 

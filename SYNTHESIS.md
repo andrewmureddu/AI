@@ -244,7 +244,14 @@ exponent" premise had to fail.
   [D2](./derivations/D2-gauge-of-the-tower.md)) into the tower's **structure
   group**: the floors are defined up to G_diff, cross-domain comparison has only
   G_pow, and the log-ratio "signature" was the difference between them. Its
-  chart-free residue is the codimension p − 2 — floor-3 data.
+  chart-free residue is the **log-slope vector modulo the diagonal ℝ⁺**
+  (2026-07-27, [D7](./derivations/D7-the-residue.md)) — the slopes of observables
+  against *other* observables, carrying **n − 1** invariants. For a smooth floor-3
+  germ that is the codimension p − 2; the integrality is Taylor orders' and not the
+  residue's. With **m controls** rather than one it is the column space of the slope
+  matrix, a point of **Gr(r, n)** with **r(n − r)** invariants whose rank counts the
+  relevant directions (2026-07-28,
+  [D8](./experiments/D8-grassmannian-residue/)) — D7 being the r = 1 slice.
 - **23 catalog entries, [now sorted](./invariants/FLOORS.md)**: 1 hub, 1 on floor 1,
   6 floor-2 facets (▸ deleted as independent), 2 floor-2 non-facets, 6 distinct
   floor-3 members, 5 splitting across floors, **2 refusing the tower**. Effective
@@ -254,13 +261,27 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **6 discovery stones** (D1–D6) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
+- **8 discovery stones** (D1–D8) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md)
   register. **Worked:** D1 (chart claim confirmed; formula deflated to N0–N1 by its
-  own prior-art note), **D2** (the P0 answered — no fourth floor) and **D6** (D1's
-  *p* generalized; floor 3's classifier is a ratio). **Unworked:** D3, D4, D5 —
-  of which **D3 (the ladder as a chart-invariance count) is the cheapest**, and
-  sharper now that D2 and D6 independently say the invariant content is a ratio.
-- **19 experiments + 6 derivations** with teeth; **4 essays**; **1 paper**.
+  own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
+  *p* generalized; floor 3's classifier is a ratio) and **D7** (the P0's successor —
+  the residue's general form, and a count) and **D8** (the multi-parameter form —
+  a Grassmannian point whose rank counts the relevant directions). **Unworked:**
+  D4, D5. **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
+  rungs around an *unpinned* chart, and the residue legs passed cleanly, but the
+  harness turned out to have almost no dynamic range in transfer (0.938–0.988
+  across the rungs that matter), because crossing p = 4 → p = 6 barely changes the
+  fluctuation law. **D3's open half stays open**, with the concrete fix registered.
+  By-product: **the degeneracy order is nearly invisible in the fluctuation shape**.
+  **D3 was run 2026-07-28 and is falsified** — the chart-free residue does
+  not separate the rungs that transfer from the one that does not (its distances are
+  seed-sized and their ordering scrambles across sampling settings), while the
+  **bare exponent** orders all four exactly as transfer does, 30× apart at L2/L3.
+  Not a paradox: aggregation composes additively, so that harness's chart is
+  **pinned** and its magnitudes are facts by D2's rule (i). Replacement: transfer
+  there is **basin membership**, which also explains paper 1's **ceiling** where a
+  quotient story predicted a step.
+- **23 experiments + 7 derivations** with teeth; **4 essays**; **1 paper**.
   *(The count was stale on both sides of the 2026-07-27 merges — it predated
   M3/M11/M15 and P-D on one side and D1/D2/D6 on the other. Every one of the 19
   carries a committed verdict. Checked against the tree: `S25-channel-independence`
@@ -311,7 +332,61 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    leaves:* the residue now has two members derived by different routes, and no
    general statement. D2 derived p − 2 for floor-3 germs; allometry has no
    singularity and no Φ at all, so "the residue is the codimension" does not cover
-   it. **What the residue is in general is the live question in this section.**
+   it. ~~**What the residue is in general is the live question in this section.**~~
+   **ANSWERED 2026-07-27 by [D7](./derivations/D7-the-residue.md) ·
+   [experiment](./experiments/D7-residue-projective/).** **The residue is the
+   log-slope vector modulo the *diagonal* ℝ⁺** — concretely, the slopes of
+   observables against *other* observables, d ln O_i/d ln O_j, in which no chart
+   appears. Relabelling the control family multiplies every log-slope by the same
+   scalar, so the chart-free content is a point of ℝP^{n−1}; eliminating the chart
+   and taking the projective quotient are one operation. All three members are that
+   invariant on three slope vectors, and one estimator shows it: **0.4996 / 0.2483**
+   against D2's 1/(p−2), **D6's table exactly** on support-type potentials, and
+   **0.7495–0.7500** against P-D's 3/4 on the branching scheme — the case with no
+   singularity, no Φ and a discrete chart. *Three things change above.*
+   **(a) "The chart-free residue is one integer, the codimension p − 2" is the
+   smooth case's arithmetic, not the residue's** — a projective space has no
+   distinguished rational points, and Φ = A|y|² + |y|^{2π} measures **0.68169**
+   (1 − 1/π) while a germ with p = 2 + √2 measures **0.70698** (1/√2). Read D2's
+   result as *a smooth germ's residue is p − 2*, which stands.
+   **(b) There is a count, and it is new:** n observables carry exactly **n − 1**
+   independent invariants — the Π-theorem with the chart as the single dimension —
+   measured at n = 5 (σ₂/σ₁ = 2.96e-3, the slope vectors span a line). Every
+   previously known member has n = 2, which is why each looked like *the* residue
+   rather than one coordinate among several.
+   **(c) D2's common-*a* caveat is derived, not stipulated:** it says the action is
+   the diagonal, which is what "one singularity, one family" means; under the
+   product group the orbits fill the orthant and only signs survive
+   (σ₂/σ₁ = 2.19e-3 diagonal vs 0.227 product, same observables, same estimator).
+   *Bonus:* P-D's kink is the point **[1 : 1] of ℝP¹** — a wall in the residue's own
+   space where the two log-slopes are equal, chart-invariant, with no Φ in its
+   statement, and the min *emerges* from the exact sum rather than being imposed.
+   *Honest:* three registered tolerances missed to the finite-window budget, a
+   fourth registration slip of a new kind, and a locator bug — all logged in the
+   experiment's §4. **Essential singularities remain the unclassified remainder;
+   it does not narrow.** ~~*What replaces this as the live question:* every germ D7 measured is
+   one-dimensional or a direct sum, so whether a coupled multi-dimensional
+   singularity still carries n − 1 invariants is untested.~~
+   **ANSWERED 2026-07-28 by [D8](./experiments/D8-grassmannian-residue/), and the
+   question was about the wrong space.** *State-space* coupling changes nothing —
+   D7's lemma never mentioned the state space. What matters is how many **controls**
+   carry the approach, and a floor-3 singularity of codimension c has c of them, so
+   the one-parameter case D7 measured is the exception rather than the rule. With m
+   controls the slope **matrix** Y_{ij} = ∂ ln O_i/∂ ln ε_j transforms as
+   **Y ↦ Y·A^{-1}** under the monomial group, so the residue is the **column space**
+   of Y — a point of **Gr(r, n)** carrying **r(n − r)** invariants — and D7's
+   ℝP^{n−1} is the **r = 1 slice**. **The rank counts the *relevant* directions, at
+   a rate their scaling dimension predicts**: a cusp with a sixth-order coupling has
+   m = 3 controls and rank **2**, the discarded singular value falling as
+   **t^1.988** against 2.00, and as **D^1.000** against 1.00 on the support-type
+   class where there is no fixed point to linearize about. Orbit dimension = r·m
+   exactly (4 / 6 / 2 / 9), so the counts 5 / 8 / 9 are measured. And **individual
+   exponents span 106×–450× under the group while the column space is fixed** — at
+   m > 1 even the *ratios* move, which sharpens D2's common-*a* statement one
+   further step. *Honest:* a fifth registration slip in a third category (a
+   tolerance set below what its own estimator can express), a vacuous control, and
+   marginal directions untested — all in the experiment's §5. **Essential
+   singularities remain the unclassified remainder; it still does not narrow.**
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.

@@ -161,6 +161,20 @@ while leaving a discrete residue — hence a classified set rather than a collap
 
 ## 6. The residue is the codimension — and it is D1's *p*
 
+> **⟳ Scoped 2026-07-27 by [D7](./D7-the-residue.md), which generalizes this
+> section rather than contradicting it.** Everything below is correct **for a
+> smooth floor-3 germ**, and that is how the heading should be read. What does not
+> generalize is the *integrality*: the residue is the log-slope vector modulo the
+> diagonal ℝ⁺, i.e. a point of ℝP^{n−1}, and a projective space has no
+> distinguished rational points. The integer here is inherited from Taylor orders
+> being integers once smoothness pins the leading exponent to 2 — with
+> incommensurable leading exponents the residue is irrational (measured: 1 − 1/π
+> and 1/√2). Two further amendments in D7's favour: "the residue is **one**
+> integer" is the n = 2 case of a count that reads **n − 1**, and §7's common-*a*
+> commitment below is *derived* there rather than stipulated — it is the statement
+> that the action is the diagonal, which is what approaching one singularity along
+> one family means.
+
 What is left of the scheme layer after the gauge is removed? Signs, counts, and
 ratios. These are not three things.
 

@@ -385,6 +385,55 @@ is a claim about the tower rather than a measurement.
 > all, so "the residue is the codimension" does not cover it. That gap is now the
 > live question in this section.
 
+> **⟳ CLOSED 2026-07-27 by [D7](../questions/UNKNOWN-LAWS.md) — and it corrects
+> one sentence above.** Derivation:
+> [`derivations/D7-the-residue.md`](../derivations/D7-the-residue.md); numerics:
+> [`experiments/D7-residue-projective/`](../experiments/D7-residue-projective/).
+>
+> **The residue is the log-slope vector modulo the *diagonal* ℝ⁺.** Write
+> y_i = d ln O_i/d ln ε for the log-slopes of observables along the one control
+> family. Relabelling the family multiplies **every** component by the **same**
+> scalar, so the chart-free content is the ray through y — the point of ℝP^{n−1} —
+> and concretely it is the set of slopes of observables against *other*
+> observables, d ln O_i/d ln O_j, in which no chart appears. Eliminating the chart
+> and taking the projective quotient are one operation done in the two directions.
+> **All three members are that invariant on three slope vectors:** D2's
+> β/k = 1/(p−2), D6's q1/q2 fixed by d ln A_c/d ln D, and P-D's θ = d ln B/d ln M.
+> One estimator, unmodified, returns 0.4996 / 0.2483 on smooth germs, D6's table
+> exactly on support-type potentials, and 0.7495–0.7500 on the branching scheme —
+> the case with no singularity, no Φ and a discrete chart, which is the one that
+> decides whether this is a general statement or a physics statement wearing one.
+>
+> **The correction: "the chart-free residue is the codimension p − 2" is the
+> smooth case's arithmetic, not the residue's.** A projective space has no
+> distinguished rational points; D2's integer comes from Taylor orders being
+> integers once smoothness forces q1 = 2. Measured counterexamples:
+> Φ = A|y|² + |y|^{2π} gives **0.68169** (= 1 − 1/π) and a germ with p = 2 + √2
+> gives **0.70698** (= 1/√2). Read the D2 block above as *the residue of a smooth
+> floor-3 germ is p − 2*, which is true, and not as *the residue is an integer*,
+> which is not.
+>
+> **Two things the general form buys that no member did.** (i) A **count**:
+> n observables give exactly n − 1 independent invariants, the Π-theorem with the
+> chart as the single dimension. Measured at n = 5 for the first time — the slope
+> vectors span a line, σ₂/σ₁ = 2.96e-3 — where every previously known member has
+> n = 2 and therefore exactly one invariant. (ii) D2's **common-*a*** commitment
+> stops being a stipulation: it says the action is the diagonal, which is what "one
+> singularity, one family" means, and under the product group the orbits are the
+> whole orthant so only signs survive. Exhibited on the same observables with the
+> same estimator: σ₂/σ₁ = 2.19e-3 diagonal vs 0.227 product, signs unchanged in
+> both.
+>
+> **And P-D's kink resolves.** The reconciliation left open whether the
+> non-analyticity of θ = min(1, ln n/−ln(β²γ)) at nβ²γ = 1 is a floor-3 degeneracy
+> read in a scheme variable. It is not: it is where the two log-slopes are *equal*,
+> the point [1 : 1] of ℝP¹ — a wall in the residue's own space. The min emerges
+> from the exact finite sum rather than being imposed (RMS 5.6e-9 against the
+> min-form), the wall locates at x = 1.00012, and it is chart-invariant.
+> **Scope, unchanged:** essential singularities remain outside, every model is 1-D
+> or separable, and three registered tolerances were missed to the finite-window
+> error budget — all logged in the experiment's §4.
+
 One more honest flag: **optimal transport (#18)** puts a *metric* on distribution
 space that is not the Fisher metric and is not derived from Φ. It is not a
 log-ratio object either, so it fits neither the three floors nor the proposed

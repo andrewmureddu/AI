@@ -9,6 +9,10 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-07-28 — D9: an inconclusive experiment, and why the design failed](./2026-07-28-D9-unpinned-chart-transfer.md)
+- [2026-07-28 — D3: the ladder is not a chart-invariance count](./2026-07-28-D3-ladder-as-quotient.md)
+- [2026-07-28 — D8: the multi-parameter residue is a Grassmannian point, and its rank counts](./2026-07-28-D8-grassmannian-residue.md)
+- [2026-07-27 — D7: the residue is the log-slope vector modulo the diagonal, and it has a count](./2026-07-27-D7-the-residue.md)
 - [2026-07-27 — Reconciling P-D with D2: the residue is a ratio, twice over](./2026-07-27-PD-D2-reconciliation.md)
 - [2026-07-27 — P-D run: the exponent that has no conjugate variable (allometry is a log-ratio)](./2026-07-27-PD-allometry.md)
 - [2026-07-27 — D6: D1 was a special case, and floor 3's classifier is a ratio](./2026-07-27-D6-support-singularities.md)

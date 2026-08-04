@@ -150,6 +150,13 @@ must be tuned to sit on the singularity, the number of relevant RG directions, a
 the reciprocal of β/k. **So what was under the fourth floor was
 [D1](../D1-chart-invariance/)'s *p*.**
 
+> **⟳ Scoped 2026-07-27 by [D7](../D7-residue-projective/).** True as measured, and
+> true of a **smooth floor-3 germ** — but "one integer" is the n = 2, integer-slope
+> case. In general the residue is the log-slope vector modulo the diagonal ℝ⁺, with
+> **n − 1** invariants (measured at n = 5), and it is not intrinsically discrete:
+> incommensurable leading exponents give 0.68169 (= 1 − 1/π) and 0.70698 (= 1/√2).
+> P3's common-*a* caveat is derived there rather than assumed.
+
 **The counter-horn survives — where the derivation said it would.** "An RG
 eigenvalue predicts which perturbations are relevant" is a claim about a *sign*,
 and signs are G_pow-invariant (P3). The predictive work is real; it just lives in
