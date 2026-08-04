@@ -603,6 +603,25 @@ is a claim about the tower rather than a measurement.
 > domain is re-charted), so common-a holds **outside physics** — but only once the
 > normalizer is made chart-internal.
 >
+> **⟳ RECONCILED 2026-08-04 by [D11](../derivations/D11-residue-reconciliation.md).**
+> This account, D7/D8's ray, and D10's composition-pinning criterion are not
+> three separate readings of the residue — they are one structure (a
+> description map's linearization at a fixed point) recovered three times.
+> D7/D8's ray *is* the projectivized eigenvalue vector of that linearization;
+> D10 says which variables carry it at all; "the fixed point of the
+> description map" above is the literature's own frame (Jona-Lasinio's
+> renormalization-group treatment of the CLT) for exactly what D7/D8 compute
+> eigenvalues of. The successor question this note logged is answered in the
+> case checked: an explicit, infinite-dimensional continuum of fixed points
+> (scale mixtures X = U·Z under the dyadic renormalized-sum map) shares one
+> eigenvalue exactly (H = 1/2, confirmed to ≤1.7e-16) while a scale-invariant
+> shape statistic — provably tangent to the fixed-point set — varies by 208%
+> while remaining exactly n-invariant. **The residue is necessary but never
+> sufficient wherever the fixed-point set has tangent directions**, which is
+> now a proved boundary of the construction rather than a property of this
+> one counterexample. D8's m > 1 Grassmannian case and a genuinely nonlinear
+> description map remain untested.
+>
 > **⟳ A second, independent account of the same kink (2026-07-28,
 > [P-K](../experiments/PK-kink-taxonomy/)), not yet checked against the one
 > above.** D7 (above) locates the kink algebraically, as the point [1 : 1] of
