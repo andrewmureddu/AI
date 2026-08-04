@@ -394,12 +394,14 @@ exponent" premise had to fail.
   composition-pinning account; **reconciling the three is not attempted here** and
   is left as the register's next question. All three replacements agree with
   paper 1's **ceiling** reading over the retracted step/cliff reading.
-- **28 experiments + 8 derivations** with teeth; **4 essays**; **1 paper**.
-  *(The count was stale on multiple sides of the 2026-07-27/28/30 merges — it
-  predated M3/M11/M15 and P-D on one side and D1/D2/D6/D7/D8/D9/D10 on others.
-  Every experiment carries a committed verdict. Checked against the tree:
-  `S25-channel-independence` had a verdict but no row in the experiments index,
-  and was added.)*
+- **32 experiments + 9 derivations** with teeth; **4 essays**; **1 paper**.
+  *(Recounted directly against the tree after reconciling five branches that
+  had diverged since 2026-07-27: every experiment directory with a committed
+  `verdict.json` has a row in [`experiments/README.md`](./experiments/README.md)
+  (32/32), and every top-level file in [`derivations/`](./derivations/) has a
+  row in its index (9/9) — `S25-one-parameterness.md` was missing one and was
+  added. Earlier counts here were stale on multiple sides of the
+  2026-07-27/28/30 merges.)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
