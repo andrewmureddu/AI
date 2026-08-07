@@ -8,8 +8,14 @@
 > required-redundancy exponent varies **within** domains as much as across them.
 > **Headline correspondence level:** L2–L3 for the taxonomy; **L1 for "one
 > threshold"** (retired).
-> **Status:** developing ✓tested ([S5](../experiments/S5-noise-thresholds/))
-> **Floor:** **3 + 4?** — splits (tested, [S5](../experiments/S5-noise-thresholds/)): types M and S are floor 3; **type R is not a Φ fact at all** — the scheme-layer candidate ([FLOORS §4](./FLOORS.md))
+> **Status:** developing ✓tested ([S5](../experiments/S5-noise-thresholds/)) — ⚠
+> floor line below corrected 2026-08-07, see Mechanism
+> **Floor:** **3** for all three types — types M and S directly (tested,
+> [S5](../experiments/S5-noise-thresholds/)); type R via [D2](../derivations/D2-gauge-of-the-tower.md),
+> which retired the "scheme-layer / floor 4" reading this line used to give and
+> folded type R's exponent into gauge (G_pow) plus floor 3. **Open, not yet
+> checked:** whether M's and S's bare exponents (2 and 1) are themselves
+> chart-invariant (D1's *p*) or partly gauge (D1's *k*) — see Mechanism.
 
 ## Statement
 
@@ -57,10 +63,33 @@ point where the Fisher information the channel carries about the message develop
 null direction (M) or where the informative event's probability vanishes (S). Both
 are faces of Φ's singular set already identified by
 [S27](../derivations/S27-control-split.md) — null Fisher directions and
-supports — and they carry different exponents, which is exactly why they cannot be
-one law. Type R is **not** a Φ-fact: it is a property of a decoder's flow, and is
-the leading candidate for a fourth floor of the
-[tower](../derivations/symmetry-sector.md).
+supports — and they carry different *bare* exponents, which is why they are not
+one law **as stated against the bare noise parameter**.
+
+> **⟳ Stale claim corrected (2026-08-07).** This section previously called type R
+> "not a Φ-fact... the leading candidate for a fourth floor." That is superseded:
+> [D2](../derivations/D2-gauge-of-the-tower.md) (run one day after this entry,
+> never cross-referenced back to it) retired the fourth-floor proposal for
+> exactly this class of exponent — log-ratio invariants (type R's
+> α = ln n₀/ln(t+1), fractal dimension, allometry's θ, RG eigenvalues) all
+> "dissolve into gauge plus floor 3": they are readouts of the **G_pow** chart
+> (smooth away from the singular point, not at it), not facts about a separate
+> floor. So type R *is* a floor-3 fact after all, seen through a different
+> admissible chart than types M and S. **This also reopens the question this
+> entry closed too quickly:** [D1](../questions/UNKNOWN-LAWS.md#d1--the-chart-law-two-integers-classify-floor-3),
+> also from 2026-07-26, separates every floor-3 singularity's exponent into a
+> **chart order** *k* (gauge, removable by reparameterizing the control
+> variable) and a **degeneracy order** *p* (invariant — the order of the first
+> non-vanishing anharmonic term of Φ). D1 names this entry's own discriminator
+> as an instance of the same move ("S5's 'α = the order of vanishing of χ²_sym'
+> is the same move made in a different chart") but the reconciliation was never
+> actually carried out: nobody has checked whether α = 2 (type M) and α = 1
+> (type S) are two different *p* values (a real, invariant classification — the
+> "cannot be one law" verdict stands) or whether one of them is secretly a *k*
+> that a further re-charting would remove (in which case "cannot be one law" is
+> premature). That check is open. See
+> [`questions/SPECULATIVE.md`](../questions/SPECULATIVE.md#cluster-c--is-there-only-one-threshold)
+> S5's annotation.
 
 ## Boundary conditions
 

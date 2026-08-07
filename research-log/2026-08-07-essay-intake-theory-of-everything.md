@@ -114,14 +114,51 @@ that gets written from it will look very different from the one submitted —
 that's the intended path (`CONTRIBUTING.md`: essays don't graduate, stones do,
 and only what survives a stone gets written up).
 
+## Addendum: pushback caught a real staleness bug
+
+The essay's submitter pushed back on the S5 annotation ("i still think these
+are all shadows of the same operator"). Re-checking rather than just holding
+the line found that the pushback had a real point, though not the one the
+essay makes.
+
+S5's "retired to L1, three unrelated exponents" verdict is dated 2026-07-25.
+[D1](../questions/UNKNOWN-LAWS.md#d1--the-chart-law-two-integers-classify-floor-3)
+and [D2](../derivations/D2-gauge-of-the-tower.md), both dated 2026-07-26 — one
+day later — were never cross-referenced back to it, and both bear directly:
+D1 shows a floor-3 exponent splits into a gauge part (chart order *k*,
+removable by reparameterizing the domain's control variable) and an invariant
+part (degeneracy order *p*), and names S5's own χ²_sym discriminator as an
+instance of exactly this move. D2 separately retired the "type R is not a
+Φ-fact, candidate fourth floor" reading this entry's Mechanism section still
+carried — type R folds into gauge plus floor 3, like fractal dimension and
+allometry's θ before it. **That specific claim (type R is excluded from Φ) was
+simply wrong as written, independent of anything about the essay** — fixed in
+[`noise-thresholds.md`](../invariants/noise-thresholds.md) and flagged in the
+S5 stone.
+
+What's still correctly retired: the essay's literal claim ("the same
+mathematical inequality... not analogies," implying one shared exponent) —
+D1/D2 don't resurrect that; a classification with multiple invariant strata
+(fold vs. cusp, in effect) is not one equation. What's now honestly open,
+where it was prematurely closed: whether type M (α=2) and type S (α=1) are two
+different values of D1's *p* (a real classification — the closest thing to
+"shadows of one operator" that could ever be true) or whether one is partly a
+removable *k*. Nobody has run that check. It's now the top item below.
+
 ## Next (cheapest high-signal tests, in order)
 
-1. **S32** — cheapest and most likely to pay off. Take one already-characterized
-   floor-3 singularity from `FLOORS.md` and check whether its residue equals
-   the Schur complement of ∇²Φ there. Pure derivation, no new data.
-2. **S5 extension** — run Ashby's requisite variety and Prigogine's
+1. **S5 × D1 reconciliation** — re-derive type M and type S's α (2 and 1)
+   through D1's *k*/*p* split: is either partly a chart order that a further
+   re-parameterization of the noise variable removes, or are both genuinely
+   different degeneracy orders *p*? Pure re-analysis of numbers S5 already
+   produced, against machinery D1 already built. No new data, no new code.
+   Promoted to top of the list by the addendum above.
+2. **S32** — take one already-characterized floor-3 singularity from
+   `FLOORS.md` and check whether its residue equals the Schur complement of
+   ∇²Φ there. Pure derivation, no new data.
+3. **S5 extension** — run Ashby's requisite variety and Prigogine's
    entropy-export inequality through the existing χ²-order discriminator
    before anyone cites them as confirmed.
-3. **S30** — find a non-Gaussian state where the symplectic-capacity bound and
+4. **S30** — find a non-Gaussian state where the symplectic-capacity bound and
    the Robertson–Schrödinger bound provably diverge, to locate where "the
    floor" reading actually stops holding.

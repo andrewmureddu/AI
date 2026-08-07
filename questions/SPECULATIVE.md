@@ -179,6 +179,30 @@ scaling exponents differ across the three. (New entry
 > test to run is S5's own instrument, not a new one — whoever picks this up
 > should extend [`experiments/S5-noise-thresholds/`](../experiments/S5-noise-thresholds/)
 > rather than start over.
+> **⟳ Reopened, not vindicated (2026-08-07, pushback from the essay's submitter):**
+> the "retired to L1" verdict above was itself never checked against this map's
+> *own* later work. [D1](../questions/UNKNOWN-LAWS.md#d1--the-chart-law-two-integers-classify-floor-3)
+> and [D2](../derivations/D2-gauge-of-the-tower.md) — both dated one day after
+> this stone's restraint pass, neither cross-referenced back to it — establish
+> that a floor-3 singularity's exponent splits into a **chart order** *k* (pure
+> gauge, carries no cross-domain information) and a **degeneracy order** *p*
+> (the real invariant). D1 explicitly names this stone's own discriminator as an
+> instance of the pattern ("S5's α = order of vanishing of χ²_sym is the same
+> move made in a different chart"), and D2 separately dissolved this stone's
+> type R specifically — folded it into gauge plus floor 3, retiring the
+> "candidate fourth floor" reading (now corrected in
+> [`noise-thresholds.md`](../invariants/noise-thresholds.md)). **What this does
+> and does not mean:** it does not resurrect "one equation" — D1/D2 are explicit
+> that the invariant is a *classification* (which stratum: which degeneracy
+> order), not a single shared number, the same way fold/cusp/swallowtail are one
+> classification (catastrophe theory) with different normal forms, not one
+> exponent. Whether type M (α=2) and type S (α=1) are two different values of
+> D1's *p* — a real, principled classification, "shadows of one operator" in the
+> only form that could ever be true — or whether one of them is partly a *k* that
+> a further re-chart would remove, has never actually been computed. **This is
+> now the sharpest open question in this cluster**, cheaper than it looks (pure
+> re-analysis of data S5 already produced, against machinery D1 already built) —
+> see the research log for 2026-08-07.
 
 ### S6 🟢 — Is the SAT solvability transition the same phase transition as a physical one?
 **Bridge:** the replica/cavity method; computational phase transitions.
