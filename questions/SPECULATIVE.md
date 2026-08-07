@@ -159,6 +159,26 @@ scaling exponents differ across the three. (New entry
 > which is why a single-exponent premise had to fail. Open: does type R
 > (scheme/decoder structure) constitute a **fourth floor** of the tower? See
 > [`../SYNTHESIS.md`](../SYNTHESIS.md) §7.2.
+> **⟳ External-claim check (2026-08-07):** an outside essay ("The Theory of
+> Everything We Missed by Looking for One More Equation," intake below) asserts
+> this exact identification as settled — "Shannon's C ≥ R, Ashby's V(controller)
+> ≥ V(system), Prigogine's entropy export ≥ entropy production, and the quantum
+> error correction threshold are the same mathematical inequality in different
+> notation... not analogies" — with no mechanism and no numbers. That is the
+> claim this stone already retired: the three legs it *shares* with S5 (Shannon,
+> the quantum threshold, and Eigen-as-error-catastrophe) carry **three different
+> degeneracy orders** (α = 2, α = ln n₀/ln(t+1), and the zero-redundancy corner
+> of α = 2 respectively), measured above. Restating it as "not analogies" does
+> not repair that; the numbers still disagree. **Left genuinely open:** Ashby's
+> requisite variety (1956) and Prigogine's entropy-export inequality are not
+> legs S5 tested — they are the same *shape* of claim (a capacity/requirement
+> inequality with a critical crossing) but neither has been put through the
+> χ²-order discriminator that separates S5's three types. Until someone does,
+> the honest status is "untested fourth and fifth instances of the same
+> question," not "confirmation." No stone opened for these two alone since the
+> test to run is S5's own instrument, not a new one — whoever picks this up
+> should extend [`experiments/S5-noise-thresholds/`](../experiments/S5-noise-thresholds/)
+> rather than start over.
 
 ### S6 🟢 — Is the SAT solvability transition the same phase transition as a physical one?
 **Bridge:** the replica/cavity method; computational phase transitions.
@@ -624,6 +644,149 @@ distribution. (iii) is runnable with torch and is the designed experiment.
 > "matrix/deep charges" opening is partly closed (a wide two-layer net keeps the
 > exact first-order cancellation and the η^−2 relaxation scaling, though there
 > charges relax to an alignment-dependent equilibrium rather than to zero).
+
+---
+
+## Cluster L — External input: "The Theory of Everything We Missed" (intake 2026-08-07)
+
+A popular-register essay, submitted for integration, argues that persistence
+across every scale — physics, biology, markets, institutions, minds — requires
+the same "bounded openness" structure, and that several textbook results
+(Shannon, Ashby, Prigogine, Eigen, Heisenberg, Bekenstein–Hawking, Landauer,
+Ostrom, Zeilinger, Chaitin) are convergent sightings of one law. Processed as raw
+material per this file's own rules, not added as a conclusion: its overlap with
+[S5](#cluster-c--is-there-only-one-threshold) is flagged above (S5's own claim,
+already retired as stated), and its remaining distinct claims are opened below as
+stones, each on its own merits, none of them pre-endorsed by the essay's tone.
+Its ontological epigraph — "if you can measure it, consider it predicted" — is
+**not** a new stone: it restates the 🔴 tier already on record in
+[`PREDICTION-FIELD.md`](../PREDICTION-FIELD.md#-strong-metaphysical-reading-generative-not-provable),
+alongside Wheeler's "it from bit" and QBism, at the same honest (unpromoted)
+level; see the pointer added there. Its general "order vs. freedom, edge of
+chaos" framing and the Grossman–Stiglitz (1980) market-efficiency citation add
+nothing past what [`criticality-phase-transitions.md`](../invariants/criticality-phase-transitions.md)
+already flags — "markets are critical" sits at L1–L2 there, contested, and
+Grossman–Stiglitz is a fine citation to add *if* that entry is ever revisited,
+not a new bridge.
+
+### S29 🔴 — Is "too much closure kills dynamics" one phenomenon across quantum measurement, replication fidelity, and algorithmic incompressibility?
+**Bridge:** a system driven to full self-knowledge stops evolving.
+**Connects:** quantum information (measurement-induced entanglement transitions)
+· molecular evolution (Eigen's error threshold) · algorithmic information theory
+(Chaitin's Ω).
+The essay groups three results as "the same result, discovered independently":
+(1) measurement-induced phase transitions — above a critical *measurement rate*,
+entanglement growth is suppressed and the state is pinned near a product state
+(Li–Chen–Fisher 2018; Skinner–Ruhman–Nahum 2019); (2) Eigen's error threshold —
+above a critical *mutation rate*, heritable information is lost; (3) Chaitin's Ω
+— a real number that is well-defined but maximally incompressible, so no finite
+description generates it. These are three different mathematical objects: a
+dynamical phase transition in a rate, an equilibrium threshold in a replication
+fidelity, and a static incompressibility bound with no rate at all. **Prior-art
+flag:** the essay attributes (1) to Zeilinger; the measurement-induced
+transition literature above is not his (his Nobel-cited work is on
+entanglement/foundations experiments), and the effect he *is* famous for
+demonstrating — that frequent measurement suppresses evolution — is the quantum
+Zeno effect (Misra–Sudarshan 1977), which is a different, older, and simpler
+result (the fully-continuous-measurement limit) than the measurement-*rate*
+phase transition the essay describes. The citation needs fixing before this
+stone can even be scored. **Falsifier:** define a single order parameter (e.g.
+"bits of predictive structure retained per unit of closure imposed") computable
+in all three settings; if its critical scaling exponent (or its analogue in the
+static Ω case, which has no dynamics to scale) cannot be stated on common
+footing, this is three phenomena wearing one slogan, not one phenomenon — the
+same verdict S5 already reached one cluster over.
+
+### S30 🟡 — Is Gromov non-squeezing the precise phase-space form of the Heisenberg uncertainty principle?
+**Bridge:** a symplectic ball of radius r cannot be mapped by a canonical
+transformation into a cylinder of smaller radius, in *any* number of extra
+dimensions (Gromov 1985) — read as a floor on phase-space "spread" that no
+classical change of coordinates can shrink.
+**Connects:** symplectic geometry (math) · quantum foundations (physics).
+De Gosson's "quantum blob" program reads a minimal symplectic capacity (∝ ħ/2)
+onto phase space and argues this reproduces the Robertson–Schrödinger
+uncertainty relation for Gaussian states specifically. This is real, published
+math, not the essay's invention — but it is narrower than the essay's
+"uncertainty principle may be the local face of a universal rule" framing makes
+it sound: non-squeezing is a statement about *classical* symplectic
+transformations, and its identification with the *quantum* operator inequality
+is closest to exact for Gaussian states and looser elsewhere. **Falsifier:** a
+non-Gaussian quantum state whose uncertainty product is not bounded below by any
+symplectic-capacity argument would show the correspondence is Gaussian-state
+convenience, not a general identity — worth checking directly rather than
+taking the essay's "the floor" framing on faith. Tagged 🟡 (plausible, checkable
+formal bridge) rather than 🟢, pending that check.
+
+### S31 🔴 — One inequality with a floor (S30) and a ceiling (Bousso), and is that inequality "why anything persists"?
+**Bridge:** Gromov/de Gosson's symplectic-capacity floor (S30) paired with
+Bousso's covariant entropy bound — entropy on a light-sheet ≤ the area
+generating it (Bousso 1999, generalizing Bekenstein–Hawking) — as two ends of
+one endurance constraint spanning quantum mechanics and gravity.
+**Connects:** symplectic geometry · quantum gravity.
+The essay itself only claims these two "rhyme," not that they are the same
+inequality, and that restraint should be kept: a phase-space non-squeezing
+theorem and a holographic entropy bound are not obviously the same object even
+loosely — one is a statement about canonical transformations in flat symplectic
+space, the other about semiclassical gravity on null surfaces, and no shared
+derivation connecting them is on record anywhere, in the essay or in the
+literature it cites. This is the essay's most speculative physics claim and is
+recorded at 🔴 for that reason. **Falsifier (the honest one, since none is
+offered):** a single inequality that specializes to Gromov non-squeezing in the
+ħ finite, G→0 limit and to the covariant entropy bound in the ħ→0, G finite
+limit. Absent that derivation this stays a rhyme, not a result, and should not
+be cited as more than a rhyme.
+
+### S32 🟡 — Is the Schur complement the one operation behind every "eliminate what you can't see" reduction?
+**Bridge:** the Schur complement of a block in a quadratic form/Gaussian
+precision matrix.
+**Connects:** statistics (Gaussian conditioning) · network science (Kron
+reduction) · quantum mechanics (Feshbach projection) · QFT (RG decimation of a
+Gaussian action) · portfolio optimization · category theory (composition of
+open quadratic systems).
+Of the essay's claims this is the most concrete and the most checkable, and
+arguably the strongest thing in it: the Schur complement genuinely is the
+general "condition on / integrate out / project away the unseen block" formula,
+and it genuinely does specialize to conditional covariance in Gaussian
+statistics, to Kron reduction in circuit/graph reduction (Dörfler–Bullo 2013),
+to the Feshbach effective-Hamiltonian method in scattering theory, and to
+one-step real-space RG decimation for a Gaussian/quadratic action. That much is
+textbook and does not need re-deriving. What is *not* yet checked here is
+whether this is doing any work for *this repo's* question, i.e. whether it is
+the same operation as the "residue" this map already spent [D7](../derivations/D7-the-residue.md)
+and [D10](../derivations/D10-composition-lens.md) characterizing — both of
+those are also, in their own vocabulary, about what survives when you eliminate
+what a chart cannot see. **Do not assume identity** — D7/D10's residue lives on
+log-slopes at a floor-3 singularity, not on a Gaussian precision matrix, and the
+connection (if real) would have to be shown, not asserted, per this file's own
+rule against reification. **Falsifier / next step:** take the simplest floor-3
+singularity already characterized in [FLOORS.md](../invariants/FLOORS.md) and
+check whether its residue is literally computable as a Schur complement of the
+Hessian of Φ at the singular point. If yes, this is a genuine and useful L2/L3
+promotion candidate — a new entry in `invariants/`, not just a stone. If the
+objects don't match, the essay's "mathematical atom" claim is real but
+orthogonal to this map, and that's worth recording too.
+
+### S33 🔴 — Are Ostrom's institutional design principles the institutional face of constraint-plus-release?
+**Bridge:** Ostrom's eight design principles for long-enduring
+common-pool-resource institutions (clear boundaries, proportional
+costs/benefits, collective choice, monitoring, graduated sanctions, conflict
+resolution, minimal recognition of rights, nested enterprises).
+**Connects:** institutional economics · (claimed) everything else in this
+cluster.
+The essay reads Ostrom's principles as an instance of the same
+constraint/release balance found in the repo's own control-split (S27, above in
+Cluster J) and noise-threshold work (S5, Cluster C). As stated this is L1 — a
+structural resemblance ("boundaries first, calibrated response, not expulsion"
+sounds like "constraint then graceful degradation") with no shared quantitative
+law and no mechanism linking Ostrom's field (repeated-game institutional
+design, enforced by reputation and sanction) to control theory or information
+theory. Ostrom's own
+literature does not derive the principles from anything Shannon- or
+Ashby-shaped. **Falsifier:** none currently statable in quantitative form, which
+is itself the finding — this stone cannot yet be scored above L1 because no one,
+including the essay, has proposed a measurable quantity. Recorded at 🔴 as a
+hunch worth keeping precise rather than knocking down prematurely; graduates
+only if someone states what would even count as evidence.
 
 ---
 

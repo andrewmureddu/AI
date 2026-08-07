@@ -66,6 +66,13 @@ record it because it is *productive* (it generates the reorganization below and
 sharp questions), and we flag it because it is *interpretive*. Held at 🔴, as a
 stone to build with, not lean on.
 
+*(2026-08-07: an outside essay's epigraph — "if you can measure it, consider it
+predicted" — and its reading of measurement as selecting from a pre-existing
+prediction structure rather than revealing a definite value is the same
+position stated in different words, not independent support for it. It joins
+Wheeler/QBism on this list; it does not move the tier. See
+[`questions/SPECULATIVE.md`](./questions/SPECULATIVE.md#cluster-l--external-input-the-theory-of-everything-we-missed-intake-2026-08-07).)*
+
 ## What it changes for this repo
 
 1. **The target sharpens.** We are mapping the measurement-invariant predictive
