@@ -2,20 +2,25 @@
 
 > **One-line claim:** The sharp noise level above which information can no longer be
 > recovered — Shannon capacity, Eigen's error catastrophe, the quantum
-> fault-tolerance threshold — is **one kind of object with three degeneracy
-> orders**, not one law. Each domain has a genuine sharp threshold with a named
-> mechanism (L3 within domain); the cross-domain *identity* is L1, because the
-> required-redundancy exponent varies **within** domains as much as across them.
+> fault-tolerance threshold — is **a real two-point classification (smooth
+> merge vs. boundary/support loss) plus one gauge readout of the same floor-3
+> structure**, not one law and not three unrelated ones. Each domain has a
+> genuine sharp threshold with a named mechanism (L3 within domain); the
+> cross-domain *identity* is L1 for "one threshold," but type M and type S are
+> each independently invariant across mechanistically unrelated systems (§
+> Mechanism) — that is more structure than "domain-specific."
 > **Headline correspondence level:** L2–L3 for the taxonomy; **L1 for "one
-> threshold"** (retired).
-> **Status:** developing ✓tested ([S5](../experiments/S5-noise-thresholds/)) — ⚠
-> floor line below corrected 2026-08-07, see Mechanism
+> threshold"** (retired); **L3 for "type M is one invariant" and "type S is one
+> invariant"** (confirmed 2026-08-07, cross-system).
+> **Status:** developing ✓tested ([S5](../experiments/S5-noise-thresholds/),
+> [S5-D6 reconciliation](../experiments/S5-D6-reconciliation/))
 > **Floor:** **3** for all three types — types M and S directly (tested,
 > [S5](../experiments/S5-noise-thresholds/)); type R via [D2](../derivations/D2-gauge-of-the-tower.md),
 > which retired the "scheme-layer / floor 4" reading this line used to give and
-> folded type R's exponent into gauge (G_pow) plus floor 3. **Open, not yet
-> checked:** whether M's and S's bare exponents (2 and 1) are themselves
-> chart-invariant (D1's *p*) or partly gauge (D1's *k*) — see Mechanism.
+> folded type R's exponent into gauge (G_pow) plus floor 3. **Resolved
+> 2026-08-07:** M's and S's bare exponents (2 and 1) are each cross-system
+> invariant, matching [D6](../questions/UNKNOWN-LAWS.md#d6--is-there-a-singularity-with-no-p)'s
+> q1=2/q1=1 classes; type R fails the same test, agreeing with D2. See Mechanism.
 
 ## Statement
 
@@ -90,6 +95,24 @@ one law **as stated against the bare noise parameter**.
 > premature). That check is open. See
 > [`questions/SPECULATIVE.md`](../questions/SPECULATIVE.md#cluster-c--is-there-only-one-threshold)
 > S5's annotation.
+
+> **⟳ Run (2026-08-07):** see
+> [`derivations/S5-D6-noise-threshold-classifier.md`](../derivations/S5-D6-noise-threshold-classifier.md)
+> and [`experiments/S5-D6-reconciliation/`](../experiments/S5-D6-reconciliation/).
+> Type S was never comparable to type M under D1's *p* in the first place — D1's
+> own pre-registration excludes it "by construction" (support-type singularities
+> have no *p*), and [D6](../questions/UNKNOWN-LAWS.md#d6--is-there-a-singularity-with-no-p)
+> generalizes to a ratio q1/q2 that names type S as its q1=1 example against type
+> M's q1=2 — tested elsewhere, never linked here. Running D1's actual certifying
+> test (agreement across mechanistically unrelated systems, not reparametrization
+> robustness) on S5's own published numbers: type M agrees to 0.037 across BSC,
+> BI-AWGN, and quasispecies+repair; type S agrees exactly across BEC and
+> Z-channel; type R spreads 0.91 across four codes, failing the test — matching
+> D2's independent verdict that type R is gauge. **α is not domain-specific
+> noise for M and S: it is a real, cross-system-invariant classifier, with type
+> R now doubly confirmed as the gauge exception.** Left open: whether α equals
+> D6's q1 in the strict crossover sense, which needs an apparatus (a noise-scale
+> sweep) nobody has built for channel models yet.
 
 ## Boundary conditions
 

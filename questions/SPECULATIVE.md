@@ -203,6 +203,26 @@ scaling exponents differ across the three. (New entry
 > now the sharpest open question in this cluster**, cheaper than it looks (pure
 > re-analysis of data S5 already produced, against machinery D1 already built) —
 > see the research log for 2026-08-07.
+> **⟳ Run (2026-08-07):** see
+> [`derivations/S5-D6-noise-threshold-classifier.md`](../derivations/S5-D6-noise-threshold-classifier.md).
+> The framing above was itself slightly off: type S was never comparable to
+> type M under D1's *p* — D1's own pre-registration excludes it "by
+> construction," on record since one day after S5 shipped, and
+> [D6](./UNKNOWN-LAWS.md#d6--is-there-a-singularity-with-no-p) (2026-07-27, also
+> never cross-referenced back) already generalizes the classifier to a ratio
+> q1/q2 that names S5's type S as its own q1=1 example, against type M's q1=2 —
+> tested and passing on three unrelated domains, just never connected to S5.
+> Re-running D1's *actual* certifying test (cross-system agreement, the method
+> that separated the fold/SIS's real k = ½ vs 1 from their shared p = 3) rather
+> than the reparametrization check above: type M agrees to 0.037 across three
+> mechanistically unrelated systems (discrete channel, continuous channel,
+> population genetics) and type S agrees exactly across two; type R spreads
+> 0.91 across four codes, failing the same test — matching D2's independent
+> verdict that type R is gauge. **Verdict: type M and type S are a real
+> two-point classification (D6's q1=2 vs q1=1), not noise and not one law;
+> type R is gauge, confirmed a second, independent way.** Left open: whether α
+> literally equals D6's q1 in the strict crossover sense, which needs an
+> apparatus nobody has built for channels yet (§5 of the derivation).
 
 ### S6 🟢 — Is the SAT solvability transition the same phase transition as a physical one?
 **Bridge:** the replica/cavity method; computational phase transitions.

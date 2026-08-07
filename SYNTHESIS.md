@@ -252,6 +252,19 @@ of two. **So the exponent spreads S5 and S7 filed as "domain-specific" are large
 a chart artifact** — which retro-reads S7's τ·λ = 1 as the statement that the
 relaxation exponent is −1 in the λ chart in every domain.
 
+> **⟳ Correction (2026-08-07, [`derivations/S5-D6-noise-threshold-classifier.md`](./derivations/S5-D6-noise-threshold-classifier.md)).**
+> This paragraph's reading of S5 specifically was too pessimistic and was never
+> actually checked against S5's own data. Re-run as D1's real certifying test
+> (agreement across mechanistically unrelated systems — the method that
+> validated *p* for the fold/SIS pair — rather than reparametrization
+> robustness): S5's type M agrees to 0.037 across three unrelated systems and
+> type S agrees exactly across two, while type R spreads 0.91 across four
+> codes and fails the same test. **S5's spread is not "largely chart
+> artifact" — it is one real invariant (type M) and a second real invariant
+> (type S), matching D6's q1=2/q1=1 below, plus one genuine gauge readout
+> (type R), confirmed independently by D2.** Only S7's reading survives this
+> paragraph unchanged.
+
 **And *p* itself turned out to be a special case.**
 [D6](./experiments/D6-support-singularities/) generalized the classifier by
 stopping treating *p* as primitive. Writing Φ's two leading terms as

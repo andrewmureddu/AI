@@ -145,14 +145,50 @@ different values of D1's *p* (a real classification — the closest thing to
 "shadows of one operator" that could ever be true) or whether one is partly a
 removable *k*. Nobody has run that check. It's now the top item below.
 
+## Addendum 2: the reconciliation, run
+
+User's response to the addendum above: "yes, run it." Full write-up in
+[`derivations/S5-D6-noise-threshold-classifier.md`](../derivations/S5-D6-noise-threshold-classifier.md);
+supporting numbers in [`experiments/S5-D6-reconciliation/`](../experiments/S5-D6-reconciliation/).
+Compressed version:
+
+The framing in the addendum above was itself slightly wrong. Type S was never
+a fair comparison to type M under D1's *p* — D1's own pre-registration
+excludes support-type singularities "by construction," a scope note written
+one day after S5 shipped and never linked back to it. D6, one day after that,
+already generalized the classifier to a ratio q1/q2 and named S5's type S as
+its own q1=1 example against type M's q1=2 — tested and passing on three
+domains outside this cluster entirely (L1-logistic regression, an M/M/1
+queue, a hard-wall corner). `SYNTHESIS.md` §4 already states this pairing;
+it simply never reached `noise-thresholds.md` or the S5 stone.
+
+What was genuinely unresolved — whether S5's own α tracks that classifier or
+is a chart artifact — got a real answer by running D1's *actual* certifying
+test (the one that validated *p* for the fold/SIS pair: agreement across
+mechanistically unrelated systems, not robustness to reparametrization).
+Applied to numbers S5 already published: type M agrees to 0.037 across a
+discrete channel, a continuous channel, and a population-genetics recursion;
+type S agrees exactly across two unrelated channel laws; type R spreads 0.91
+across four codes and fails outright — matching D2's independent verdict from
+the previous addendum. `SYNTHESIS.md` itself had called S5's spread "largely
+a chart artifact"; that read was never checked and turns out to be too
+pessimistic — corrected there too.
+
+**Where this leaves the essay's claim:** still wrong on its own terms (there
+is no single shared exponent, confirmed a second time). But "unrelated laws"
+was also wrong, confirmed now with an actual invariance test rather than an
+assumption. The honest statement is the one in the derivation's title: a real
+two-point classification, not one law, not noise. Whether S5's α is
+*literally* D6's q1 (not just the same type) remains open and needs an
+apparatus nobody has built — see the derivation's §5.
+
 ## Next (cheapest high-signal tests, in order)
 
-1. **S5 × D1 reconciliation** — re-derive type M and type S's α (2 and 1)
-   through D1's *k*/*p* split: is either partly a chart order that a further
-   re-parameterization of the noise variable removes, or are both genuinely
-   different degeneracy orders *p*? Pure re-analysis of numbers S5 already
-   produced, against machinery D1 already built. No new data, no new code.
-   Promoted to top of the list by the addendum above.
+1. **Build D6's apparatus for channel models** — construct the noise-rounding
+   or excess-kurtosis analogue for a channel (what plays the role of D6's
+   noise scale D for a static probability model?) and check whether S5's α
+   literally equals D6's q1, not just its type. Needs its own
+   pre-registration; flagged, not started.
 2. **S32** — take one already-characterized floor-3 singularity from
    `FLOORS.md` and check whether its residue equals the Schur complement of
    ∇²Φ there. Pure derivation, no new data.
