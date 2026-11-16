@@ -350,9 +350,9 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **11 discovery stones** (D1–D11, D7 reused once — see the register's numbering
+- **12 discovery stones** (D1–D12, D7 reused once — see the register's numbering
   note) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) register, **all
-  eleven now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
+  twelve now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
   *p* generalized; floor 3's classifier is a ratio), **D7** (the P0's successor —
   the residue's general form, and a count), **D8** (the multi-parameter form —
@@ -362,7 +362,11 @@ exponent" premise had to fail.
   projectivized eigenvalue vector of a description map's linearization, D10 says
   which variables carry that structure, D3's "fixed point" language is the
   literature's own frame for it, and the residue is provably blind to whatever
-  is tangent to the fixed-point set), **D4** (falsified — the amplitude/exponent
+  is tangent to the fixed-point set — *narrowed by D12*), **D12** (the
+  identification survives a nonlinear description map, period doubling, to
+  2e-8 … 4e-5; D11's blindness holds only along orbits of maps commuting with
+  the description map, and fails along the z-family of period-doubling fixed
+  points, where the residue determines the fixed point), **D4** (falsified — the amplitude/exponent
   axis is a confound; collapses into D2/D3) and **D5** (confirmed but N0–N1;
   arithmetic nobody doubted). **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
   rungs around an *unpinned* chart, and the residue legs passed cleanly, but the
@@ -398,12 +402,12 @@ exponent" premise had to fail.
   composition-pinning account; **reconciling the three is not attempted here** and
   is left as the register's next question. All three replacements agree with
   paper 1's **ceiling** reading over the retracted step/cliff reading.
-- **33 experiments + 10 derivations** with teeth; **4 essays**; **1 paper**.
-  *(Recounted directly against the tree, most recently for D11. Every
+- **34 experiments + 11 derivations** with teeth; **4 essays**; **1 paper**.
+  *(Recounted directly against the tree, most recently for D12. Every
   experiment directory with a committed `verdict.json` has a row in
-  [`experiments/README.md`](./experiments/README.md) (33/33), and every
+  [`experiments/README.md`](./experiments/README.md) (34/34), and every
   top-level file in [`derivations/`](./derivations/) has a row in its index
-  (10/10).)*
+  (11/11).)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -568,6 +572,24 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    prior-art note before any code; what is not previously stated is the
    cross-connection of these four in-repo results and the closed-form proof of
    the residue's blindness.
+   **NARROWED 2026-11-16 by [D12](./derivations/D12-nonlinear-description-map.md)
+   — the nonlinear probe is run, and it splits D11 in two.** *What survives:*
+   the identification. Under the period-doubling operator, log-slopes measured
+   on raw maps match the linearized operator's eigen-data to 2e-8 … 4e-5 at
+   seven critical orders, across two microscopic families — the nontrivial
+   eigenvalue ratio under a literal description map that D11 did not have.
+   *What does not:* "never sufficient wherever the fixed-point set has tangent
+   directions." The z-family g_z is a curve of fixed points of one operator and
+   the residue is a complete coordinate on it (ln α/ln δ: 0.914 → 0.128). The
+   corrected statement: **on Fix(T) the residue is the spectrum map σ, blind
+   to ker dσ; orbits of maps commuting with T always lie in ker dσ, other
+   tangent directions need not.** And D11's U-family is such an orbit only
+   under *shared-U* aggregation — under the iid CLT map it named, the same
+   direction is irrelevant (λ₄ = 2⁻¹) and reads as slope −1.000, ratio −2.000.
+   *Honest:* N0 for every number; a registered convergence gate failed (a
+   tolerance asserted, not derived — D8's slip again) and one of four
+   literature constants registered from memory was wrong. **Still open: D8's
+   m > 1 case under a literal description map, and the FLOORS kink note.**
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.

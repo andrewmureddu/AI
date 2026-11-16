@@ -1131,6 +1131,17 @@ machine-epsilon precision.**
 [`derivations/D11-residue-reconciliation.md`](../derivations/D11-residue-reconciliation.md),
 [`experiments/D11-residue-reconciliation/`](../experiments/D11-residue-reconciliation/).
 
+> **⟳ CORRECTED 2026-11-16 by [D12](#d12--the-residue-under-a-nonlinear-map-and-what-its-blindness-is).**
+> Two things in this entry do not survive. (i) "Blind to whatever is tangent
+> to the fixed-point set" is false in general: z ↦ g_z is a curve of fixed
+> points of the period-doubling operator and the residue is a complete
+> coordinate along it. Blindness holds along orbits of maps commuting with T,
+> which is what the U-family is. (ii) The U-family is a fixed-point set of the
+> *shared-U* aggregation, not of the iid map (X₁+X₂)/√2 this entry names;
+> under the iid map the same direction is irrelevant (λ₄ = 2⁻¹) and visible,
+> measured at slope −1.000, ratio −2.000. The numbers below are unaffected.
+> The local falsifier at the end of this entry has fired.
+>
 > **⟳ Restraint pass: the three accounts are not competing — they are one
 > structure (a description map's linearization at a fixed point) recovered
 > three times, plus one boundary strong enough to prove rather than only
@@ -1227,6 +1238,69 @@ stone assembles rather than re-tests. The one falsifier genuinely local to
 D11: a description map with a fixed-point set whose tangent directions *do*
 show up in some log-slope-built observable — which would mean the "tangent
 direction" boundary is not general, only true of the one family tested.
+
+---
+
+### D12 — The residue under a nonlinear map, and what its blindness is
+
+**Engine:** gap prediction — the two probes [D11](#d11--reconciling-the-residue-one-structure-three-descriptions)
+named and left unrun, and D11's own local falsifier.
+**Novelty: N0 for every number; N1 at most for the composition.** A restraint
+pass on this register's own claim, not a discovery attempt.
+**Status: ⟳ RUN 2026-11-16 — the identification survives a nonlinear map;
+D11's blindness sentence is falsified as stated. Core legs pass; two
+registered items fail, neither on the claim.**
+[`derivations/D12-nonlinear-description-map.md`](../derivations/D12-nonlinear-description-map.md),
+[`experiments/D12-nonlinear-description-map/`](../experiments/D12-nonlinear-description-map/).
+
+**The claim.** On the fixed-point set of a description map T, the residue is
+the spectrum map σ : Fix(T) → {projectivized spectra}, blind to exactly
+ker dσ. If M∘T = T∘M then DT(Mx\*)·DM = DM·DT(x\*), so orbits of commuting
+maps lie in ker dσ — exactly, at every n. A tangent direction that is not such
+an orbit carries eigenvalue 1 and no further constraint.
+
+> **⟳ What was measured.**
+>
+> **The identification, under a nonlinear map (at risk — passes).** For the
+> period-doubling operator at seven critical orders z ∈ {1.5 … 8}, log-slopes
+> measured on raw maps (superstable parameters and nearest returns, 80 digits,
+> no reference to T) agree with the leading eigenvalue and rescaling of the
+> linearized operator (collocation) to **2e-8 … 4e-5** in ln δ and ln α,
+> registered 1e-4. This supplies the nontrivial eigenvalue ratio under a
+> literal description map that D11 lacked. A second microscopic family
+> (|sin x|^z) gives the same residue to ≤ 6e-5.
+>
+> **The falsifiable core, aimed at D11 (at risk — passes, so D11's sentence
+> fails).** ρ(z) = ln α/ln δ is strictly decreasing, **0.914 → 0.128**, spread
+> 6.15 against a registered 1.0. ∂_z g_z is tangent to Fix(T) and the residue
+> determines z.
+>
+> **D11's family under the map D11 named (at risk — passes).** With iid
+> summands the U-family is not fixed: D11's own quantile shape statistic
+> decays as n^**−1.0002 … −1.0019** (registered −1.00 ± 0.05) with the scale
+> spread at H = 0.50002 … 0.50042, ratio **−2.000 … −2.002** = ln λ₄/ln √2.
+> One direction, two maps, two roles: tangent-and-invisible under shared-U,
+> irrelevant-and-visible under iid.
+>
+> **Failed, and reported.** (i) The registered convergence gate on the
+> collocation route (N = 12 vs 16 to 1e-7) failed at every z: the N = 12
+> continuation left the branch, and the method resolves δ to ~1e-6 at best —
+> a tolerance asserted rather than derived, D8's P1 slip again. (ii) Of four
+> literature values registered from memory, **δ(z = 3) was wrong** (5.968
+> registered; 6.08469 from two routes sharing no code). The table could not be
+> retrieved to check, so no value here should be cited as Briggs's.
+
+**Prior-art note.** Feigenbaum (1978, 1979), Coullet–Tresser,
+Collet–Eckmann–Lanford for the operator and its spectrum; Hu & Satija (1983),
+van der Weele–Capel–Kluiving (Physica A 145 (1987) 425) and Briggs (Math.
+Comp. 57 (1991) 435) for the z-family; Jona-Lasinio (2001) for
+λ_k = 2^{1−k/2}. Written and searched before the code; everything measured is
+in these.
+
+**Falsifier still live.** C1 is sufficient, not necessary: a family of fixed
+points that is *not* a commuting orbit yet has constant σ would show the
+criterion is incomplete. And everything here is m = 1 — D8's m > 1 case under
+a literal description map is untested for the third stone running.
 
 ---
 

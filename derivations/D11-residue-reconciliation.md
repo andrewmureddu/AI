@@ -270,3 +270,20 @@ correctly composed, with one derived (not previously stated in this repo or,
 so far as the prior-art search found, in the literature) consequence: the
 residue's blindness to fixed-point-tangent directions is a *provable* general
 fact about the construction, not a property discovered once by accident.
+
+> **⟳ CORRECTED 2026-11-16 by [D12](./D12-nonlinear-description-map.md), which
+> keeps §2 and §5 and narrows §3–§4 and the verdict.** Two points. **(i) The
+> map.** §3 defines T with iid copies and proves the fixed-point property for
+> a shared U. Under the iid map the U-family is not fixed — κ₄ decays exactly
+> as 1/n, the direction is the irrelevant k = 4 Hermite direction, and the
+> log-slope construction reads it (slope −1.000, ratio −2.000 against the
+> scale spread). The U-family is a fixed-point set of shared-U aggregation,
+> where it is a mixture over the dilation orbit of the Gaussian. **(ii) The
+> boundary.** "Exactly blind to whatever is tangent to the fixed-point set" is
+> false in general. Blindness is exact along orbits of maps commuting with T
+> (the lemma DT(Mx\*)·DM = DM·DT(x\*)); a tangent direction that is not such
+> an orbit can be fully visible, and for the period-doubling operator's
+> z-family it is — ln α/ln δ runs 0.914 → 0.128 across z = 1.5 … 8. The
+> corrected statement is in D12 §5. C1's identification itself survives the
+> nonlinear map, to 2e-8 … 4e-5.
+

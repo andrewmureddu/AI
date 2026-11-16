@@ -622,6 +622,20 @@ is a claim about the tower rather than a measurement.
 > one counterexample. D8's m > 1 Grassmannian case and a genuinely nonlinear
 > description map remain untested.
 >
+> **⟳ NARROWED 2026-11-16 by [D12](../derivations/D12-nonlinear-description-map.md).**
+> The nonlinear map is now tested (period doubling; the identification holds
+> to 2e-8 … 4e-5 across seven critical orders), and the bold sentence above
+> does not survive it. "Never sufficient wherever the fixed-point set has
+> tangent directions" is true along orbits of maps commuting with the
+> description map — which is what the scale-mixture family is, and only under
+> *shared-U* aggregation — and false otherwise: along the curve of
+> period-doubling fixed points indexed by critical order z, the residue
+> ln α/ln δ falls monotonically 0.914 → 0.128 and determines the fixed point.
+> **The residue on a fixed-point set is a function, and it is blind to its own
+> level sets, no more.** Under the literal iid CLT map the scale-mixture
+> direction is irrelevant, not tangent, and reads as slope −1.000. D8's m > 1
+> case is still untested.
+>
 > **⟳ A second, independent account of the same kink (2026-07-28,
 > [P-K](../experiments/PK-kink-taxonomy/)), not yet checked against the one
 > above.** D7 (above) locates the kink algebraically, as the point [1 : 1] of
