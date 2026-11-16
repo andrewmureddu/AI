@@ -780,6 +780,13 @@ is an artifact of the estimator rather than of the group.
 Status: ⟳ RUN 2026-07-28 —
 [`experiments/D8-grassmannian-residue/`](../experiments/D8-grassmannian-residue/).**
 
+> **⟳ QUALIFIED 2026-11-16 by [D13](#d13--which-part-of-an-m-control-residue-is-spectral).**
+> col(Y) is invariant under the monomial group *at a base point*; it is not
+> an invariant of the singularity. Under a literal two-field description map
+> the plane rotates by 1.15 rad across two decades of the base ray, keeping
+> one line — the spectral weight vector — fixed. The rank statement stands.
+> Whether this entry's own germs show the same dependence is untested.
+>
 > **⟳ Restraint pass (2026-07-28): the question's premise was about the wrong
 > space, and the answer generalizes D7 rather than qualifying it.** *State-space*
 > coupling changes nothing — D7's lemma never mentioned the state space. What
@@ -1142,6 +1149,11 @@ machine-epsilon precision.**
 > measured at slope −1.000, ratio −2.000. The numbers below are unaffected.
 > The local falsifier at the end of this entry has fired.
 >
+> **⟳ AND NARROWED AGAIN 2026-11-16 by [D13](#d13--which-part-of-an-m-control-residue-is-spectral).**
+> "D8's Grassmannian point [is] exactly" the projectivized eigenvalue vector
+> is withdrawn for m > 1. One ray of the plane is spectral; the plane rotates
+> by 1.15 rad with the base ray while that ray stays fixed.
+>
 > **⟳ Restraint pass: the three accounts are not competing — they are one
 > structure (a description map's linearization at a fixed point) recovered
 > three times, plus one boundary strong enough to prove rather than only
@@ -1301,6 +1313,58 @@ in these.
 points that is *not* a commuting orbit yet has constant σ would show the
 criterion is incomplete. And everything here is m = 1 — D8's m > 1 case under
 a literal description map is untested for the third stone running.
+
+---
+
+### D13 — Which part of an m-control residue is spectral
+
+**Engine:** gap prediction — D8's m > 1 case under a literal description map,
+named untested by D11 and D12.
+**Novelty: N0** (two-field scaling theory; Derrida–Itzykson–Luck 1984 for the
+log-periodic part). A restraint pass on D8 and D11.
+**Status: ⟳ RUN 2026-11-16 — the claim holds; two registered bounds fail,
+both from a log-periodic modulation I under-budgeted.**
+[`derivations/D13-two-control-description-map.md`](../derivations/D13-two-control-description-map.md),
+[`experiments/D13-two-control-description-map/`](../experiments/D13-two-control-description-map/).
+
+**The claim.** With r relevant fields and continuous scaling, Euler gives
+Y·ℓ = w, so the weight vector w lies in col(Y) at every base point. The other
+r − 1 directions are logarithmic derivatives of scaling functions and depend
+on the base ray κ. So ∩_κ col Y(κ) = ⟨w⟩: **the spectral content of D8's
+Grassmannian point is one ray — D7's — and a single plane does not determine
+it.**
+
+> **⟳ What was measured** (Ising on the diamond hierarchical lattice, exact
+> recursion in (K, h), λ_t = 1.6786, λ_h = 3.6786; four observables; three
+> base rays spanning two decades of κ; eight phases across one period).
+>
+> **The plane moves, the line stays (at risk — the core).** Largest principal
+> angle between col Y at 0.1κ\* and 10κ\*: **1.155 rad** (registered ≥ 0.05);
+> smallest **4.0e-3**; shared direction within **9.0e-3** of [w]. Every entry
+> of Y moves and several change sign.
+>
+> **Rank 2 (at risk — passes):** σ₂/σ₁ ≥ 0.126.
+>
+> **One step of the map (near-identity — passes):** per-step log-increments
+> equal w to **4.9e-7**.
+>
+> **Failed, and reported.** (i) The infinitesimal Euler residual was
+> registered < 1e-2; it reaches **6.7e-2** at 10κ\* (its period mean is
+> 3e-7, as predicted). (ii) Consequently one of P4's three pairs misses the
+> "within 1e-2 of [w]" bound at 1.04e-2, so **P4 as registered fails.** Post
+> hoc, with phase-averaged slopes the line is shared to 1e-7 on all three
+> pairs. The modulation is the discrete map's log-periodic amplitude; I
+> bounded it from impression, not derivation.
+
+**Prior-art note.** Widom/Kadanoff/Fisher/Wegner scaling; Berker & Ostlund
+(1979), Griffiths & Kaufman (1982) for hierarchical lattices; Derrida,
+Itzykson & Luck, Comm. Math. Phys. 94 (1984) 115. Searched before the code;
+the Ising-with-field recursion on this lattice was derived, not sourced.
+
+**Falsifier still live.** §2 of the derivation predicts D8's own germs show
+the same base-ray dependence (their col(Y) was measured at one point of one
+ray). If the cusp's col(Y) is ray-independent, something here is special to
+this model. Untested.
 
 ---
 

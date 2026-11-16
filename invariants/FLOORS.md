@@ -636,6 +636,17 @@ is a claim about the tower rather than a measurement.
 > direction is irrelevant, not tangent, and reads as slope −1.000. D8's m > 1
 > case is still untested.
 >
+> **⟳ m > 1 TESTED 2026-11-16 by [D13](../derivations/D13-two-control-description-map.md).**
+> With two relevant fields (Ising on the diamond hierarchical lattice, exact
+> recursion) the Grassmannian point is **not** spectral data: it rotates by
+> 1.15 rad as the base ray h/t^Δ moves across two decades. What every plane
+> shares is one line, the vector of observable scaling weights — D7's ray.
+> **At any m, the residue that belongs to the fixed point is the ray; the
+> rest of the plane belongs to the scaling function and the choice of
+> approach.** Also measured: because the map is discrete, local log-slopes
+> oscillate log-periodically by up to 0.12 around their period mean, and only
+> per-step increments (4.9e-7) and period means (3e-7) are exact.
+>
 > **⟳ A second, independent account of the same kink (2026-07-28,
 > [P-K](../experiments/PK-kink-taxonomy/)), not yet checked against the one
 > above.** D7 (above) locates the kink algebraically, as the point [1 : 1] of

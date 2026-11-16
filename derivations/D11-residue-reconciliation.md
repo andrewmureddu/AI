@@ -286,4 +286,11 @@ fact about the construction, not a property discovered once by accident.
 > z-family it is — ln α/ln δ runs 0.914 → 0.128 across z = 1.5 … 8. The
 > corrected statement is in D12 §5. C1's identification itself survives the
 > nonlinear map, to 2e-8 … 4e-5.
-
+>
+> **⟳ AND 2026-11-16 by [D13](./D13-two-control-description-map.md): §2's
+> closing clause is withdrawn for m > 1.** "D8's Grassmannian point for m
+> controls" is not the projectivized eigenvalue vector. By Euler, the weight
+> vector lies *in* the plane; the plane's other directions are
+> scaling-function derivatives and move with the base ray (1.15 rad across
+> two decades on the diamond-lattice Ising model, the shared line fixed to
+> 4e-3, or 1e-7 after averaging out the map's log-periodic modulation).

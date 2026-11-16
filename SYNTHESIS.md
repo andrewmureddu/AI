@@ -350,9 +350,9 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **12 discovery stones** (D1–D12, D7 reused once — see the register's numbering
+- **13 discovery stones** (D1–D13, D7 reused once — see the register's numbering
   note) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) register, **all
-  twelve now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
+  thirteen now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
   *p* generalized; floor 3's classifier is a ratio), **D7** (the P0's successor —
   the residue's general form, and a count), **D8** (the multi-parameter form —
@@ -366,7 +366,9 @@ exponent" premise had to fail.
   identification survives a nonlinear description map, period doubling, to
   2e-8 … 4e-5; D11's blindness holds only along orbits of maps commuting with
   the description map, and fails along the z-family of period-doubling fixed
-  points, where the residue determines the fixed point), **D4** (falsified — the amplitude/exponent
+  points, where the residue determines the fixed point), **D13** (D8's m > 1
+  case under a literal two-field map: the Grassmannian point rotates with the
+  base ray and only one line of it — D7's ray — is spectral), **D4** (falsified — the amplitude/exponent
   axis is a confound; collapses into D2/D3) and **D5** (confirmed but N0–N1;
   arithmetic nobody doubted). **D9 was run 2026-07-28 and is inconclusive** — it rebuilt D3's four
   rungs around an *unpinned* chart, and the residue legs passed cleanly, but the
@@ -402,12 +404,12 @@ exponent" premise had to fail.
   composition-pinning account; **reconciling the three is not attempted here** and
   is left as the register's next question. All three replacements agree with
   paper 1's **ceiling** reading over the retracted step/cliff reading.
-- **34 experiments + 11 derivations** with teeth; **4 essays**; **1 paper**.
-  *(Recounted directly against the tree, most recently for D12. Every
+- **35 experiments + 12 derivations** with teeth; **4 essays**; **1 paper**.
+  *(Recounted directly against the tree, most recently for D13. Every
   experiment directory with a committed `verdict.json` has a row in
-  [`experiments/README.md`](./experiments/README.md) (34/34), and every
+  [`experiments/README.md`](./experiments/README.md) (35/35), and every
   top-level file in [`derivations/`](./derivations/) has a row in its index
-  (11/11).)*
+  (12/12).)*
 
 Full catalog: [`invariants/README.md`](./invariants/README.md). The
 invariant × domain matrix: [`domains/README.md`](./domains/README.md).
@@ -590,6 +592,21 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    tolerance asserted, not derived — D8's slip again) and one of four
    literature constants registered from memory was wrong. **Still open: D8's
    m > 1 case under a literal description map, and the FLOORS kink note.**
+   **m > 1 RUN 2026-11-16 by [D13](./derivations/D13-two-control-description-map.md).**
+   Ising on the diamond hierarchical lattice, exact two-field recursion. D11's
+   clause that D8's Grassmannian point is "the same statement with r controls"
+   is **withdrawn**: col(Y) rotates by **1.155 rad** across two decades of the
+   base ray h/t^Δ, and the planes share exactly one line, within 4e-3 of the
+   spectral weight vector (1e-7 after phase-averaging, post hoc). **The
+   fixed point's residue is D7's ray at every m; D8's plane is the ray plus
+   scaling-function directions, and a single plane does not determine the
+   ray.** By-product: the map is discrete, so local log-slopes carry a
+   log-periodic modulation of up to 0.12 — only per-step increments (4.9e-7)
+   are exact. *Honest:* N0; **two registered bounds failed** on that
+   modulation, which I bounded at 1e-2 from impression. Third stone running
+   with a tolerance asserted rather than derived. **Still open: whether D8's
+   own germs show the same base-ray dependence; completeness of D12's
+   commuting-orbit criterion; the FLOORS kink note.**
 1. **The fourth floor, as previously posed (superseded by 0, kept for the record).**
    The tower's
    own falsifier #4 asks for an invariant reducible to none of the three floors.
