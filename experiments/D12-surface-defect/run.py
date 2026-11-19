@@ -54,7 +54,14 @@ SYSTEMS = {
 def kwindow(sysd, L):
     N = L ** sysd["d"]
     lo, hi = sysd["window"]                  # in e = -k/N
-    return N, int(math.ceil(-hi * N)), int(math.floor(-lo * N))
+    d = sysd["d"]
+    # 3-D: keep clear of the sparse levels next to the ground state (wl.c
+    # enumerates them exactly only in 2-D).  Never binding for the registered
+    # 3-D window, which stops 0.1 N below the ground state.
+    kmax = int(math.floor(-lo * N))
+    if d == 3:
+        kmax = min(kmax, d * N - 14)
+    return N, int(math.ceil(-hi * N)), kmax
 
 
 def outpath(name, L, seed):

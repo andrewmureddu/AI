@@ -6,8 +6,10 @@
  * The walker is confined to k in [kmin, kmax]; moves leaving the window are
  * rejected (and the current bin is updated, as usual for windowed WL).
  *
- * Schedule: standard WL with flatness 0.8 and ln f halving until
- * ln f < 1/t, then the 1/t algorithm of Belardinelli & Pereyra (2007),
+ * Schedule: Belardinelli-Pereyra.  Initial phase halves ln f each time every
+ * reachable bin in the window (all of them for q >= 3, the even-parity ones for
+ * q = 2) has been visited since the last halving (checked every
+ * 10*nbin trials), until ln f < 1/t; then the 1/t algorithm of Belardinelli & Pereyra (2007),
  * t = trials / (number of visited bins), until ln f < lnf_final.
  * Bins never visited are reported with ln g = NaN and excluded from the
  * flatness check (this handles parity-forbidden levels, e.g. q = 2).
@@ -80,13 +82,29 @@ int main(int argc, char **argv) {
     }
 
     int nbin = kmax - kmin + 1;
+    /* reachable levels, by m = dN - k unsatisfied bonds.  q = 2: every
+       single-spin flip changes m by an even amount, so m is even, and m = 2 is
+       impossible (one flip costs 2d).  q >= 3 in d = 2: m = 1, 2, 3, 5 are
+       impossible (one flip 4; a flipped pair 6 or 7).  Checked against exact
+       enumeration.  d = 3 is not enumerated here: the caller keeps
+       kmax <= 3N - 14, where every level is reachable. */
+    int nexp = 0;
+    for (int kk = kmin; kk <= kmax; kk++) {
+        long m = (long)d * N - kk;
+        int ok;
+        if (q == 2) ok = (m % 2 == 0) && m != 2;
+        else if (d == 2) ok = !(m == 1 || m == 2 || m == 3 || m == 5);
+        else ok = m >= 14 || m == 0;
+        nexp += ok;
+    }
     double *g = calloc(nbin, sizeof(double));
     long *H = calloc(nbin, sizeof(long));
     unsigned char *vis = calloc(nbin, 1);
     double lnf = 1.0;
     int one_over_t = 0;
     long double trials = 0;
-    long check = (long)nbin * 1000;
+    long check = (long)nbin * 10;
+    int progress = getenv("WL_PROGRESS") != NULL;
     long it = 0;
     for (;;) {
         int i = randint(N), nw = randint(q - 1); if (nw >= sp[i]) nw++;
@@ -106,10 +124,16 @@ int main(int argc, char **argv) {
                 if (lnf < lnf_final) break;
             }
         } else if (++it % check == 0) {
-            int nv = 0; double mean = 0; long hmin = -1;
-            for (int j = 0; j < nbin; j++) if (vis[j]) { nv++; mean += H[j]; if (hmin < 0 || H[j] < hmin) hmin = H[j]; }
-            mean /= nv;
-            if (hmin > 0.8 * mean) {
+            if (trials > 4e11L) {       /* a wrong reachable-level set must fail loudly, not hang */
+                int nv = 0; for (int j = 0; j < nbin; j++) nv += vis[j];
+                fprintf(stderr, "abort: initial phase did not finish (visited %d of %d expected)\n", nv, nexp);
+                return 3;
+            }
+            int nv = 0; long hmin = -1;
+            for (int j = 0; j < nbin; j++) if (vis[j]) { nv++; if (hmin < 0 || H[j] < hmin) hmin = H[j]; }
+            /* Belardinelli-Pereyra initial phase: halve once every visited bin has H > 0 */
+            if (hmin > 0 && nv == nexp) {
+                if (progress) fprintf(stderr, "lnf=%.3e trials=%.3Le nv=%d\n", lnf, trials, nv);
                 lnf *= 0.5;
                 memset(H, 0, sizeof(long) * nbin);
                 if (lnf < (double)nv / (double)trials) { one_over_t = 1; lnf = (double)nv / (double)trials; }

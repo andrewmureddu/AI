@@ -1,0 +1,42 @@
+{
+ "q2_d2_L4": {
+  "window": [
+   4,
+   32
+  ],
+  "levels": 14,
+  "levels_match": true,
+  "max_abs_err": 0.003909218864253106,
+  "rms_err": 0.001571976711098601
+ },
+ "q3_d2_L4": {
+  "window": [
+   0,
+   32
+  ],
+  "levels": 29,
+  "levels_match": true,
+  "max_abs_err": 0.009541248513789569,
+  "rms_err": 0.005058159897928849
+ },
+ "q4_d2_L4": {
+  "window": [
+   4,
+   32
+  ],
+  "levels": 25,
+  "levels_match": true,
+  "max_abs_err": 0.009666284544024961,
+  "rms_err": 0.003047318981329597
+ },
+ "q2_d3_L3": {
+  "window": [
+   33,
+   69
+  ],
+  "levels": 19,
+  "levels_match": true,
+  "max_abs_err": 0.009786562884217531,
+  "rms_err": 0.004039767744608687
+ }
+}

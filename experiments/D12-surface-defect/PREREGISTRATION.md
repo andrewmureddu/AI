@@ -139,3 +139,29 @@ evidence for the claim.
 - **Periodic boundaries** select the slab (two-interface) geometry at the
   defect's maximum. Free boundaries would change the prefactor, not the
   exponent; not tested.
+
+---
+
+## Amendment A — 2026-11-19, before any production defect was computed
+
+The first production launch ran 30 minutes without completing a job and was
+killed; no output from it was kept or analyzed. Two changes to the Wang–Landau
+*machinery* followed. The definition, the systems, sizes, windows, seeds,
+ln f_final, the statistics and every registered band are unchanged.
+
+1. **Schedule.** "Flatness 0.8" (§0) is replaced by Belardinelli–Pereyra's own
+   initial-phase rule: halve ln f each time every reachable bin in the window
+   has been visited since the last halving, then switch to 1/t. The flatness
+   rule stalled on a 5,816-bin window that spans a first-order intruder.
+2. **Reachable levels.** A first attempt at (1) counted only bins visited *so
+   far*, and a timing probe (q=20, L=32) showed the walker converging on 447 of
+   1,731 bins without crossing to the disordered side. The rule now requires
+   every *reachable* level, enumerated exactly in `wl.c` (2-D q ≥ 3: m = 1, 2,
+   3, 5 unsatisfied bonds are impossible; q = 2: m even and m ≠ 2; 3-D windows
+   are kept below 3N − 14, which never binds for the registered window). A run
+   that cannot finish now aborts instead of hanging.
+
+Re-validated against exact enumeration at the production ln f_final = 1e-6,
+with 2-D windows running to the ground state: levels match exactly on all four
+lattices, max |Δ ln Ω| ≤ 0.0098 (`validate.py`, `validation.json`). The timing
+probe was a code check at a registered size; its defect was not computed.
