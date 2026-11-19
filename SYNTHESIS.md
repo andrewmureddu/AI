@@ -350,9 +350,11 @@ exponent" premise had to fail.
   **Worked:** S1, S3, S5, S7, S9 (sharpened), S11 (strong form falsified), S18,
   S23, S25, S27, S26, S28. **Unworked:** S2, S4, S6, S8, S10, S12–S17,
   S19–S22, S24.
-- **11 discovery stones** (D1–D11, D7 reused once — see the register's numbering
+- **12 discovery stones** (D1–D12, D7 reused once — see the register's numbering
   note) in the new [`UNKNOWN-LAWS.md`](./questions/UNKNOWN-LAWS.md) register, **all
-  eleven now worked.** D1 (chart claim confirmed; formula deflated to N0–N1 by its
+  twelve now worked.** **D12** (the order-0 defect is the surface in 2-D, with the
+  interface tension as prefactor; 3-D failed its band; D10's definition gains an
+  intruder clause; N0). D1 (chart claim confirmed; formula deflated to N0–N1 by its
   own prior-art note), **D2** (the P0 answered — no fourth floor), **D6** (D1's
   *p* generalized; floor 3's classifier is a ratio), **D7** (the P0's successor —
   the residue's general form, and a count), **D8** (the multi-parameter form —
@@ -422,7 +424,15 @@ invariant × domain matrix: [`domains/README.md`](./domains/README.md).
    floor 1 consumes — a **composition law** — which is now floor 0, and floors 2
    and 3 are the orders at which it lapses.
    ***What this leaves open, in priority order:***
-   **(a) the d ≥ 2 surface test (P0, cheap-ish).** D10's order-0 control is a 1-D
+   **(a) ~~the d ≥ 2 surface test (P0, cheap-ish).~~ RUN 2026-11-19 as
+   [D12](./experiments/D12-surface-defect/).** *The surface is confirmed in d = 2,
+   with D ~ N^0.509 ± 0.011 for 2-D q=20 Potts and D/L = 0.376 against the exact
+   interface tension 2σ_od = 0.371. The Ising control is flat, so order 0 is a
+   0 / (d−1)/d / 1 classifier. 3-D failed its registered band (b = 0.778 vs ≤ 0.767);
+   its slopes fall toward 2/3 (post hoc 0.695 at L = 20). D10's definition gains a
+   clause: measure the intruder, not the band edge, whose lattice lumps grow as
+   ln N. N0, as declared. The original text follows.*
+   D10's order-0 control is a 1-D
    chain whose entropy is exactly log-binomial, so its zero is nearly an identity.
    The version with teeth is an interacting short-range model in d ≥ 2 with a
    first-order transition, where the defect should scale as the **surface**,

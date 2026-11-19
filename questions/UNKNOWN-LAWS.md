@@ -1236,8 +1236,32 @@ direction" boundary is not general, only true of the one family tested.
 own boundary section and [`SYNTHESIS.md`](../SYNTHESIS.md) §7.0'(a), where it is the
 P0. **Novelty: N0 for the scaling, declared before the work** (prior-art note
 below); the stone's content is *placement* only.
-**Status: ⧗ PRE-REGISTERED —
-[`experiments/D12-surface-defect/PREREGISTRATION.md`](../experiments/D12-surface-defect/PREREGISTRATION.md).**
+**Status: ⟳ RUN 2026-11-19 — 3 of 5 registered predictions pass;
+[`experiments/D12-surface-defect/`](../experiments/D12-surface-defect/).**
+
+> **⟳ Restraint pass (2026-11-19): the surface is confirmed in d = 2, with the
+> interface tension as prefactor; d = 3 failed its registered band; and D10's
+> definition needed a clause.**
+>
+> **P1 + P3, the leg with teeth:** 2-D q=20 Potts, D ~ N^**0.509 ± 0.011**
+> (registered 0.50 ± 0.08; 0 and 1 excluded by > 40σ), and D/L = **0.376** at
+> L = 48 against the exact 2σ_od = **0.370988** (+1.3%). **P5:** the 2-D Ising
+> control does not grow (b = −0.48), and away from the band edge its defect is at
+> the WL noise floor (≤ 0.013). So order 0 sorts into **0 / (d−1)/d / 1**, and
+> D10's B3b becomes *"a first-order transition always violates order 0; range sets
+> the exponent"*, sub-extensively for short range.
+>
+> **P2 ✗:** 3-D q=10 gives b = **0.778** against [0.567, 0.767]. The local slopes
+> fall at every step, and a post-hoc extension to L = 20 reaches 0.695. That is
+> not a pass. It does exclude ½ and 1, so the dimension enters; the exact 2/3 is
+> unestablished.
+> **P4 ✗, and the finding:** 2-D q=10 gives b = 0.20 because at L = 16 the max sits
+> at the **bottom of the band**, where the low-excitation level counts are not
+> concave (exact, the same in all seeds). D10's max-over-all-e definition picks
+> that up, with depth O(ln N). **Correction to D10:** the order-0 defect is the
+> intruder depth, or the max over a fixed interior fraction of the band. D10's own
+> numbers are unaffected (its models have no band-edge lumps). Novelty stays
+> **N0**, as declared.
 
 **The claim.** D10 measured the order-0 (concavity) defect D(N) = N·max(ŝ − s)
 at N^1.0252 for a long-range first-order model and exactly 0 for a 1-D chain

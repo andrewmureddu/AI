@@ -9,6 +9,7 @@ the map honest and reconstructable.
 
 ## Entries
 
+- [2026-11-19 — D12: the order-0 defect is the surface in 2-D, and D10's definition needed a clause](./2026-11-19-D12-surface-defect.md)
 - [2026-08-04 — D11: the residue reconciled, and why D3's counterexample was never a fluke](./2026-08-04-D11-residue-reconciliation.md)
 - [2026-07-30 — D3: the ladder is not a chart-invariance count, and the residue is a fixed point](./2026-07-30-D3-ladder-invariance.md)
 - [2026-07-29 — D10: the lens under floor 1, and what maintains it](./2026-07-29-D10-composition-lens.md)
