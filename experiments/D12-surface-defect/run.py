@@ -20,6 +20,7 @@ Omega from Wang-Landau (wl.c, 1/t schedule), validated against exact enumeration
 Run: python3 run.py            (compiles wl.c, runs missing jobs on all cores,
                                  caches raw/ ; ~1-2 h on 4 cores from scratch)
      python3 run.py --analyze   (analysis only, from raw/)
+     python3 run.py --extend    (POST HOC: 3-D L = 16, 18, 20; ~1 h on 4 cores)
 """
 
 import json
@@ -46,6 +47,13 @@ SYSTEMS = {
     "ising2d":     dict(q=2, d=2, Ls=[8, 12, 16, 24, 32], window=(-1.98, -1.30), seeds=[1, 2, 3, 4]),
 }
 
+# POST HOC -- added after the registered verdict was computed, because P2 failed
+# with local slopes still falling.  Same window, seeds, settings; larger sizes
+# only.  Never enters verdict(); reported under "post_hoc".
+EXTENSION = {
+    "potts3d_q10_ext": dict(q=10, d=3, Ls=[16, 18, 20], window=(-2.90, -0.45), seeds=[1, 2, 3]),
+}
+
 
 # ---------------------------------------------------------------------------
 # jobs
@@ -68,9 +76,9 @@ def outpath(name, L, seed):
     return os.path.join(RAW, f"{name}_L{L}_s{seed}.txt")
 
 
-def jobs():
+def jobs(systems=None):
     out = []
-    for name, sd in SYSTEMS.items():
+    for name, sd in (systems or SYSTEMS).items():
         for L in sd["Ls"]:
             N, kmin, kmax = kwindow(sd, L)
             for seed in sd["seeds"]:
@@ -94,11 +102,11 @@ def run_job(j):
     return p, dt
 
 
-def run_all():
+def run_all(systems=None):
     os.makedirs(RAW, exist_ok=True)
     if not os.path.exists(WL) or os.path.getmtime(WL) < os.path.getmtime(WL + ".c"):
         subprocess.run(["gcc", "-O3", "-march=native", "-o", WL, WL + ".c", "-lm"], check=True)
-    todo = [j for j in jobs() if not os.path.exists(outpath(j[1], j[3], j[4]))]
+    todo = [j for j in jobs(systems) if not os.path.exists(outpath(j[1], j[3], j[4]))]
     print(f"{len(todo)} jobs to run", flush=True)
     with ThreadPoolExecutor(max_workers=os.cpu_count() or 4) as ex:
         list(ex.map(run_job, todo))
@@ -253,12 +261,79 @@ def verdict(res):
     return v
 
 
+def intruder_defect(k, lng, N):
+    """POST HOC: the gap maximised only under the bitangent (the widest hull
+    edge), i.e. the coexistence intruder alone.  Differs from D10's D only when
+    D's maximum sits elsewhere -- in this run, always at the low-energy window
+    edge, where the exact level counts are lumpy (lattice discreteness)."""
+    e = -k / N
+    s = lng / N
+    shat, hx = concave_hull(e, s)
+    j = int(np.argmax(np.diff(hx)))
+    m = (e > hx[j]) & (e < hx[j + 1])
+    return float(N * np.max((shat - s)[m])) if m.any() else 0.0
+
+
+def post_hoc(res):
+    out = {}
+    for name, sd in SYSTEMS.items():
+        if name == "ising2d":
+            continue
+        Ds, Ns = [], []
+        for L in sd["Ls"]:
+            N = L ** sd["d"]
+            k, g, _ = averaged(name, L, sd["seeds"])
+            Ds.append(intruder_defect(k, g, N)); Ns.append(N)
+        out[name + "_intruder_only"] = dict(
+            Ls=sd["Ls"], D=Ds, b=fit_slope(np.array(Ns, float), np.array(Ds)),
+            local_slopes=[float(math.log(Ds[i + 1] / Ds[i]) / math.log(Ns[i + 1] / Ns[i]))
+                          for i in range(len(Ds) - 1)],
+            D_over_surface=[D / L ** (sd["d"] - 1) for D, L in zip(Ds, sd["Ls"])])
+    # Ising: where the defect sits, and its size away from the window edge
+    sd = SYSTEMS["ising2d"]
+    rows = []
+    for L in sd["Ls"]:
+        N = L * L
+        k, g, _ = averaged("ising2d", L, sd["seeds"])
+        e = -k / N
+        shat, _ = concave_hull(e, g / N)
+        gap = N * (shat - g / N)
+        interior = e > sd["window"][0] + 0.10
+        rows.append(dict(L=L, e_at_max=float(e[np.argmax(gap)]),
+                         D_interior=float(gap[interior].max())))
+    out["ising2d_location"] = rows
+    # 3-D extension, if its raw files exist
+    ext = EXTENSION["potts3d_q10_ext"]
+    if all(os.path.exists(outpath("potts3d_q10_ext", L, s)) for L in ext["Ls"] for s in ext["seeds"]):
+        base = res["potts3d_q10"]["rows"]
+        Ls = [r["L"] for r in base] + ext["Ls"]
+        Ds = [r["D"] for r in base]
+        win = []
+        for L in ext["Ls"]:
+            N = L ** 3
+            k, g, gs = averaged("potts3d_q10_ext", L, ext["seeds"])
+            r = defect_of(k, g, N, ext["window"])
+            Ds.append(r["D"]); win.append(r["window_ok"])
+        Ns = np.array([L ** 3 for L in Ls], float)
+        D = np.array(Ds)
+        out["potts3d_q10_extended"] = dict(
+            Ls=Ls, D=Ds, window_ok_ext=win,
+            local_slopes=[float(math.log(D[i + 1] / D[i]) / math.log(Ns[i + 1] / Ns[i]))
+                          for i in range(len(D) - 1)],
+            b_all=fit_slope(Ns, D), b_last3=fit_slope(Ns[-3:], D[-3:]),
+            D_over_surface=[float(x / L ** 2) for x, L in zip(Ds, Ls)])
+    return out
+
+
 def main():
     t0 = time.time()
-    if "--analyze" not in sys.argv:
+    if "--extend" in sys.argv:
+        run_all(EXTENSION)
+    elif "--analyze" not in sys.argv:
         run_all()
     res = analyze()
     v = verdict(res)
+    ph = post_hoc(res)
     for name, r in res.items():
         print(f"--- {name}  b={r.get('b', float('nan')):+.4f} +/- {r.get('b_err', float('nan')):.4f}"
               f"  local={[round(x, 3) for x in r.get('local_slopes', [])]}")
@@ -270,8 +345,10 @@ def main():
         if "secondary_fit_a_c_e" in r:
             print(f"    secondary (unregistered) D = a L^(d-1) + c ln L + e : {r['secondary_fit_a_c_e']}")
     print(json.dumps(v, indent=1))
+    print("--- POST HOC (unregistered)")
+    print(json.dumps(ph, indent=1))
     with open(os.path.join(HERE, "verdict.json"), "w") as f:
-        json.dump(dict(stone="D12", verdict=v, results=res, lnf_final=LNF_FINAL,
+        json.dump(dict(stone="D12", verdict=v, results=res, post_hoc_unregistered=ph, lnf_final=LNF_FINAL,
                        analysis_runtime_s=round(time.time() - t0, 1)), f, indent=1)
 
 
