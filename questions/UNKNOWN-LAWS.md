@@ -1230,6 +1230,51 @@ direction" boundary is not general, only true of the one family tested.
 
 ---
 
+### D12 — Does the order-0 defect scale as the surface in short-range models?
+
+**Engine:** gap prediction — [D10](#d10--is-there-a-floor-0-and-is-it-a-composition-law)'s
+own boundary section and [`SYNTHESIS.md`](../SYNTHESIS.md) §7.0'(a), where it is the
+P0. **Novelty: N0 for the scaling, declared before the work** (prior-art note
+below); the stone's content is *placement* only.
+**Status: ⧗ PRE-REGISTERED —
+[`experiments/D12-surface-defect/PREREGISTRATION.md`](../experiments/D12-surface-defect/PREREGISTRATION.md).**
+
+**The claim.** D10 measured the order-0 (concavity) defect D(N) = N·max(ŝ − s)
+at N^1.0252 for a long-range first-order model and exactly 0 for a 1-D chain
+whose entropy is log-binomial — so its zero was close to an identity. For a
+short-range model in d dimensions with a first-order transition, coexistence
+costs an interface, so **D ~ N^{(d−1)/d}**: 1/2 in d = 2, 2/3 in d = 3, and the
+prefactor in a periodic box is the interface free energy 2σ_od. If so, order 0 is
+a three-valued classifier — 0 / (d−1)/d / 1 for no coexistence / short-range
+coexistence / long-range coexistence — and D10's B3b ("long range opens the
+possibility, a first-order transition realizes it") becomes "a first-order
+transition always violates order 0; range sets the exponent". A continuous
+transition (2-D Ising) is the control: no coexistence, no interface, no growth.
+
+**Prior-art note (written first).** The scaling is textbook and this stone
+cannot be more than N0 on it. Binder, *Phys. Rev. A* 25 (1982) 1699: the minimum
+of the double-peaked canonical energy histogram at a first-order transition is
+suppressed by exp(−2σL^{d−1}), and that is how interface tensions are measured.
+Lee & Kosterlitz, *Phys. Rev. Lett.* 65 (1990) 137: ΔF(L) = ln(P_max/P_min)
+grows as L^{d−1} at first-order transitions and stays bounded at continuous
+ones — which is this stone's P1 and P5 in canonical language. ΔF *is* the
+order-0 defect (a Legendre shift of the hull's chord; declared an identity in
+the pre-registration). Borgs & Janke, *J. Phys. I France* 2 (1992) 2011: exact
+2σ_od for the 2-D Potts model (0.094701 for q = 10, 0.370988 for q = 20),
+confirmed by multicanonical simulation (Billoire, Neuhaus & Berg). The
+microcanonical reading — a "convex intruder" in s(e) whose depth is the
+surface tension — is Gross, *Microcanonical Thermodynamics* (2001), and
+Janke, *Nucl. Phys. B (Proc. Suppl.)* 63 (1998) 631; the droplet/strip
+geometry inside the intruder is Biskup, Chayes & Kotecký (2002). **What is not
+in those sources** is only the repo-local statement: that this number is D10's
+order-0 additivity defect, so the ensemble-inequivalence literature and the
+interface-tension literature are reading one floor-0 quantity at two ranges.
+**Nearest-miss test:** a source that states the long-range N^1 and short-range
+N^{(d−1)/d} cases as one exponent of one composition defect — then even the
+placement is N0.
+
+---
+
 ## 6. Working a D-stone
 
 Same rhythm as a speculative stone, with two additions, both aimed at the two
